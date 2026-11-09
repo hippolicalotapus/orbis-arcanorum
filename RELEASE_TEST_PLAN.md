@@ -35,3 +35,13 @@ Do not merge PR #1 or trigger a new Netlify build until these checks pass. No pr
 
 ## Environment notes
 Netlify deploy previews may require authenticated access. Opening an existing preview does not require a new build. The current preview's HTTP 401 means access could not be established in the unauthenticated test, not that the code was validated.
+
+## Verification update — 2026-11-09
+- [x] Rechecked public site and PR #1 preview via external unauthenticated fetch: both returned HTTP 401; browser functionality remains blocked pending authorized access.
+- [x] Rechecked Supabase RLS policy inventory for vendor applications, vendor profiles and collector profiles; policies remain present.
+- [x] Re-ran Supabase security advisor: leaked-password protection disabled (WARN); two internal RLS tables without policies (INFO).
+- [x] Homepage and catalog source changed to derive chamber names from data; shared catalog previously checked at 86 entries, 13 populated categories.
+- [ ] Obtain authorized Netlify test session or intentionally enable preview access, then perform browser tests.
+- [ ] Execute real applicant/admin/non-admin test-account flow and verify database state before and after cleanup.
+- [ ] Resolve leaked-password protection warning in Supabase Auth settings before launch.
+- [ ] Test billing and sponsorship inquiries only after payment provider and terms are approved.
