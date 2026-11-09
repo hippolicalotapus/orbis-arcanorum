@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vendor Reviews | Orbis Arcanorum</title><style>:root{color-scheme:dark;background:#101019;color:#f3ead8;font-family:Georgia,serif}*{box-sizing:border-box}body{margin:0;background:#101019}header,main{max-width:900px;margin:auto;padding:22px}a{color:#e8c68c}.card{padding:20px;margin:15px 0;background:#211d28;border:1px solid #70583a;border-radius:12px}button,input{padding:12px;border-radius:8px;font:1rem system-ui}button{background:#e8c68c;border:0;margin:6px;cursor:pointer}input{background:#28222e;color:white;border:1px solid #947751}label{display:block;margin:12px 0 6px}p{line-height:1.5}:focus-visible{outline:3px solid #e8c68c;outline-offset:3px}</style></head><body><header><a href="./index.html">ORBIS ARCANORUM</a> / Restricted administration</header><main><h1>Vendor Application Reviews</h1><p>Only designated administrators may view or decide applications. Never approve a business without checking its identity and public claims.</p><form id="login"><label for="email">Administrator email</label><input id="email" type="email" required autocomplete="email"><label for="password">Password</label><input id="password" type="password" required autocomplete="current-password"><button>Sign in</button></form><button id="logout" hidden>Sign out</button><p id="status" role="status" aria-live="polite"></p><section id="results" aria-label="Pending vendor applications"></section></main><script type="module">
+import {createClient} from "https://esm.sh/@supabase/supabase-js@2.57.0";
+const db=createClient("https://brxptqbdrlxixvsafvlf.supabase.co","sb_publishable_UV40XxeKKe3qP4bGOno2RQ__QuaVmKK");
+const el=id=>document.getElementById(id),status=t=>el("status").textContent=t;
+async function load(){
+ const {data:{user}}=await db.auth.getUser();el("login").hidden=!!user;el("logout").hidden=!user;el("results").replaceChildren();if(!user){status("Sign in with an authorized administrator account.");return;}
+ const {data,error}=await db.from("vendor_applications").select("id,display_name,country,specialty,description,website_url,status,created_at").eq("status","pending").order("created_at",{ascending:true}).limit(100);
+ if(error){status("Access denied or review service unavailable.");return;}
+ status(data.length+" pending applications");
+ for(const item of data){
+  const card=document.createElement("article");card.className="card";
+  const title=document.createElement("h2");title.textContent=item.display_name;
+  const details=document.createElement("p");details.textContent=item.country+" · "+item.specialty+" · "+new Date(item.created_at).toLocaleDateString();
+  const desc=document.createElement("p");desc.textContent=item.description;card.append(title,details,desc);
+  if(item.website_url){const a=document.createElement("a");a.href=item.website_url;a.target="_blank";a.rel="noopener noreferrer";a.textContent="Inspect vendor website";card.append(a)}
+  for(const decision of ["approved","rejected"]){const b=document.createElement("button");b.textContent=decision==="approved"?"Approve":"Reject";b.addEventListener("click",async()=>{
+   if(!confirm("Confirm "+decision+" for "+item.display_name+"?"))return;
+   b.disabled=true;const {data:updated,error}=await db.from("vendor_applications").update({status:decision,reviewed_at:new Date().toISOString()}).eq("id",item.id).eq("status","pending").select("id");
+   if(error||!updated?.length){status("Review failed. Verify administrator permissions.");b.disabled=false;return;}await load();
+  });card.append(b)}el("results").append(card)}
+}
+el("login").addEventListener("submit",async e=>{e.preventDefault();const {error}=await db.auth.signInWithPassword({email:el("email").value.trim(),password:el("password").value});if(error)status("Sign-in failed.");else await load()});
+el("logout").addEventListener("click",async()=>{await db.auth.signOut();await load()});load();
+</script></body></html>
