@@ -528,5 +528,165 @@
     "source_url": "https://www.loc.gov/research-centers/rare-book-and-special-collections/collections/selected-special-collections/",
     "source_status": "Institutional item or collection page checked 2026-11-08; reuse rights not reviewed",
     "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-054",
+    "title": "Taoism (Daoism): traditions and history",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "Daoist philosophy, ritual traditions and communities have distinct historical developments.",
+    "source_url": "https://plato.stanford.edu/entries/daoism/",
+    "source_status": "Research lead — source page and item-level details require review",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-055",
+    "title": "Daodejing (Tao Te Ching)",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "Classical Daoist text; its authorship, dating and translations are debated.",
+    "source_url": "https://ctext.org/dao-de-jing",
+    "source_status": "Research lead — source page and item-level details require review",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-056",
+    "title": "Zhuangzi",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "Classical Daoist writings and parables, with varied interpretations.",
+    "source_url": "https://ctext.org/zhuangzi",
+    "source_status": "Research lead — source page and item-level details require review",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-057",
+    "title": "Buddhism: traditions and history",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "Historical foundations and differences among Theravada, Mahayana and Vajrayana traditions.",
+    "source_url": "https://www.britannica.com/topic/Buddhism",
+    "source_status": "Research lead — source page and item-level details require review",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-058",
+    "title": "Early Buddhist discourses",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "SuttaCentral provides translated and original-language early Buddhist texts.",
+    "source_url": "https://suttacentral.net/",
+    "source_status": "Research lead — source page and item-level details require review",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-059",
+    "title": "Mahayana sutras and translation",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "84000 translates Tibetan Buddhist canonical literature, including many Mahayana works.",
+    "source_url": "https://84000.co/",
+    "source_status": "Research lead — source page and item-level details require review",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-060",
+    "title": "Hinduism: texts and traditions",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "Vedas, Upanishads, devotional movements and philosophical schools; no single uniform doctrine.",
+    "source_url": "https://www.britannica.com/topic/Hinduism",
+    "source_status": "Research lead — source page and item-level details require review",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-061",
+    "title": "Sikhism: history and scripture",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "History of Sikh Gurus and the Guru Granth Sahib.",
+    "source_url": "https://www.britannica.com/topic/Sikhism",
+    "source_status": "Research lead — source page and item-level details require review",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-062",
+    "title": "Jainism: ethics and cosmology",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "Ahimsa, liberation and the historical Jain religious traditions.",
+    "source_url": "https://www.britannica.com/topic/Jainism",
+    "source_status": "Research lead — source page and item-level details require review",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-063",
+    "title": "Shinto: shrines and kami",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "Japanese religious traditions involving kami, shrines and ritual practice.",
+    "source_url": "https://www.britannica.com/topic/Shinto",
+    "source_status": "Research lead — source page and item-level details require review",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-064",
+    "title": "Sufism: Islamic mystical traditions",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "Historical Sufi schools, devotional practices and Islamic contexts.",
+    "source_url": "https://www.britannica.com/topic/Sufism",
+    "source_status": "Research lead — source page and item-level details require review",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-065",
+    "title": "Kabbalah: Jewish mystical traditions",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "Jewish mystical literature and historical development; avoid conflating with modern occult adaptations.",
+    "source_url": "https://www.britannica.com/topic/Kabbala",
+    "source_status": "Research lead — source page and item-level details require review",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-066",
+    "title": "Gnosticism: ancient movements and texts",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "Diverse ancient religious movements; distinguish scholarly reconstruction from modern spiritual claims.",
+    "source_url": "https://www.britannica.com/topic/gnosticism",
+    "source_status": "Research lead — source page and item-level details require review",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-067",
+    "title": "Zoroastrianism: history and sacred texts",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "Iranian religious traditions, Zoroaster and the Avesta.",
+    "source_url": "https://www.britannica.com/topic/Zoroastrianism",
+    "source_status": "Research lead — source page and item-level details require review",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-068",
+    "title": "Indigenous spiritual traditions: research ethics",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "Research must distinguish specific living communities and prioritize community-authored, publicly shared sources.",
+    "source_url": "https://americanindian.si.edu/",
+    "source_status": "Research lead — source page and item-level details require review",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-069",
+    "title": "Modern spirituality and New Age movements",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "History of contemporary spiritual movements, channeling, energy healing and related claims.",
+    "source_url": "https://www.britannica.com/topic/New-Age-movement",
+    "source_status": "Research lead — source page and item-level details require review",
+    "rights": "Link only; no reproduction permission assumed"
   }
 ]
