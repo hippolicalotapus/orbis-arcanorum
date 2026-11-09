@@ -788,5 +788,35 @@
     "source_url": "https://www.unesco.org/en/underwater-heritage",
     "source_status": "Institutional source page verified 2026-11-09; further item-level review pending",
     "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-080",
+    "title": "Angkor — Khmer imperial sacred landscape",
+    "chamber": "Occult Locations & Archaeology",
+    "classification": "Documented",
+    "summary": "The Angkor archaeological landscape in Cambodia preserves Khmer imperial capitals and temple complexes. Its historical and religious significance is documented independently of speculative lost-civilization theories.",
+    "source_url": "https://whc.unesco.org/en/list/668/",
+    "source_status": "UNESCO institutional page checked 2026-11-09; detailed item-level review pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-081",
+    "title": "Taj Mahal — Mughal funerary architecture",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "The Taj Mahal in Agra, India, is a seventeenth-century Mughal mausoleum commissioned by Shah Jahan. It is included here for Islamic cultural heritage and architecture, not as evidence of occult claims.",
+    "source_url": "https://whc.unesco.org/en/list/252/",
+    "source_status": "UNESCO institutional page checked 2026-11-09; detailed item-level review pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-082",
+    "title": "Old Towns of Djenné — West African Islamic heritage",
+    "chamber": "Occult Locations & Archaeology",
+    "classification": "Documented",
+    "summary": "Djenné in Mali is an important historic trading and Islamic learning centre with a distinctive earthen architectural tradition; its documented heritage should not be conflated with unrelated esoteric claims.",
+    "source_url": "https://whc.unesco.org/en/list/116/",
+    "source_status": "UNESCO institutional page checked 2026-11-09; detailed item-level review pending",
+    "rights": "Link only; no reproduction permission assumed"
   }
 ]
