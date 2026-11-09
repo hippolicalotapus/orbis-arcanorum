@@ -45,3 +45,12 @@ Netlify deploy previews may require authenticated access. Opening an existing pr
 - [ ] Execute real applicant/admin/non-admin test-account flow and verify database state before and after cleanup.
 - [ ] Resolve leaked-password protection warning in Supabase Auth settings before launch.
 - [ ] Test billing and sponsorship inquiries only after payment provider and terms are approved.
+
+## Development QA update — 2026-11-09
+- [x] Temporary public test window: production and preview became publicly accessible, then both were restored to Private and Netlify confirmed both settings.
+- [x] Browser smoke tests passed for homepage, catalog, vendors, registration, advertise, and lost histories; browser rendered 86 catalog entries and 13 populated chamber buttons. Search/filter navigation tested.
+- [x] Found and fixed a literal `\\n` token in `admin-vendors.html` module JavaScript that would cause parsing failure. Commit `94f2dab`.
+- [x] Updated vendor directory copy and obsolete Twelve Archives navigation. Commit `321c568`.
+- [ ] Rebuild/redeploy updated admin page and perform real browser JavaScript and admin authentication tests.
+- [ ] Vendor sign-up, application insertion, admin review, public profile sync, RLS negative tests and cleanup remain pending.
+- [ ] Payment and advertising transactions remain disabled and untested.
