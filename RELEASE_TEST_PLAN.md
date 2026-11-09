@@ -79,3 +79,9 @@ Netlify deploy previews may require authenticated access. Opening an existing pr
 - [ ] Enable leaked-password protection in Supabase Auth and re-run security advisor.
 - [ ] Confirm configured email redirect allowlist covers the selected preview or staging host; test account confirmation with controlled disposable accounts.
 - [ ] Run non-admin rejection, applicant-only access, admin approval, directory synchronization and cleanup tests in a controlled environment.
+
+## Fourteen-chamber expansion check — 2026-11-09
+- [x] Added Estonian folklore, Northern European legends and Project Gutenberg source gateways (oa-102–oa-104).
+- [x] Catalog integrity checked: 104 records, 104 unique IDs, all required fields populated, all 14 chambers represented.
+- [ ] Individual manuscript-level provenance, edition, translation and rights verification pending for gateway records.
+- [ ] Deploy latest branch and test 14 chamber navigation, 104 record search/filter, mobile layout and vendor workflow. Existing private deploy has not been rebuilt for this change.
