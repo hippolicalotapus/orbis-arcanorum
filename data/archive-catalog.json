@@ -1646,5 +1646,185 @@
     "source_url": "https://archive.org/search?query=Novum%20Lumen%20Chymicum",
     "source_status": "Discovery gateway; specific item and rights verification pending",
     "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-160",
+    "title": "Hildegard of Bingen",
+    "chamber": "Esoteric People & Biographies",
+    "classification": "Research lead",
+    "summary": "Twelfth-century Benedictine abbess, visionary author, composer and natural-history writer; distinguish her documented writings from later esoteric reinterpretations.",
+    "source_url": "https://www.britannica.com/biography/Saint-Hildegard",
+    "source_status": "Candidate biographical reference or research gateway; URL, details and primary documents require independent verification",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-161",
+    "title": "Marsilio Ficino",
+    "chamber": "Esoteric People & Biographies",
+    "classification": "Research lead",
+    "summary": "Renaissance philosopher and translator of the Greek Hermetic writings; investigate his intellectual circle and Christian Platonism.",
+    "source_url": "https://www.britannica.com/biography/Marsilio-Ficino",
+    "source_status": "Candidate biographical reference or research gateway; URL, details and primary documents require independent verification",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-162",
+    "title": "Giovanni Pico della Mirandola",
+    "chamber": "Esoteric People & Biographies",
+    "classification": "Research lead",
+    "summary": "Italian Renaissance philosopher whose engagement with Kabbalah and philosophy influenced Christian esoteric thought; interpret his writings in historical context.",
+    "source_url": "https://www.britannica.com/biography/Giovanni-Pico-della-Mirandola",
+    "source_status": "Candidate biographical reference or research gateway; URL, details and primary documents require independent verification",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-163",
+    "title": "Heinrich Cornelius Agrippa",
+    "chamber": "Esoteric People & Biographies",
+    "classification": "Research lead",
+    "summary": "Early modern humanist and author of De occulta philosophia; separate his writings from later attributions.",
+    "source_url": "https://www.britannica.com/biography/Heinrich-Cornelius-Agrippa-von-Nettesheim",
+    "source_status": "Candidate biographical reference or research gateway; URL, details and primary documents require independent verification",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-164",
+    "title": "Giordano Bruno",
+    "chamber": "Esoteric People & Biographies",
+    "classification": "Research lead",
+    "summary": "Italian philosopher whose cosmology and art of memory interacted with Renaissance Hermeticism; avoid simplistic accounts of his trial.",
+    "source_url": "https://www.britannica.com/biography/Giordano-Bruno",
+    "source_status": "Candidate biographical reference or research gateway; URL, details and primary documents require independent verification",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-165",
+    "title": "Jakob Böhme",
+    "chamber": "Esoteric People & Biographies",
+    "classification": "Research lead",
+    "summary": "German Christian mystic and author whose theosophical writings influenced later European esoteric movements.",
+    "source_url": "https://www.britannica.com/biography/Jakob-Boehme",
+    "source_status": "Candidate biographical reference or research gateway; URL, details and primary documents require independent verification",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-166",
+    "title": "Emanuel Swedenborg",
+    "chamber": "Esoteric People & Biographies",
+    "classification": "Research lead",
+    "summary": "Swedish scientist, visionary and religious author; document his writings and subsequent religious movements without endorsing supernatural claims.",
+    "source_url": "https://www.britannica.com/biography/Emanuel-Swedenborg",
+    "source_status": "Candidate biographical reference or research gateway; URL, details and primary documents require independent verification",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-167",
+    "title": "Aleister Crowley",
+    "chamber": "Esoteric People & Biographies",
+    "classification": "Research lead",
+    "summary": "British occult writer and founder of Thelema-associated organizations; examine biography, source criticism and controversies.",
+    "source_url": "https://www.britannica.com/biography/Aleister-Crowley",
+    "source_status": "Candidate biographical reference or research gateway; URL, details and primary documents require independent verification",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-168",
+    "title": "Dion Fortune",
+    "chamber": "Esoteric People & Biographies",
+    "classification": "Research lead",
+    "summary": "British occult author and founder of the Society of the Inner Light; institutional archives and first editions remain to be checked.",
+    "source_url": "https://en.wikipedia.org/wiki/Dion_Fortune",
+    "source_status": "Candidate biographical reference or research gateway; URL, details and primary documents require independent verification",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-169",
+    "title": "Papus (Gérard Encausse)",
+    "chamber": "Esoteric People & Biographies",
+    "classification": "Research lead",
+    "summary": "French physician and occultist associated with modern Martinism; verify organizational chronology from specialist historical scholarship.",
+    "source_url": "https://en.wikipedia.org/wiki/Papus_(occultist)",
+    "source_status": "Candidate biographical reference or research gateway; URL, details and primary documents require independent verification",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-170",
+    "title": "René Guénon",
+    "chamber": "Esoteric People & Biographies",
+    "classification": "Research lead",
+    "summary": "French-born metaphysical writer associated with Traditionalism and later Islamic practice; present his intellectual influence without endorsing ideological interpretations.",
+    "source_url": "https://www.britannica.com/biography/Rene-Guenon",
+    "source_status": "Candidate biographical reference or research gateway; URL, details and primary documents require independent verification",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-171",
+    "title": "G. I. Gurdjieff",
+    "chamber": "Esoteric People & Biographies",
+    "classification": "Research lead",
+    "summary": "Spiritual teacher associated with the Fourth Way; compare autobiographical claims with independent historical records.",
+    "source_url": "https://www.britannica.com/biography/George-Ivanovitch-Gurdjieff",
+    "source_status": "Candidate biographical reference or research gateway; URL, details and primary documents require independent verification",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-172",
+    "title": "P. D. Ouspensky",
+    "chamber": "Esoteric People & Biographies",
+    "classification": "Research lead",
+    "summary": "Russian philosopher and author who interpreted and disseminated Fourth Way teachings; distinguish his publications from those of Gurdjieff.",
+    "source_url": "https://www.britannica.com/biography/P-D-Ouspensky",
+    "source_status": "Candidate biographical reference or research gateway; URL, details and primary documents require independent verification",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-173",
+    "title": "Abū Maʿshar al-Balkhī",
+    "chamber": "Esoteric People & Biographies",
+    "classification": "Research lead",
+    "summary": "Ninth-century Persian astrologer whose Arabic writings influenced medieval Latin astrology; verify manuscripts and translations.",
+    "source_url": "https://en.wikipedia.org/wiki/Abu_Ma%27shar_al-Balkhi",
+    "source_status": "Candidate biographical reference or research gateway; URL, details and primary documents require independent verification",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-174",
+    "title": "Ibn ʿArabī",
+    "chamber": "Esoteric People & Biographies",
+    "classification": "Research lead",
+    "summary": "Influential Sufi philosopher and mystic; interpret metaphysical terminology through scholarship and living Islamic intellectual traditions.",
+    "source_url": "https://plato.stanford.edu/entries/ibn-arabi/",
+    "source_status": "Candidate biographical reference or research gateway; URL, details and primary documents require independent verification",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-175",
+    "title": "Lalleshwari (Lal Ded)",
+    "chamber": "Esoteric People & Biographies",
+    "classification": "Research lead",
+    "summary": "Kashmiri mystic poet associated with Shaiva traditions; biography and verse transmission contain legendary layers requiring careful source criticism.",
+    "source_url": "https://en.wikipedia.org/wiki/Lal_Ded",
+    "source_status": "Candidate biographical reference or research gateway; URL, details and primary documents require independent verification",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-176",
+    "title": "Dōgen",
+    "chamber": "Esoteric People & Biographies",
+    "classification": "Research lead",
+    "summary": "Thirteenth-century Japanese Zen Buddhist teacher and writer; contextualize religious philosophy rather than labeling Zen practice as occultism.",
+    "source_url": "https://plato.stanford.edu/entries/japanese-zen/",
+    "source_status": "Candidate biographical reference or research gateway; URL, details and primary documents require independent verification",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-177",
+    "title": "Helena Roerich",
+    "chamber": "Esoteric People & Biographies",
+    "classification": "Research lead",
+    "summary": "Twentieth-century writer associated with Agni Yoga; evaluate movement histories and her published correspondence.",
+    "source_url": "https://en.wikipedia.org/wiki/Helena_Roerich",
+    "source_status": "Candidate biographical reference or research gateway; URL, details and primary documents require independent verification",
+    "rights": "Link only; no reproduction permission assumed"
   }
 ]
