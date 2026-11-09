@@ -68,3 +68,14 @@ test('vendor signup remains disabled until launch gates pass', () => {
   assert.match(js,/button\[type=submit\]/);
   assert.doesNotMatch(JSON.stringify(config),/sb_secret_|service_role/);
 });
+
+test('vendor studio is gated and only drafts or submits for moderation', () => {
+ const html=fs.readFileSync('studio.html','utf8');
+ const js=fs.readFileSync('studio.js','utf8');
+ assert.match(html,/id="studio" hidden/);
+ assert.match(js,/config.registrationEnabled!==true/);
+ assert.match(js,/eq\('status','approved'\)/);
+ assert.match(js,/status:'draft'/);
+ assert.match(js,/status:'pending_review'/);
+ assert.doesNotMatch(js,/service_role|sb_secret_|innerHTML/);
+});
