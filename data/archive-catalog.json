@@ -1196,5 +1196,45 @@
     "source_url": "https://collections.si.edu/search/results.htm?fq=-object_type%3A%22Photographs%22&q=%22Spiritualism%22",
     "source_status": "Institutional collection listing checked 2026-11-09; folder contents not inspected",
     "rights": "Link and metadata only; repository disclaims blanket reproduction clearance"
+  },
+  {
+    "id": "oa-115",
+    "title": "Alchemy, Science, and Innovations in the Decorative Arts",
+    "chamber": "Alchemy & Hermeticism",
+    "classification": "Documented",
+    "summary": "Metropolitan Museum of Art research essay on alchemical workshop practices, court patronage, glassmaking, metallurgy and the relationship between early modern alchemy and experimental science.",
+    "source_url": "https://www.metmuseum.org/es/perspectives/alchemy-science-making-marvels",
+    "source_status": "Institutional essay or specific video landing page checked 2026-11-09; not an item-level manuscript inspection",
+    "rights": "Link only; no media republication or reproduction permission assumed"
+  },
+  {
+    "id": "oa-116",
+    "title": "Rudolf II and alchemy at the courts of Europe",
+    "chamber": "Esoteric People & Biographies",
+    "classification": "Documented",
+    "summary": "Historical research on Emperor Rudolf II's patronage of alchemists and workshops in Prague, contextualized through the Metropolitan Museum of Art's essay on court science and craftsmanship.",
+    "source_url": "https://www.metmuseum.org/es/perspectives/alchemy-science-making-marvels",
+    "source_status": "Institutional essay or specific video landing page checked 2026-11-09; not an item-level manuscript inspection",
+    "rights": "Link only; no media republication or reproduction permission assumed"
+  },
+  {
+    "id": "oa-117",
+    "title": "ESOTERICA — introduction to scholarly esotericism",
+    "chamber": "Documentaries, Lectures & Audio",
+    "classification": "Documented",
+    "summary": "Introductory lecture from ESOTERICA describing an academic approach to the history of magic, Hermeticism, Kabbalah, alchemy and religious esotericism. This is a specific video, distinct from existing general channel listings.",
+    "source_url": "https://www.youtube.com/watch?v=dC8O73xO508",
+    "source_status": "Institutional essay or specific video landing page checked 2026-11-09; not an item-level manuscript inspection",
+    "rights": "Link only; no media republication or reproduction permission assumed"
+  },
+  {
+    "id": "oa-118",
+    "title": "The Met: Immaterial — Metals, Part One",
+    "chamber": "Documentaries, Lectures & Audio",
+    "classification": "Documented",
+    "summary": "Museum-produced audio transcript discussing metals and the traditional seven metals of alchemy with commentary from the museum's scientific research staff.",
+    "source_url": "https://www.metmuseum.org/it/perspectives/immaterial-metals-part-one",
+    "source_status": "Institutional essay or specific video landing page checked 2026-11-09; not an item-level manuscript inspection",
+    "rights": "Link only; no media republication or reproduction permission assumed"
   }
 ]
