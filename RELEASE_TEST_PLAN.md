@@ -11,6 +11,8 @@ Do not merge PR #1 or trigger a new Netlify build until these checks pass. No pr
 - [x] Admin review page improved to show authorization and sign-in errors.
 - [x] Static navigation audit of seven HTML pages: no unresolved local page links, duplicate element IDs, or missing referenced element IDs.
 
+- [x] Research catalog expanded to 79 records; three new UNESCO source pages checked and catalog JSON schema/IDs validated.
+
 ## Required end-to-end checks (not yet verified)
 - [ ] Serve HTML locally; check all internal links, JavaScript console errors and mobile layouts.
 - [ ] Sign up with a non-admin test account and confirm email redirect.
