@@ -61,6 +61,14 @@ class ArchiveImportTests(unittest.TestCase):
         opener.return_value.__enter__.return_value = io.BytesIO(b'[]')
         reject_existing([normalize(BASE)], "https://project.supabase.co", "fake-key")
     @patch("import_archive_jsonl.urllib.request.urlopen")
+    def test_preflight_rejects_existing_slug(self, opener):
+        opener.return_value.__enter__.side_effect = [
+            io.BytesIO(b'[]'), io.BytesIO(b'[{"id":"existing"}]')
+        ]
+        with self.assertRaisesRegex(ValueError, "existing institution/catalog ID or slug"):
+            reject_existing([normalize(BASE)], "https://project.supabase.co", "fake-key")
+        self.assertEqual(opener.call_count, 2)
+    @patch("import_archive_jsonl.urllib.request.urlopen")
     def test_preflight_network_failure_blocks_post(self, opener):
         opener.side_effect = OSError("network unavailable")
         with patch.dict(os.environ, {
