@@ -64,7 +64,7 @@ class ArchiveImportTests(unittest.TestCase):
             reject_existing([normalize(BASE)], "https://project.supabase.co", "fake-key")
     @patch("import_archive_jsonl.urllib.request.urlopen")
     def test_preflight_accepts_new_catalog(self, opener):
-        opener.return_value.__enter__.return_value = io.BytesIO(b'[]')
+        opener.return_value.__enter__.side_effect = [io.BytesIO(b'[]'), io.BytesIO(b'[]')]
         reject_existing([normalize(BASE)], "https://project.supabase.co", "fake-key")
     @patch("import_archive_jsonl.urllib.request.urlopen")
     def test_preflight_rejects_existing_slug(self, opener):
