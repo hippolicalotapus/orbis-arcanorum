@@ -51,16 +51,21 @@ def harvest(query, limit, pause):
     search_url = API + "/search?" + urllib.parse.urlencode({"q": query})
     ids = fetch_json(search_url).get("objectIDs") or []
     results, seen = [], set()
+    max_scanned = max(100, limit * 10)
+    scanned = 0
     for object_id in ids:
         if len(results) >= limit:
             break
         if type(object_id) is not int or object_id <= 0 or object_id in seen:
             continue
         seen.add(object_id)
+        if scanned >= max_scanned:
+            break
+        scanned += 1
         try:
             obj = fetch_json(API + "/objects/" + str(object_id))
             record = transform(obj)
-            if record:
+            if record and obj.get("objectID") == object_id:
                 results.append(record)
         except (OSError, ValueError, json.JSONDecodeError) as exc:
             print("Skipping object " + str(object_id) + ": " + type(exc).__name__, flush=True)
