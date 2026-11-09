@@ -828,5 +828,41 @@
     "source_url": "https://www.theosophical.org/",
     "source_status": "Theosophical Society institutional homepage checked 2026-11-09; item-specific historical citations still required",
     "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-084",
+    "title": "Persepolis — Achaemenid imperial heritage",
+    "chamber": "Occult Locations & Archaeology",
+    "classification": "Documented",
+    "summary": "Persepolis in Iran was founded under Darius I and preserves Achaemenid imperial architecture. Interpretations of its ritual or symbolic elements must be supported separately.",
+    "source_url": "https://whc.unesco.org/en/list/114/",
+    "source_status": "UNESCO institutional source page checked 2026-11-09; item-level review pending",
+    "rights": "Link only; no reproduction permission assumed",
+    "original_language": "Multiple relevant historical languages; specific object language not yet assigned",
+    "english_translation_status": "English editorial summary; not a translation of a primary manuscript"
+  },
+  {
+    "id": "oa-085",
+    "title": "Old City of Jerusalem — shared sacred heritage",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "Jerusalem's Old City contains historic sacred sites associated with Judaism, Christianity and Islam. The archive documents cultural and religious heritage without adjudicating theological truth claims.",
+    "source_url": "https://whc.unesco.org/en/list/148/",
+    "source_status": "UNESCO institutional source page checked 2026-11-09; item-level review pending",
+    "rights": "Link only; no reproduction permission assumed",
+    "original_language": "Multiple relevant historical languages; specific object language not yet assigned",
+    "english_translation_status": "English editorial summary; not a translation of a primary manuscript"
+  },
+  {
+    "id": "oa-086",
+    "title": "Mogao Caves — Silk Road religious manuscripts and art",
+    "chamber": "Rare Manuscripts & Artifacts",
+    "classification": "Documented",
+    "summary": "The Mogao cave sanctuaries near Dunhuang preserve Buddhist art and evidence of cultural exchange along the Silk Roads. Manuscript-level provenance requires separate cataloging.",
+    "source_url": "https://whc.unesco.org/en/list/440/",
+    "source_status": "UNESCO institutional source page checked 2026-11-09; item-level review pending",
+    "rights": "Link only; no reproduction permission assumed",
+    "original_language": "Multiple relevant historical languages; specific object language not yet assigned",
+    "english_translation_status": "English editorial summary; not a translation of a primary manuscript"
   }
 ]
