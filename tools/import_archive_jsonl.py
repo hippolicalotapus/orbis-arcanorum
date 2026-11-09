@@ -78,29 +78,27 @@ def load(path):
     return records
 
 def reject_existing(records, base, key):
-    """Fail closed if any institution/catalog pair already exists remotely.
-
-    Requires a trusted service-role key; this is a preflight, not a substitute
-    for the database unique index during concurrent imports.
-    """
+    """Reject existing catalog pairs and slugs before writing; fail closed."""
     from urllib.parse import urlencode
     for record in records:
-        params = urlencode({
-            "select": "id",
-            "source_name": "eq." + record["source_name"],
-            "institution_catalog_id": "eq." + record["institution_catalog_id"],
-            "limit": "1",
-        })
-        request = urllib.request.Request(
-            base + "/rest/v1/archive_resources?" + params,
-            headers={"apikey": key, "Authorization": "Bearer " + key,
-                     "Accept": "application/json"})
-        with urllib.request.urlopen(request, timeout=20) as response:
-            existing = json.load(response)
-        if existing:
-            raise ValueError("existing institution/catalog ID: " +
-                             record["source_name"] + " / " +
-                             record["institution_catalog_id"])
+        for filters in (
+            {"source_name": "eq." + record["source_name"],
+             "institution_catalog_id": "eq." + record["institution_catalog_id"]},
+            {"slug": "eq." + record["slug"]},
+        ):
+            params = urlencode({"select": "id", **filters, "limit": "1"})
+            request = urllib.request.Request(
+                base + "/rest/v1/archive_resources?" + params,
+                headers={"apikey": key, "Authorization": "Bearer " + key,
+                         "Accept": "application/json"})
+            with urllib.request.urlopen(request, timeout=20) as response:
+                existing = json.load(response)
+            if not isinstance(existing, list):
+                raise ValueError("invalid database lookup response")
+            if existing:
+                raise ValueError("existing institution/catalog ID or slug: " +
+                                 record["source_name"] + " / " +
+                                 record["institution_catalog_id"])
 
 def commit(records):
     base = os.environ.get("SUPABASE_URL", "").rstrip("/")
