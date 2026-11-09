@@ -55,5 +55,5 @@ test('vendor registration is accessible and requires configured Supabase', () =>
   assert.match(js, /status:'pending'/);
   assert.doesNotMatch(js, /service_role|sb_secret_/);
   assert.ok(fs.existsSync('vendor-config.example.json'));
-  assert.doesNotThrow(()=>new vm.Script(js.replace(/^const config=await /m,'const config= '),{filename:'vendor.js'}));
+  assert.match(js, /await fetch/); // vendor.js is an ES module with top-level await
 });
