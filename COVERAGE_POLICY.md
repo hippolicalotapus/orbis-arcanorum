@@ -22,3 +22,11 @@ Orbis Arcanorum documents religious, spiritual, occult, magical, mystical, esote
 7. Review for stereotyping, sensationalism and misrepresentation, particularly of living and historically marginalized communities.
 
 Coverage is aspirational and grows through sourced research and community participation; listing a tradition here does not imply its archive entries are already complete.
+
+## Welcoming religious institutions and clergy
+
+The archive is designed to be useful to Catholic priests, Orthodox clergy, Protestant ministers, rabbis, imams, monks, nuns, theologians, religious educators, and other faith leaders as well as occult practitioners and researchers. No visitor is required to affirm another tradition's theology.
+
+Document Catholic and wider Christian subjects including saints and hagiography, relics, Marian apparitions, reported miracles, monastic archives, mysticism, angelology, demonology, historical exorcism practices, pilgrimage, and ecclesiastical history. Clearly distinguish official doctrine, approved devotion, historical documents, popular piety, folklore, private revelation, and disputed claims. Do not imply institutional endorsement or permission to reproduce restricted archives.
+
+Provide source citations, primary-document references, tradition-specific terminology, respectful discussion, and an option to flag inaccurate or offensive descriptions. Marketplace listings and scholarly archive entries must remain clearly separated. Never market harmful ritual services or impersonate clergy or religious institutions.
