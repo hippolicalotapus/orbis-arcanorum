@@ -1396,5 +1396,65 @@
     "source_url": "https://en.wikipedia.org/wiki/Order_of_Nine_Angles",
     "source_status": "Preliminary encyclopedia discovery link; authoritative item-level source verification pending",
     "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-135",
+    "title": "Order of the Garter — English chivalric order",
+    "chamber": "Secret Societies & Orders",
+    "classification": "Research lead",
+    "summary": "English royal order of chivalry established under Edward III in the fourteenth century. Explore its public ceremonial traditions, heraldry and institutional history; this is not evidence of a hidden governing network.",
+    "source_url": "https://www.royal.uk/the-order-of-the-garter",
+    "source_status": "Candidate institutional or encyclopedia entry point; URL and item-level historical claims not independently checked in this update",
+    "rights": "Link only; no republication or reproduction permission assumed"
+  },
+  {
+    "id": "oa-136",
+    "title": "Knights Hospitaller — Order of Saint John",
+    "chamber": "Secret Societies & Orders",
+    "classification": "Research lead",
+    "summary": "Medieval religious and military hospitaller order whose successor institution documents its history. Separate its medieval activities from modern organizations and popular occult legends.",
+    "source_url": "https://www.orderofmalta.int/history/",
+    "source_status": "Candidate institutional or encyclopedia entry point; URL and item-level historical claims not independently checked in this update",
+    "rights": "Link only; no republication or reproduction permission assumed"
+  },
+  {
+    "id": "oa-137",
+    "title": "Bektashi Order — Sufi religious tradition",
+    "chamber": "Secret Societies & Orders",
+    "classification": "Research lead",
+    "summary": "Sufi tradition historically associated with Anatolia and the Balkans. Study its distinctive ritual life, institutional history and living communities; do not equate private religious practice with conspiratorial secrecy.",
+    "source_url": "https://en.wikipedia.org/wiki/Bektashi_Order",
+    "source_status": "Candidate institutional or encyclopedia entry point; URL and item-level historical claims not independently checked in this update",
+    "rights": "Link only; no republication or reproduction permission assumed"
+  },
+  {
+    "id": "oa-138",
+    "title": "Mevlevi Order — Sufi tradition",
+    "chamber": "Secret Societies & Orders",
+    "classification": "Research lead",
+    "summary": "Sufi order associated with Jalal al-Din Rumi and the sema ceremony. Its religious practice and historical organization should be described respectfully rather than sensationalized as a secret society.",
+    "source_url": "https://en.wikipedia.org/wiki/Mevlevi_Order",
+    "source_status": "Candidate institutional or encyclopedia entry point; URL and item-level historical claims not independently checked in this update",
+    "rights": "Link only; no republication or reproduction permission assumed"
+  },
+  {
+    "id": "oa-139",
+    "title": "Ancient Arabic Order of the Nobles of the Mystic Shrine — Shriners",
+    "chamber": "Secret Societies & Orders",
+    "classification": "Research lead",
+    "summary": "Masonic-related fraternal organization established in the nineteenth century; distinguish documented charitable and ceremonial activities from fictional occult claims.",
+    "source_url": "https://www.shrinersinternational.org/en/who-we-are/history",
+    "source_status": "Candidate institutional or encyclopedia entry point; URL and item-level historical claims not independently checked in this update",
+    "rights": "Link only; no republication or reproduction permission assumed"
+  },
+  {
+    "id": "oa-140",
+    "title": "Order of Saint Lazarus — chivalric traditions",
+    "chamber": "Secret Societies & Orders",
+    "classification": "Research lead",
+    "summary": "Historical hospitaller and chivalric traditions associated with care for people with leprosy, alongside later organizations claiming continuity. Modern succession claims require careful source-by-source comparison.",
+    "source_url": "https://en.wikipedia.org/wiki/Order_of_Saint_Lazarus",
+    "source_status": "Candidate institutional or encyclopedia entry point; URL and item-level historical claims not independently checked in this update",
+    "rights": "Link only; no republication or reproduction permission assumed"
   }
 ]
