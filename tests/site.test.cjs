@@ -57,3 +57,14 @@ test('vendor registration is accessible and requires configured Supabase', () =>
   assert.ok(fs.existsSync('vendor-config.example.json'));
   assert.match(js, /await fetch/); // vendor.js is an ES module with top-level await
 });
+
+test('vendor signup remains disabled until launch gates pass', () => {
+  const config=JSON.parse(fs.readFileSync('vendor-config.json','utf8'));
+  const js=fs.readFileSync('vendor.js','utf8');
+  assert.equal(config.registrationEnabled,false,'registration must remain closed during beta preparation');
+  assert.match(config.supabaseUrl,/^https:\\/\\/[a-z0-9-]+\\.supabase\\.co$/);
+  assert.match(config.publishableKey,/^sb_publishable_/);
+  assert.match(js,/config\\.registrationEnabled!==true/);
+  assert.match(js,/button\\[type=submit\\]/);
+  assert.doesNotMatch(JSON.stringify(config),/sb_secret_|service_role/);
+});
