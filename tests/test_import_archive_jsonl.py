@@ -5,9 +5,10 @@ import sys
 import tempfile
 import unittest
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1] / "tools"))
-from import_archive_jsonl import load, normalize, reject_existing
+from import_archive_jsonl import load, normalize, reject_existing, commit
 from unittest.mock import patch
 import io
+import os
 
 BASE = {
     "institution": "Example Museum", "catalog_id": "A-123",
@@ -59,6 +60,17 @@ class ArchiveImportTests(unittest.TestCase):
     def test_preflight_accepts_new_catalog(self, opener):
         opener.return_value.__enter__.return_value = io.BytesIO(b'[]')
         reject_existing([normalize(BASE)], "https://project.supabase.co", "fake-key")
+    @patch("import_archive_jsonl.urllib.request.urlopen")
+    def test_preflight_network_failure_blocks_post(self, opener):
+        opener.side_effect = OSError("network unavailable")
+        with patch.dict(os.environ, {
+            "SUPABASE_URL": "https://project.supabase.co",
+            "SUPABASE_SERVICE_ROLE_KEY": "test-only",
+        }):
+            with self.assertRaises(OSError):
+                commit([normalize(BASE)])
+        self.assertEqual(opener.call_count, 1)
+        self.assertEqual(opener.call_args.args[0].get_method(), "GET")
     def test_valid_two_record_batch(self):
         with tempfile.NamedTemporaryFile(mode="w", suffix=".jsonl", encoding="utf-8") as f:
             f.write(json.dumps(BASE)+"\n"+json.dumps({**BASE,"catalog_id":"A-124"})+"\n")
