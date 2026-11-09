@@ -23,7 +23,7 @@ el("auth").addEventListener("submit",async e=>{
  e.preventDefault();const action=e.submitter?.value||"signup",email=el("email").value.trim(),password=el("password").value;
  const buttons=[...el("auth").querySelectorAll("button")];buttons.forEach(b=>b.disabled=true);
  try{
-  const {data,error}=action==="signup"?await client.auth.signUp({email,password}):await client.auth.signInWithPassword({email,password});
+  const {data,error}=action==="signup"?await client.auth.signUp({email,password,options:{emailRedirectTo:new URL("./register.html",window.location.href).href}}):await client.auth.signInWithPassword({email,password});
   if(error)throw error;
   if(action==="signup"&&!data.session)msg("Check your email for a verification link, then return here to sign in.");
   else{msg("Authentication successful.");await refresh();}
