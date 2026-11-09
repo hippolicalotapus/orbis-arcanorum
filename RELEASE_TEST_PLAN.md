@@ -54,3 +54,8 @@ Netlify deploy previews may require authenticated access. Opening an existing pr
 - [ ] Rebuild/redeploy updated admin page and perform real browser JavaScript and admin authentication tests.
 - [ ] Vendor sign-up, application insertion, admin review, public profile sync, RLS negative tests and cleanup remain pending.
 - [ ] Payment and advertising transactions remain disabled and untested.
+
+## Archive growth verification — 2026-11-09
+- [x] Four new UNESCO World Heritage leads checked at their institution pages and committed as oa-087 through oa-090.
+- [x] Shared catalog now has 90 records, 90 unique IDs, required metadata complete; all new items flag pending item-level and multilingual review.
+- [ ] Recheck the 90-entry catalog in a deployed browser preview after the next planned build; do not spend an extra deployment solely for this data change.
