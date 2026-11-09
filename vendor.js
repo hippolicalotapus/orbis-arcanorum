@@ -9,6 +9,9 @@ const config=await fetch('./vendor-config.json',{cache:'no-store'}).then(r=>r.ok
 if(!config || !/^https:\/\/[a-z0-9-]+\.supabase\.co$/.test(config.supabaseUrl||'') || !/^sb_publishable_/.test(config.publishableKey||'')){
   say('Registration is not yet connected. The site administrator must configure the public Supabase connection.');
   for(const button of document.querySelectorAll('button[type=submit]'))button.disabled=true;
+}else if(config.registrationEnabled!==true){
+  say('Vendor registration is temporarily closed while security and end-to-end tests are completed.');
+  for(const button of document.querySelectorAll('button[type=submit]'))button.disabled=true;
 }else{
   try{
     const {createClient}=await import('https://esm.sh/@supabase/supabase-js@2.49.10');
