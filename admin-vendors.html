@@ -3,9 +3,9 @@ import {createClient} from "https://esm.sh/@supabase/supabase-js@2.57.0";
 const db=createClient("https://brxptqbdrlxixvsafvlf.supabase.co","sb_publishable_UV40XxeKKe3qP4bGOno2RQ__QuaVmKK");
 const el=id=>document.getElementById(id),status=t=>el("status").textContent=t;
 async function load(){
- const {data:{user}}=await db.auth.getUser();el("login").hidden=!!user;el("logout").hidden=!user;el("results").replaceChildren();if(!user){status("Sign in with an authorized administrator account.");return;}
+ const {data:{user},error:authError}=await db.auth.getUser();el("login").hidden=!!user;el("logout").hidden=!user;el("results").replaceChildren();if(authError||!user){status("Sign in with an authorized administrator account.");return;}\n if(user.app_metadata?.orbis_admin!=="true"){status("This account does not have administrator access. Sign out and use the approved administrator account.");return;}
  const {data,error}=await db.from("vendor_applications").select("id,display_name,country,specialty,description,website_url,status,created_at").eq("status","pending").order("created_at",{ascending:true}).limit(100);
- if(error){status("Access denied or review service unavailable.");return;}
+ if(error){status("Could not load applications: "+error.message+" Sign out and back in if your administrator access was just assigned.");return;}
  status(data.length+" pending applications");
  for(const item of data){
   const card=document.createElement("article");card.className="card";
@@ -19,6 +19,6 @@ async function load(){
    if(error||!updated?.length){status("Review failed. Verify administrator permissions.");b.disabled=false;return;}await load();
   });card.append(b)}el("results").append(card)}
 }
-el("login").addEventListener("submit",async e=>{e.preventDefault();const {error}=await db.auth.signInWithPassword({email:el("email").value.trim(),password:el("password").value});if(error)status("Sign-in failed.");else await load()});
+el("login").addEventListener("submit",async e=>{e.preventDefault();const {error}=await db.auth.signInWithPassword({email:el("email").value.trim(),password:el("password").value});if(error)status("Sign-in failed: "+error.message);else await load()});
 el("logout").addEventListener("click",async()=>{await db.auth.signOut();await load()});load();
 </script></body></html>
