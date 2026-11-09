@@ -864,5 +864,53 @@
     "rights": "Link only; no reproduction permission assumed",
     "original_language": "Multiple relevant historical languages; specific object language not yet assigned",
     "english_translation_status": "English editorial summary; not a translation of a primary manuscript"
+  },
+  {
+    "id": "oa-087",
+    "title": "The Great Wall — historical fortifications of China",
+    "chamber": "Occult Locations & Archaeology",
+    "classification": "Documented",
+    "summary": "The Great Wall comprises fortifications built and rebuilt over centuries. This record documents archaeological and historical heritage; legends associated with the wall require separate evidence labels.",
+    "source_url": "https://whc.unesco.org/en/list/438/",
+    "source_status": "UNESCO World Heritage page accessed 2026-11-09; object-level and multilingual review pending",
+    "rights": "Link only; no reproduction rights assumed",
+    "original_language": "Historical and community languages require item-level identification",
+    "english_translation_status": "English editorial summary, not a primary-source translation"
+  },
+  {
+    "id": "oa-088",
+    "title": "Tchogha Zanbil — Elamite sacred city",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "Tchogha Zanbil in Iran preserves the remains of an Elamite religious complex and ziggurat. Its documented architectural history is distinct from interpretations of ancient ritual practice.",
+    "source_url": "https://whc.unesco.org/en/list/113/",
+    "source_status": "UNESCO World Heritage page accessed 2026-11-09; object-level and multilingual review pending",
+    "rights": "Link only; no reproduction rights assumed",
+    "original_language": "Historical and community languages require item-level identification",
+    "english_translation_status": "English editorial summary, not a primary-source translation"
+  },
+  {
+    "id": "oa-089",
+    "title": "Bamiyan Valley — Buddhist cultural landscape",
+    "chamber": "The Lost Histories",
+    "classification": "Documented",
+    "summary": "The Bamiyan Valley in Afghanistan preserves archaeological traces of Buddhist monastic communities and cultural exchange. The site's damaged monumental heritage requires careful documentation and conservation context.",
+    "source_url": "https://whc.unesco.org/en/list/208/",
+    "source_status": "UNESCO World Heritage page accessed 2026-11-09; object-level and multilingual review pending",
+    "rights": "Link only; no reproduction rights assumed",
+    "original_language": "Historical and community languages require item-level identification",
+    "english_translation_status": "English editorial summary, not a primary-source translation"
+  },
+  {
+    "id": "oa-090",
+    "title": "Kathmandu Valley — sacred architectural heritage",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "Kathmandu Valley in Nepal contains monumental Hindu and Buddhist heritage. Specific religious interpretations should be attributed to their communities and historical sources.",
+    "source_url": "https://whc.unesco.org/en/list/121/",
+    "source_status": "UNESCO World Heritage page accessed 2026-11-09; object-level and multilingual review pending",
+    "rights": "Link only; no reproduction rights assumed",
+    "original_language": "Historical and community languages require item-level identification",
+    "english_translation_status": "English editorial summary, not a primary-source translation"
   }
 ]
