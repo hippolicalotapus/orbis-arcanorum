@@ -4,7 +4,7 @@ const db=createClient("https://brxptqbdrlxixvsafvlf.supabase.co","sb_publishable
 const el=id=>document.getElementById(id),status=t=>el("status").textContent=t;
 async function load(){
  const {data:{user},error:authError}=await db.auth.getUser();el("login").hidden=!!user;el("logout").hidden=!user;el("results").replaceChildren();if(authError||!user){status("Sign in with an authorized administrator account.");return;}
- if(user.app_metadata?.orbis_admin!=="true"){status("This account does not have administrator access. Sign out and use the approved administrator account.");return;}
+ if(user.app_metadata?.orbis_admin!==true && user.app_metadata?.orbis_admin!=="true"){status("This account does not have administrator access. Sign out and use the approved administrator account.");return;}
  const {data,error}=await db.from("vendor_applications").select("id,display_name,country,specialty,description,website_url,status,created_at").eq("status","pending").order("created_at",{ascending:true}).limit(100);
  if(error){status("Could not load applications: "+error.message+" Sign out and back in if your administrator access was just assigned.");return;}
  status(data.length+" pending applications");
