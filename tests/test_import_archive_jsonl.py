@@ -5,7 +5,9 @@ import sys
 import tempfile
 import unittest
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1] / "tools"))
-from import_archive_jsonl import load, normalize
+from import_archive_jsonl import load, normalize, reject_existing
+from unittest.mock import patch
+import io
 
 BASE = {
     "institution": "Example Museum", "catalog_id": "A-123",
@@ -47,6 +49,16 @@ class ArchiveImportTests(unittest.TestCase):
             f.flush()
             with self.assertRaisesRegex(ValueError, "duplicate normalized slug"):
                 load(f.name)
+    @patch("import_archive_jsonl.urllib.request.urlopen")
+    def test_preflight_rejects_existing_catalog(self, opener):
+        response = io.BytesIO(b'[{"id":"existing"}]')
+        opener.return_value.__enter__.return_value = response
+        with self.assertRaisesRegex(ValueError, "existing institution/catalog"):
+            reject_existing([normalize(BASE)], "https://project.supabase.co", "fake-key")
+    @patch("import_archive_jsonl.urllib.request.urlopen")
+    def test_preflight_accepts_new_catalog(self, opener):
+        opener.return_value.__enter__.return_value = io.BytesIO(b'[]')
+        reject_existing([normalize(BASE)], "https://project.supabase.co", "fake-key")
     def test_valid_two_record_batch(self):
         with tempfile.NamedTemporaryFile(mode="w", suffix=".jsonl", encoding="utf-8") as f:
             f.write(json.dumps(BASE)+"\n"+json.dumps({**BASE,"catalog_id":"A-124"})+"\n")
