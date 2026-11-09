@@ -31,7 +31,8 @@ def normalize(raw):
             raise ValueError("missing required field: " + key)
     url = raw["source_url"].strip()
     parsed = urlparse(url)
-    if parsed.scheme != "https" or not parsed.hostname or parsed.username or parsed.password:
+    if (parsed.scheme != "https" or not parsed.hostname or parsed.username or parsed.password
+            or parsed.fragment or any(ch.isspace() for ch in url)):
         raise ValueError("canonical source URL must be HTTPS")
     institution = raw["institution"].strip()
     catalog_id = raw["catalog_id"].strip()
