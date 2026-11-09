@@ -31,7 +31,7 @@ def normalize(raw):
             raise ValueError("missing required field: " + key)
     url = raw["source_url"].strip()
     parsed = urlparse(url)
-    if parsed.scheme != "https" or not parsed.hostname:
+    if parsed.scheme != "https" or not parsed.hostname or parsed.username or parsed.password:
         raise ValueError("canonical source URL must be HTTPS")
     institution = raw["institution"].strip()
     catalog_id = raw["catalog_id"].strip()
@@ -56,6 +56,7 @@ def normalize(raw):
 def load(path):
     records = []
     keys = set()
+    slugs = set()
     with open(path, encoding="utf-8") as stream:
         for line_no, line in enumerate(stream, 1):
             if not line.strip():
@@ -67,7 +68,10 @@ def load(path):
             key = (record["source_name"].casefold(), record["institution_catalog_id"].casefold())
             if key in keys:
                 raise ValueError(f"line {line_no}: duplicate institution/catalog ID")
+            if record["slug"] in slugs:
+                raise ValueError(f"line {line_no}: duplicate normalized slug")
             keys.add(key)
+            slugs.add(record["slug"])
             records.append(record)
             if len(records) > MAX_ITEMS:
                 raise ValueError(f"maximum {MAX_ITEMS} records per batch")
