@@ -688,5 +688,75 @@
     "source_url": "https://www.britannica.com/topic/New-Age-movement",
     "source_status": "Research lead — source page and item-level details require review",
     "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-070",
+    "title": "Tantra: Hindu and Buddhist traditions",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "Tantra comprises diverse religious texts, rituals and philosophies; it is not synonymous with sexuality.",
+    "source_url": "https://www.britannica.com/topic/Tantrism",
+    "source_status": "Research lead — individual bibliographic verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-071",
+    "title": "Vajrayana Buddhism and tantric practice",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "Buddhist tantric traditions include ritual, visualization and philosophical teachings, with lineage-specific practices.",
+    "source_url": "https://www.britannica.com/topic/Vajrayana",
+    "source_status": "Research lead — individual bibliographic verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-072",
+    "title": "Shakta traditions and divine feminine symbolism",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "Shakta Hindu traditions center the goddess and include some tantric lineages; practices vary widely.",
+    "source_url": "https://www.britannica.com/topic/Shaktism",
+    "source_status": "Research lead — individual bibliographic verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-073",
+    "title": "Daoist sexual cultivation: historical research",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "Historical Daoist and Chinese sexual cultivation literature includes practices concerning vitality and longevity; medical benefits are not established by the historical record.",
+    "source_url": "https://www.britannica.com/topic/Daoism",
+    "source_status": "Research lead — individual bibliographic verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-074",
+    "title": "Kama Sutra: historical context",
+    "chamber": "Rare Manuscripts & Artifacts",
+    "classification": "Documented",
+    "summary": "Classical Sanskrit work on relationships, pleasure and social life; distinct from Hindu and Buddhist Tantra.",
+    "source_url": "https://www.britannica.com/topic/Kama-sutra",
+    "source_status": "Research lead — individual bibliographic verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-075",
+    "title": "Kundalini in yogic traditions",
+    "chamber": "Mystical Symbols & Languages",
+    "classification": "Documented",
+    "summary": "Kundalini is described in certain yoga and tantric traditions; claims of measurable supernatural energy require independent evidence.",
+    "source_url": "https://www.britannica.com/topic/Kundalini",
+    "source_status": "Research lead — individual bibliographic verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-076",
+    "title": "Modern neo-Tantra and sacred sexuality",
+    "chamber": "Unverified Mysteries",
+    "classification": "Documented",
+    "summary": "Contemporary intimacy and spiritual practices often differ substantially from historical South Asian tantric traditions.",
+    "source_url": "https://www.britannica.com/topic/Tantrism",
+    "source_status": "Research lead — individual bibliographic verification pending",
+    "rights": "Link only; no reproduction permission assumed"
   }
 ]
