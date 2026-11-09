@@ -38,6 +38,15 @@ class ArchiveImportTests(unittest.TestCase):
             f.flush()
             with self.assertRaisesRegex(ValueError,"maximum 100"):
                 load(f.name)
+    def test_reject_url_credentials(self):
+        with self.assertRaises(ValueError):
+            normalize({**BASE, "source_url": "https://user:pass@museum.example.org/object"})
+    def test_slug_collision(self):
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".jsonl", encoding="utf-8") as f:
+            f.write(json.dumps(BASE)+"\\n"+json.dumps({**BASE,"catalog_id":"A 123"})+"\\n")
+            f.flush()
+            with self.assertRaisesRegex(ValueError, "duplicate normalized slug"):
+                load(f.name)
     def test_valid_two_record_batch(self):
         with tempfile.NamedTemporaryFile(mode="w", suffix=".jsonl", encoding="utf-8") as f:
             f.write(json.dumps(BASE)+"\n"+json.dumps({**BASE,"catalog_id":"A-124"})+"\n")
