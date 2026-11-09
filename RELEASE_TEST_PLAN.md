@@ -96,3 +96,9 @@ Netlify deploy previews may require authenticated access. Opening an existing pr
 - [x] Added oa-109, a sourced Santeria/Lucumi reference lead; 109 unique IDs after intake.
 - [ ] Several candidate religion sources blocked automated access; do not count them as verified.
 - [ ] New catalog version remains un-deployed; fourteen-chamber browser regression and real vendor signup/approval still pending.
+
+## Archive development checkpoint — 2026-11-09
+- [x] Added oa-113 and oa-114 for Smithsonian-linked historical spirit photography and spiritualism archival discovery; 114 records with unique IDs.
+- [ ] Check exact item URLs and source metadata again before public release; bibliographic record and archive search are not full-content verification.
+- [ ] Latest archive catalog and new Collectors' Vault / Antiquarian Atelier pages require deployed browser and mobile regression tests.
+- [ ] Live vendor applicant/admin workflow still pending; no Netlify deployment authorized or triggered in this checkpoint.
