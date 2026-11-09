@@ -1606,5 +1606,45 @@
     "source_url": "https://www.newtonproject.ox.ac.uk/",
     "source_status": "Discovery gateway or candidate catalog URL; exact source item and rights not independently verified in this update",
     "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-156",
+    "title": "Heinrich Khunrath — Amphitheatrum Sapientiae Aeternae",
+    "chamber": "Alchemy & Hermeticism",
+    "classification": "Research lead",
+    "summary": "Early modern Christian-theosophical and alchemical illustrated work associated with Heinrich Khunrath; compare surviving printed editions and emblematic plates.",
+    "source_url": "https://archive.org/search?query=Amphitheatrum%20Sapientiae%20Aeternae",
+    "source_status": "Discovery gateway; specific item and rights verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-157",
+    "title": "The Golden Chain of Homer — Aurea Catena Homeri",
+    "chamber": "Alchemy & Hermeticism",
+    "classification": "Research lead",
+    "summary": "Eighteenth-century alchemical and natural-philosophical text attributed to Anton Josef Kirchweger; identify editions and distinguish textual claims from established chemistry.",
+    "source_url": "https://archive.org/search?query=Aurea%20Catena%20Homeri",
+    "source_status": "Discovery gateway; specific item and rights verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-158",
+    "title": "George Starkey / Eirenaeus Philalethes — alchemical writings",
+    "chamber": "Alchemy & Hermeticism",
+    "classification": "Research lead",
+    "summary": "Seventeenth-century alchemist George Starkey wrote under the name Eirenaeus Philalethes. Investigate textual transmission and connections to Isaac Newton's alchemical reading.",
+    "source_url": "https://www.newtonproject.ox.ac.uk/",
+    "source_status": "Discovery gateway; specific item and rights verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-159",
+    "title": "Michael Sendivogius — Novum Lumen Chymicum",
+    "chamber": "Alchemy & Hermeticism",
+    "classification": "Research lead",
+    "summary": "Influential early seventeenth-century alchemical treatise associated with Michael Sendivogius; locate edition-specific scans and scholarly context.",
+    "source_url": "https://archive.org/search?query=Novum%20Lumen%20Chymicum",
+    "source_status": "Discovery gateway; specific item and rights verification pending",
+    "rights": "Link only; no reproduction permission assumed"
   }
 ]
