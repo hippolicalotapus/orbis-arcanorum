@@ -77,11 +77,37 @@ def load(path):
                 raise ValueError(f"maximum {MAX_ITEMS} records per batch")
     return records
 
+def reject_existing(records, base, key):
+    """Fail closed if any institution/catalog pair already exists remotely.
+
+    Requires a trusted service-role key; this is a preflight, not a substitute
+    for the database unique index during concurrent imports.
+    """
+    from urllib.parse import urlencode
+    for record in records:
+        params = urlencode({
+            "select": "id",
+            "source_name": "eq." + record["source_name"],
+            "institution_catalog_id": "eq." + record["institution_catalog_id"],
+            "limit": "1",
+        })
+        request = urllib.request.Request(
+            base + "/rest/v1/archive_resources?" + params,
+            headers={"apikey": key, "Authorization": "Bearer " + key,
+                     "Accept": "application/json"})
+        with urllib.request.urlopen(request, timeout=20) as response:
+            existing = json.load(response)
+        if existing:
+            raise ValueError("existing institution/catalog ID: " +
+                             record["source_name"] + " / " +
+                             record["institution_catalog_id"])
+
 def commit(records):
     base = os.environ.get("SUPABASE_URL", "").rstrip("/")
     key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
     if not base.startswith("https://") or not key:
         raise RuntimeError("missing secure Supabase environment configuration")
+    reject_existing(records, base, key)
     endpoint = base + "/rest/v1/archive_resources?on_conflict=slug"
     # Never overwrite existing records: use ignore-duplicates, not merge.
     payload = json.dumps(records).encode("utf-8")
