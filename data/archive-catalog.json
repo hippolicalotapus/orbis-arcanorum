@@ -1826,5 +1826,195 @@
     "source_url": "https://en.wikipedia.org/wiki/Helena_Roerich",
     "source_status": "Candidate biographical reference or research gateway; URL, details and primary documents require independent verification",
     "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-178",
+    "title": "Smithsonian Folklife — oral traditions and ritual recordings",
+    "chamber": "Documentaries, Lectures & Audio",
+    "classification": "Research lead",
+    "summary": "Institutional discovery gateway for recorded traditions, festivals, interviews and cultural practice; select specific recordings with community context.",
+    "source_url": "https://folklife.si.edu/",
+    "source_status": "Institutional or general media discovery gateway only; no specific playable recording verified in this update",
+    "rights": "Link only; media playback, embedding and republication permissions not assumed"
+  },
+  {
+    "id": "oa-179",
+    "title": "Library of Congress — American Folklife Center audio",
+    "chamber": "Documentaries, Lectures & Audio",
+    "classification": "Research lead",
+    "summary": "Institutional archive gateway for oral history, folklore and field recordings; rights and community permissions vary by item.",
+    "source_url": "https://www.loc.gov/folklife/",
+    "source_status": "Institutional or general media discovery gateway only; no specific playable recording verified in this update",
+    "rights": "Link only; media playback, embedding and republication permissions not assumed"
+  },
+  {
+    "id": "oa-180",
+    "title": "British Library Sounds — historical and ethnographic recordings",
+    "chamber": "Documentaries, Lectures & Audio",
+    "classification": "Research lead",
+    "summary": "Sound-archive discovery lead for oral traditions and historical recordings; current access and licensing must be checked.",
+    "source_url": "https://sounds.bl.uk/",
+    "source_status": "Institutional or general media discovery gateway only; no specific playable recording verified in this update",
+    "rights": "Link only; media playback, embedding and republication permissions not assumed"
+  },
+  {
+    "id": "oa-181",
+    "title": "Internet Archive — public-domain folklore audio discovery",
+    "chamber": "Documentaries, Lectures & Audio",
+    "classification": "Research lead",
+    "summary": "Broad audio search gateway for historical lectures and folklore recordings; uploaded files are not automatically public domain.",
+    "source_url": "https://archive.org/details/audio",
+    "source_status": "Institutional or general media discovery gateway only; no specific playable recording verified in this update",
+    "rights": "Link only; media playback, embedding and republication permissions not assumed"
+  },
+  {
+    "id": "oa-182",
+    "title": "BBC In Our Time — history of alchemy episodes",
+    "chamber": "Documentaries, Lectures & Audio",
+    "classification": "Research lead",
+    "summary": "Academic discussion series; search for alchemy and early science episodes, checking exact episode availability and dates.",
+    "source_url": "https://www.bbc.co.uk/programmes/b006qykl",
+    "source_status": "Institutional or general media discovery gateway only; no specific playable recording verified in this update",
+    "rights": "Link only; media playback, embedding and republication permissions not assumed"
+  },
+  {
+    "id": "oa-183",
+    "title": "BBC In Our Time — Gnosticism and late antiquity",
+    "chamber": "Documentaries, Lectures & Audio",
+    "classification": "Research lead",
+    "summary": "Research lead for scholarly audio conversations on Gnosticism and late antique religion; locate a specific episode before publication as a media item.",
+    "source_url": "https://www.bbc.co.uk/programmes/b006qykl",
+    "source_status": "Institutional or general media discovery gateway only; no specific playable recording verified in this update",
+    "rights": "Link only; media playback, embedding and republication permissions not assumed"
+  },
+  {
+    "id": "oa-184",
+    "title": "The Met — Perspectives audio and museum scholarship",
+    "chamber": "Documentaries, Lectures & Audio",
+    "classification": "Research lead",
+    "summary": "Museum editorial and audio gateway for material culture and historical interpretation; individual episodes require confirmation.",
+    "source_url": "https://www.metmuseum.org/perspectives",
+    "source_status": "Institutional or general media discovery gateway only; no specific playable recording verified in this update",
+    "rights": "Link only; media playback, embedding and republication permissions not assumed"
+  },
+  {
+    "id": "oa-185",
+    "title": "Getty Research Institute — lectures and conversations",
+    "chamber": "Documentaries, Lectures & Audio",
+    "classification": "Research lead",
+    "summary": "Institutional research gateway for art history and manuscripts; identify a particular public lecture and license.",
+    "source_url": "https://www.getty.edu/research/",
+    "source_status": "Institutional or general media discovery gateway only; no specific playable recording verified in this update",
+    "rights": "Link only; media playback, embedding and republication permissions not assumed"
+  },
+  {
+    "id": "oa-186",
+    "title": "Warburg Institute — lectures on cultural history",
+    "chamber": "Documentaries, Lectures & Audio",
+    "classification": "Research lead",
+    "summary": "Academic institute whose research addresses classical traditions, Renaissance imagery and cultural transmission; locate particular recorded lectures.",
+    "source_url": "https://warburg.sas.ac.uk/",
+    "source_status": "Institutional or general media discovery gateway only; no specific playable recording verified in this update",
+    "rights": "Link only; media playback, embedding and republication permissions not assumed"
+  },
+  {
+    "id": "oa-187",
+    "title": "Gresham College — history of magic lectures",
+    "chamber": "Documentaries, Lectures & Audio",
+    "classification": "Research lead",
+    "summary": "Public lecture archive; search for history of magic, witchcraft and early modern science and validate individual recordings.",
+    "source_url": "https://www.gresham.ac.uk/watch-now",
+    "source_status": "Institutional or general media discovery gateway only; no specific playable recording verified in this update",
+    "rights": "Link only; media playback, embedding and republication permissions not assumed"
+  },
+  {
+    "id": "oa-188",
+    "title": "Oxford Podcasts — religion and manuscript studies",
+    "chamber": "Documentaries, Lectures & Audio",
+    "classification": "Research lead",
+    "summary": "University podcast directory covering religion and historical scholarship; item-level discovery and playback checks pending.",
+    "source_url": "https://podcasts.ox.ac.uk/",
+    "source_status": "Institutional or general media discovery gateway only; no specific playable recording verified in this update",
+    "rights": "Link only; media playback, embedding and republication permissions not assumed"
+  },
+  {
+    "id": "oa-189",
+    "title": "Harvard Divinity School — public lectures",
+    "chamber": "Documentaries, Lectures & Audio",
+    "classification": "Research lead",
+    "summary": "Academic lecture discovery gateway on religious traditions and comparative study; individual recording selection pending.",
+    "source_url": "https://hds.harvard.edu/",
+    "source_status": "Institutional or general media discovery gateway only; no specific playable recording verified in this update",
+    "rights": "Link only; media playback, embedding and republication permissions not assumed"
+  },
+  {
+    "id": "oa-190",
+    "title": "SOAS — Asian and African religious studies events",
+    "chamber": "Documentaries, Lectures & Audio",
+    "classification": "Research lead",
+    "summary": "University gateway for lectures on Asian and African religious histories; select recordings with accurate cultural attribution.",
+    "source_url": "https://www.soas.ac.uk/",
+    "source_status": "Institutional or general media discovery gateway only; no specific playable recording verified in this update",
+    "rights": "Link only; media playback, embedding and republication permissions not assumed"
+  },
+  {
+    "id": "oa-191",
+    "title": "Smithsonian National Museum of Asian Art — talks",
+    "chamber": "Documentaries, Lectures & Audio",
+    "classification": "Research lead",
+    "summary": "Museum resource for historical Asian material culture and religious art; identify specific publicly available talks.",
+    "source_url": "https://asia.si.edu/",
+    "source_status": "Institutional or general media discovery gateway only; no specific playable recording verified in this update",
+    "rights": "Link only; media playback, embedding and republication permissions not assumed"
+  },
+  {
+    "id": "oa-192",
+    "title": "The Japan Foundation — cultural lecture resources",
+    "chamber": "Documentaries, Lectures & Audio",
+    "classification": "Research lead",
+    "summary": "Cultural organization discovery gateway for Japanese traditions and folklore; specific media and translation status pending.",
+    "source_url": "https://www.jpf.go.jp/e/",
+    "source_status": "Institutional or general media discovery gateway only; no specific playable recording verified in this update",
+    "rights": "Link only; media playback, embedding and republication permissions not assumed"
+  },
+  {
+    "id": "oa-193",
+    "title": "Nichibunken — Japanese cultural research media",
+    "chamber": "Documentaries, Lectures & Audio",
+    "classification": "Research lead",
+    "summary": "Research institute discovery gateway for Japanese historical and folklore scholarship; locate a suitable public lecture.",
+    "source_url": "https://www.nichibun.ac.jp/en/",
+    "source_status": "Institutional or general media discovery gateway only; no specific playable recording verified in this update",
+    "rights": "Link only; media playback, embedding and republication permissions not assumed"
+  },
+  {
+    "id": "oa-194",
+    "title": "Rijksmuseum — art and conservation videos",
+    "chamber": "Documentaries, Lectures & Audio",
+    "classification": "Research lead",
+    "summary": "Museum gateway for historical objects, materials and conservation media; identify specific eligible videos.",
+    "source_url": "https://www.rijksmuseum.nl/en",
+    "source_status": "Institutional or general media discovery gateway only; no specific playable recording verified in this update",
+    "rights": "Link only; media playback, embedding and republication permissions not assumed"
+  },
+  {
+    "id": "oa-195",
+    "title": "National Archives UK — recorded talks",
+    "chamber": "Documentaries, Lectures & Audio",
+    "classification": "Research lead",
+    "summary": "Government archival gateway for recorded historical talks and document interpretation; item-level verification pending.",
+    "source_url": "https://www.nationalarchives.gov.uk/",
+    "source_status": "Institutional or general media discovery gateway only; no specific playable recording verified in this update",
+    "rights": "Link only; media playback, embedding and republication permissions not assumed"
+  },
+  {
+    "id": "oa-196",
+    "title": "Smithsonian Open Access — 3D artifact demonstrations",
+    "chamber": "Documentaries, Lectures & Audio",
+    "classification": "Research lead",
+    "summary": "Open Access gateway with 3D assets suitable for research demonstrations; does not imply existing documentary recordings or blanket rights for all items.",
+    "source_url": "https://www.si.edu/openaccess",
+    "source_status": "Institutional or general media discovery gateway only; no specific playable recording verified in this update",
+    "rights": "Link only; media playback, embedding and republication permissions not assumed"
   }
 ]
