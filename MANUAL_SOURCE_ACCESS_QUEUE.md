@@ -43,3 +43,18 @@ Status: candidate source URLs; NOT independently verified source content.
 
 ## Review status
 All entries above remain **pending manual verification** unless separately recorded as checked. A blocked URL is not evidence that its article exists or supports a claim.
+
+## Alternative-source recovery — 2026-11-09
+Blocked pages are not a reason to stop researching a topic. Seek independently accessible sources, with proper attribution and item-level verification; do not circumvent site restrictions.
+
+| Previously blocked subject | Accessible alternative checked | Status |
+| --- | --- | --- |
+| Mithraism | https://www.worldhistory.org/Mithraic_Mysteries/ | Article opened; title `Mithraism` checked |
+| Druids | https://www.worldhistory.org/Druid/ | Article opened; title `Druid` checked |
+| Library of Congress collections | https://www.loc.gov/ | Institutional homepage opened; specific collections not checked |
+| African religions (broader coverage) | https://www.sacred-texts.com/afr/index.htm | Topical archive index opened; not a substitute for community sources |
+| Eleusinian Mysteries | https://www.worldhistory.org/Eleusinian_Mysteries/ | Search/disambiguation only; direct article still needed |
+| Manichaeism | https://www.worldhistory.org/Manichaeism/ | Search/disambiguation only; direct article still needed |
+| Orphism | https://www.worldhistory.org/Orphism/ | Automated access blocked; alternate needed |
+
+Keep Ethiopian Orthodox, Beta Israel, Mandaeism, Vodou, Coptic, and museum object records in research queue until a substantive alternative is opened and checked. Avoid treating a homepage or search results page as verification of a specific claim.
