@@ -25,6 +25,14 @@ class MetHarvestIntegrationTests(unittest.TestCase):
         records = harvest_met.harvest("amulet", 10, 0)
         self.assertEqual([x["catalog_id"] for x in records], ["10", "12"])
         self.assertEqual(fetch.call_count, 4)
+    @patch("harvest_met.fetch_json")
+    def test_rejects_mismatched_api_object(self, fetch):
+        fetch.side_effect = [
+            {"objectIDs": [10]},
+            {"objectID": 11, "title": "Amulet",
+             "objectURL": "https://www.metmuseum.org/art/collection/search/11"}
+        ]
+        self.assertEqual(harvest_met.harvest("amulet", 1, 0), [])
     @patch("harvest_met.fetch_json", return_value={"objectIDs": None})
     def test_empty_search(self, fetch):
         self.assertEqual(harvest_met.harvest("unmatched", 10, 0), [])
