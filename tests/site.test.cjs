@@ -41,3 +41,19 @@ test('research resource catalog has valid URLs and classifications', () => {
     assert.equal(new URL(item.url).protocol, 'https:');
   }
 });
+
+test('vendor registration is accessible and requires configured Supabase', () => {
+  const html=fs.readFileSync('vendor.html','utf8');
+  const js=fs.readFileSync('vendor.js','utf8');
+  assert.match(html, /id="account"/);
+  assert.match(html, /id="signin"/);
+  assert.match(html, /id="application"/);
+  assert.match(html, /aria-live="polite"/);
+  assert.match(js, /auth\.signUp/);
+  assert.match(js, /auth\.signInWithPassword/);
+  assert.match(js, /vendor_applications/);
+  assert.match(js, /status:'pending'/);
+  assert.doesNotMatch(js, /service_role|sb_secret_/);
+  assert.ok(fs.existsSync('vendor-config.example.json'));
+  assert.doesNotThrow(()=>new vm.Script(js.replace(/^const config=await /m,'const config= '),{filename:'vendor.js'}));
+});
