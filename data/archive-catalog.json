@@ -1176,5 +1176,25 @@
     "rights": "Link only; no reproduction rights assumed",
     "original_language": "Multiple African languages and historical European translations",
     "english_translation_status": "English editorial synopsis; not verified translation"
+  },
+  {
+    "id": "oa-113",
+    "title": "Photographing the Invisible — James Coates (1911) bibliographic record",
+    "chamber": "Paranormal Investigations",
+    "classification": "Documented",
+    "summary": "Smithsonian Libraries catalog record for James Coates's historical study of spirit photography, published in 1911 and preserved in microform. The record documents historical claims and photographic practices, not proof of paranormal phenomena.",
+    "source_url": "https://www.si.edu/object/photographing-invisible-microform-practical-studies-spirit-photography-spirit-portraiture-and-other%3Asiris_sil_376692",
+    "source_status": "Smithsonian item-level bibliographic metadata checked 2026-11-09; digitized content not inspected",
+    "rights": "Metadata marked CC0; book imagery and reproduction rights require separate review"
+  },
+  {
+    "id": "oa-114",
+    "title": "Smithsonian archival records — spiritualists and spiritualism, c. 1850–1904",
+    "chamber": "Rare Manuscripts & Artifacts",
+    "classification": "Documented",
+    "summary": "Smithsonian collection search describes a historical Spiritualists and Spiritualism archival series in the Warshaw Collection of Business Americana, dated approximately 1850–1904. Repository cautions that copyright and reproduction restrictions may apply.",
+    "source_url": "https://collections.si.edu/search/results.htm?fq=-object_type%3A%22Photographs%22&q=%22Spiritualism%22",
+    "source_status": "Institutional collection listing checked 2026-11-09; folder contents not inspected",
+    "rights": "Link and metadata only; repository disclaims blanket reproduction clearance"
   }
 ]
