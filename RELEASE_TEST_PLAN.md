@@ -90,3 +90,9 @@ Netlify deploy previews may require authenticated access. Opening an existing pr
 - [x] Added oa-105 through oa-108 (Rastafari, Yazidi, Zoroastrianism, Aksum) after accessible reference-page checks.
 - [x] Catalog integrity: 108 unique IDs across 14 represented chambers; gateway-level entries remain subject to primary-source review.
 - [ ] Full deployed-browser regression and real user registration/admin flow still pending; no new Netlify build triggered.
+
+## Resume checkpoint — 2026-11-09
+- [x] Re-read development catalog and fourteen-chamber manifest: 108 unique records before intake, all chambers populated.
+- [x] Added oa-109, a sourced Santeria/Lucumi reference lead; 109 unique IDs after intake.
+- [ ] Several candidate religion sources blocked automated access; do not count them as verified.
+- [ ] New catalog version remains un-deployed; fourteen-chamber browser regression and real vendor signup/approval still pending.
