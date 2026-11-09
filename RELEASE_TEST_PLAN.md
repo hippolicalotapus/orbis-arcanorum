@@ -85,3 +85,8 @@ Netlify deploy previews may require authenticated access. Opening an existing pr
 - [x] Catalog integrity checked: 104 records, 104 unique IDs, all required fields populated, all 14 chambers represented.
 - [ ] Individual manuscript-level provenance, edition, translation and rights verification pending for gateway records.
 - [ ] Deploy latest branch and test 14 chamber navigation, 104 record search/filter, mobile layout and vendor workflow. Existing private deploy has not been rebuilt for this change.
+
+## Worldwide religions intake — 2026-11-09
+- [x] Added oa-105 through oa-108 (Rastafari, Yazidi, Zoroastrianism, Aksum) after accessible reference-page checks.
+- [x] Catalog integrity: 108 unique IDs across 14 represented chambers; gateway-level entries remain subject to primary-source review.
+- [ ] Full deployed-browser regression and real user registration/admin flow still pending; no new Netlify build triggered.
