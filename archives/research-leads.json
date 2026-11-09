@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "updated": "2026-11-09",
+  "notice": "Research leads only. Links are institutional entry points, not verified object downloads or reproduction permissions.",
+  "records": [
+    {
+      "id": "lead-001",
+      "title": "The Lesser Key of Solomon",
+      "category": "Grimoires & Ceremonial Magic",
+      "classification": "Historical grimoire",
+      "source_url": "https://www.loc.gov/",
+      "next_action": "Find authoritative digitized edition and check rights",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    },
+    {
+      "id": "lead-002",
+      "title": "The Book of Abramelin",
+      "category": "Grimoires & Ceremonial Magic",
+      "classification": "Historical grimoire",
+      "source_url": "https://archive.org/",
+      "next_action": "Locate original edition and determine rights",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    },
+    {
+      "id": "lead-003",
+      "title": "Witchcraft trial records",
+      "category": "Witchcraft & Folklore",
+      "classification": "Primary court records",
+      "source_url": "https://www.nationalarchives.gov.uk/",
+      "next_action": "Find cataloged primary records",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    },
+    {
+      "id": "lead-004",
+      "title": "Salem witch trials documentary archive",
+      "category": "Witchcraft & Folklore",
+      "classification": "Historical documentary collection",
+      "source_url": "https://salem.lib.virginia.edu/",
+      "next_action": "Verify collection and item rights",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    },
+    {
+      "id": "lead-005",
+      "title": "Spiritualism and séance history",
+      "category": "Ghosts & Hauntings",
+      "classification": "Historical research topic",
+      "source_url": "https://www.loc.gov/",
+      "next_action": "Find contemporary primary accounts",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    },
+    {
+      "id": "lead-006",
+      "title": "Society for Psychical Research",
+      "category": "Parapsychology & Investigation",
+      "classification": "Research organization",
+      "source_url": "https://www.spr.ac.uk/",
+      "next_action": "Review archive and publication rights",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    },
+    {
+      "id": "lead-007",
+      "title": "Fortean phenomena",
+      "category": "Unexplained Phenomena",
+      "classification": "Research topic",
+      "source_url": "https://www.loc.gov/",
+      "next_action": "Find public domain periodicals",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    },
+    {
+      "id": "lead-008",
+      "title": "UFO reports and declassified files",
+      "category": "UFOs & UAP",
+      "classification": "Government documents",
+      "source_url": "https://www.archives.gov/research/military/air-force/ufos",
+      "next_action": "Check individual record access",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    },
+    {
+      "id": "lead-009",
+      "title": "Folklore and oral traditions",
+      "category": "Folklore & Mythology",
+      "classification": "Cultural tradition",
+      "source_url": "https://www.loc.gov/folklife/",
+      "next_action": "Respect community protocols and restrictions",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    },
+    {
+      "id": "lead-010",
+      "title": "Alchemical manuscripts",
+      "category": "Alchemy & Hermeticism",
+      "classification": "Historical manuscripts",
+      "source_url": "https://wellcomecollection.org/",
+      "next_action": "Locate item-level licenses",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    },
+    {
+      "id": "lead-011",
+      "title": "Astrological manuscripts",
+      "category": "Astrology & Divination",
+      "classification": "Historical manuscripts",
+      "source_url": "https://www.bl.uk/",
+      "next_action": "Find catalog records and rights",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    },
+    {
+      "id": "lead-012",
+      "title": "Tarot history and imagery",
+      "category": "Astrology & Divination",
+      "classification": "Material culture",
+      "source_url": "https://www.metmuseum.org/art/collection",
+      "next_action": "Find specific public domain objects",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    },
+    {
+      "id": "lead-013",
+      "title": "Cunning-folk and folk magic",
+      "category": "Witchcraft & Folklore",
+      "classification": "Historical research topic",
+      "source_url": "https://www.britishmuseum.org/collection",
+      "next_action": "Locate primary artifacts",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    },
+    {
+      "id": "lead-014",
+      "title": "Vodou material culture",
+      "category": "Faith & Sacred Traditions",
+      "classification": "Living religious tradition",
+      "source_url": "https://www.si.edu/openaccess",
+      "next_action": "Check contextual sensitivity and item rights",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    },
+    {
+      "id": "lead-015",
+      "title": "Lukumí and Santería",
+      "category": "Faith & Sacred Traditions",
+      "classification": "Living religious tradition",
+      "source_url": "https://www.si.edu/openaccess",
+      "next_action": "Avoid publishing restricted ceremonial material",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    },
+    {
+      "id": "lead-016",
+      "title": "Wicca history",
+      "category": "Faith & Sacred Traditions",
+      "classification": "Living religious tradition",
+      "source_url": "https://www.loc.gov/",
+      "next_action": "Research modern copyright and reliable sources",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    },
+    {
+      "id": "lead-017",
+      "title": "Catholic mysticism and hagiography",
+      "category": "Faith & Sacred Traditions",
+      "classification": "Religious history",
+      "source_url": "https://www.vatican.va/",
+      "next_action": "Use official texts and verify reuse rights",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    },
+    {
+      "id": "lead-018",
+      "title": "Ancient Near Eastern tablets",
+      "category": "Lost Histories & Civilizations",
+      "classification": "Archaeological primary sources",
+      "source_url": "https://www.britishmuseum.org/collection",
+      "next_action": "Locate specific catalog items",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    },
+    {
+      "id": "lead-019",
+      "title": "Megalithic monuments",
+      "category": "Lost Histories & Civilizations",
+      "classification": "Archaeological research topic",
+      "source_url": "https://whc.unesco.org/",
+      "next_action": "Distinguish scholarly findings and speculation",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    },
+    {
+      "id": "lead-020",
+      "title": "Historical maps of lost places",
+      "category": "Lost Histories & Civilizations",
+      "classification": "Historical cartography",
+      "source_url": "https://www.loc.gov/free-to-use/discovery-and-exploration/",
+      "next_action": "Check map-level rights",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    },
+    {
+      "id": "lead-021",
+      "title": "Cryptids and regional legends",
+      "category": "Cryptozoology & Folklore",
+      "classification": "Reported traditions",
+      "source_url": "https://www.loc.gov/folklife/",
+      "next_action": "Attribute testimony and avoid factual overclaims",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    },
+    {
+      "id": "lead-022",
+      "title": "Cemetery symbolism and funerary folklore",
+      "category": "Ghosts & Hauntings",
+      "classification": "Material culture",
+      "source_url": "https://www.si.edu/openaccess",
+      "next_action": "Select CC0 objects with provenance",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    },
+    {
+      "id": "lead-023",
+      "title": "Dream interpretation traditions",
+      "category": "Dreams & Consciousness",
+      "classification": "Comparative cultural history",
+      "source_url": "https://www.gutenberg.org/",
+      "next_action": "Check edition and jurisdictional rights",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    },
+    {
+      "id": "lead-024",
+      "title": "Ancient herbal lore",
+      "category": "Herbalism & Occult Botany",
+      "classification": "Historical medical/botanical texts",
+      "source_url": "https://www.biodiversitylibrary.org/",
+      "next_action": "Avoid unverified medicinal advice",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    },
+    {
+      "id": "lead-025",
+      "title": "Ritual masks and protective amulets",
+      "category": "Talismans & Ritual Objects",
+      "classification": "Museum objects",
+      "source_url": "https://www.metmuseum.org/art/collection",
+      "next_action": "Check rights and community restrictions",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    },
+    {
+      "id": "lead-026",
+      "title": "Medieval bestiaries",
+      "category": "Mythical Creatures",
+      "classification": "Illuminated manuscripts",
+      "source_url": "https://www.bl.uk/",
+      "next_action": "Locate rights-cleared digitizations",
+      "status": "research_lead",
+      "downloaded": false,
+      "license_verified": false
+    }
+  ]
+}
