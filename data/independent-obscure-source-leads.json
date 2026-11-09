@@ -134,6 +134,17 @@
       "outreach_status": "Not contacted",
       "access_status": "Unreachable in automated check 2026-11-09",
       "last_checked": "2026-11-09"
+    },
+    {
+      "name": "Nichibunken Japanese-language Yōkai database gateway",
+      "url": "https://www.nichibun.ac.jp/ja/db/category/yokai/",
+      "category": "Japanese folklore / original-language index",
+      "description": "Japanese-language entrypoint linked from the institutional yōkai folklore bibliography page",
+      "review_needed": "Inspect Japanese-language item-level records, licensing, exact source titles and translation provenance",
+      "rights": "Link only; no copying without rights check",
+      "outreach_status": "Not contacted",
+      "access_status": "Link discovered on accessible Nichibunken English page; Japanese endpoint not separately fetched",
+      "last_checked": "2026-11-09"
     }
   ]
 }
