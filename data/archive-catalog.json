@@ -1456,5 +1456,155 @@
     "source_url": "https://en.wikipedia.org/wiki/Order_of_Saint_Lazarus",
     "source_status": "Candidate institutional or encyclopedia entry point; URL and item-level historical claims not independently checked in this update",
     "rights": "Link only; no republication or reproduction permission assumed"
+  },
+  {
+    "id": "oa-141",
+    "title": "Splendor Solis — illuminated alchemical manuscript",
+    "chamber": "Alchemy & Hermeticism",
+    "classification": "Research lead",
+    "summary": "The illuminated Splendor Solis manuscript, held as British Library Harley MS 3469, is a major visual witness to early modern European alchemical symbolism. Its images should be studied in manuscript context.",
+    "source_url": "https://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Harley_MS_3469",
+    "source_status": "Discovery gateway or candidate catalog URL; exact source item and rights not independently verified in this update",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-142",
+    "title": "Mutus Liber — wordless alchemical emblem book",
+    "chamber": "Alchemy & Hermeticism",
+    "classification": "Research lead",
+    "summary": "Seventeenth-century emblematic alchemical work commonly called the Silent Book; search digitized editions and distinguish the historical images from later occult interpretations.",
+    "source_url": "https://archive.org/search?query=title%3A%22Mutus+Liber%22",
+    "source_status": "Discovery gateway or candidate catalog URL; exact source item and rights not independently verified in this update",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-143",
+    "title": "Atalanta Fugiens — Michael Maier (1617/1618)",
+    "chamber": "Alchemy & Hermeticism",
+    "classification": "Research lead",
+    "summary": "Michael Maier's early modern multimedia emblem book combined engraved imagery, verse and musical fugues. Verify edition-specific bibliographic records and available scans.",
+    "source_url": "https://digital.sciencehistory.org/search?query=Atalanta%20Fugiens",
+    "source_status": "Discovery gateway or candidate catalog URL; exact source item and rights not independently verified in this update",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-144",
+    "title": "The Ripley Scroll — English alchemical tradition",
+    "chamber": "Alchemy & Hermeticism",
+    "classification": "Research lead",
+    "summary": "A family of richly illustrated English alchemical scrolls traditionally associated with George Ripley. Individual copies vary and should be cataloged by holding institution and shelfmark.",
+    "source_url": "https://www.bl.uk/search-results?query=Ripley%20Scroll",
+    "source_status": "Discovery gateway or candidate catalog URL; exact source item and rights not independently verified in this update",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-145",
+    "title": "Aurora Consurgens — illustrated alchemical text",
+    "chamber": "Alchemy & Hermeticism",
+    "classification": "Research lead",
+    "summary": "Late medieval alchemical work surviving in multiple manuscript witnesses; traditional attribution to Thomas Aquinas is disputed and must not be presented as established authorship.",
+    "source_url": "https://archive.org/search?query=Aurora%20Consurgens",
+    "source_status": "Discovery gateway or candidate catalog URL; exact source item and rights not independently verified in this update",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-146",
+    "title": "Rosarium Philosophorum — alchemical emblem cycle",
+    "chamber": "Alchemy & Hermeticism",
+    "classification": "Research lead",
+    "summary": "Sixteenth-century printed alchemical compilation known for its symbolic woodcuts. Record the particular edition and avoid presenting allegorical images as laboratory proof.",
+    "source_url": "https://archive.org/search?query=Rosarium%20Philosophorum",
+    "source_status": "Discovery gateway or candidate catalog URL; exact source item and rights not independently verified in this update",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-147",
+    "title": "Basil Valentine — Twelve Keys of Philosophy",
+    "chamber": "Alchemy & Hermeticism",
+    "classification": "Research lead",
+    "summary": "Alchemical emblem and textual tradition attributed to Basil Valentine, a figure of uncertain historical identity. Investigate early printed editions and later editorial additions.",
+    "source_url": "https://archive.org/search?query=The%20Twelve%20Keys%20of%20Basil%20Valentine",
+    "source_status": "Discovery gateway or candidate catalog URL; exact source item and rights not independently verified in this update",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-148",
+    "title": "The Book of Lambspring — alchemical emblems",
+    "chamber": "Alchemy & Hermeticism",
+    "classification": "Research lead",
+    "summary": "Illustrated alchemical allegory attributed to Lambspring or Lambsprinck. Compare digitized editions and interpretations without treating symbolic readings as historical fact.",
+    "source_url": "https://archive.org/search?query=Book%20of%20Lambspring",
+    "source_status": "Discovery gateway or candidate catalog URL; exact source item and rights not independently verified in this update",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-149",
+    "title": "Geber / Pseudo-Geber — Summa perfectionis",
+    "chamber": "Alchemy & Hermeticism",
+    "classification": "Research lead",
+    "summary": "Influential medieval Latin alchemical treatise traditionally attributed to Geber; distinguish the Latin Pseudo-Geber corpus from the writings of Jābir ibn Ḥayyān.",
+    "source_url": "https://archive.org/search?query=Summa%20perfectionis%20magisterii",
+    "source_status": "Discovery gateway or candidate catalog URL; exact source item and rights not independently verified in this update",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-150",
+    "title": "Jābir ibn Ḥayyān — Arabic alchemical corpus",
+    "chamber": "Alchemy & Hermeticism",
+    "classification": "Research lead",
+    "summary": "The Arabic Jabirian corpus is central to the history of Islamic alchemy. Its authorship and chronology remain subjects of scholarship; seek manuscript-specific catalog records and translations.",
+    "source_url": "https://www.loc.gov/search/?q=Jabir%20ibn%20Hayyan",
+    "source_status": "Discovery gateway or candidate catalog URL; exact source item and rights not independently verified in this update",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-151",
+    "title": "Maria the Jewess — early alchemical apparatus traditions",
+    "chamber": "Alchemy & Hermeticism",
+    "classification": "Research lead",
+    "summary": "An early figure in the history of alchemy known through later textual witnesses, associated with apparatus such as the bain-marie. Separate attributed inventions from secure historical evidence.",
+    "source_url": "https://www.worldhistory.org/search/?q=Maria%20the%20Jewess",
+    "source_status": "Discovery gateway or candidate catalog URL; exact source item and rights not independently verified in this update",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-152",
+    "title": "Zosimos of Panopolis — Greek alchemical writings",
+    "chamber": "Alchemy & Hermeticism",
+    "classification": "Research lead",
+    "summary": "Late antique Greek-language alchemical writer whose surviving works and fragments are important for studying early chemical and spiritual allegories. Locate critical editions.",
+    "source_url": "https://archive.org/search?query=Zosimos%20Panopolis",
+    "source_status": "Discovery gateway or candidate catalog URL; exact source item and rights not independently verified in this update",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-153",
+    "title": "Turba Philosophorum — Latin alchemical dialogue",
+    "chamber": "Alchemy & Hermeticism",
+    "classification": "Research lead",
+    "summary": "Medieval Latin alchemical dialogue traditionally presented as a gathering of philosophers. Research its Arabic and Latin textual history and manuscript witnesses.",
+    "source_url": "https://archive.org/search?query=Turba%20Philosophorum",
+    "source_status": "Discovery gateway or candidate catalog URL; exact source item and rights not independently verified in this update",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-154",
+    "title": "Khālid ibn Yazīd — alchemical attribution traditions",
+    "chamber": "Alchemy & Hermeticism",
+    "classification": "Research lead",
+    "summary": "Early Islamic prince associated in later traditions with translation and alchemical learning; claims of direct authorship and sponsorship require critical historical assessment.",
+    "source_url": "https://www.loc.gov/search/?q=Khalid%20ibn%20Yazid%20alchemy",
+    "source_status": "Discovery gateway or candidate catalog URL; exact source item and rights not independently verified in this update",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-155",
+    "title": "Newton's alchemical manuscripts — research gateway",
+    "chamber": "Alchemy & Hermeticism",
+    "classification": "Research lead",
+    "summary": "The Newton Project provides scholarly transcriptions and contextual research on Isaac Newton's writings, including his engagement with alchemical texts. Identify specific manuscript identifiers before item-level publication.",
+    "source_url": "https://www.newtonproject.ox.ac.uk/",
+    "source_status": "Discovery gateway or candidate catalog URL; exact source item and rights not independently verified in this update",
+    "rights": "Link only; no reproduction permission assumed"
   }
 ]
