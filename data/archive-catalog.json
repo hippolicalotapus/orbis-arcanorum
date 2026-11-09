@@ -1080,5 +1080,53 @@
     "rights": "Link only; item-level reproduction rights not assumed",
     "original_language": "Multiple languages",
     "english_translation_status": "English editorial description; not a primary-source translation"
+  },
+  {
+    "id": "oa-105",
+    "title": "Rastafari — Jamaican religious movement",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "Rastafari emerged in Jamaica in the twentieth century and includes diverse spiritual, cultural and political expressions. Haile Selassie I and Ethiopian symbolism are central to many, but not all, Rastafari interpretations.",
+    "source_url": "https://www.britannica.com/topic/Rastafari",
+    "source_status": "Reference page opened and title checked 2026-11-09; primary sources and community review pending",
+    "rights": "Link only; no reproduction rights assumed",
+    "original_language": "English and Jamaican Creole",
+    "english_translation_status": "English editorial synopsis; not a primary-language translation"
+  },
+  {
+    "id": "oa-106",
+    "title": "Yazidi religious tradition",
+    "chamber": "Sacred Archives",
+    "classification": "Documented",
+    "summary": "Yazidism is a living religious tradition with distinct sacred narratives and community practices. This reference gateway is a starting point; oral transmission and community authority require special care.",
+    "source_url": "https://www.britannica.com/topic/Yazidi",
+    "source_status": "Reference page opened and title checked 2026-11-09; primary sources and community review pending",
+    "rights": "Link only; no reproduction rights assumed",
+    "original_language": "Kurmanji Kurdish and other languages",
+    "english_translation_status": "English editorial synopsis; not a primary-language translation"
+  },
+  {
+    "id": "oa-107",
+    "title": "Zoroastrian religious tradition",
+    "chamber": "Sacred Archives",
+    "classification": "Documented",
+    "summary": "Zoroastrianism is a living religious tradition associated with Zarathushtra and the Avesta. Its ancient history and surviving communities should be studied separately from claims that it is extinct.",
+    "source_url": "https://www.britannica.com/topic/Zoroastrianism",
+    "source_status": "Reference page opened and title checked 2026-11-09; primary sources and community review pending",
+    "rights": "Link only; no reproduction rights assumed",
+    "original_language": "Avestan, Middle Persian and modern community languages",
+    "english_translation_status": "English editorial synopsis; not a primary-language translation"
+  },
+  {
+    "id": "oa-108",
+    "title": "Kingdom of Aksum — pre-Christian and Christian religious context",
+    "chamber": "The Lost Histories",
+    "classification": "Documented",
+    "summary": "Historical overview of the kingdom of Aksum provides context for religious change in the Horn of Africa. It is not itself a primary source for Aksumite ritual; specific inscriptions and archaeological reports remain to be identified.",
+    "source_url": "https://www.worldhistory.org/Kingdom_of_Aksum/",
+    "source_status": "Reference page opened and title checked 2026-11-09; primary sources and community review pending",
+    "rights": "Link only; no reproduction rights assumed",
+    "original_language": "Ge'ez and Greek historical sources",
+    "english_translation_status": "English editorial synopsis; not a primary-language translation"
   }
 ]
