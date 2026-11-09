@@ -15,6 +15,9 @@ Do not merge PR #1 or trigger a new Netlify build until these checks pass. No pr
 
 - [x] Verified vendor application SELECT/INSERT/UPDATE policies, column-scoped UPDATE grants, and review/sync triggers in live Supabase metadata; no test account transactions performed.
 
+- [x] Catalog expanded to 82 entries with three UNESCO-checked cultural heritage leads; unique IDs and required fields rechecked.
+- [x] Homepage source updated to fetch shared catalog rather than hard-code eight records; browser verification still pending.
+
 ## Required end-to-end checks (not yet verified)
 - [ ] Serve HTML locally; check all internal links, JavaScript console errors and mobile layouts.
 - [ ] Sign up with a non-admin test account and confirm email redirect.
