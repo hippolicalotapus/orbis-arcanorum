@@ -1236,5 +1236,65 @@
     "source_url": "https://www.metmuseum.org/it/perspectives/immaterial-metals-part-one",
     "source_status": "Institutional essay or specific video landing page checked 2026-11-09; not an item-level manuscript inspection",
     "rights": "Link only; no media republication or reproduction permission assumed"
+  },
+  {
+    "id": "oa-119",
+    "title": "Bavarian Illuminati — founding and suppression",
+    "chamber": "Secret Societies & Orders",
+    "classification": "Documented",
+    "summary": "Ludwig Maximilian University Munich documents Adam Weishaupt's 1776 founding of the Illuminati in Ingolstadt and its suppression in the 1780s. Historical evidence for this short-lived order does not establish modern global conspiracy claims.",
+    "source_url": "https://www.lmu.de/en/about-lmu/lmu-at-a-glance/history/1776/",
+    "source_status": "Source landing page or digitized historical document located 2026-11-09; full item-level critical review pending",
+    "rights": "Link only; no republication or reproduction permission assumed"
+  },
+  {
+    "id": "oa-120",
+    "title": "Adam Weishaupt's letters to Massenhausen (1776)",
+    "chamber": "Secret Societies & Orders",
+    "classification": "Documented",
+    "summary": "German History Intersections publishes translated primary-source letters detailing recruitment instructions for the early Illuminati. The letters are evidence for historical organization and strategy, not later conspiracy narratives.",
+    "source_url": "https://germanhistory-intersections.org/en/knowledge-and-education/ghis%3Adocument-190",
+    "source_status": "Source landing page or digitized historical document located 2026-11-09; full item-level critical review pending",
+    "rights": "Link only; no republication or reproduction permission assumed"
+  },
+  {
+    "id": "oa-121",
+    "title": "Carbonari — early nineteenth-century political networks",
+    "chamber": "Secret Societies & Orders",
+    "classification": "Documented",
+    "summary": "Historical account of the Carbonari, secret political associations active in Italy and France, whose symbolism drew on charcoal burning. This early Catholic Encyclopedia account is a period perspective and should be compared with modern scholarship.",
+    "source_url": "https://www.newadvent.org/cathen/03330c.htm",
+    "source_status": "Source landing page or digitized historical document located 2026-11-09; full item-level critical review pending",
+    "rights": "Link only; no republication or reproduction permission assumed"
+  },
+  {
+    "id": "oa-122",
+    "title": "Carbonari rites — historical printed study",
+    "chamber": "Secret Societies & Orders",
+    "classification": "Documented",
+    "summary": "Digitized historical study preserved by the University of Illinois describes the changing ritual forms and political associations of Carbonari groups. Its author cautions that sources are fragmentary and rites varied by region and time.",
+    "source_url": "https://brittlebooks.library.illinois.edu/brittlebooks_open/Books2008-11/johnro0001napemp/johnro0001napempv00002/johnro0001napempv00002.pdf",
+    "source_status": "Source landing page or digitized historical document located 2026-11-09; full item-level critical review pending",
+    "rights": "Link only; no republication or reproduction permission assumed"
+  },
+  {
+    "id": "oa-123",
+    "title": "Knights Templar — medieval military order",
+    "chamber": "Secret Societies & Orders",
+    "classification": "Documented",
+    "summary": "Historical overview of the medieval Knights Templar, a Christian military religious order founded in the era of the Crusades. The historical institution should be distinguished from later esoteric revival movements and legendary treasure claims.",
+    "source_url": "https://www.history.com/articles/who-were-the-knights-templar",
+    "source_status": "Source landing page or digitized historical document located 2026-11-09; full item-level critical review pending",
+    "rights": "Link only; no republication or reproduction permission assumed"
+  },
+  {
+    "id": "oa-124",
+    "title": "Adam Weishaupt — founder of the Bavarian Illuminati",
+    "chamber": "Esoteric People & Biographies",
+    "classification": "Documented",
+    "summary": "University of Munich account of Adam Weishaupt (1748–1830), the Ingolstadt professor who founded the Illuminati in 1776. Historical biographical documentation is separate from later mythology.",
+    "source_url": "https://www.lmu.de/en/about-lmu/lmu-at-a-glance/history/1776/",
+    "source_status": "Source landing page or digitized historical document located 2026-11-09; full item-level critical review pending",
+    "rights": "Link only; no republication or reproduction permission assumed"
   }
 ]
