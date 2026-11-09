@@ -358,5 +358,125 @@
     "source_url": "https://www.rigb.org/",
     "source_status": "Research lead — item-level verification pending",
     "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-037",
+    "title": "Freemasonry: historical collections",
+    "chamber": "Secret Societies & Orders",
+    "classification": "Documented",
+    "summary": "Historical Masonic constitutions, rituals and institutional records; distinguish jurisdictional traditions.",
+    "source_url": "https://www.loc.gov/collections/",
+    "source_status": "Institutional discovery lead — exact item and link verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-038",
+    "title": "The Key of Solomon: manuscript witnesses",
+    "chamber": "Grimoires & Magical Texts",
+    "classification": "Documented",
+    "summary": "Compare surviving manuscript traditions and later printed editions rather than treating them as a single original text.",
+    "source_url": "https://searcharchives.bl.uk/",
+    "source_status": "Institutional discovery lead — exact item and link verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-039",
+    "title": "Theatrum Chemicum",
+    "chamber": "Alchemy & Hermeticism",
+    "classification": "Documented",
+    "summary": "Early modern compendium of alchemical writings; bibliographic and edition-level verification needed.",
+    "source_url": "https://www.biodiversitylibrary.org/",
+    "source_status": "Institutional discovery lead — exact item and link verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-040",
+    "title": "Perseus Greek and Roman texts",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "Classical primary texts and translations useful for tracing mythological figures and cult practices.",
+    "source_url": "https://www.perseus.tufts.edu/hopper/",
+    "source_status": "Institutional discovery lead — exact item and link verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-041",
+    "title": "Society for Psychical Research historical records",
+    "chamber": "Paranormal Investigations",
+    "classification": "Documented",
+    "summary": "Institutional history and published investigations; existence of reports does not verify paranormal interpretations.",
+    "source_url": "https://www.spr.ac.uk/",
+    "source_status": "Institutional discovery lead — exact item and link verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-042",
+    "title": "Voynich manuscript interpretations",
+    "chamber": "Unverified Mysteries",
+    "classification": "Unverified",
+    "summary": "Competing decipherment claims should be evaluated against the manuscript and peer-reviewed research.",
+    "source_url": "https://beinecke.library.yale.edu/collections/highlights/voynich-manuscript",
+    "source_status": "Institutional discovery lead — exact item and link verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-043",
+    "title": "Early modern witch trial records",
+    "chamber": "Witchcraft & Folk Magic",
+    "classification": "Documented",
+    "summary": "Trial records document accusations and legal practices, not supernatural powers.",
+    "source_url": "https://www.nationalarchives.gov.uk/",
+    "source_status": "Institutional discovery lead — exact item and link verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-044",
+    "title": "John Dee and angelic language claims",
+    "chamber": "Mystical Symbols & Languages",
+    "classification": "Unverified",
+    "summary": "Historical accounts of Dee and Kelley’s recorded communications; supernatural origin remains unverified.",
+    "source_url": "https://www.bl.uk/",
+    "source_status": "Institutional discovery lead — exact item and link verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-045",
+    "title": "British Library digitised manuscripts",
+    "chamber": "Rare Manuscripts & Artifacts",
+    "classification": "Documented",
+    "summary": "Collection discovery point for manuscript witnesses, provenance and catalog descriptions.",
+    "source_url": "https://www.bl.uk/",
+    "source_status": "Institutional discovery lead — exact item and link verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-046",
+    "title": "John Dee: archival research",
+    "chamber": "Esoteric People & Biographies",
+    "classification": "Documented",
+    "summary": "Trace Dee through contemporary documents and modern scholarship rather than later legends.",
+    "source_url": "https://www.oxforddnb.com/",
+    "source_status": "Institutional discovery lead — exact item and link verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-047",
+    "title": "Delphi archaeological site",
+    "chamber": "Occult Locations & Archaeology",
+    "classification": "Documented",
+    "summary": "Archaeological evidence and ancient accounts of the sanctuary; separate material history from prophetic claims.",
+    "source_url": "https://whc.unesco.org/en/list/393/",
+    "source_status": "Institutional discovery lead — exact item and link verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-048",
+    "title": "ESOTERICA academic video lectures",
+    "chamber": "Documentaries, Lectures & Audio",
+    "classification": "Documented",
+    "summary": "Research-led lectures on esotericism and religious history; evaluate individual episode citations.",
+    "source_url": "https://www.youtube.com/@TheEsotericaChannel",
+    "source_status": "Institutional discovery lead — exact item and link verification pending",
+    "rights": "Link only; no reproduction permission assumed"
   }
 ]
