@@ -1044,5 +1044,41 @@
     "rights": "Link only; no reproduction rights assumed",
     "original_language": "Hebrew and Aramaic",
     "english_translation_status": "English editorial summary; not a translation of a primary manuscript"
+  },
+  {
+    "id": "oa-102",
+    "title": "Estonian folklore research — Haldjas portal",
+    "chamber": "Witchcraft & Folk Magic",
+    "classification": "Documented",
+    "summary": "The Estonian folklorists' Haldjas portal is a gateway to research on oral traditions and folk belief. Individual charms, narratives and ritual descriptions require record-level sourcing.",
+    "source_url": "https://www.folklore.ee/",
+    "source_status": "Source gateway opened and identity checked 2026-11-09; specific works not individually verified",
+    "rights": "Link only; item-level reproduction rights not assumed",
+    "original_language": "Estonian",
+    "english_translation_status": "English editorial description; not a primary-source translation"
+  },
+  {
+    "id": "oa-103",
+    "title": "Northern European legends and sagas — source index",
+    "chamber": "The Lost Histories",
+    "classification": "Documented",
+    "summary": "An independent legends-and-sagas index links to older editions and translations of Northern European narrative traditions. Historical provenance and translation fidelity vary by work.",
+    "source_url": "https://www.sacred-texts.com/neu/index.htm",
+    "source_status": "Source gateway opened and identity checked 2026-11-09; specific works not individually verified",
+    "rights": "Link only; item-level reproduction rights not assumed",
+    "original_language": "Old Norse and other Northern European languages",
+    "english_translation_status": "English editorial description; not a primary-source translation"
+  },
+  {
+    "id": "oa-104",
+    "title": "Project Gutenberg — historical esoteric book discovery",
+    "chamber": "Rare Manuscripts & Artifacts",
+    "classification": "Documented",
+    "summary": "Project Gutenberg provides a searchable collection of digitized books, including historical writings that may be relevant to esoteric research. Specific titles, editions, rights and scholarly reliability must be reviewed individually.",
+    "source_url": "https://www.gutenberg.org/",
+    "source_status": "Source gateway opened and identity checked 2026-11-09; specific works not individually verified",
+    "rights": "Link only; item-level reproduction rights not assumed",
+    "original_language": "Multiple languages",
+    "english_translation_status": "English editorial description; not a primary-source translation"
   }
 ]
