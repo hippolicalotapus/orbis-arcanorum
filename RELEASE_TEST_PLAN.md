@@ -9,6 +9,7 @@ Do not merge PR #1 or trigger a new Netlify build until these checks pass. No pr
 - [x] Authenticated role can INSERT vendor_applications.
 - [x] Supabase security advisor reviewed. Leaked-password protection remains a warning; internal schema tables with RLS and no policies were INFO findings.
 - [x] Admin review page improved to show authorization and sign-in errors.
+- [x] Static navigation audit of seven HTML pages: no unresolved local page links, duplicate element IDs, or missing referenced element IDs.
 
 ## Required end-to-end checks (not yet verified)
 - [ ] Serve HTML locally; check all internal links, JavaScript console errors and mobile layouts.
