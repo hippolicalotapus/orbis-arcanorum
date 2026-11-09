@@ -1140,5 +1140,41 @@
     "rights": "Link only; no reproduction rights assumed",
     "original_language": "Spanish and Yoruba-derived liturgical vocabulary",
     "english_translation_status": "English editorial synopsis; not a primary-language translation"
+  },
+  {
+    "id": "oa-110",
+    "title": "Mithraic mysteries — historical overview",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "A historical overview of the Roman Mithraic mysteries and their surviving archaeological evidence. Interpretation of ritual practices is limited by the fragmentary written record.",
+    "source_url": "https://www.worldhistory.org/Mithraic_Mysteries/",
+    "source_status": "Alternative article or source index opened and title checked 2026-11-09; item-level verification pending",
+    "rights": "Link only; no reproduction rights assumed",
+    "original_language": "Latin and Greek historical evidence",
+    "english_translation_status": "English editorial synopsis; not verified translation"
+  },
+  {
+    "id": "oa-111",
+    "title": "Druids — historical and archaeological overview",
+    "chamber": "Esoteric People & Biographies",
+    "classification": "Documented",
+    "summary": "A historical overview of druids in ancient Celtic societies. Accounts by external classical authors and modern reconstructions require careful separation.",
+    "source_url": "https://www.worldhistory.org/Druid/",
+    "source_status": "Alternative article or source index opened and title checked 2026-11-09; item-level verification pending",
+    "rights": "Link only; no reproduction rights assumed",
+    "original_language": "Classical Greek, Latin and Celtic-language contexts",
+    "english_translation_status": "English editorial synopsis; not verified translation"
+  },
+  {
+    "id": "oa-112",
+    "title": "African religious literature — historical text index",
+    "chamber": "Sacred Archives",
+    "classification": "Documented",
+    "summary": "A topical index of historical texts concerning African religious traditions. Its historical translations and colonial-era descriptions require contextual review alongside contemporary community scholarship.",
+    "source_url": "https://www.sacred-texts.com/afr/index.htm",
+    "source_status": "Alternative article or source index opened and title checked 2026-11-09; item-level verification pending",
+    "rights": "Link only; no reproduction rights assumed",
+    "original_language": "Multiple African languages and historical European translations",
+    "english_translation_status": "English editorial synopsis; not verified translation"
   }
 ]
