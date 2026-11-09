@@ -478,5 +478,55 @@
     "source_url": "https://www.youtube.com/@TheEsotericaChannel",
     "source_status": "Institutional discovery lead — exact item and link verification pending",
     "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-049",
+    "title": "Voynich Manuscript (Beinecke MS 408)",
+    "chamber": "Rare Manuscripts & Artifacts",
+    "classification": "Documented",
+    "summary": "Yale provides high-resolution images of the undeciphered manuscript and provenance research.",
+    "source_url": "https://beinecke.library.yale.edu/beinecke/collections/beinecke-cipher-voynich-manuscript",
+    "source_status": "Institutional item or collection page checked 2026-11-08; reuse rights not reviewed",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-050",
+    "title": "Paracelsus: Of the Supreme Mysteries of Nature (1656)",
+    "chamber": "Alchemy & Hermeticism",
+    "classification": "Documented",
+    "summary": "Library of Congress digitized edition with 186 page images; historical medical and alchemical claims are not modern medical evidence.",
+    "source_url": "https://www.loc.gov/item/35031040/",
+    "source_status": "Institutional item or collection page checked 2026-11-08; reuse rights not reviewed",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-051",
+    "title": "Agrippa: Three Books of Occult Philosophy (1898 edition)",
+    "chamber": "Grimoires & Magical Texts",
+    "classification": "Documented",
+    "summary": "Library of Congress digitized historical edition, with 316 page images.",
+    "source_url": "https://www.loc.gov/item/11008996/",
+    "source_status": "Institutional item or collection page checked 2026-11-08; reuse rights not reviewed",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-052",
+    "title": "Frederick Hockley: The Crystal",
+    "chamber": "Paranormal Investigations",
+    "classification": "Documented",
+    "summary": "Library of Congress digitized manuscript recording reported crystal-gazing visions; the experiences are documented as reports, not verified paranormal events.",
+    "source_url": "https://www.loc.gov/resource/rbc0001.2018houd14646v11/?sp=3&st=list",
+    "source_status": "Institutional item or collection page checked 2026-11-08; reuse rights not reviewed",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-053",
+    "title": "Houdini and McManus-Young special collections",
+    "chamber": "Witchcraft & Folk Magic",
+    "classification": "Documented",
+    "summary": "Library of Congress collection descriptions covering spiritualism, witchcraft, illusion and historical magical literature.",
+    "source_url": "https://www.loc.gov/research-centers/rare-book-and-special-collections/collections/selected-special-collections/",
+    "source_status": "Institutional item or collection page checked 2026-11-08; reuse rights not reviewed",
+    "rights": "Link only; no reproduction permission assumed"
   }
 ]
