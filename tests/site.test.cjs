@@ -79,3 +79,15 @@ test('vendor studio is gated and only drafts or submits for moderation', () => {
  assert.match(js,/status:'pending_review'/);
  assert.doesNotMatch(js,/service_role|sb_secret_|innerHTML/);
 });
+
+test('administrator review desk is gated and moderated', () => {
+ const html=fs.readFileSync('review.html','utf8');
+ const js=fs.readFileSync('review.js','utf8');
+ assert.match(html,/id="desk" hidden/);
+ assert.ok(js.includes('config.registrationEnabled!==true'));
+ assert.ok(js.includes('user.app_metadata?.orbis_admin!==true'));
+ assert.ok(js.includes("'pending_review'"));
+ assert.ok(js.includes("'published'"));
+ assert.ok(js.includes('reviewed_at'));
+ assert.doesNotMatch(js,/service_role|sb_secret_|innerHTML/);
+});
