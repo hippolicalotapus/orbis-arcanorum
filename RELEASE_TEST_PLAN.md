@@ -65,3 +65,10 @@ Netlify deploy previews may require authenticated access. Opening an existing pr
 - [x] 10 pages accessible in automated checks; Hermetic Library blocked automated access; Weird Science legacy link unreachable.
 - [x] UKIYOVERSE identified as original mythology/creative material rather than independent historical corroboration.
 - [ ] Review individual items, rights, source provenance and original-language translations before promotion into main research catalog.
+
+## East Asian research and release status — 2026-11-09
+- [x] Five Japanese and Chinese historical ritual/folklore research leads committed as oa-091 through oa-095; 95 records, 95 unique IDs and required metadata complete.
+- [x] Four institutional/scholarly source pages opened and title checked; UC Press page blocked automated reading, explicitly flagged in record oa-094.
+- [ ] Cross-check Japanese and Chinese primary-language names and bibliographic citations; English summaries are editorial, not manuscript translations.
+- [ ] Perform real test-account signup, email confirmation, application submission, admin review, RLS negative tests and cleanup; prior six-page smoke test is NOT end-to-end workflow verification.
+- [ ] Verify admin JavaScript fix and 95-record catalog on next planned deployment; production and preview remain private.
