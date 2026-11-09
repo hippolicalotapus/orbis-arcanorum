@@ -1296,5 +1296,105 @@
     "source_url": "https://www.lmu.de/en/about-lmu/lmu-at-a-glance/history/1776/",
     "source_status": "Source landing page or digitized historical document located 2026-11-09; full item-level critical review pending",
     "rights": "Link only; no republication or reproduction permission assumed"
+  },
+  {
+    "id": "oa-125",
+    "title": "Independent Order of Odd Fellows",
+    "chamber": "Secret Societies & Orders",
+    "classification": "Research lead",
+    "summary": "Fraternal mutual-aid order established in the United States in 1819, drawing on older Odd Fellows traditions; investigate lodge records, charitable work and ritual symbolism.",
+    "source_url": "https://en.wikipedia.org/wiki/Independent_Order_of_Odd_Fellows",
+    "source_status": "Preliminary encyclopedia discovery link; authoritative item-level source verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-126",
+    "title": "Order of the Eastern Star",
+    "chamber": "Secret Societies & Orders",
+    "classification": "Research lead",
+    "summary": "Fraternal order founded in the nineteenth century and associated with the Masonic family; distinguish membership and religious symbolism from conspiracy claims.",
+    "source_url": "https://en.wikipedia.org/wiki/Order_of_the_Eastern_Star",
+    "source_status": "Preliminary encyclopedia discovery link; authoritative item-level source verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-127",
+    "title": "Skull and Bones",
+    "chamber": "Secret Societies & Orders",
+    "classification": "Research lead",
+    "summary": "Yale undergraduate senior society founded in 1832; examine documented university history, membership and the difference between secrecy and unsupported claims of political control.",
+    "source_url": "https://en.wikipedia.org/wiki/Skull_and_Bones",
+    "source_status": "Preliminary encyclopedia discovery link; authoritative item-level source verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-128",
+    "title": "Society of the Cincinnati",
+    "chamber": "Secret Societies & Orders",
+    "classification": "Research lead",
+    "summary": "Hereditary society established in 1783 by officers of the American Revolutionary War; assess its founding documents, historical controversies and present-day activities.",
+    "source_url": "https://en.wikipedia.org/wiki/Society_of_the_Cincinnati",
+    "source_status": "Preliminary encyclopedia discovery link; authoritative item-level source verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-129",
+    "title": "Order of the Golden Fleece",
+    "chamber": "Secret Societies & Orders",
+    "classification": "Research lead",
+    "summary": "Dynastic chivalric order founded by Philip the Good in 1430; examine court ceremonial, heraldry and later Austrian and Spanish branches.",
+    "source_url": "https://en.wikipedia.org/wiki/Order_of_the_Golden_Fleece",
+    "source_status": "Preliminary encyclopedia discovery link; authoritative item-level source verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-130",
+    "title": "Knights of Pythias",
+    "chamber": "Secret Societies & Orders",
+    "classification": "Research lead",
+    "summary": "American fraternal order founded in 1864 with rituals inspired by the story of Damon and Pythias; distinguish documented lodge history from legend.",
+    "source_url": "https://en.wikipedia.org/wiki/Knights_of_Pythias",
+    "source_status": "Preliminary encyclopedia discovery link; authoritative item-level source verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-131",
+    "title": "Ancient Order of Druids",
+    "chamber": "Secret Societies & Orders",
+    "classification": "Research lead",
+    "summary": "Fraternal society founded in London in 1781; its modern ritual tradition must not be mistaken for a continuous surviving ancient Druid priesthood.",
+    "source_url": "https://en.wikipedia.org/wiki/Ancient_Order_of_Druids",
+    "source_status": "Preliminary encyclopedia discovery link; authoritative item-level source verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-132",
+    "title": "Ordo Templi Orientis",
+    "chamber": "Secret Societies & Orders",
+    "classification": "Research lead",
+    "summary": "Esoteric initiatory order established in the early twentieth century; document its early leadership, later Thelemic associations and competing historical accounts.",
+    "source_url": "https://en.wikipedia.org/wiki/Ordo_Templi_Orientis",
+    "source_status": "Preliminary encyclopedia discovery link; authoritative item-level source verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-133",
+    "title": "Societas Rosicruciana in Anglia",
+    "chamber": "Secret Societies & Orders",
+    "classification": "Research lead",
+    "summary": "Rosicrucian study society established in 1867 with Masonic membership requirements; distinguish its nineteenth-century organization from seventeenth-century Rosicrucian manifestos.",
+    "source_url": "https://en.wikipedia.org/wiki/Societas_Rosicruciana_in_Anglia",
+    "source_status": "Preliminary encyclopedia discovery link; authoritative item-level source verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-134",
+    "title": "Order of the Nine Angles — historical claims and controversies",
+    "chamber": "Secret Societies & Orders",
+    "classification": "Research lead",
+    "summary": "Controversial extremist-linked occult network associated with violent neo-Nazi ideology; document critical scholarship and law-enforcement context without promoting recruitment or operational materials.",
+    "source_url": "https://en.wikipedia.org/wiki/Order_of_Nine_Angles",
+    "source_status": "Preliminary encyclopedia discovery link; authoritative item-level source verification pending",
+    "rights": "Link only; no reproduction permission assumed"
   }
 ]
