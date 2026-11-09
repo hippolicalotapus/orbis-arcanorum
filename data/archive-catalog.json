@@ -972,5 +972,77 @@
     "rights": "Link only; no reproduction rights assumed",
     "original_language": "Chinese",
     "english_translation_status": "English editorial synopsis; not a verified translation of a primary-language text"
+  },
+  {
+    "id": "oa-096",
+    "title": "Dead Sea Scrolls — Leon Levy Digital Library",
+    "chamber": "Sacred Archives",
+    "classification": "Documented",
+    "summary": "An Israel Antiquities Authority digital library presents manuscript images and information on the Dead Sea Scrolls. Individual manuscript identifications, dating and translation details require item-level checking.",
+    "source_url": "https://www.deadseascrolls.org.il/",
+    "source_status": "Source landing/index page accessible and title checked 2026-11-09; individual work and translation not yet verified",
+    "rights": "Link only; no reproduction rights assumed",
+    "original_language": "Hebrew, Aramaic and Greek",
+    "english_translation_status": "English editorial summary; not a translation of a primary manuscript"
+  },
+  {
+    "id": "oa-097",
+    "title": "Hindu sacred literature — research index",
+    "chamber": "Sacred Archives",
+    "classification": "Documented",
+    "summary": "An independent collection index provides access to historical editions and translations of Hindu religious literature, including Vedic and later traditions. Editions and translation rights vary by work.",
+    "source_url": "https://www.sacred-texts.com/hin/index.htm",
+    "source_status": "Source landing/index page accessible and title checked 2026-11-09; individual work and translation not yet verified",
+    "rights": "Link only; no reproduction rights assumed",
+    "original_language": "Sanskrit and other South Asian languages",
+    "english_translation_status": "English editorial summary; not a translation of a primary manuscript"
+  },
+  {
+    "id": "oa-098",
+    "title": "Buddhist sacred literature — research index",
+    "chamber": "Sacred Archives",
+    "classification": "Documented",
+    "summary": "A topical index gathers historical Buddhist texts and translations from multiple traditions. Original-language sources, sectarian context and translation provenance must be checked individually.",
+    "source_url": "https://www.sacred-texts.com/bud/index.htm",
+    "source_status": "Source landing/index page accessible and title checked 2026-11-09; individual work and translation not yet verified",
+    "rights": "Link only; no reproduction rights assumed",
+    "original_language": "Pali, Sanskrit, Tibetan, Chinese, Japanese and others",
+    "english_translation_status": "English editorial summary; not a translation of a primary manuscript"
+  },
+  {
+    "id": "oa-099",
+    "title": "Daoist sacred literature — research index",
+    "chamber": "Sacred Archives",
+    "classification": "Documented",
+    "summary": "An independent Taoism index points to English translations and discussions of Daoist texts. Original Chinese editions and attribution require separate examination.",
+    "source_url": "https://www.sacred-texts.com/tao/index.htm",
+    "source_status": "Source landing/index page accessible and title checked 2026-11-09; individual work and translation not yet verified",
+    "rights": "Link only; no reproduction rights assumed",
+    "original_language": "Classical Chinese",
+    "english_translation_status": "English editorial summary; not a translation of a primary manuscript"
+  },
+  {
+    "id": "oa-100",
+    "title": "Ancient Egyptian religious texts — research index",
+    "chamber": "Sacred Archives",
+    "classification": "Documented",
+    "summary": "An independent Egyptian-text index collects historical translations and discussions of religious and funerary writings. Manuscript or inscription witnesses should be identified before definitive interpretation.",
+    "source_url": "https://www.sacred-texts.com/egy/index.htm",
+    "source_status": "Source landing/index page accessible and title checked 2026-11-09; individual work and translation not yet verified",
+    "rights": "Link only; no reproduction rights assumed",
+    "original_language": "Ancient Egyptian",
+    "english_translation_status": "English editorial summary; not a translation of a primary manuscript"
+  },
+  {
+    "id": "oa-101",
+    "title": "Jewish sacred literature — research index",
+    "chamber": "Sacred Archives",
+    "classification": "Documented",
+    "summary": "An independent index organizes Jewish sacred and interpretive literature. Different textual traditions, editions, languages and religious contexts must be distinguished.",
+    "source_url": "https://www.sacred-texts.com/jud/index.htm",
+    "source_status": "Source landing/index page accessible and title checked 2026-11-09; individual work and translation not yet verified",
+    "rights": "Link only; no reproduction rights assumed",
+    "original_language": "Hebrew and Aramaic",
+    "english_translation_status": "English editorial summary; not a translation of a primary manuscript"
   }
 ]
