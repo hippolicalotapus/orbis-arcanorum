@@ -72,3 +72,10 @@ Netlify deploy previews may require authenticated access. Opening an existing pr
 - [ ] Cross-check Japanese and Chinese primary-language names and bibliographic citations; English summaries are editorial, not manuscript translations.
 - [ ] Perform real test-account signup, email confirmation, application submission, admin review, RLS negative tests and cleanup; prior six-page smoke test is NOT end-to-end workflow verification.
 - [ ] Verify admin JavaScript fix and 95-record catalog on next planned deployment; production and preview remain private.
+
+## Next-priority security and admin audit — 2026-11-09
+- [x] Re-ran Supabase security advisors: leaked-password protection disabled (WARN); two internal-schema RLS tables without policies (INFO).
+- [x] Updated admin review app-metadata check to accept boolean `true` and legacy string `"true"`; pending deployed browser verification.
+- [ ] Enable leaked-password protection in Supabase Auth and re-run security advisor.
+- [ ] Confirm configured email redirect allowlist covers the selected preview or staging host; test account confirmation with controlled disposable accounts.
+- [ ] Run non-admin rejection, applicant-only access, admin approval, directory synchronization and cleanup tests in a controlled environment.
