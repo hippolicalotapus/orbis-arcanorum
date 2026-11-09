@@ -26,7 +26,10 @@ def transform(obj):
     identifier = obj.get("objectID")
     title = str(obj.get("title") or "").strip()
     source_url = str(obj.get("objectURL") or "").strip()
-    if not isinstance(identifier, int) or not title or not source_url.startswith("https://"):
+    parsed = urllib.parse.urlparse(source_url)
+    if (type(identifier) is not int or identifier <= 0 or not title
+            or parsed.scheme != "https" or parsed.hostname != "www.metmuseum.org"
+            or parsed.path.rstrip("/") != f"/art/collection/search/{identifier}"):
         return None
     description = "; ".join(str(v).strip() for v in [
         obj.get("objectDate"), obj.get("culture"), obj.get("medium"),
@@ -51,7 +54,7 @@ def harvest(query, limit, pause):
     for object_id in ids:
         if len(results) >= limit:
             break
-        if not isinstance(object_id, int) or object_id in seen:
+        if type(object_id) is not int or object_id <= 0 or object_id in seen:
             continue
         seen.add(object_id)
         try:
