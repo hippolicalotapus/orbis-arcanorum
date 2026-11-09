@@ -19,6 +19,12 @@ class MetHarvestTests(unittest.TestCase):
         self.assertIsNone(transform({"title": "Amulet", "objectURL": "https://example.org/1"}))
     def test_missing_title(self):
         self.assertIsNone(transform({"objectID": 123, "objectURL": "https://example.org/1"}))
+    def test_rejects_lookalike_domain(self):
+        self.assertIsNone(transform({"objectID": 123, "title": "Amulet", "objectURL": "https://www.metmuseum.org.evil.test/art/collection/search/123"}))
+    def test_rejects_mismatched_catalog_id(self):
+        self.assertIsNone(transform({"objectID": 123, "title": "Amulet", "objectURL": "https://www.metmuseum.org/art/collection/search/456"}))
+    def test_rejects_boolean_id(self):
+        self.assertIsNone(transform({"objectID": True, "title": "Amulet", "objectURL": "https://www.metmuseum.org/art/collection/search/True"}))
     def test_insecure_source(self):
         self.assertIsNone(transform({"objectID": 123, "title": "Amulet", "objectURL": "http://example.org/1"}))
 
