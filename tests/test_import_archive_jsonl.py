@@ -43,7 +43,7 @@ class ArchiveImportTests(unittest.TestCase):
             normalize({**BASE, "source_url": "https://user:pass@museum.example.org/object"})
     def test_slug_collision(self):
         with tempfile.NamedTemporaryFile(mode="w", suffix=".jsonl", encoding="utf-8") as f:
-            f.write(json.dumps(BASE)+"\\n"+json.dumps({**BASE,"catalog_id":"A 123"})+"\\n")
+            f.write(json.dumps(BASE)+"\n"+json.dumps({**BASE,"catalog_id":"A 123"})+"\n")
             f.flush()
             with self.assertRaisesRegex(ValueError, "duplicate normalized slug"):
                 load(f.name)
