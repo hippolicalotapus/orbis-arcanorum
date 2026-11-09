@@ -1,0 +1,362 @@
+[
+  {
+    "id": "oa-001",
+    "title": "Rosicrucian manifestos",
+    "chamber": "Secret Societies & Orders",
+    "classification": "Documented",
+    "summary": "Historical manifestos published in early modern Europe; later Rosicrucian orders should be distinguished.",
+    "source_url": "https://www.britannica.com/topic/Rosicrucians",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-002",
+    "title": "Hermetic Order of the Golden Dawn",
+    "chamber": "Secret Societies & Orders",
+    "classification": "Documented",
+    "summary": "Late-Victorian initiatory order; its history differs from later successor groups.",
+    "source_url": "https://www.britannica.com/topic/Hermetic-Order-of-the-Golden-Dawn",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-003",
+    "title": "Theosophical Society",
+    "chamber": "Secret Societies & Orders",
+    "classification": "Documented",
+    "summary": "Founded in 1875; its institutional history is separate from its metaphysical claims.",
+    "source_url": "https://www.theosophical.org/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-004",
+    "title": "Key of Solomon",
+    "chamber": "Grimoires & Magical Texts",
+    "classification": "Documented",
+    "summary": "A family of magical manuscripts and printed editions with varying provenance.",
+    "source_url": "https://www.bl.uk/manuscripts/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-005",
+    "title": "Picatrix (Ghāyat al-Ḥakīm)",
+    "chamber": "Grimoires & Magical Texts",
+    "classification": "Documented",
+    "summary": "Medieval Arabic astrological magic treatise transmitted through Latin translation.",
+    "source_url": "https://www.loc.gov/search/?q=Picatrix",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-006",
+    "title": "The Book of Abramelin",
+    "chamber": "Grimoires & Magical Texts",
+    "classification": "Documented",
+    "summary": "A grimoire tradition preserved through manuscripts and later editions.",
+    "source_url": "https://www.loc.gov/search/?q=Abramelin",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-007",
+    "title": "Emerald Tablet",
+    "chamber": "Alchemy & Hermeticism",
+    "classification": "Documented",
+    "summary": "Short Hermetic text with a complex transmission history; attribution is traditional.",
+    "source_url": "https://www.britannica.com/topic/Hermeticism",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-008",
+    "title": "Corpus Hermeticum",
+    "chamber": "Alchemy & Hermeticism",
+    "classification": "Documented",
+    "summary": "Greek philosophical-religious writings attributed to Hermes Trismegistus.",
+    "source_url": "https://www.britannica.com/topic/Hermeticism",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-009",
+    "title": "Sloane alchemical manuscripts",
+    "chamber": "Alchemy & Hermeticism",
+    "classification": "Documented",
+    "summary": "British Library manuscript holdings offer source material for historical alchemy.",
+    "source_url": "https://searcharchives.bl.uk/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-010",
+    "title": "The Epic of Gilgamesh",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "Ancient Mesopotamian literary tradition surviving in multiple textual witnesses.",
+    "source_url": "https://www.britishmuseum.org/collection",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-011",
+    "title": "The Egyptian Book of the Dead",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Documented",
+    "summary": "Funerary compositions preserved on papyri and other objects.",
+    "source_url": "https://www.metmuseum.org/art/collection",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-012",
+    "title": "The Wild Hunt",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Folklore & Legend",
+    "summary": "Northern and central European narrative traditions of supernatural processions.",
+    "source_url": "https://www.loc.gov/folklife/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-013",
+    "title": "Society for Psychical Research",
+    "chamber": "Paranormal Investigations",
+    "classification": "Documented",
+    "summary": "Historical organization investigating reported psychical phenomena; findings are debated.",
+    "source_url": "https://www.spr.ac.uk/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-014",
+    "title": "The Fox sisters and spiritualism",
+    "chamber": "Paranormal Investigations",
+    "classification": "Documented",
+    "summary": "Historical movement associated with reported spirit communication; supernatural claims unproven.",
+    "source_url": "https://www.loc.gov/search/?q=Fox+sisters+spiritualism",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-015",
+    "title": "The Enfield poltergeist case",
+    "chamber": "Paranormal Investigations",
+    "classification": "Disputed",
+    "summary": "Well-known reported haunting with competing interpretations and contested evidence.",
+    "source_url": "https://www.bbc.co.uk/search?q=Enfield%20poltergeist",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-016",
+    "title": "Atlantis as a lost civilization",
+    "chamber": "Unverified Mysteries",
+    "classification": "Unverified",
+    "summary": "Plato's story has inspired modern historical claims without established archaeological confirmation.",
+    "source_url": "https://www.perseus.tufts.edu/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-017",
+    "title": "The Bermuda Triangle mystery",
+    "chamber": "Unverified Mysteries",
+    "classification": "Unverified",
+    "summary": "Popular accounts of disappearances should be checked against navigational and incident records.",
+    "source_url": "https://oceanservice.noaa.gov/facts/bermudatri.html",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-018",
+    "title": "The Loch Ness monster",
+    "chamber": "Unverified Mysteries",
+    "classification": "Unverified",
+    "summary": "Long-running reported sightings with no confirmed zoological evidence for a monster.",
+    "source_url": "https://www.nms.ac.uk/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-019",
+    "title": "Malleus Maleficarum",
+    "chamber": "Witchcraft & Folk Magic",
+    "classification": "Documented",
+    "summary": "Late-fifteenth-century witch-hunting text; historically significant and deeply harmful.",
+    "source_url": "https://www.loc.gov/search/?q=Malleus+Maleficarum",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-020",
+    "title": "European witch-trial records",
+    "chamber": "Witchcraft & Folk Magic",
+    "classification": "Documented",
+    "summary": "Court documents illuminate persecution and legal history, not proof of supernatural powers.",
+    "source_url": "https://www.nationalarchives.gov.uk/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-021",
+    "title": "Hoodoo as a living tradition",
+    "chamber": "Witchcraft & Folk Magic",
+    "classification": "Documented",
+    "summary": "African American folk spiritual practices with diverse histories and contemporary communities.",
+    "source_url": "https://www.loc.gov/folklife/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-022",
+    "title": "John Dee's Monas Hieroglyphica",
+    "chamber": "Mystical Symbols & Languages",
+    "classification": "Documented",
+    "summary": "Sixteenth-century symbolic work by John Dee; interpretations vary.",
+    "source_url": "https://www.loc.gov/search/?q=Monas+Hieroglyphica",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-023",
+    "title": "Ogham inscriptions",
+    "chamber": "Mystical Symbols & Languages",
+    "classification": "Documented",
+    "summary": "Early medieval alphabet attested in inscribed stones.",
+    "source_url": "https://www.britishmuseum.org/collection",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-024",
+    "title": "The Enochian language",
+    "chamber": "Mystical Symbols & Languages",
+    "classification": "Documented",
+    "summary": "Historical system recorded in John Dee and Edward Kelley's papers; claimed origins unverified.",
+    "source_url": "https://www.bl.uk/manuscripts/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-025",
+    "title": "Voynich Manuscript",
+    "chamber": "Rare Manuscripts & Artifacts",
+    "classification": "Disputed",
+    "summary": "Genuine manuscript; its writing and meaning remain undeciphered.",
+    "source_url": "https://beinecke.library.yale.edu/collections/highlights/voynich-manuscript",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-026",
+    "title": "Ripley Scroll",
+    "chamber": "Rare Manuscripts & Artifacts",
+    "classification": "Documented",
+    "summary": "Illustrated alchemical scroll tradition with surviving versions.",
+    "source_url": "https://www.bl.uk/manuscripts/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-027",
+    "title": "Greek Magical Papyri",
+    "chamber": "Rare Manuscripts & Artifacts",
+    "classification": "Documented",
+    "summary": "Collection of ancient magical texts surviving in papyrus manuscripts.",
+    "source_url": "https://www.metmuseum.org/art/collection",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-028",
+    "title": "Helena Petrovna Blavatsky",
+    "chamber": "Esoteric People & Biographies",
+    "classification": "Documented",
+    "summary": "Influential co-founder of the Theosophical Society; claims require separate assessment.",
+    "source_url": "https://www.britannica.com/biography/Helena-Blavatsky",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-029",
+    "title": "John Dee",
+    "chamber": "Esoteric People & Biographies",
+    "classification": "Documented",
+    "summary": "Elizabethan mathematician, court adviser and practitioner of angelic magic.",
+    "source_url": "https://www.britannica.com/biography/John-Dee",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-030",
+    "title": "Éliphas Lévi",
+    "chamber": "Esoteric People & Biographies",
+    "classification": "Documented",
+    "summary": "Nineteenth-century French occult writer influential in later ceremonial magic.",
+    "source_url": "https://www.britannica.com/biography/Eliphas-Levi",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-031",
+    "title": "Stonehenge",
+    "chamber": "Occult Locations & Archaeology",
+    "classification": "Documented",
+    "summary": "Prehistoric monument with archaeological evidence; modern esoteric interpretations differ.",
+    "source_url": "https://www.english-heritage.org.uk/visit/places/stonehenge/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-032",
+    "title": "Delphi and the Oracle",
+    "chamber": "Occult Locations & Archaeology",
+    "classification": "Documented",
+    "summary": "Ancient Greek sanctuary and divination institution with literary and archaeological records.",
+    "source_url": "https://whc.unesco.org/en/list/393/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-033",
+    "title": "Glastonbury legends",
+    "chamber": "Occult Locations & Archaeology",
+    "classification": "Folklore & Legend",
+    "summary": "A real historical location associated with evolving Arthurian and sacred traditions.",
+    "source_url": "https://www.english-heritage.org.uk/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-034",
+    "title": "ESOTERICA lectures",
+    "chamber": "Documentaries, Lectures & Audio",
+    "classification": "Documented",
+    "summary": "Educational videos about Western esotericism; evaluate individual lectures and sources.",
+    "source_url": "https://www.youtube.com/@TheEsotericaChannel",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-035",
+    "title": "British Library manuscript videos",
+    "chamber": "Documentaries, Lectures & Audio",
+    "classification": "Documented",
+    "summary": "Institutional videos and talks on manuscript collections and conservation.",
+    "source_url": "https://www.youtube.com/@britishlibrary",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-036",
+    "title": "The Royal Institution lectures",
+    "chamber": "Documentaries, Lectures & Audio",
+    "classification": "Documented",
+    "summary": "Public lectures on history of science and related subjects.",
+    "source_url": "https://www.rigb.org/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  }
+]
