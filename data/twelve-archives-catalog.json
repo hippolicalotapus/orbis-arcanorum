@@ -758,5 +758,35 @@
     "source_url": "https://www.britannica.com/topic/Tantrism",
     "source_status": "Research lead — individual bibliographic verification pending",
     "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-077",
+    "title": "Göbekli Tepe — prehistoric monumental complex",
+    "chamber": "The Lost Histories",
+    "classification": "Documented",
+    "summary": "UNESCO-listed prehistoric monumental structures in southeastern Anatolia, Türkiye; archaeological interpretation continues to develop.",
+    "source_url": "https://whc.unesco.org/en/list/1572/",
+    "source_status": "Institutional source page verified 2026-11-09; further item-level review pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-078",
+    "title": "Stonehenge, Avebury and associated sites",
+    "chamber": "The Lost Histories",
+    "classification": "Documented",
+    "summary": "UNESCO World Heritage cultural landscape of megalithic monuments in Wiltshire, England; interpretations of construction and use remain subjects of research.",
+    "source_url": "https://whc.unesco.org/en/list/373/",
+    "source_status": "Institutional source page verified 2026-11-09; further item-level review pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-079",
+    "title": "UNESCO Underwater Cultural Heritage Convention",
+    "chamber": "The Lost Histories",
+    "classification": "Documented",
+    "summary": "UNESCO's 2001 convention provides a framework for protecting underwater cultural heritage; it is a starting point for research into submerged archaeological sites, not evidence of a particular lost civilization.",
+    "source_url": "https://www.unesco.org/en/underwater-heritage",
+    "source_status": "Institutional source page verified 2026-11-09; further item-level review pending",
+    "rights": "Link only; no reproduction permission assumed"
   }
 ]
