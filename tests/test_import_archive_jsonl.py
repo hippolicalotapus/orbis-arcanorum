@@ -25,6 +25,12 @@ class ArchiveImportTests(unittest.TestCase):
     def test_reject_http(self):
         with self.assertRaises(ValueError):
             normalize({**BASE, "source_url": "http://museum.example.org/a"})
+    def test_reject_url_fragment(self):
+        with self.assertRaises(ValueError):
+            normalize({**BASE, "source_url": "https://museum.example.org/a#token"})
+    def test_reject_url_whitespace(self):
+        with self.assertRaises(ValueError):
+            normalize({**BASE, "source_url": "https://museum.example.org/a b"})
     def test_reject_missing_catalog_id(self):
         with self.assertRaises(ValueError):
             normalize({**BASE, "catalog_id": ""})
