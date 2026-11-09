@@ -59,3 +59,9 @@ Netlify deploy previews may require authenticated access. Opening an existing pr
 - [x] Four new UNESCO World Heritage leads checked at their institution pages and committed as oa-087 through oa-090.
 - [x] Shared catalog now has 90 records, 90 unique IDs, required metadata complete; all new items flag pending item-level and multilingual review.
 - [ ] Recheck the 90-entry catalog in a deployed browser preview after the next planned build; do not spend an extra deployment solely for this data change.
+
+## Obscure-source verification — 2026-11-09
+- [x] 12 independent and niche source leads logged in separate JSON discovery queue; 12 unique URLs.
+- [x] 10 pages accessible in automated checks; Hermetic Library blocked automated access; Weird Science legacy link unreachable.
+- [x] UKIYOVERSE identified as original mythology/creative material rather than independent historical corroboration.
+- [ ] Review individual items, rights, source provenance and original-language translations before promotion into main research catalog.
