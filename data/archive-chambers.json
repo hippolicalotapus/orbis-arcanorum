@@ -1,0 +1,72 @@
+[
+  {
+    "number": 1,
+    "name": "Secret Societies & Orders",
+    "status": "populated"
+  },
+  {
+    "number": 2,
+    "name": "Grimoires & Magical Texts",
+    "status": "populated"
+  },
+  {
+    "number": 3,
+    "name": "Alchemy & Hermeticism",
+    "status": "populated"
+  },
+  {
+    "number": 4,
+    "name": "Ancient Religions & Mythology",
+    "status": "populated"
+  },
+  {
+    "number": 5,
+    "name": "Paranormal Investigations",
+    "status": "populated"
+  },
+  {
+    "number": 6,
+    "name": "Unverified Mysteries",
+    "status": "populated"
+  },
+  {
+    "number": 7,
+    "name": "Witchcraft & Folk Magic",
+    "status": "populated"
+  },
+  {
+    "number": 8,
+    "name": "Mystical Symbols & Languages",
+    "status": "populated"
+  },
+  {
+    "number": 9,
+    "name": "Rare Manuscripts & Artifacts",
+    "status": "populated"
+  },
+  {
+    "number": 10,
+    "name": "Esoteric People & Biographies",
+    "status": "populated"
+  },
+  {
+    "number": 11,
+    "name": "Occult Locations & Archaeology",
+    "status": "populated"
+  },
+  {
+    "number": 12,
+    "name": "Documentaries, Lectures & Audio",
+    "status": "populated"
+  },
+  {
+    "number": 13,
+    "name": "Sacred Archives",
+    "status": "awaiting curated records"
+  },
+  {
+    "number": 14,
+    "name": "The Lost Histories",
+    "status": "populated"
+  }
+]
