@@ -92,3 +92,14 @@ test('preserved historical archive and research leads remain accessible', () => 
  const chambers=JSON.parse(fs.readFileSync('data/archive-chambers.json','utf8'));
  assert.equal(chambers.length,14);
 });
+
+test('Akashic catalog supports review-stage filtering without modifying source records', () => {
+ const html=fs.readFileSync('catalog.html','utf8');
+ assert.match(html, /id="review"/);
+ assert.match(html, /rv\.addEventListener\('change',render\)/);
+ assert.match(html, /Research status: /);
+ assert.match(html, /Historical research collection/);
+ const records=JSON.parse(fs.readFileSync('data/archive-catalog.json','utf8'));
+ assert.equal(records.length,360);
+ assert.ok(records.every(r=>r.id&&r.title&&r.source_url&&r.source_status));
+});
