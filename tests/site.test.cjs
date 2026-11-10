@@ -114,3 +114,12 @@ test('individual dossiers are linked and preserve source provenance', () => {
  assert.match(catalog, /record\.html\?id=/);
  assert.match(page, /archive-catalog\.json/);
 });
+
+test('dossiers expose transparent cross-chamber discovery', () => {
+ const page=fs.readFileSync('record.html','utf8');
+ assert.match(page, /Discover related mysteries across the archives/);
+ assert.match(page, /item\.chamber!==entry\.chamber/);
+ assert.match(page, /shared catalog terms/);
+ assert.match(page, /not verified historical relationships/);
+ assert.match(page, /encodeURIComponent\(item.id\)/);
+});
