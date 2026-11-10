@@ -2016,5 +2016,405 @@
     "source_url": "https://www.si.edu/openaccess",
     "source_status": "Institutional or general media discovery gateway only; no specific playable recording verified in this update",
     "rights": "Link only; media playback, embedding and republication permissions not assumed"
+  },
+  {
+    "id": "oa-197",
+    "title": "The Green Children of Woolpit",
+    "chamber": "Unverified Mysteries",
+    "classification": "Research lead",
+    "summary": "Medieval English narrative recorded by chroniclers; examine source chronology and later folkloric interpretations rather than assuming the story is factual.",
+    "source_url": "https://en.wikipedia.org/wiki/Green_children_of_Woolpit",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-198",
+    "title": "The Voynich Manuscript — undeciphered text",
+    "chamber": "Unverified Mysteries",
+    "classification": "Research lead",
+    "summary": "Yale-held illustrated manuscript written in an undeciphered script; competing decipherment claims require independent scrutiny.",
+    "source_url": "https://beinecke.library.yale.edu/collections/highlights/voynich-manuscript",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-199",
+    "title": "The Shroud of Turin — historical and scientific debates",
+    "chamber": "Unverified Mysteries",
+    "classification": "Research lead",
+    "summary": "Religious relic with disputed origin and scientific interpretations; present dating evidence and faith claims separately.",
+    "source_url": "https://en.wikipedia.org/wiki/Shroud_of_Turin",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-200",
+    "title": "The Oak Island treasure legend",
+    "chamber": "Unverified Mysteries",
+    "classification": "Research lead",
+    "summary": "Long-running Nova Scotia treasure narrative; distinguish documented excavations from speculative treasure and conspiracy stories.",
+    "source_url": "https://en.wikipedia.org/wiki/Oak_Island_mystery",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-201",
+    "title": "The Greek Magical Papyri",
+    "chamber": "Grimoires & Magical Texts",
+    "classification": "Research lead",
+    "summary": "Collection of ancient Egyptian Greek-language magical texts; distinguish original papyri from modern translations.",
+    "source_url": "https://en.wikipedia.org/wiki/Greek_Magical_Papyri",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-202",
+    "title": "The Key of Solomon",
+    "chamber": "Grimoires & Magical Texts",
+    "classification": "Research lead",
+    "summary": "Early modern grimoire tradition attributed pseudepigraphically to Solomon; study manuscript families and editions.",
+    "source_url": "https://en.wikipedia.org/wiki/Key_of_Solomon",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-203",
+    "title": "The Lesser Key of Solomon",
+    "chamber": "Grimoires & Magical Texts",
+    "classification": "Research lead",
+    "summary": "Composite early modern magical text with multiple books and complex manuscript history; distinguish from the Key of Solomon.",
+    "source_url": "https://en.wikipedia.org/wiki/The_Lesser_Key_of_Solomon",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-204",
+    "title": "The Picatrix / Ghāyat al-Ḥakīm",
+    "chamber": "Grimoires & Magical Texts",
+    "classification": "Research lead",
+    "summary": "Medieval Arabic astral magic work transmitted in Latin translation; examine cultural transmission and textual variants.",
+    "source_url": "https://en.wikipedia.org/wiki/Picatrix",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-205",
+    "title": "Society for Psychical Research — historical investigations",
+    "chamber": "Paranormal Investigations",
+    "classification": "Research lead",
+    "summary": "Research society founded in 1882 to investigate claims of unusual experiences; archival reports are evidence of inquiry, not proof of phenomena.",
+    "source_url": "https://www.spr.ac.uk/",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-206",
+    "title": "Enfield poltergeist — contested case",
+    "chamber": "Paranormal Investigations",
+    "classification": "Research lead",
+    "summary": "1970s London haunting allegations investigated by psychical researchers; document witness testimony, criticism and disputed evidence.",
+    "source_url": "https://en.wikipedia.org/wiki/Enfield_poltergeist",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-207",
+    "title": "The Fox sisters and modern Spiritualism",
+    "chamber": "Paranormal Investigations",
+    "classification": "Research lead",
+    "summary": "Nineteenth-century American spirit-rapping claims and their later confessions and controversies; historical impact does not validate alleged phenomena.",
+    "source_url": "https://en.wikipedia.org/wiki/Fox_sisters",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-208",
+    "title": "The Cottingley Fairies photographs",
+    "chamber": "Paranormal Investigations",
+    "classification": "Research lead",
+    "summary": "Early twentieth-century staged fairy photographs and their reception; distinguish documented photographic fabrication from subsequent folklore.",
+    "source_url": "https://en.wikipedia.org/wiki/Cottingley_Fairies",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-209",
+    "title": "Library of Ashurbanipal",
+    "chamber": "The Lost Histories",
+    "classification": "Research lead",
+    "summary": "Ancient Assyrian royal tablet collections from Nineveh preserve historical and literary texts; identify tablets by museum inventory numbers.",
+    "source_url": "https://www.britishmuseum.org/collection/galleries/assyrian-sculpture-and-balawat-gates",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-210",
+    "title": "Nalanda Mahavihara — Buddhist learning centre",
+    "chamber": "The Lost Histories",
+    "classification": "Research lead",
+    "summary": "Archaeological remains of the historic monastic university in Bihar; avoid claims that all manuscripts or knowledge vanished in one event.",
+    "source_url": "https://whc.unesco.org/en/list/1502/",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-211",
+    "title": "Timbuktu manuscript heritage",
+    "chamber": "The Lost Histories",
+    "classification": "Research lead",
+    "summary": "West African manuscript collections preserve scholarship in multiple disciplines; many collections survive despite conflict and dispersal.",
+    "source_url": "https://en.unesco.org/themes/protecting-our-heritage-and-fostering-creativity/timbuktu-manuscripts",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-212",
+    "title": "House of Wisdom — Baghdad historical debates",
+    "chamber": "The Lost Histories",
+    "classification": "Research lead",
+    "summary": "Abbasid-era intellectual institutions and translation traditions; the scale and nature of a single House of Wisdom remain debated.",
+    "source_url": "https://en.wikipedia.org/wiki/House_of_Wisdom",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-213",
+    "title": "Pennsylvania Dutch powwow / Braucherei",
+    "chamber": "Witchcraft & Folk Magic",
+    "classification": "Research lead",
+    "summary": "Regional healing and charm traditions associated with Pennsylvania Dutch communities; avoid confusing the term with Indigenous powwows.",
+    "source_url": "https://en.wikipedia.org/wiki/Pow-wow_(folk_magic)",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-214",
+    "title": "Italian benandanti",
+    "chamber": "Witchcraft & Folk Magic",
+    "classification": "Research lead",
+    "summary": "Early modern Friulian visionary traditions recorded in Inquisition trials; sources are mediated by judicial interrogation.",
+    "source_url": "https://en.wikipedia.org/wiki/Benandanti",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-215",
+    "title": "Scottish witchcraft trial records",
+    "chamber": "Witchcraft & Folk Magic",
+    "classification": "Research lead",
+    "summary": "University of Edinburgh research database documenting accused people and trials; judicial accusations do not establish actual magical activity.",
+    "source_url": "https://witches.is.ed.ac.uk/",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-216",
+    "title": "Icelandic magical staves",
+    "chamber": "Witchcraft & Folk Magic",
+    "classification": "Research lead",
+    "summary": "Symbolic figures recorded in Icelandic manuscript traditions; individual stave histories and modern reconstructions require distinction.",
+    "source_url": "https://en.wikipedia.org/wiki/Icelandic_magical_staves",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-217",
+    "title": "Ogham inscriptions",
+    "chamber": "Mystical Symbols & Languages",
+    "classification": "Research lead",
+    "summary": "Early medieval inscription system documented in scholarly corpora; distinguish archaeological writing from modern divination systems.",
+    "source_url": "https://ogham.celt.dias.ie/",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-218",
+    "title": "Elder Futhark runic alphabet",
+    "chamber": "Mystical Symbols & Languages",
+    "classification": "Research lead",
+    "summary": "Historical Germanic writing system; modern occult rune interpretations are separate from early inscriptions.",
+    "source_url": "https://en.wikipedia.org/wiki/Elder_Futhark",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-219",
+    "title": "Enochian language manuscripts",
+    "chamber": "Mystical Symbols & Languages",
+    "classification": "Research lead",
+    "summary": "Constructed or revealed-language system recorded in John Dee and Edward Kelley's writings; scholarly provenance differs from supernatural origin claims.",
+    "source_url": "https://en.wikipedia.org/wiki/Enochian",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-220",
+    "title": "Alchemical planetary and metal symbols",
+    "chamber": "Mystical Symbols & Languages",
+    "classification": "Research lead",
+    "summary": "Early modern symbolic notation for materials and processes; meanings vary across texts and eras.",
+    "source_url": "https://en.wikipedia.org/wiki/Alchemical_symbol",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-221",
+    "title": "Göbekli Tepe",
+    "chamber": "Occult Locations & Archaeology",
+    "classification": "Research lead",
+    "summary": "Neolithic archaeological site in southeastern Türkiye; ceremonial interpretations remain subject to archaeological debate.",
+    "source_url": "https://whc.unesco.org/en/list/1572/",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-222",
+    "title": "Newgrange passage tomb",
+    "chamber": "Occult Locations & Archaeology",
+    "classification": "Research lead",
+    "summary": "Neolithic passage tomb in Ireland associated with winter-solstice light; avoid projecting later religious systems onto its builders.",
+    "source_url": "https://whc.unesco.org/en/list/659/",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-223",
+    "title": "Delphi sanctuary of Apollo",
+    "chamber": "Occult Locations & Archaeology",
+    "classification": "Research lead",
+    "summary": "Ancient Greek sanctuary and oracle documented by archaeology and classical texts; distinguish ritual practice from supernatural claims.",
+    "source_url": "https://whc.unesco.org/en/list/393/",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-224",
+    "title": "Chavín de Huántar",
+    "chamber": "Occult Locations & Archaeology",
+    "classification": "Research lead",
+    "summary": "Andean ceremonial and archaeological centre in Peru; discuss ritual interpretation through archaeological evidence.",
+    "source_url": "https://whc.unesco.org/en/list/330/",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-225",
+    "title": "Codex Gigas",
+    "chamber": "Rare Manuscripts & Artifacts",
+    "classification": "Research lead",
+    "summary": "Large medieval illuminated manuscript held in Sweden; devil legends are folklore rather than evidence of supernatural creation.",
+    "source_url": "https://en.wikipedia.org/wiki/Codex_Gigas",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-226",
+    "title": "Dresden Codex",
+    "chamber": "Rare Manuscripts & Artifacts",
+    "classification": "Research lead",
+    "summary": "Pre-Columbian Maya manuscript containing calendrical and astronomical material; reproduction and Indigenous cultural context require care.",
+    "source_url": "https://en.wikipedia.org/wiki/Dresden_Codex",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-227",
+    "title": "Book of Kells",
+    "chamber": "Rare Manuscripts & Artifacts",
+    "classification": "Research lead",
+    "summary": "Early medieval illuminated Gospel manuscript held at Trinity College Dublin; item-level image rights require review.",
+    "source_url": "https://www.tcd.ie/library/manuscripts/book-of-kells.php",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-228",
+    "title": "Nebra sky disc",
+    "chamber": "Rare Manuscripts & Artifacts",
+    "classification": "Research lead",
+    "summary": "Bronze Age artifact associated with astronomical imagery; authentication history and archaeological context should be documented.",
+    "source_url": "https://en.wikipedia.org/wiki/Nebra_sky_disc",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-229",
+    "title": "Ethiopian Orthodox manuscript tradition",
+    "chamber": "Sacred Archives",
+    "classification": "Research lead",
+    "summary": "Geʽez manuscript and liturgical traditions of the Ethiopian Orthodox Tewahedo Church; locate collection records and consult cultural context.",
+    "source_url": "https://www.bl.uk/collection-guides/ethiopian-manuscripts",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-230",
+    "title": "Guru Granth Sahib — Sikh scripture",
+    "chamber": "Sacred Archives",
+    "classification": "Research lead",
+    "summary": "Living Sikh scriptural tradition; interpretation and reuse should respect religious practice and community guidance.",
+    "source_url": "https://www.sikhri.org/",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-231",
+    "title": "Avesta — Zoroastrian sacred texts",
+    "chamber": "Sacred Archives",
+    "classification": "Research lead",
+    "summary": "Textual gateway to Zoroastrian liturgy and scholarship; verify translations and copyright before reproducing.",
+    "source_url": "https://www.avesta.org/",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-232",
+    "title": "Mandaean Ginza Rabba",
+    "chamber": "Sacred Archives",
+    "classification": "Research lead",
+    "summary": "Principal Mandaean sacred scripture; respect living-community interpretations and restricted or sensitive material.",
+    "source_url": "https://en.wikipedia.org/wiki/Ginza_Rabba",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-233",
+    "title": "Hittite religious texts and deities",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Research lead",
+    "summary": "Academic Hittite text research gateway for ancient Anatolian religion; verify specific editions.",
+    "source_url": "https://www.hethport.uni-wuerzburg.de/",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-234",
+    "title": "Ugaritic Baal Cycle",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Research lead",
+    "summary": "Late Bronze Age Ugaritic mythological tablets; examine primary editions and translation choices.",
+    "source_url": "https://en.wikipedia.org/wiki/Baal_Cycle",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-235",
+    "title": "Nabataean religion",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Research lead",
+    "summary": "Religious traditions of ancient Nabataea documented through inscriptions and archaeological remains.",
+    "source_url": "https://en.wikipedia.org/wiki/Nabataean_religion",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
+  },
+  {
+    "id": "oa-236",
+    "title": "Etruscan religion and divination",
+    "chamber": "Ancient Religions & Mythology",
+    "classification": "Research lead",
+    "summary": "Ancient Etruscan ritual and divination traditions known from material culture and later classical testimony.",
+    "source_url": "https://en.wikipedia.org/wiki/Etruscan_religion",
+    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "rights": "Link only; no reproduction or translation rights assumed"
   }
 ]
