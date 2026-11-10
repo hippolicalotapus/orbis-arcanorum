@@ -123,3 +123,15 @@ test('dossiers expose transparent cross-chamber discovery', () => {
  assert.match(page, /not verified historical relationships/);
  assert.match(page, /encodeURIComponent\(item.id\)/);
 });
+
+test('constellation explorer is connected and uses source-led catalog data', () => {
+ const page=fs.readFileSync('constellation.html','utf8');
+ const home=fs.readFileSync('index.html','utf8');
+ const dossier=fs.readFileSync('record.html','utf8');
+ assert.match(page, /id="network"/);
+ assert.match(page, /id="list"/);
+ assert.match(page, /archive-catalog\.json/);
+ assert.match(page, /not evidence of a historical association/);
+ assert.match(home, /constellation\.html/);
+ assert.match(dossier, /constellation\.html\?id=/);
+});
