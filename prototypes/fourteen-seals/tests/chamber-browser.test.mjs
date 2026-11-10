@@ -20,8 +20,8 @@ test('14 chambers: import, editorial quarantine, clear and observatory on mobile
   const upload=async data=>page.locator('#archiveImport').setInputFiles({name:'synthetic.json',mimeType:'application/json',buffer:Buffer.from(typeof data==='string'?data:JSON.stringify(data))});
   await upload(fixture);
   assert.match(await page.locator('#importStatus').innerText(),/Loaded 2 records across 2 chambers/);
-  assert.match(await page.locator('#importStatus').innerText(),/1 records withheld/);
-  assert.equal(await page.locator('[data-record-count]').filter({hasText:'1 imported records'}).count(),2);
+  assert.match(await page.locator('#importStatus').innerText(),/1 record withheld/);
+  assert.equal(await page.locator('[data-record-count]').filter({hasText:'1 imported record'}).count(),2);
   mkdirSync('test-artifacts',{recursive:true});
   await page.screenshot({path:'test-artifacts/fourteen-chambers-mobile.png',fullPage:true});
   await page.locator('#grid .tile').filter({hasText:'Alchemy & Hermeticism'}).click();
