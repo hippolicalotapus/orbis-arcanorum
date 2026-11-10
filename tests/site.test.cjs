@@ -196,3 +196,13 @@ test('all chambers link to their filtered catalog and homepage records link to d
  assert.equal(records.length,360);
  for(const chamber of chambers)assert.ok(records.some(x=>x.chamber===chamber.name),'missing records for '+chamber.name);
 });
+
+test('research dossier offers contextual chamber and constellation navigation', () => {
+ const html=fs.readFileSync('record.html','utf8');
+ assert.match(html, /id="chamber-link"/);
+ assert.match(html, /id="constellation-link"/);
+ assert.match(html, /catalog\.html\?chamber=/);
+ assert.match(html, /encodeURIComponent\(entry\.chamber\)/);
+ assert.match(html, /constellation\.html\?id=/);
+ assert.match(html, /encodeURIComponent\(entry\.id\)/);
+});
