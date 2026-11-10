@@ -246,3 +246,12 @@ test('investigation board explains connection terms without claiming historical 
  assert.match(html, /hit\.item\.classification/);
  assert.match(html, /hit\.overlap\.slice\(0,4\)/);
 });
+
+test('investigation trails can continue from any suggested connection', () => {
+ const html=fs.readFileSync('constellation.html','utf8');
+ assert.match(html, /function trailLink\(item\)/);
+ assert.match(html, /constellation\.html\?id='\+encodeURIComponent\(item\.id\)/);
+ assert.match(html, /Investigate this connection/);
+ assert.match(html, /wrap\.append\(item,trailLink\(hit\.item\)\)/);
+ assert.match(html, /className='connection-card'/);
+});
