@@ -68,3 +68,13 @@ test('Atelier discloses collector edition inclusions and no active checkout', ()
   assert.match(html, /No checkout is active/);
   assert.match(html, /fine-art paper print/i);
 });
+
+test('Grand Archive hero has an original accessible image asset', () => {
+ const html=fs.readFileSync('index.html','utf8');
+ assert.match(html, /src="\.\/assets\/grand-archive\.svg"/);
+ assert.match(html, /class="archive-illustration"[^>]+alt="[^"]+"/);
+ const asset=fs.readFileSync('assets/grand-archive.svg','utf8');
+ assert.match(asset, /<svg/);
+ assert.match(asset, /<title/);
+ assert.match(asset, /<desc/);
+});
