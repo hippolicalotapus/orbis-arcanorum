@@ -279,3 +279,15 @@ test('case file export includes provenance and uncertainty without remote storag
  assert.match(html, /URL\.createObjectURL\(blob\)/);
  assert.match(html, /Suggested links do not establish historical relationships/);
 });
+
+test('case file import validates format size and catalog membership before restoring trail', () => {
+ const html=fs.readFileSync('constellation.html','utf8');
+ assert.match(html, /id="import-trail"/);
+ assert.match(html, /async function importCaseFile\(file\)/);
+ assert.match(html, /file\.size>1048576/);
+ assert.match(html, /parsed\.format!=='orbis-arcanorum-casefile-v1'/);
+ assert.match(html, /parsed\.trail\.length>12/);
+ assert.match(html, /records\.some\(x=>x\.id===step\.id\)/);
+ assert.match(html, /saveTrail\(ids\)/);
+ assert.match(html, /Import rejected:/);
+});
