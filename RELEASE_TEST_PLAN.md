@@ -102,3 +102,16 @@ Netlify deploy previews may require authenticated access. Opening an existing pr
 - [ ] Check exact item URLs and source metadata again before public release; bibliographic record and archive search are not full-content verification.
 - [ ] Latest archive catalog and new Collectors' Vault / Antiquarian Atelier pages require deployed browser and mobile regression tests.
 - [ ] Live vendor applicant/admin workflow still pending; no Netlify deployment authorized or triggered in this checkpoint.
+
+
+## Five-step integration pass — 2026-11-09
+- [x] Corrected archive-chambers path assertion; earlier GitHub checks passed after correction.
+- [x] Linked homepage to Akashic Records, marketplace, Collectors' Vault and Antiquarian Atelier.
+- [x] Added preview-only print format selection and complimentary original/restored digital bundle policy; rights clearance required.
+- [x] Extended static smoke tests to more pages and navigation/policy assertions.
+- [x] Recorded release controls and remaining gaps in this plan.
+- [ ] Confirm latest GitHub workflows after all commits; passing earlier commits does not validate the final commit.
+- [ ] Browser-rendered desktop/mobile visual review, accessibility and console checks.
+- [ ] Commission or create original high-quality artwork and verify any historical imagery rights.
+- [ ] Complete live vendor/auth/admin end-to-end testing and security review.
+- [ ] Compare Netlify's deployed commit with the reviewed development branch; do not merge or deploy without approval.
