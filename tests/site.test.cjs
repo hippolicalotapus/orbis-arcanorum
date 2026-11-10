@@ -227,3 +227,13 @@ test('catalog mobile filters can be cleared and chamber selection persists in UR
  assert.match(html, /q\.value='';c\.value='';cl\.value='';rv\.value=''/);
  assert.match(html, /@media\(max-width:750px\)/);
 });
+
+test('constellation board labels provisional connections and keeps selected dossier shareable', () => {
+ const html=fs.readFileSync('constellation.html','utf8');
+ assert.match(html, /Suggested text connection/);
+ assert.match(html, /id="selected-dossier"/);
+ assert.match(html, /selectedDossier\.href='\.\/record\.html\?id='/);
+ assert.match(html, /url\.searchParams\.set\('id',select\.value\)/);
+ assert.match(html, /history\.replaceState\(null,'',url\)/);
+ assert.match(html, /@media\(max-width:390px\)/);
+});
