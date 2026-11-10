@@ -264,7 +264,7 @@ test('investigation trail stores limited session history and supports reset', ()
  assert.match(html, /sessionStorage\.setItem\(trailKey,JSON\.stringify\(ids\)\)/);
  assert.match(html, /ids\.slice\(-12\)/);
  assert.match(html, /function rememberTrail\(id\)/);
- assert.match(html, /saveTrail\(\[\]\);renderTrail\(\)/);
+ assert.match(html, /saveTrail\(\[\]\);caseName\.value='';caseNotes\.value='';saveCaseMeta\(\);renderTrail\(\)/);
  assert.match(html, /constellation\.html\?id='\+encodeURIComponent\(entry\.id\)/);
 });
 
