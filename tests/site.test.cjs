@@ -291,3 +291,15 @@ test('case file import validates format size and catalog membership before resto
  assert.match(html, /saveTrail\(ids\)/);
  assert.match(html, /Import rejected:/);
 });
+
+test('named investigation cases and notes survive case file export and import', () => {
+ const html=fs.readFileSync('constellation.html','utf8');
+ assert.match(html, /id="case-name"/);
+ assert.match(html, /id="case-notes"/);
+ assert.match(html, /caseMetaKey='orbis-investigation-metadata-v1'/);
+ assert.match(html, /case_name:caseName\.value\.slice\(0,100\)/);
+ assert.match(html, /investigator_notes:caseNotes\.value\.slice\(0,5000\)/);
+ assert.match(html, /parsed\.case_name/);
+ assert.match(html, /parsed\.investigator_notes/);
+ assert.match(html, /saveCaseMeta\(\)/);
+});
