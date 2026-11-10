@@ -237,3 +237,12 @@ test('constellation board labels provisional connections and keeps selected doss
  assert.match(html, /history\.replaceState\(null,'',url\)/);
  assert.match(html, /@media\(max-width:390px\)/);
 });
+
+test('investigation board explains connection terms without claiming historical proof', () => {
+ const html=fs.readFileSync('constellation.html','utf8');
+ assert.match(html, /className='connection-reason'/);
+ assert.match(html, /Suggested because both records mention:/);
+ assert.match(html, /Automated text match — historical relationship not verified/);
+ assert.match(html, /hit\.item\.classification/);
+ assert.match(html, /hit\.overlap\.slice\(0,4\)/);
+});
