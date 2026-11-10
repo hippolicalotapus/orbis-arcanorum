@@ -34,7 +34,7 @@ test('archive manifest and catalog contain fourteen consistent chambers', () => 
   assert.equal(new Set(names).size, 14);
   assert.equal(new Set(entries.map(e => e.id)).size, entries.length);
   for (const entry of entries) assert.ok(names.includes(entry.chamber), 'unknown chamber: ' + entry.chamber);
-  assert.match(fs.readFileSync('index.html', 'utf8'), /archive-chambers\\.json/);
+  assert.match(fs.readFileSync('index.html', 'utf8'), /archive-chambers\.json/);
 });
 test('research resource catalog has valid URLs and classifications', () => {
   const data = JSON.parse(fs.readFileSync('data/archive-resources.json', 'utf8'));
