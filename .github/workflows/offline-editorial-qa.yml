@@ -1,6 +1,12 @@
 name: Offline editorial queue browser QA
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - development/offline-research-review
+    paths:
+      - 'prototypes/fourteen-seals/**'
+      - '.github/workflows/offline-editorial-qa.yml'
 permissions:
   contents: read
 jobs:
