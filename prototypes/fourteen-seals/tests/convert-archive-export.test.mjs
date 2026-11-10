@@ -38,3 +38,21 @@ test('converter rejects invalid records without writing output',()=>{
   assert.equal(existsSync(output),false);
  }finally{rmSync(dir,{recursive:true,force:true})}
 });
+
+test('translated fields are normalized and limited for safe private review',()=>{
+ const dir=mkdtempSync(join(tmpdir(),'orbis-converter-'));
+ try{
+  const input=join(dir,'input.json'),output=join(dir,'output.json');
+  writeFileSync(input,JSON.stringify({records:[
+   {title:'Original title',english_title:{unexpected:'object'},archive_section:'Alchemy & Hermeticism',description:123,english_description:['not text']},
+   {title:'Original',english_title:'English title',archive_section:'Alchemy & Hermeticism',english_description:'a'.repeat(4000)}
+  ]}));
+  const run=spawnSync(process.execPath,[script,input,mapping,output],{encoding:'utf8'});
+  assert.equal(run.status,0,run.stderr);
+  const result=JSON.parse(readFileSync(output,'utf8'));
+  assert.equal(result.records[0].title,'Original title');
+  assert.equal(result.records[0].summary,'');
+  assert.equal(result.records[1].title,'English title');
+  assert.equal(result.records[1].summary.length,3000);
+ }finally{rmSync(dir,{recursive:true,force:true})}
+});
