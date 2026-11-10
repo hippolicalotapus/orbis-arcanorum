@@ -1,0 +1,20 @@
+name: Offline editorial queue browser QA
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Playwright in temporary workspace
+        run: |
+          npm install --no-save --no-package-lock playwright@1.58.2
+          npx playwright install --with-deps chromium
+      - name: Run offline editorial queue browser tests
+        run: node --test prototypes/fourteen-seals/tests/editorial-queue.test.mjs
