@@ -45,3 +45,26 @@ test('research resource catalog has valid URLs and classifications', () => {
     assert.equal(new URL(item.url).protocol, 'https:');
   }
 });
+
+const additionalPages = ['catalog.html','vendors.html','register.html','collectors-vault.html','antiquarian-atelier.html','advertise.html','lost-histories.html'];
+for (const page of additionalPages) {
+  test(page + ' exists with basic structure and valid local links', () => {
+    const html = fs.readFileSync(page, 'utf8');
+    assert.match(html, /<!doctype html>/i);
+    assert.match(html, /<html lang="en">/i);
+    assert.match(html, /<title>/i);
+    const links = [...html.matchAll(/href="\.\/([^"#?]+)"/g)].map(x => x[1]);
+    links.forEach(link => assert.ok(fs.existsSync(link), page + ' missing link: ' + link));
+  });
+}
+test('homepage connects the five core experiences', () => {
+  const html = fs.readFileSync('index.html','utf8');
+  for (const page of ['catalog.html','vendors.html','collectors-vault.html','antiquarian-atelier.html'])
+    assert.ok(html.includes('./'+page), 'missing homepage link: '+page);
+});
+test('Atelier discloses collector edition inclusions and no active checkout', () => {
+  const html = fs.readFileSync('antiquarian-atelier.html','utf8');
+  assert.match(html, /original unretouched scan/);
+  assert.match(html, /No checkout is active/);
+  assert.match(html, /fine-art paper print/i);
+});
