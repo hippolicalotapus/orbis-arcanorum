@@ -2031,10 +2031,10 @@
     "id": "oa-198",
     "title": "The Voynich Manuscript — undeciphered text",
     "chamber": "Unverified Mysteries",
-    "classification": "Research lead",
-    "summary": "Yale-held illustrated manuscript written in an undeciphered script; competing decipherment claims require independent scrutiny.",
-    "source_url": "https://beinecke.library.yale.edu/collections/highlights/voynich-manuscript",
-    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "classification": "Documented",
+    "summary": "Beinecke MS 408, held by Yale University Library, is an illustrated manuscript in an unidentified script, associated with botanical, astronomical, bathing and pharmaceutical imagery. Yale describes a Central European origin around the late fifteenth or sixteenth century and notes that no decipherment is accepted. Proposed translations remain hypotheses.",
+    "source_url": "https://beinecke.library.yale.edu/beinecke/collections/beinecke-cipher-voynich-manuscript",
+    "source_status": "Institutional collection description directly checked 2026-11-09; manuscript pages and reproduction terms not individually audited",
     "rights": "Link only; no reproduction or translation rights assumed"
   },
   {
@@ -2151,10 +2151,10 @@
     "id": "oa-210",
     "title": "Nalanda Mahavihara — Buddhist learning centre",
     "chamber": "The Lost Histories",
-    "classification": "Research lead",
-    "summary": "Archaeological remains of the historic monastic university in Bihar; avoid claims that all manuscripts or knowledge vanished in one event.",
+    "classification": "Documented",
+    "summary": "UNESCO documents Nalanda Mahavihara in Bihar as a major Buddhist monastic and educational complex with stupas, shrines, residential monasteries and art. Its surviving archaeological remains span multiple centuries, and the institution ceased functioning in the thirteenth century. Popular accounts of a single event destroying all of its knowledge oversimplify the evidence.",
     "source_url": "https://whc.unesco.org/en/list/1502/",
-    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "source_status": "UNESCO World Heritage site record directly checked 2026-11-09; excavation and manuscript claims need item-level follow-up",
     "rights": "Link only; no reproduction or translation rights assumed"
   },
   {
@@ -2261,10 +2261,10 @@
     "id": "oa-221",
     "title": "Göbekli Tepe",
     "chamber": "Occult Locations & Archaeology",
-    "classification": "Research lead",
-    "summary": "Neolithic archaeological site in southeastern Türkiye; ceremonial interpretations remain subject to archaeological debate.",
+    "classification": "Documented",
+    "summary": "UNESCO describes Göbekli Tepe in southeastern Türkiye as a Pre-Pottery Neolithic complex of monumental structures dating roughly 9600–8200 BCE. Its carved T-shaped pillars depict animals and human-like features. Ritual and social functions are archaeological interpretations, not evidence of lost advanced technology.",
     "source_url": "https://whc.unesco.org/en/list/1572/",
-    "source_status": "Discovery reference only; exact page availability, scholarly claims and item-level sources not verified in this batch",
+    "source_status": "UNESCO World Heritage site record directly checked 2026-11-09; archaeological interpretation remains subject to research",
     "rights": "Link only; no reproduction or translation rights assumed"
   },
   {
