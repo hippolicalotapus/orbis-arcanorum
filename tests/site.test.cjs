@@ -171,3 +171,13 @@ test('mobile homepage entrance keeps text readable and reaches all chambers', ()
  const chambers=JSON.parse(fs.readFileSync('data/archive-chambers.json','utf8'));
  assert.equal(chambers.length,14);
 });
+
+test('source review filter cannot mark pending leads as verified', () => {
+ const html=fs.readFileSync('catalog.html','utf8');
+ const match=html.match(/function isSourceChecked\(status\)\{[\s\S]*?\}\s*function render\(/);
+ assert.ok(match,'source review classifier is present');
+ const classify=new Function('status',match[0].replace(/^function isSourceChecked\(status\)\{/,'').replace(/\}\s*function render\($/,''));
+ for(const pending of ['Research lead — item-level verification pending','not verified','not independently verified','source not checked','discovery lead'])assert.equal(classify(pending),false,pending);
+ for(const checked of ['Source page checked','Source reviewed','independently verified'])assert.equal(classify(checked),true,checked);
+ assert.match(html,/Verification incomplete \/ pending/);
+});
