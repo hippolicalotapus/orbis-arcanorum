@@ -216,3 +216,14 @@ test('research dossiers provide mobile readable layout and return navigation', (
  assert.match(html, /id="chamber-link"/);
  assert.match(html, /id="constellation-link"/);
 });
+
+test('catalog mobile filters can be cleared and chamber selection persists in URL', () => {
+ const html=fs.readFileSync('catalog.html','utf8');
+ assert.match(html, /id="clear-filters"/);
+ assert.match(html, /id="active-chamber"/);
+ assert.match(html, /history\.replaceState\(null,'',url\)/);
+ assert.match(html, /url\.searchParams\.set\('chamber',c\.value\)/);
+ assert.match(html, /url\.searchParams\.delete\('chamber'\)/);
+ assert.match(html, /q\.value='';c\.value='';cl\.value='';rv\.value=''/);
+ assert.match(html, /@media\(max-width:750px\)/);
+});
