@@ -1,0 +1,43 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {chromium} from 'playwright';
+import {resolve} from 'node:path';
+import {pathToFileURL} from 'node:url';
+const url=pathToFileURL(resolve('prototypes/fourteen-seals/index.html')).href;
+test('14 chambers: import, editorial quarantine, clear and observatory on mobile',async()=>{
+ const browser=await chromium.launch({headless:true});
+ try{
+  const page=await browser.newPage({viewport:{width:390,height:844}});
+  const errors=[];page.on('pageerror',e=>errors.push(e.message));
+  await page.goto(url);
+  await page.locator('#skip').click();
+  assert.equal(await page.locator('#grid .tile').count(),14);
+  const fixture={records:[
+   {title:'Synthetic alchemical text',chamber:'Alchemy & Hermeticism',summary:'A controlled test record',sources:[{url:'https://example.org/source',label:'Source'}]},
+   {title:'Synthetic legend',chamber:'Myths & Legends',summary:'Another controlled record',sources:[]}
+  ],review_required:[{title:'Withheld example',archive_section:'Indigenous Traditions & Oral Histories'}]};
+  const upload=async data=>page.locator('#archiveImport').setInputFiles({name:'synthetic.json',mimeType:'application/json',buffer:Buffer.from(typeof data==='string'?data:JSON.stringify(data))});
+  await upload(fixture);
+  assert.match(await page.locator('#importStatus').innerText(),/Loaded 2 records across 2 chambers/);
+  assert.match(await page.locator('#importStatus').innerText(),/1 records withheld/);
+  assert.equal(await page.locator('[data-record-count]').filter({hasText:'1 imported records'}).count(),2);
+  await page.locator('#grid .tile').filter({hasText:'Alchemy & Hermeticism'}).click();
+  assert.equal(await page.locator('#recordResults article').count(),1);
+  assert.equal(await page.locator('#recordResults article h4').innerText(),'Synthetic alchemical text');
+  assert.equal(await page.locator('#recordResults a').getAttribute('href'),'https://example.org/source');
+  await page.locator('#back').click();
+  await page.locator('#observatoryAccess').click();
+  assert.equal(await page.locator('#boardPins .pin').count(),14);
+  await page.locator('#boardPins .pin').first().click();
+  assert.equal(await page.locator('#boardInfo button').count(),1);
+  await page.locator('#closeObservatory').click();
+  await page.locator('#clearImport').click();
+  assert.equal(await page.locator('[data-record-count]').filter({hasText:'0 imported records'}).count(),14);
+  await upload('{broken');
+  assert.match(await page.locator('#importStatus').innerText(),/Import rejected/);
+  await upload(fixture);
+  assert.match(await page.locator('#importStatus').innerText(),/Loaded 2 records/);
+  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),true,'Mobile horizontal overflow');
+  assert.deepEqual(errors,[]);
+ }finally{await browser.close()}
+});
