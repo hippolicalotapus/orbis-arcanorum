@@ -206,3 +206,13 @@ test('research dossier offers contextual chamber and constellation navigation', 
  assert.match(html, /constellation\.html\?id=/);
  assert.match(html, /encodeURIComponent\(entry\.id\)/);
 });
+
+test('research dossiers provide mobile readable layout and return navigation', () => {
+ const html=fs.readFileSync('record.html','utf8');
+ assert.match(html, /aria-label="Breadcrumb"/);
+ assert.match(html, /id="return-catalog"/);
+ assert.match(html, /@media\(max-width:650px\)/);
+ assert.match(html, /\.related\{grid-template-columns:1fr\}/);
+ assert.match(html, /id="chamber-link"/);
+ assert.match(html, /id="constellation-link"/);
+});
