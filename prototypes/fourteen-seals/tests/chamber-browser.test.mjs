@@ -36,6 +36,18 @@ test('14 chambers: import, editorial quarantine, clear and observatory on mobile
   await page.locator('#closeObservatory').click();
   await page.locator('#clearImport').click();
   assert.equal(await page.locator('[data-record-count]').filter({hasText:'0 imported records'}).count(),14);
+  // Failed imports must never erase a previously valid private review session.
+  await upload(fixture);
+  await upload('{broken');
+  assert.match(await page.locator('#importStatus').innerText(),/Import rejected/);
+  assert.equal(await page.locator('[data-record-count]').filter({hasText:'1 imported record'}).count(),2);
+  // The renderer must treat research titles as text and reject executable links.
+  await upload({records:[{title:'<img src=x onerror=alert(1)>',chamber:'Alchemy & Hermeticism',summary:'<script>alert(1)</script>',sources:[{url:'javascript:alert(1)',label:'Unsafe'}]}]});
+  await page.locator('#grid .tile').filter({hasText:'Alchemy & Hermeticism'}).click();
+  assert.equal(await page.locator('#recordResults img').count(),0);
+  assert.equal(await page.locator('#recordResults script').count(),0);
+  assert.equal(await page.locator('#recordResults a').count(),0);
+  await page.locator('#back').click();
   await upload('{broken');
   assert.match(await page.locator('#importStatus').innerText(),/Import rejected/);
   await upload(fixture);
