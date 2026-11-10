@@ -34,6 +34,14 @@ test('offline editorial queue: imports, filters, escapes HTML, rejects unsafe UR
   await page.locator('#search').fill('alchemy');
   assert.equal(await page.locator('article').count(),1);
   await page.locator('#search').fill('');
+  await page.locator('#priority').selectOption('rights');
+  assert.equal(await page.locator('article').count(),1);
+  await page.locator('#priority').selectOption('translation');
+  assert.equal(await page.locator('article').count(),1);
+  await page.locator('#priority').selectOption('');
+  assert.equal(await page.locator('article h2').first().innerText(),'Alchemy <img src=x onerror=alert(1)>');
+  assert.equal(await page.locator('article a').first().getAttribute('href'),'https://example.org/source');
+  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth <= window.innerWidth),true,'Mobile viewport has horizontal overflow');
   await load(page,'{broken');
   assert.match(await page.locator('#status').innerText(),/Import rejected/);
   assert.equal(await page.locator('article').count(),2);
