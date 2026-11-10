@@ -2,6 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
 import {resolve} from 'node:path';
+import {mkdirSync} from 'node:fs';
 import {pathToFileURL} from 'node:url';
 const url=pathToFileURL(resolve('prototypes/fourteen-seals/index.html')).href;
 test('14 chambers: import, editorial quarantine, clear and observatory on mobile',async()=>{
@@ -21,6 +22,8 @@ test('14 chambers: import, editorial quarantine, clear and observatory on mobile
   assert.match(await page.locator('#importStatus').innerText(),/Loaded 2 records across 2 chambers/);
   assert.match(await page.locator('#importStatus').innerText(),/1 records withheld/);
   assert.equal(await page.locator('[data-record-count]').filter({hasText:'1 imported records'}).count(),2);
+  mkdirSync('test-artifacts',{recursive:true});
+  await page.screenshot({path:'test-artifacts/fourteen-chambers-mobile.png',fullPage:true});
   await page.locator('#grid .tile').filter({hasText:'Alchemy & Hermeticism'}).click();
   assert.equal(await page.locator('#recordResults article').count(),1);
   assert.equal(await page.locator('#recordResults article h4').innerText(),'Synthetic alchemical text');
