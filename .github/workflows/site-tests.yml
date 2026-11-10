@@ -1,7 +1,7 @@
 name: Static site smoke tests
 on:
   push:
-    branches: [main]
+    branches: [main, feature/vendor-directory-foundation]
   pull_request:
 jobs:
   test:
