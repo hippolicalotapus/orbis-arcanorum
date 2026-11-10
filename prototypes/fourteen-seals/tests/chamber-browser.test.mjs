@@ -48,6 +48,14 @@ test('14 chambers: import, editorial quarantine, clear and observatory on mobile
   assert.equal(await page.locator('#recordResults script').count(),0);
   assert.equal(await page.locator('#recordResults a').count(),0);
   await page.locator('#back').click();
+  // A malformed chamber must be rejected without replacing the previous valid import.
+  await upload({records:[{title:'Unmapped test',chamber:'Not A Real Chamber'}]});
+  assert.match(await page.locator('#importStatus').innerText(),/Unknown chamber/);
+  assert.equal(await page.locator('[data-record-count]').filter({hasText:'1 imported record'}).count(),1);
+  // Oversized imports are rejected and the file input resets for retries.
+  await upload(' '.repeat(5*1024*1024+1));
+  assert.match(await page.locator('#importStatus').innerText(),/exceeds 5 MB/);
+  assert.equal(await page.locator('#archiveImport').inputValue(),'');
   await upload('{broken');
   assert.match(await page.locator('#importStatus').innerText(),/Import rejected/);
   await upload(fixture);
