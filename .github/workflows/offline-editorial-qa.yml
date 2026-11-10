@@ -12,6 +12,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Run archive taxonomy and conversion regression tests
+        run: node --test prototypes/fourteen-seals/tests/chamber-mapping.test.mjs prototypes/fourteen-seals/tests/convert-archive-export.test.mjs
       - name: Install Playwright in temporary workspace
         run: |
           npm install --no-save --no-package-lock playwright@1.58.2
