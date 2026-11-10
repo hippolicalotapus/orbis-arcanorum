@@ -267,3 +267,15 @@ test('investigation trail stores limited session history and supports reset', ()
  assert.match(html, /saveTrail\(\[\]\);renderTrail\(\)/);
  assert.match(html, /constellation\.html\?id='\+encodeURIComponent\(entry\.id\)/);
 });
+
+test('case file export includes provenance and uncertainty without remote storage', () => {
+ const html=fs.readFileSync('constellation.html','utf8');
+ assert.match(html, /id="export-trail"/);
+ assert.match(html, /function exportCaseFile\(\)/);
+ assert.match(html, /orbis-arcanorum-casefile-v1/);
+ assert.match(html, /source_status:entry\.source_status/);
+ assert.match(html, /source_url:entry\.source_url/);
+ assert.match(html, /JSON\.stringify\(file,null,2\)/);
+ assert.match(html, /URL\.createObjectURL\(blob\)/);
+ assert.match(html, /Suggested links do not establish historical relationships/);
+});
