@@ -26,11 +26,15 @@ for (const page of pages) {
     assert.doesNotMatch(html, /\.innerHTML\s*=/);
   });
 }
-test('homepage includes all twelve chambers', () => {
-  const html = fs.readFileSync('index.html', 'utf8');
-  const match = html.match(/const chambers=(\[[^;]+\]);const entries=/);
-  assert.ok(match, 'chamber data missing');
-  assert.equal(JSON.parse(match[1]).length, 12);
+test('archive manifest and catalog contain fourteen consistent chambers', () => {
+  const chambers = JSON.parse(fs.readFileSync('data/archive-chambers.json', 'utf8'));
+  const entries = JSON.parse(fs.readFileSync('data/archive-catalog.json', 'utf8'));
+  assert.equal(chambers.length, 14);
+  const names = chambers.map(c => c.name);
+  assert.equal(new Set(names).size, 14);
+  assert.equal(new Set(entries.map(e => e.id)).size, entries.length);
+  for (const entry of entries) assert.ok(names.includes(entry.chamber), 'unknown chamber: ' + entry.chamber);
+  assert.match(fs.readFileSync('index.html', 'utf8'), /archive-chambers\\.json/);
 });
 test('research resource catalog has valid URLs and classifications', () => {
   const data = JSON.parse(fs.readFileSync('data/archive-resources.json', 'utf8'));
