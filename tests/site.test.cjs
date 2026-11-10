@@ -159,3 +159,15 @@ test('release gate validates navigation, scripts and external-link protections a
   for(const tag of html.match(/<a\b[^>]*target="_blank"[^>]*>/g)||[])assert.match(tag,/rel="[^"]*noopener/,page+' unsafe external link');
  }
 });
+
+test('mobile homepage entrance keeps text readable and reaches all chambers', () => {
+ const html=fs.readFileSync('index.html','utf8');
+ assert.match(html, /class="hero-content"/);
+ assert.match(html, /class="hero-action" href="#chambers"/);
+ assert.match(html, /<section id="chambers" aria-label="Research archive chambers">/);
+ assert.match(html, /\.hero-content h1\{/);
+ assert.match(html, /@media\(max-width:650px\)\{\.hero\{/);
+ assert.match(html, /\.hero:before\{display:none!important\}/);
+ const chambers=JSON.parse(fs.readFileSync('data/archive-chambers.json','utf8'));
+ assert.equal(chambers.length,14);
+});
