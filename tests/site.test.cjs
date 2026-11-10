@@ -103,3 +103,14 @@ test('Akashic catalog supports review-stage filtering without modifying source r
  assert.equal(records.length,360);
  assert.ok(records.every(r=>r.id&&r.title&&r.source_url&&r.source_status));
 });
+
+test('individual dossiers are linked and preserve source provenance', () => {
+ const page=fs.readFileSync('record.html','utf8');
+ const catalog=fs.readFileSync('catalog.html','utf8');
+ assert.match(page, /id="metadata"/);
+ assert.match(page, /Source review status/);
+ assert.match(page, /Rights and reproduction/);
+ assert.match(page, /encodeURIComponent\(item.id\)/);
+ assert.match(catalog, /record\.html\?id=/);
+ assert.match(page, /archive-catalog\.json/);
+});
