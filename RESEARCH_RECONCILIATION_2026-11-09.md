@@ -37,3 +37,13 @@ Prior project discussions mention these assets and leads. Their presence in the 
 3. Preserve `source_status`, `rights`, original citations, and language information in future migrations.
 4. Next: locate historical branch files and external draft exports, compare by ID + normalized title + source URL, and create an additive review queue for genuinely missing records.
 5. Next: independent backup/export with a tested restore procedure; GitHub history alone is not an off-platform backup.
+
+
+## Recovery verification update — 2026-11-10
+**Previously discussed materials found in live systems:**
+- GitHub `main/archives/research-leads.json`: **26 records** confirmed; blob `0f850cc78347ba0bf3be7afe14a3912f1927616f`. This historical file was not listed in the current development-branch tree, so it must be compared before any import.
+- GitHub `main/archives/index.html`: historical archive index confirmed present (6,854 UTF-8 characters). Eight displayed source cards previously reported; card count not independently parsed in this audit.
+- Supabase project `orbis-arcanorum` (read-only count check): `public.archive_resources` **91 rows**, `orbis_internal.source_leads` **5 rows**, `orbis_internal.work_register` **15 rows**. These are separate datasets; **do not add counts together** as unique research items without cross-matching.
+- GitHub development branch: **360** catalog entries, **13** independent source leads, **10** archive resources.
+
+**Outstanding:** Compare 26 historical leads and 91 Supabase archive rows with 360 GitHub catalog entries using stable IDs, source URLs and normalized titles; preserve unpublished/draft states and private access controls. Do not expose private Supabase records or merge blindly. Independent off-platform backup and restore test remain pending.
