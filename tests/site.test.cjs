@@ -255,3 +255,15 @@ test('investigation trails can continue from any suggested connection', () => {
  assert.match(html, /wrap\.append\(item,trailLink\(hit\.item\)\)/);
  assert.match(html, /className='connection-card'/);
 });
+
+test('investigation trail stores limited session history and supports reset', () => {
+ const html=fs.readFileSync('constellation.html','utf8');
+ assert.match(html, /id="trail-steps"/);
+ assert.match(html, /id="clear-trail"/);
+ assert.match(html, /sessionStorage\.getItem\(trailKey\)/);
+ assert.match(html, /sessionStorage\.setItem\(trailKey,JSON\.stringify\(ids\)\)/);
+ assert.match(html, /ids\.slice\(-12\)/);
+ assert.match(html, /function rememberTrail\(id\)/);
+ assert.match(html, /saveTrail\(\[\]\);renderTrail\(\)/);
+ assert.match(html, /constellation\.html\?id='\+encodeURIComponent\(entry\.id\)/);
+});
