@@ -181,3 +181,18 @@ test('source review filter cannot mark pending leads as verified', () => {
  for(const checked of ['Source page checked','Source reviewed','independently verified'])assert.equal(classify(checked),true,checked);
  assert.match(html,/Verification incomplete \/ pending/);
 });
+
+test('all chambers link to their filtered catalog and homepage records link to dossiers', () => {
+ const home=fs.readFileSync('index.html','utf8');
+ const catalog=fs.readFileSync('catalog.html','utf8');
+ assert.match(home, /catalog\.html\?chamber=/);
+ assert.match(home, /encodeURIComponent\(name\)/);
+ assert.match(home, /record\.html\?id=/);
+ assert.match(home, /encodeURIComponent\(x\.id\)/);
+ assert.match(catalog, /URLSearchParams\(location\.search\)\.get\('chamber'\)/);
+ const chambers=JSON.parse(fs.readFileSync('data/archive-chambers.json','utf8'));
+ const records=JSON.parse(fs.readFileSync('data/archive-catalog.json','utf8'));
+ assert.equal(chambers.length,14);
+ assert.equal(records.length,360);
+ for(const chamber of chambers)assert.ok(records.some(x=>x.chamber===chamber.name),'missing records for '+chamber.name);
+});
