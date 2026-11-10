@@ -144,3 +144,18 @@ test('constellation mobile layout and full catalog selection remain usable', () 
  const records=JSON.parse(fs.readFileSync('data/archive-catalog.json','utf8'));
  assert.equal(records.length,360);
 });
+
+test('release gate validates navigation, scripts and external-link protections across public pages', () => {
+ const pages=['index.html','orders.html','catalog.html','record.html','constellation.html','vendors.html','register.html','collectors-vault.html','antiquarian-atelier.html','advertise.html','lost-histories.html'];
+ for(const page of pages){
+  const html=fs.readFileSync(page,'utf8');
+  assert.match(html, /<html lang="en">/i,page+' missing language');
+  assert.match(html, /<meta name="viewport"/i,page+' missing viewport');
+  for(const [,path] of html.matchAll(/href="\.\/([^"#?]+)(?:[?#][^"]*)?"/g))assert.ok(fs.existsSync(path),page+' broken local link: '+path);
+  for(const [,script] of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)){
+   if(/<script[^>]*type="module"/.test(html)&&page==='register.html')continue;
+   new vm.Script(script,{filename:page});
+  }
+  for(const tag of html.match(/<a\b[^>]*target="_blank"[^>]*>/g)||[])assert.match(tag,/rel="[^"]*noopener/,page+' unsafe external link');
+ }
+});
