@@ -20,3 +20,11 @@ jobs:
           npx playwright install --with-deps chromium
       - name: Run offline editorial queue browser tests
         run: node --test prototypes/fourteen-seals/tests/editorial-queue.test.mjs prototypes/fourteen-seals/tests/chamber-browser.test.mjs
+      - name: Preserve real browser screenshot for review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: orbis-mobile-chambers-screenshot
+          path: test-artifacts/fourteen-chambers-mobile.png
+          if-no-files-found: warn
+          retention-days: 14
