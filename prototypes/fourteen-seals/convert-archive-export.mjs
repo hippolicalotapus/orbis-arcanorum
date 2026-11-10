@@ -15,7 +15,10 @@ for(const [index,r] of records.entries()){
  const chamber=Object.hasOwn(taxonomy.mapping,r.archive_section)?taxonomy.mapping[r.archive_section]:undefined;
  if(!chamber){review.push({index:index+1,title:r.title,archive_section:r.archive_section,reason:'Unmapped: requires editorial review'});continue}
  let source=[];try{const u=new URL(r.source_url);if(['https:','http:'].includes(u.protocol))source=[{url:u.href,label:typeof r.source_name==='string'?r.source_name:'Original source'}]}catch{}
- mapped.push({title:r.english_title||r.title,chamber,summary:r.english_description||r.description||'',sources:source});
+ const title=typeof r.english_title==='string'&&r.english_title.trim()?r.english_title:r.title;
+ const summary=typeof r.english_description==='string'?r.english_description:typeof r.description==='string'?r.description:'';
+ if(!title.trim())throw Error('Empty title in record '+(index+1));
+ mapped.push({title:title.slice(0,250),chamber,summary:summary.slice(0,3000),sources:source});
 }
 writeFileSync(outputPath,JSON.stringify({records:mapped,review_required:review,summary:{input:records.length,mapped:mapped.length,review_required:review.length}},null,2)+'\n',{flag:'wx',mode:0o600});
 console.log(JSON.stringify({input:records.length,mapped:mapped.length,review_required:review.length,output:outputPath}));
