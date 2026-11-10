@@ -78,3 +78,17 @@ test('Grand Archive hero has an original accessible image asset', () => {
  assert.match(asset, /<title/);
  assert.match(asset, /<desc/);
 });
+
+test('preserved historical archive and research leads remain accessible', () => {
+ const html=fs.readFileSync('index.html','utf8');
+ for(const path of ['archives/index.html','archives/research-leads.json','data/archive-resources.json']) {
+  assert.ok(fs.existsSync(path),'missing preserved collection: '+path);
+  assert.ok(html.includes('./'+path),'missing homepage access: '+path);
+ }
+ const historical=JSON.parse(fs.readFileSync('archives/research-leads.json','utf8'));
+ assert.equal(historical.records.length,26);
+ const catalog=JSON.parse(fs.readFileSync('data/archive-catalog.json','utf8'));
+ assert.ok(catalog.length>=360,'archive catalog shrank unexpectedly');
+ const chambers=JSON.parse(fs.readFileSync('data/archive-chambers.json','utf8'));
+ assert.equal(chambers.length,14);
+});
