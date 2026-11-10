@@ -135,3 +135,12 @@ test('constellation explorer is connected and uses source-led catalog data', () 
  assert.match(home, /constellation\.html/);
  assert.match(dossier, /constellation\.html\?id=/);
 });
+
+test('constellation mobile layout and full catalog selection remain usable', () => {
+ const html=fs.readFileSync('constellation.html','utf8');
+ assert.match(html, /position:static!important/);
+ assert.doesNotMatch(html, /\.slice\(0,120\)/);
+ assert.match(html, /@media\(max-width:700px\)/);
+ const records=JSON.parse(fs.readFileSync('data/archive-catalog.json','utf8'));
+ assert.equal(records.length,360);
+});
