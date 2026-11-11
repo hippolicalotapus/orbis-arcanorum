@@ -798,5 +798,45 @@
     "source_url": "https://discovery.nationalarchives.gov.uk/",
     "source_status": "Research lead — item-level verification pending",
     "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-081",
+    "title": "Codex Sinaiticus",
+    "chamber": "The Sacred Archives",
+    "classification": "Documented",
+    "summary": "Fourth-century Greek biblical manuscript preserved across multiple institutions; consult the project for manuscript images and scholarly descriptions.",
+    "source_url": "https://www.codexsinaiticus.org/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-082",
+    "title": "The Cairo Genizah collections",
+    "chamber": "The Sacred Archives",
+    "classification": "Documented",
+    "summary": "Documentary fragments from a historic synagogue storeroom provide evidence of religious, commercial and everyday life; individual fragments need provenance and rights review.",
+    "source_url": "https://cudl.lib.cam.ac.uk/collections/genizah",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-083",
+    "title": "Europeana digital cultural heritage collections",
+    "chamber": "The Lost Histories",
+    "classification": "Documented",
+    "summary": "European cultural heritage discovery portal linking institutional records, photographs and manuscripts; availability and licensing vary by item.",
+    "source_url": "https://www.europeana.eu/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-084",
+    "title": "Library of Congress American Memory collections",
+    "chamber": "The Lost Histories",
+    "classification": "Documented",
+    "summary": "Historic documents, images, oral histories and other primary materials useful for recovering overlooked narratives; object-level context remains essential.",
+    "source_url": "https://www.loc.gov/collections/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
   }
 ]
