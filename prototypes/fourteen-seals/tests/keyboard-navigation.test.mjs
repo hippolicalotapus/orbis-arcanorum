@@ -70,3 +70,24 @@ test('modified Escape shortcuts do not navigate away',async()=>{
   assert.equal(await page.locator('#detail').isVisible(),true);
  }finally{await browser.close()}
 });
+
+test('all fourteen chamber exits restore the corresponding atlas tile',async()=>{
+ const browser=await chromium.launch({headless:true});
+ try{
+  const page=await browser.newPage({viewport:{width:390,height:844},reducedMotion:'reduce'});
+  const errors=[];page.on('pageerror',error=>errors.push(error.message));
+  await page.goto(url);await page.locator('#skip').click();
+  const tiles=page.locator('#grid .tile');
+  assert.equal(await tiles.count(),14);
+  for(let i=0;i<14;i++){
+   await tiles.nth(i).click();
+   assert.equal(await page.locator('#detail').isVisible(),true);
+   assert.equal(await page.locator('#detailTitle').innerText(),await tiles.nth(i).locator('h3').innerText());
+   await page.locator('#detailTitle').focus();
+   await page.keyboard.press('Escape');
+   assert.equal(await page.locator('#chambers').isVisible(),true,'Atlas must be visible after chamber '+(i+1));
+   assert.equal(await tiles.nth(i).evaluate(node=>node===document.activeElement),true,'Focus must return to chamber '+(i+1));
+  }
+  assert.deepEqual(errors,[]);
+ }finally{await browser.close()}
+});
