@@ -25,3 +25,14 @@ test('curated catalog entries have unique identifiers and valid source links', (
     assert.ok(typeof record.rights === 'string' && record.rights.trim(), 'missing rights review');
   }
 });
+
+test('all fourteen archive chambers have research records and homepage navigation', () => {
+  const records = JSON.parse(fs.readFileSync('data/twelve-archives-catalog.json', 'utf8'));
+  const chambers = new Set(records.map(record => record.chamber));
+  assert.equal(chambers.size, 14, 'Expected fourteen populated archives');
+  for (const name of ['The Sacred Archives', 'The Lost Histories']) assert.ok(chambers.has(name));
+  const home = fs.readFileSync('index.html', 'utf8');
+  const catalog = fs.readFileSync('catalog.html', 'utf8');
+  for (const name of chambers) assert.ok(home.includes(name), 'Missing homepage chamber: ' + name);
+  assert.ok(catalog.includes('Fourteen Archives'));
+});
