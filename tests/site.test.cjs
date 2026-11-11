@@ -28,7 +28,7 @@ for (const page of pages) {
 }
 test('homepage includes all fourteen chambers', () => {
   const html = fs.readFileSync('index.html', 'utf8');
-  const match = html.match(/const chambers=(\[[^;]+\]);const entries=/);
+  const match = html.match(/const chambers=(\[[^;]+\]);(?:const|let) entries=/);
   assert.ok(match, 'chamber data missing');
   assert.equal(JSON.parse(match[1]).length, 14);
 });
