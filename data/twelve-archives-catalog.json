@@ -758,5 +758,45 @@
     "source_url": "https://www.britannica.com/topic/Tantrism",
     "source_status": "Research lead — individual bibliographic verification pending",
     "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-077",
+    "title": "The Dead Sea Scrolls",
+    "chamber": "The Sacred Archives",
+    "classification": "Documented",
+    "summary": "Ancient Jewish manuscript collection illuminating Second Temple religious texts and practices; interpretations of individual fragments remain scholarly questions.",
+    "source_url": "https://www.deadseascrolls.org.il/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-078",
+    "title": "Sacred texts in the British Library collections",
+    "chamber": "The Sacred Archives",
+    "classification": "Documented",
+    "summary": "Institutional collections of religious manuscripts and printed texts from multiple traditions; individual objects and reuse terms require verification.",
+    "source_url": "https://www.bl.uk/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-079",
+    "title": "UNESCO Memory of the World Register",
+    "chamber": "The Lost Histories",
+    "classification": "Documented",
+    "summary": "International register highlighting documentary heritage at risk of neglect, loss, or destruction; entries are starting points for object-level research.",
+    "source_url": "https://www.unesco.org/en/memory-world",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-080",
+    "title": "The National Archives discovery catalogue",
+    "chamber": "The Lost Histories",
+    "classification": "Documented",
+    "summary": "Searchable catalogue of historical records and archival collections, including lesser-known institutional and personal histories; not every record is digitized.",
+    "source_url": "https://discovery.nationalarchives.gov.uk/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
   }
 ]
