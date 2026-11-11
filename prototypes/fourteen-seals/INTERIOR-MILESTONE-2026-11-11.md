@@ -9,3 +9,7 @@ All original chamber names, import protections, record rendering, reviewer notes
 Local validation: 19 Node regressions passed; prototype and browser-test scripts parsed successfully. Added Playwright coverage for all fourteen guide/reveal/navigation flows, wraparound, import-tool access, all fourteen interiors at 320/390/768px and fresh viewport screenshots of the atlas, Celestial Mysteries and Grimoires & Magical Texts.
 
 Hosted QA and visual screenshot review pending at this implementation commit. Continue under the user's approved GitHub QA workflow; do not deploy. Show actual webpage screenshots directly in chat, with no requirement for the user to navigate GitHub to see them.
+
+## Verified completion
+
+GitHub run https://github.com/hippolicalotapus/orbis-arcanorum/actions/runs/42996212102 passed at commit `868e3c0983f64567be6ed6646661c427edb09033`: seven taxonomy/conversion tests and seven browser tests, zero failures or skips. The five-width atlas coverage and fourteen-interior coverage at three widths passed. Actual mobile viewport screenshots of the atlas, Celestial Mysteries and Grimoires & Magical Texts were downloaded from artifact `13844241298` and visually inspected. These are rendered webpage screenshots, not GitHub interface screenshots. Offline milestone complete; live deployment remains unapproved.
