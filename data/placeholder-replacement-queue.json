@@ -1,0 +1,1118 @@
+[
+  {
+    "id": "oa-237",
+    "title": "Ars Notoria",
+    "chamber": "Grimoires & Magical Texts",
+    "source_url": "https://archive.org/search?query=Ars%20Notoria",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-238",
+    "title": "Heptameron attributed to Pietro d'Abano",
+    "chamber": "Grimoires & Magical Texts",
+    "source_url": "https://archive.org/search?query=Heptameron%20attributed%20to%20Pietro%20d'Abano",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-239",
+    "title": "Sworn Book of Honorius",
+    "chamber": "Grimoires & Magical Texts",
+    "source_url": "https://archive.org/search?query=Sworn%20Book%20of%20Honorius",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-240",
+    "title": "Book of Abramelin",
+    "chamber": "Grimoires & Magical Texts",
+    "source_url": "https://archive.org/search?query=Book%20of%20Abramelin",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-241",
+    "title": "Arbatel of Magic",
+    "chamber": "Grimoires & Magical Texts",
+    "source_url": "https://archive.org/search?query=Arbatel%20of%20Magic",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-242",
+    "title": "The Sixth and Seventh Books of Moses",
+    "chamber": "Grimoires & Magical Texts",
+    "source_url": "https://archive.org/search?query=The%20Sixth%20and%20Seventh%20Books%20of%20Moses",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-243",
+    "title": "Grimorium Verum",
+    "chamber": "Grimoires & Magical Texts",
+    "source_url": "https://archive.org/search?query=Grimorium%20Verum",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-244",
+    "title": "Grand Grimoire",
+    "chamber": "Grimoires & Magical Texts",
+    "source_url": "https://archive.org/search?query=Grand%20Grimoire",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-245",
+    "title": "Liber Juratus manuscript witnesses",
+    "chamber": "Grimoires & Magical Texts",
+    "source_url": "https://archive.org/search?query=Liber%20Juratus%20manuscript%20witnesses",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-246",
+    "title": "Sefer Raziel HaMalakh",
+    "chamber": "Grimoires & Magical Texts",
+    "source_url": "https://archive.org/search?query=Sefer%20Raziel%20HaMalakh",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-247",
+    "title": "Shams al-Ma'arif manuscript tradition",
+    "chamber": "Grimoires & Magical Texts",
+    "source_url": "https://archive.org/search?query=Shams%20al-Ma'arif%20manuscript%20tradition",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-248",
+    "title": "Munich Manual of Demonic Magic",
+    "chamber": "Grimoires & Magical Texts",
+    "source_url": "https://archive.org/search?query=Munich%20Manual%20of%20Demonic%20Magic",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-249",
+    "title": "Hygromanteia manuscript tradition",
+    "chamber": "Grimoires & Magical Texts",
+    "source_url": "https://archive.org/search?query=Hygromanteia%20manuscript%20tradition",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-250",
+    "title": "The Black Pullet",
+    "chamber": "Grimoires & Magical Texts",
+    "source_url": "https://archive.org/search?query=The%20Black%20Pullet",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-251",
+    "title": "Book of Saint Cyprian traditions",
+    "chamber": "Grimoires & Magical Texts",
+    "source_url": "https://archive.org/search?query=Book%20of%20Saint%20Cyprian%20traditions",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-252",
+    "title": "Borley Rectory case",
+    "chamber": "Paranormal Investigations",
+    "source_url": "https://archive.org/search?query=Borley%20Rectory%20case",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-253",
+    "title": "Amityville haunting claims",
+    "chamber": "Paranormal Investigations",
+    "source_url": "https://archive.org/search?query=Amityville%20haunting%20claims",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-254",
+    "title": "Rosenheim poltergeist reports",
+    "chamber": "Paranormal Investigations",
+    "source_url": "https://archive.org/search?query=Rosenheim%20poltergeist%20reports",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-255",
+    "title": "The Scole Experiment",
+    "chamber": "Paranormal Investigations",
+    "source_url": "https://archive.org/search?query=The%20Scole%20Experiment",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-256",
+    "title": "Philip experiment in parapsychology",
+    "chamber": "Paranormal Investigations",
+    "source_url": "https://archive.org/search?query=Philip%20experiment%20in%20parapsychology",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-257",
+    "title": "Ganzfeld experiments",
+    "chamber": "Paranormal Investigations",
+    "source_url": "https://archive.org/search?query=Ganzfeld%20experiments",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-258",
+    "title": "Remote viewing Stargate Project",
+    "chamber": "Paranormal Investigations",
+    "source_url": "https://archive.org/search?query=Remote%20viewing%20Stargate%20Project",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-259",
+    "title": "Project Blue Book archival files",
+    "chamber": "Paranormal Investigations",
+    "source_url": "https://archive.org/search?query=Project%20Blue%20Book%20archival%20files",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-260",
+    "title": "Hessdalen lights observations",
+    "chamber": "Paranormal Investigations",
+    "source_url": "https://archive.org/search?query=Hessdalen%20lights%20observations",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-261",
+    "title": "The Brown Lady of Raynham Hall photograph",
+    "chamber": "Paranormal Investigations",
+    "source_url": "https://archive.org/search?query=The%20Brown%20Lady%20of%20Raynham%20Hall%20photograph",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-262",
+    "title": "The Bélmez faces claims",
+    "chamber": "Paranormal Investigations",
+    "source_url": "https://archive.org/search?query=The%20B%C3%A9lmez%20faces%20claims",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-263",
+    "title": "The Moberly–Jourdain incident",
+    "chamber": "Paranormal Investigations",
+    "source_url": "https://archive.org/search?query=The%20Moberly%E2%80%93Jourdain%20incident",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-264",
+    "title": "The Trianon ghost narrative",
+    "chamber": "Paranormal Investigations",
+    "source_url": "https://archive.org/search?query=The%20Trianon%20ghost%20narrative",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-265",
+    "title": "The Cross-Correspondences psychical research",
+    "chamber": "Paranormal Investigations",
+    "source_url": "https://archive.org/search?query=The%20Cross-Correspondences%20psychical%20research",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-266",
+    "title": "The Society for Psychical Research Census of Hallucinations",
+    "chamber": "Paranormal Investigations",
+    "source_url": "https://archive.org/search?query=The%20Society%20for%20Psychical%20Research%20Census%20of%20Hallucinations",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-267",
+    "title": "The Mary Celeste abandonment",
+    "chamber": "Unverified Mysteries",
+    "source_url": "https://archive.org/search?query=The%20Mary%20Celeste%20abandonment",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-268",
+    "title": "The Flannan Isles lighthouse disappearance",
+    "chamber": "Unverified Mysteries",
+    "source_url": "https://archive.org/search?query=The%20Flannan%20Isles%20lighthouse%20disappearance",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-269",
+    "title": "The Dyatlov Pass incident",
+    "chamber": "Unverified Mysteries",
+    "source_url": "https://archive.org/search?query=The%20Dyatlov%20Pass%20incident",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-270",
+    "title": "The Tunguska event interpretations",
+    "chamber": "Unverified Mysteries",
+    "source_url": "https://archive.org/search?query=The%20Tunguska%20event%20interpretations",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-271",
+    "title": "The Wow! signal",
+    "chamber": "Unverified Mysteries",
+    "source_url": "https://archive.org/search?query=The%20Wow!%20signal",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-272",
+    "title": "The Hessdalen lights mystery",
+    "chamber": "Unverified Mysteries",
+    "source_url": "https://archive.org/search?query=The%20Hessdalen%20lights%20mystery",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-273",
+    "title": "The Antikythera mechanism lost-technology claims",
+    "chamber": "Unverified Mysteries",
+    "source_url": "https://archive.org/search?query=The%20Antikythera%20mechanism%20lost-technology%20claims",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-274",
+    "title": "The Phaistos Disc undeciphered signs",
+    "chamber": "Unverified Mysteries",
+    "source_url": "https://archive.org/search?query=The%20Phaistos%20Disc%20undeciphered%20signs",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-275",
+    "title": "The Rongorongo script of Rapa Nui",
+    "chamber": "Unverified Mysteries",
+    "source_url": "https://archive.org/search?query=The%20Rongorongo%20script%20of%20Rapa%20Nui",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-276",
+    "title": "The Nazca Lines speculative claims",
+    "chamber": "Unverified Mysteries",
+    "source_url": "https://archive.org/search?query=The%20Nazca%20Lines%20speculative%20claims",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-277",
+    "title": "The Bermuda Triangle narrative",
+    "chamber": "Unverified Mysteries",
+    "source_url": "https://archive.org/search?query=The%20Bermuda%20Triangle%20narrative",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-278",
+    "title": "The Princes in the Tower",
+    "chamber": "Unverified Mysteries",
+    "source_url": "https://archive.org/search?query=The%20Princes%20in%20the%20Tower",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-279",
+    "title": "The Somerton Man case",
+    "chamber": "Unverified Mysteries",
+    "source_url": "https://archive.org/search?query=The%20Somerton%20Man%20case",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-280",
+    "title": "The Lead Masks Case",
+    "chamber": "Unverified Mysteries",
+    "source_url": "https://archive.org/search?query=The%20Lead%20Masks%20Case",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-281",
+    "title": "The Devil's Footprints of 1855",
+    "chamber": "Unverified Mysteries",
+    "source_url": "https://archive.org/search?query=The%20Devil's%20Footprints%20of%201855",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-282",
+    "title": "The Taos Hum reports",
+    "chamber": "Unverified Mysteries",
+    "source_url": "https://archive.org/search?query=The%20Taos%20Hum%20reports",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-283",
+    "title": "Malleus Maleficarum historical reception",
+    "chamber": "Witchcraft & Folk Magic",
+    "source_url": "https://archive.org/search?query=Malleus%20Maleficarum%20historical%20reception",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-284",
+    "title": "Witch trials in Salem",
+    "chamber": "Witchcraft & Folk Magic",
+    "source_url": "https://archive.org/search?query=Witch%20trials%20in%20Salem",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-285",
+    "title": "Basque witch trials of 1609–1614",
+    "chamber": "Witchcraft & Folk Magic",
+    "source_url": "https://archive.org/search?query=Basque%20witch%20trials%20of%201609%E2%80%931614",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-286",
+    "title": "Witch trials in Würzburg",
+    "chamber": "Witchcraft & Folk Magic",
+    "source_url": "https://archive.org/search?query=Witch%20trials%20in%20W%C3%BCrzburg",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-287",
+    "title": "Witch trials in Bamberg",
+    "chamber": "Witchcraft & Folk Magic",
+    "source_url": "https://archive.org/search?query=Witch%20trials%20in%20Bamberg",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-288",
+    "title": "Isobel Gowdie trial testimony",
+    "chamber": "Witchcraft & Folk Magic",
+    "source_url": "https://archive.org/search?query=Isobel%20Gowdie%20trial%20testimony",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-289",
+    "title": "Cunning folk in early modern England",
+    "chamber": "Witchcraft & Folk Magic",
+    "source_url": "https://archive.org/search?query=Cunning%20folk%20in%20early%20modern%20England",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-290",
+    "title": "English witch bottles archaeological evidence",
+    "chamber": "Witchcraft & Folk Magic",
+    "source_url": "https://archive.org/search?query=English%20witch%20bottles%20archaeological%20evidence",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-291",
+    "title": "Cornish pellar traditions",
+    "chamber": "Witchcraft & Folk Magic",
+    "source_url": "https://archive.org/search?query=Cornish%20pellar%20traditions",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-292",
+    "title": "Finnish tietäjä traditions",
+    "chamber": "Witchcraft & Folk Magic",
+    "source_url": "https://archive.org/search?query=Finnish%20tiet%C3%A4j%C3%A4%20traditions",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-293",
+    "title": "Sámi noaidi historical sources",
+    "chamber": "Witchcraft & Folk Magic",
+    "source_url": "https://archive.org/search?query=S%C3%A1mi%20noaidi%20historical%20sources",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-294",
+    "title": "Romanian descântec charm traditions",
+    "chamber": "Witchcraft & Folk Magic",
+    "source_url": "https://archive.org/search?query=Romanian%20desc%C3%A2ntec%20charm%20traditions",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-295",
+    "title": "Greek evil eye apotropaic customs",
+    "chamber": "Witchcraft & Folk Magic",
+    "source_url": "https://archive.org/search?query=Greek%20evil%20eye%20apotropaic%20customs",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-296",
+    "title": "Slavic zagovory verbal charms",
+    "chamber": "Witchcraft & Folk Magic",
+    "source_url": "https://archive.org/search?query=Slavic%20zagovory%20verbal%20charms",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-297",
+    "title": "Theban alphabet historical use",
+    "chamber": "Mystical Symbols & Languages",
+    "source_url": "https://archive.org/search?query=Theban%20alphabet%20historical%20use",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-298",
+    "title": "Malachim alphabet",
+    "chamber": "Mystical Symbols & Languages",
+    "source_url": "https://archive.org/search?query=Malachim%20alphabet",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-299",
+    "title": "Celestial alphabet in Agrippa",
+    "chamber": "Mystical Symbols & Languages",
+    "source_url": "https://archive.org/search?query=Celestial%20alphabet%20in%20Agrippa",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-300",
+    "title": "Sigillum Dei Aemeth manuscript tradition",
+    "chamber": "Mystical Symbols & Languages",
+    "source_url": "https://archive.org/search?query=Sigillum%20Dei%20Aemeth%20manuscript%20tradition",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-301",
+    "title": "Seal of Solomon iconography",
+    "chamber": "Mystical Symbols & Languages",
+    "source_url": "https://archive.org/search?query=Seal%20of%20Solomon%20iconography",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-302",
+    "title": "Pentagram in medieval manuscripts",
+    "chamber": "Mystical Symbols & Languages",
+    "source_url": "https://archive.org/search?query=Pentagram%20in%20medieval%20manuscripts",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-303",
+    "title": "Hexagram in historical religious art",
+    "chamber": "Mystical Symbols & Languages",
+    "source_url": "https://archive.org/search?query=Hexagram%20in%20historical%20religious%20art",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-304",
+    "title": "Egyptian hieroglyphs and modern esoteric readings",
+    "chamber": "Mystical Symbols & Languages",
+    "source_url": "https://archive.org/search?query=Egyptian%20hieroglyphs%20and%20modern%20esoteric%20readings",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-305",
+    "title": "Coptic magical characteres",
+    "chamber": "Mystical Symbols & Languages",
+    "source_url": "https://archive.org/search?query=Coptic%20magical%20characteres",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-306",
+    "title": "Greek magical voces magicae",
+    "chamber": "Mystical Symbols & Languages",
+    "source_url": "https://archive.org/search?query=Greek%20magical%20voces%20magicae",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-307",
+    "title": "Sator Square inscriptions",
+    "chamber": "Mystical Symbols & Languages",
+    "source_url": "https://archive.org/search?query=Sator%20Square%20inscriptions",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-308",
+    "title": "Abraxas on engraved gems",
+    "chamber": "Mystical Symbols & Languages",
+    "source_url": "https://archive.org/search?query=Abraxas%20on%20engraved%20gems",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-309",
+    "title": "Mithraic tauroctony iconography",
+    "chamber": "Mystical Symbols & Languages",
+    "source_url": "https://archive.org/search?query=Mithraic%20tauroctony%20iconography",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-310",
+    "title": "Alchemical ouroboros traditions",
+    "chamber": "Mystical Symbols & Languages",
+    "source_url": "https://archive.org/search?query=Alchemical%20ouroboros%20traditions",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-311",
+    "title": "Book of Soyga manuscript witnesses",
+    "chamber": "Rare Manuscripts & Artifacts",
+    "source_url": "https://archive.org/search?query=Book%20of%20Soyga%20manuscript%20witnesses",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-312",
+    "title": "Rohonc Codex",
+    "chamber": "Rare Manuscripts & Artifacts",
+    "source_url": "https://archive.org/search?query=Rohonc%20Codex",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-313",
+    "title": "Sibiu Manuscript rocket illustrations",
+    "chamber": "Rare Manuscripts & Artifacts",
+    "source_url": "https://archive.org/search?query=Sibiu%20Manuscript%20rocket%20illustrations",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-314",
+    "title": "Codex Seraphinianus copyright-controlled work",
+    "chamber": "Rare Manuscripts & Artifacts",
+    "source_url": "https://archive.org/search?query=Codex%20Seraphinianus%20copyright-controlled%20work",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-315",
+    "title": "Maya Madrid Codex",
+    "chamber": "Rare Manuscripts & Artifacts",
+    "source_url": "https://archive.org/search?query=Maya%20Madrid%20Codex",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-316",
+    "title": "Maya Paris Codex",
+    "chamber": "Rare Manuscripts & Artifacts",
+    "source_url": "https://archive.org/search?query=Maya%20Paris%20Codex",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-317",
+    "title": "Grolier Maya Codex authenticity history",
+    "chamber": "Rare Manuscripts & Artifacts",
+    "source_url": "https://archive.org/search?query=Grolier%20Maya%20Codex%20authenticity%20history",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-318",
+    "title": "Dunhuang manuscripts",
+    "chamber": "Rare Manuscripts & Artifacts",
+    "source_url": "https://archive.org/search?query=Dunhuang%20manuscripts",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-319",
+    "title": "Nag Hammadi codices",
+    "chamber": "Rare Manuscripts & Artifacts",
+    "source_url": "https://archive.org/search?query=Nag%20Hammadi%20codices",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-320",
+    "title": "Oxyrhynchus papyri",
+    "chamber": "Rare Manuscripts & Artifacts",
+    "source_url": "https://archive.org/search?query=Oxyrhynchus%20papyri",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-321",
+    "title": "Magical papyri in the British Library",
+    "chamber": "Rare Manuscripts & Artifacts",
+    "source_url": "https://archive.org/search?query=Magical%20papyri%20in%20the%20British%20Library",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-322",
+    "title": "Stonehenge prehistoric monument",
+    "chamber": "Occult Locations & Archaeology",
+    "source_url": "https://archive.org/search?query=Stonehenge%20prehistoric%20monument",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-323",
+    "title": "Avebury stone circle",
+    "chamber": "Occult Locations & Archaeology",
+    "source_url": "https://archive.org/search?query=Avebury%20stone%20circle",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-324",
+    "title": "Carnac standing stones",
+    "chamber": "Occult Locations & Archaeology",
+    "source_url": "https://archive.org/search?query=Carnac%20standing%20stones",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-325",
+    "title": "Ħal Saflieni Hypogeum",
+    "chamber": "Occult Locations & Archaeology",
+    "source_url": "https://archive.org/search?query=%C4%A6al%20Saflieni%20Hypogeum",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-326",
+    "title": "Mnajdra temple complex",
+    "chamber": "Occult Locations & Archaeology",
+    "source_url": "https://archive.org/search?query=Mnajdra%20temple%20complex",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-327",
+    "title": "Ġgantija temples",
+    "chamber": "Occult Locations & Archaeology",
+    "source_url": "https://archive.org/search?query=%C4%A0gantija%20temples",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-328",
+    "title": "Oracle of Dodona",
+    "chamber": "Occult Locations & Archaeology",
+    "source_url": "https://archive.org/search?query=Oracle%20of%20Dodona",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-329",
+    "title": "Eleusis sanctuary archaeological remains",
+    "chamber": "Occult Locations & Archaeology",
+    "source_url": "https://archive.org/search?query=Eleusis%20sanctuary%20archaeological%20remains",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-330",
+    "title": "Mithraeum beneath San Clemente Rome",
+    "chamber": "Occult Locations & Archaeology",
+    "source_url": "https://archive.org/search?query=Mithraeum%20beneath%20San%20Clemente%20Rome",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-331",
+    "title": "Chichén Itzá sacred cenote",
+    "chamber": "Occult Locations & Archaeology",
+    "source_url": "https://archive.org/search?query=Chich%C3%A9n%20Itz%C3%A1%20sacred%20cenote",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-332",
+    "title": "Teotihuacan Avenue of the Dead",
+    "chamber": "Occult Locations & Archaeology",
+    "source_url": "https://archive.org/search?query=Teotihuacan%20Avenue%20of%20the%20Dead",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-333",
+    "title": "Poverty Point earthworks",
+    "chamber": "Occult Locations & Archaeology",
+    "source_url": "https://archive.org/search?query=Poverty%20Point%20earthworks",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-334",
+    "title": "Megalithic temples of Tarxien",
+    "chamber": "Occult Locations & Archaeology",
+    "source_url": "https://archive.org/search?query=Megalithic%20temples%20of%20Tarxien",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-335",
+    "title": "Destruction of the Library of Alexandria debates",
+    "chamber": "The Lost Histories",
+    "source_url": "https://archive.org/search?query=Destruction%20of%20the%20Library%20of%20Alexandria%20debates",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-336",
+    "title": "Serapeum of Alexandria historical sources",
+    "chamber": "The Lost Histories",
+    "source_url": "https://archive.org/search?query=Serapeum%20of%20Alexandria%20historical%20sources",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-337",
+    "title": "Herculaneum papyri recovery",
+    "chamber": "The Lost Histories",
+    "source_url": "https://archive.org/search?query=Herculaneum%20papyri%20recovery",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-338",
+    "title": "Palimpsests of Saint Catherine's Monastery",
+    "chamber": "The Lost Histories",
+    "source_url": "https://archive.org/search?query=Palimpsests%20of%20Saint%20Catherine's%20Monastery",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-339",
+    "title": "Archimedes Palimpsest recovery",
+    "chamber": "The Lost Histories",
+    "source_url": "https://archive.org/search?query=Archimedes%20Palimpsest%20recovery",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-340",
+    "title": "Bamiyan Buddhist manuscript finds",
+    "chamber": "The Lost Histories",
+    "source_url": "https://archive.org/search?query=Bamiyan%20Buddhist%20manuscript%20finds",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-341",
+    "title": "Khara-Khoto manuscripts",
+    "chamber": "The Lost Histories",
+    "source_url": "https://archive.org/search?query=Khara-Khoto%20manuscripts",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-342",
+    "title": "Turfan manuscript collections",
+    "chamber": "The Lost Histories",
+    "source_url": "https://archive.org/search?query=Turfan%20manuscript%20collections",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-343",
+    "title": "Dead Sea Scrolls discovery and conservation",
+    "chamber": "The Lost Histories",
+    "source_url": "https://archive.org/search?query=Dead%20Sea%20Scrolls%20discovery%20and%20conservation",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-344",
+    "title": "Dunhuang Library Cave history",
+    "chamber": "The Lost Histories",
+    "source_url": "https://archive.org/search?query=Dunhuang%20Library%20Cave%20history",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-345",
+    "title": "Maya codices colonial destruction",
+    "chamber": "The Lost Histories",
+    "source_url": "https://archive.org/search?query=Maya%20codices%20colonial%20destruction",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-346",
+    "title": "Indus script decipherment debates",
+    "chamber": "The Lost Histories",
+    "source_url": "https://archive.org/search?query=Indus%20script%20decipherment%20debates",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-347",
+    "title": "Linear A undeciphered documents",
+    "chamber": "The Lost Histories",
+    "source_url": "https://archive.org/search?query=Linear%20A%20undeciphered%20documents",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-348",
+    "title": "Ancient Egyptian Amarna letters",
+    "chamber": "The Lost Histories",
+    "source_url": "https://archive.org/search?query=Ancient%20Egyptian%20Amarna%20letters",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-349",
+    "title": "Ebla palace archive",
+    "chamber": "The Lost Histories",
+    "source_url": "https://archive.org/search?query=Ebla%20palace%20archive",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-350",
+    "title": "Pali Canon manuscript traditions",
+    "chamber": "Sacred Archives",
+    "source_url": "https://archive.org/search?query=Pali%20Canon%20manuscript%20traditions",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-351",
+    "title": "Kangyur Tibetan Buddhist canon",
+    "chamber": "Sacred Archives",
+    "source_url": "https://archive.org/search?query=Kangyur%20Tibetan%20Buddhist%20canon",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-352",
+    "title": "Tengyur Tibetan Buddhist commentaries",
+    "chamber": "Sacred Archives",
+    "source_url": "https://archive.org/search?query=Tengyur%20Tibetan%20Buddhist%20commentaries",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-353",
+    "title": "Samaritan Pentateuch manuscript tradition",
+    "chamber": "Sacred Archives",
+    "source_url": "https://archive.org/search?query=Samaritan%20Pentateuch%20manuscript%20tradition",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-354",
+    "title": "Gospel of Thomas Nag Hammadi text",
+    "chamber": "Sacred Archives",
+    "source_url": "https://archive.org/search?query=Gospel%20of%20Thomas%20Nag%20Hammadi%20text",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-355",
+    "title": "Coptic Gospel of Judas manuscript",
+    "chamber": "Sacred Archives",
+    "source_url": "https://archive.org/search?query=Coptic%20Gospel%20of%20Judas%20manuscript",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-356",
+    "title": "Sikh Dasam Granth textual history",
+    "chamber": "Sacred Archives",
+    "source_url": "https://archive.org/search?query=Sikh%20Dasam%20Granth%20textual%20history",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-357",
+    "title": "Baha'i Kitáb-i-Aqdas translations",
+    "chamber": "Sacred Archives",
+    "source_url": "https://archive.org/search?query=Baha'i%20Kit%C3%A1b-i-Aqdas%20translations",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-358",
+    "title": "Yezidi Qewl oral hymns",
+    "chamber": "Sacred Archives",
+    "source_url": "https://archive.org/search?query=Yezidi%20Qewl%20oral%20hymns",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-359",
+    "title": "Oromo Waaqeffanna living traditions",
+    "chamber": "Sacred Archives",
+    "source_url": "https://archive.org/search?query=Oromo%20Waaqeffanna%20living%20traditions",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  },
+  {
+    "id": "oa-360",
+    "title": "Ifá divination literary corpus",
+    "chamber": "Sacred Archives",
+    "source_url": "https://archive.org/search?query=If%C3%A1%20divination%20literary%20corpus",
+    "review_state": "needs_specific_source",
+    "priority": "replace_placeholder",
+    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+  }
+]
