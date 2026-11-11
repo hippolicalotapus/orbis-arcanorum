@@ -93,7 +93,10 @@ test('every chamber plays its own themed opening sequence',async()=>{
   for(let i=0;i<14;i++){
    await page.locator('#grid .tile').nth(i).click();
    await page.locator('#chamberImage').evaluate(img=>img.decode());
+   await page.locator('#mechanism').scrollIntoViewIfNeeded();
+   await page.waitForFunction(()=>document.querySelector('#mechanism').classList.contains('scene-visible'));
    await page.locator('#reveal').click();
+   assert.equal(await page.locator('#mechanism').evaluate(node=>node.classList.contains('scene-visible')),true,'Revealing a chamber must preserve its visible atmosphere state');
    await page.waitForFunction(()=>Number(getComputedStyle(document.querySelector('.opening-fx')).opacity)>.1);
    const animations=await page.locator('.opening-fx *').evaluateAll(nodes=>nodes.map(node=>getComputedStyle(node).animationName).filter(name=>name!=='none'));
    assert.ok(animations.length>0,`Chamber ${i+1} has no themed animation`);
