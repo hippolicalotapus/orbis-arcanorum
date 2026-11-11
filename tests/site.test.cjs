@@ -26,11 +26,11 @@ for (const page of pages) {
     assert.doesNotMatch(html, /\.innerHTML\s*=/);
   });
 }
-test('homepage includes all twelve chambers', () => {
+test('homepage includes all fourteen chambers', () => {
   const html = fs.readFileSync('index.html', 'utf8');
   const match = html.match(/const chambers=(\[[^;]+\]);const entries=/);
   assert.ok(match, 'chamber data missing');
-  assert.equal(JSON.parse(match[1]).length, 12);
+  assert.equal(JSON.parse(match[1]).length, 14);
 });
 test('research resource catalog has valid URLs and classifications', () => {
   const data = JSON.parse(fs.readFileSync('data/archive-resources.json', 'utf8'));
