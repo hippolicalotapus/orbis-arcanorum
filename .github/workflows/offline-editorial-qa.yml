@@ -25,7 +25,7 @@ jobs:
           npm install --no-save --no-package-lock playwright@1.58.2
           npx playwright install --with-deps chromium
       - name: Run offline editorial queue browser tests
-        run: node --test prototypes/fourteen-seals/tests/editorial-queue.test.mjs prototypes/fourteen-seals/tests/chamber-browser.test.mjs prototypes/fourteen-seals/tests/portal-navigation.test.mjs prototypes/fourteen-seals/tests/fantasy-portals.test.mjs
+        run: node --test prototypes/fourteen-seals/tests/editorial-queue.test.mjs prototypes/fourteen-seals/tests/chamber-browser.test.mjs prototypes/fourteen-seals/tests/portal-navigation.test.mjs prototypes/fourteen-seals/tests/fantasy-portals.test.mjs prototypes/fourteen-seals/tests/chamber-journey.test.mjs
       - name: Preserve real browser screenshot for review
         if: always()
         uses: actions/upload-artifact@v4

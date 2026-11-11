@@ -98,6 +98,8 @@ test('chamber interiors cycle through fourteen guides, wrap, reveal and return t
   assert.equal(await page.locator('#grid .tile').nth(13).evaluate(node=>node===document.activeElement),true);
   await page.locator('#grid .tile').nth(7).click();
   assert.match(await page.locator('#recordResults').innerText(),/does not query the live archive/);
+  await page.locator('#reveal').click();
+  await page.locator('#enterReadingRoom').click();
   await page.locator('#recordResults button').click();
   assert.equal(await page.locator('#archiveImport').evaluate(node=>node===document.activeElement),true);
   assert.equal(await page.locator('#chambers').isVisible(),true);
