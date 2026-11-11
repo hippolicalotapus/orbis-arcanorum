@@ -193,7 +193,7 @@ $("observatoryAccess").onclick=()=>{$("observatory").classList.remove("hidden");
 document.addEventListener("keydown",event=>{
  if(event.key!=="Escape"||event.defaultPrevented||event.altKey||event.ctrlKey||event.metaKey||event.shiftKey)return;
  const active=document.activeElement;
- if(active?.closest?.('[role="dialog"],[aria-modal="true"]'))return;
+ if(active?.closest?.('[role="dialog"],[aria-modal="true"],[contenteditable="true"],textarea,input,select'))return;
  if(!$("observatory").classList.contains("hidden")){
   event.preventDefault();$("closeObservatory").click();return;
  }
