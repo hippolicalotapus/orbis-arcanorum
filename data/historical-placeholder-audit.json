@@ -1,0 +1,753 @@
+{
+  "source_commit": "5ab1441a8e8b34f1eddb48f9e586af13ae415d29",
+  "total_historical_entries": 360,
+  "template_placeholders": 124,
+  "generic_archive_org_search_links": 135,
+  "review_status": "Not approved for publication; preserve original catalog until verified replacements are ready",
+  "flagged_entries": [
+    {
+      "id": "oa-237",
+      "title": "Ars Notoria",
+      "chamber": "Grimoires & Magical Texts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-238",
+      "title": "Heptameron attributed to Pietro d'Abano",
+      "chamber": "Grimoires & Magical Texts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-239",
+      "title": "Sworn Book of Honorius",
+      "chamber": "Grimoires & Magical Texts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-240",
+      "title": "Book of Abramelin",
+      "chamber": "Grimoires & Magical Texts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-241",
+      "title": "Arbatel of Magic",
+      "chamber": "Grimoires & Magical Texts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-242",
+      "title": "The Sixth and Seventh Books of Moses",
+      "chamber": "Grimoires & Magical Texts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-243",
+      "title": "Grimorium Verum",
+      "chamber": "Grimoires & Magical Texts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-244",
+      "title": "Grand Grimoire",
+      "chamber": "Grimoires & Magical Texts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-245",
+      "title": "Liber Juratus manuscript witnesses",
+      "chamber": "Grimoires & Magical Texts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-246",
+      "title": "Sefer Raziel HaMalakh",
+      "chamber": "Grimoires & Magical Texts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-247",
+      "title": "Shams al-Ma'arif manuscript tradition",
+      "chamber": "Grimoires & Magical Texts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-248",
+      "title": "Munich Manual of Demonic Magic",
+      "chamber": "Grimoires & Magical Texts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-249",
+      "title": "Hygromanteia manuscript tradition",
+      "chamber": "Grimoires & Magical Texts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-250",
+      "title": "The Black Pullet",
+      "chamber": "Grimoires & Magical Texts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-251",
+      "title": "Book of Saint Cyprian traditions",
+      "chamber": "Grimoires & Magical Texts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-252",
+      "title": "Borley Rectory case",
+      "chamber": "Paranormal Investigations",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-253",
+      "title": "Amityville haunting claims",
+      "chamber": "Paranormal Investigations",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-254",
+      "title": "Rosenheim poltergeist reports",
+      "chamber": "Paranormal Investigations",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-255",
+      "title": "The Scole Experiment",
+      "chamber": "Paranormal Investigations",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-256",
+      "title": "Philip experiment in parapsychology",
+      "chamber": "Paranormal Investigations",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-257",
+      "title": "Ganzfeld experiments",
+      "chamber": "Paranormal Investigations",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-258",
+      "title": "Remote viewing Stargate Project",
+      "chamber": "Paranormal Investigations",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-259",
+      "title": "Project Blue Book archival files",
+      "chamber": "Paranormal Investigations",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-260",
+      "title": "Hessdalen lights observations",
+      "chamber": "Paranormal Investigations",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-261",
+      "title": "The Brown Lady of Raynham Hall photograph",
+      "chamber": "Paranormal Investigations",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-262",
+      "title": "The Bélmez faces claims",
+      "chamber": "Paranormal Investigations",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-263",
+      "title": "The Moberly–Jourdain incident",
+      "chamber": "Paranormal Investigations",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-264",
+      "title": "The Trianon ghost narrative",
+      "chamber": "Paranormal Investigations",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-265",
+      "title": "The Cross-Correspondences psychical research",
+      "chamber": "Paranormal Investigations",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-266",
+      "title": "The Society for Psychical Research Census of Hallucinations",
+      "chamber": "Paranormal Investigations",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-267",
+      "title": "The Mary Celeste abandonment",
+      "chamber": "Unverified Mysteries",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-268",
+      "title": "The Flannan Isles lighthouse disappearance",
+      "chamber": "Unverified Mysteries",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-269",
+      "title": "The Dyatlov Pass incident",
+      "chamber": "Unverified Mysteries",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-270",
+      "title": "The Tunguska event interpretations",
+      "chamber": "Unverified Mysteries",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-271",
+      "title": "The Wow! signal",
+      "chamber": "Unverified Mysteries",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-272",
+      "title": "The Hessdalen lights mystery",
+      "chamber": "Unverified Mysteries",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-273",
+      "title": "The Antikythera mechanism lost-technology claims",
+      "chamber": "Unverified Mysteries",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-274",
+      "title": "The Phaistos Disc undeciphered signs",
+      "chamber": "Unverified Mysteries",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-275",
+      "title": "The Rongorongo script of Rapa Nui",
+      "chamber": "Unverified Mysteries",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-276",
+      "title": "The Nazca Lines speculative claims",
+      "chamber": "Unverified Mysteries",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-277",
+      "title": "The Bermuda Triangle narrative",
+      "chamber": "Unverified Mysteries",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-278",
+      "title": "The Princes in the Tower",
+      "chamber": "Unverified Mysteries",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-279",
+      "title": "The Somerton Man case",
+      "chamber": "Unverified Mysteries",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-280",
+      "title": "The Lead Masks Case",
+      "chamber": "Unverified Mysteries",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-281",
+      "title": "The Devil's Footprints of 1855",
+      "chamber": "Unverified Mysteries",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-282",
+      "title": "The Taos Hum reports",
+      "chamber": "Unverified Mysteries",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-283",
+      "title": "Malleus Maleficarum historical reception",
+      "chamber": "Witchcraft & Folk Magic",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-284",
+      "title": "Witch trials in Salem",
+      "chamber": "Witchcraft & Folk Magic",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-285",
+      "title": "Basque witch trials of 1609–1614",
+      "chamber": "Witchcraft & Folk Magic",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-286",
+      "title": "Witch trials in Würzburg",
+      "chamber": "Witchcraft & Folk Magic",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-287",
+      "title": "Witch trials in Bamberg",
+      "chamber": "Witchcraft & Folk Magic",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-288",
+      "title": "Isobel Gowdie trial testimony",
+      "chamber": "Witchcraft & Folk Magic",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-289",
+      "title": "Cunning folk in early modern England",
+      "chamber": "Witchcraft & Folk Magic",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-290",
+      "title": "English witch bottles archaeological evidence",
+      "chamber": "Witchcraft & Folk Magic",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-291",
+      "title": "Cornish pellar traditions",
+      "chamber": "Witchcraft & Folk Magic",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-292",
+      "title": "Finnish tietäjä traditions",
+      "chamber": "Witchcraft & Folk Magic",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-293",
+      "title": "Sámi noaidi historical sources",
+      "chamber": "Witchcraft & Folk Magic",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-294",
+      "title": "Romanian descântec charm traditions",
+      "chamber": "Witchcraft & Folk Magic",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-295",
+      "title": "Greek evil eye apotropaic customs",
+      "chamber": "Witchcraft & Folk Magic",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-296",
+      "title": "Slavic zagovory verbal charms",
+      "chamber": "Witchcraft & Folk Magic",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-297",
+      "title": "Theban alphabet historical use",
+      "chamber": "Mystical Symbols & Languages",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-298",
+      "title": "Malachim alphabet",
+      "chamber": "Mystical Symbols & Languages",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-299",
+      "title": "Celestial alphabet in Agrippa",
+      "chamber": "Mystical Symbols & Languages",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-300",
+      "title": "Sigillum Dei Aemeth manuscript tradition",
+      "chamber": "Mystical Symbols & Languages",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-301",
+      "title": "Seal of Solomon iconography",
+      "chamber": "Mystical Symbols & Languages",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-302",
+      "title": "Pentagram in medieval manuscripts",
+      "chamber": "Mystical Symbols & Languages",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-303",
+      "title": "Hexagram in historical religious art",
+      "chamber": "Mystical Symbols & Languages",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-304",
+      "title": "Egyptian hieroglyphs and modern esoteric readings",
+      "chamber": "Mystical Symbols & Languages",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-305",
+      "title": "Coptic magical characteres",
+      "chamber": "Mystical Symbols & Languages",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-306",
+      "title": "Greek magical voces magicae",
+      "chamber": "Mystical Symbols & Languages",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-307",
+      "title": "Sator Square inscriptions",
+      "chamber": "Mystical Symbols & Languages",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-308",
+      "title": "Abraxas on engraved gems",
+      "chamber": "Mystical Symbols & Languages",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-309",
+      "title": "Mithraic tauroctony iconography",
+      "chamber": "Mystical Symbols & Languages",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-310",
+      "title": "Alchemical ouroboros traditions",
+      "chamber": "Mystical Symbols & Languages",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-311",
+      "title": "Book of Soyga manuscript witnesses",
+      "chamber": "Rare Manuscripts & Artifacts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-312",
+      "title": "Rohonc Codex",
+      "chamber": "Rare Manuscripts & Artifacts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-313",
+      "title": "Sibiu Manuscript rocket illustrations",
+      "chamber": "Rare Manuscripts & Artifacts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-314",
+      "title": "Codex Seraphinianus copyright-controlled work",
+      "chamber": "Rare Manuscripts & Artifacts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-315",
+      "title": "Maya Madrid Codex",
+      "chamber": "Rare Manuscripts & Artifacts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-316",
+      "title": "Maya Paris Codex",
+      "chamber": "Rare Manuscripts & Artifacts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-317",
+      "title": "Grolier Maya Codex authenticity history",
+      "chamber": "Rare Manuscripts & Artifacts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-318",
+      "title": "Dunhuang manuscripts",
+      "chamber": "Rare Manuscripts & Artifacts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-319",
+      "title": "Nag Hammadi codices",
+      "chamber": "Rare Manuscripts & Artifacts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-320",
+      "title": "Oxyrhynchus papyri",
+      "chamber": "Rare Manuscripts & Artifacts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-321",
+      "title": "Magical papyri in the British Library",
+      "chamber": "Rare Manuscripts & Artifacts",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-322",
+      "title": "Stonehenge prehistoric monument",
+      "chamber": "Occult Locations & Archaeology",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-323",
+      "title": "Avebury stone circle",
+      "chamber": "Occult Locations & Archaeology",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-324",
+      "title": "Carnac standing stones",
+      "chamber": "Occult Locations & Archaeology",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-325",
+      "title": "Ħal Saflieni Hypogeum",
+      "chamber": "Occult Locations & Archaeology",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-326",
+      "title": "Mnajdra temple complex",
+      "chamber": "Occult Locations & Archaeology",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-327",
+      "title": "Ġgantija temples",
+      "chamber": "Occult Locations & Archaeology",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-328",
+      "title": "Oracle of Dodona",
+      "chamber": "Occult Locations & Archaeology",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-329",
+      "title": "Eleusis sanctuary archaeological remains",
+      "chamber": "Occult Locations & Archaeology",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-330",
+      "title": "Mithraeum beneath San Clemente Rome",
+      "chamber": "Occult Locations & Archaeology",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-331",
+      "title": "Chichén Itzá sacred cenote",
+      "chamber": "Occult Locations & Archaeology",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-332",
+      "title": "Teotihuacan Avenue of the Dead",
+      "chamber": "Occult Locations & Archaeology",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-333",
+      "title": "Poverty Point earthworks",
+      "chamber": "Occult Locations & Archaeology",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-334",
+      "title": "Megalithic temples of Tarxien",
+      "chamber": "Occult Locations & Archaeology",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-335",
+      "title": "Destruction of the Library of Alexandria debates",
+      "chamber": "The Lost Histories",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-336",
+      "title": "Serapeum of Alexandria historical sources",
+      "chamber": "The Lost Histories",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-337",
+      "title": "Herculaneum papyri recovery",
+      "chamber": "The Lost Histories",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-338",
+      "title": "Palimpsests of Saint Catherine's Monastery",
+      "chamber": "The Lost Histories",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-339",
+      "title": "Archimedes Palimpsest recovery",
+      "chamber": "The Lost Histories",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-340",
+      "title": "Bamiyan Buddhist manuscript finds",
+      "chamber": "The Lost Histories",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-341",
+      "title": "Khara-Khoto manuscripts",
+      "chamber": "The Lost Histories",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-342",
+      "title": "Turfan manuscript collections",
+      "chamber": "The Lost Histories",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-343",
+      "title": "Dead Sea Scrolls discovery and conservation",
+      "chamber": "The Lost Histories",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-344",
+      "title": "Dunhuang Library Cave history",
+      "chamber": "The Lost Histories",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-345",
+      "title": "Maya codices colonial destruction",
+      "chamber": "The Lost Histories",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-346",
+      "title": "Indus script decipherment debates",
+      "chamber": "The Lost Histories",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-347",
+      "title": "Linear A undeciphered documents",
+      "chamber": "The Lost Histories",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-348",
+      "title": "Ancient Egyptian Amarna letters",
+      "chamber": "The Lost Histories",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-349",
+      "title": "Ebla palace archive",
+      "chamber": "The Lost Histories",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-350",
+      "title": "Pali Canon manuscript traditions",
+      "chamber": "Sacred Archives",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-351",
+      "title": "Kangyur Tibetan Buddhist canon",
+      "chamber": "Sacred Archives",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-352",
+      "title": "Tengyur Tibetan Buddhist commentaries",
+      "chamber": "Sacred Archives",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-353",
+      "title": "Samaritan Pentateuch manuscript tradition",
+      "chamber": "Sacred Archives",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-354",
+      "title": "Gospel of Thomas Nag Hammadi text",
+      "chamber": "Sacred Archives",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-355",
+      "title": "Coptic Gospel of Judas manuscript",
+      "chamber": "Sacred Archives",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-356",
+      "title": "Sikh Dasam Granth textual history",
+      "chamber": "Sacred Archives",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-357",
+      "title": "Baha'i Kitáb-i-Aqdas translations",
+      "chamber": "Sacred Archives",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-358",
+      "title": "Yezidi Qewl oral hymns",
+      "chamber": "Sacred Archives",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-359",
+      "title": "Oromo Waaqeffanna living traditions",
+      "chamber": "Sacred Archives",
+      "reason": "Template dossier; item-level source not verified"
+    },
+    {
+      "id": "oa-360",
+      "title": "Ifá divination literary corpus",
+      "chamber": "Sacred Archives",
+      "reason": "Template dossier; item-level source not verified"
+    }
+  ]
+}
