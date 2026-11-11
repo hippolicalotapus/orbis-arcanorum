@@ -878,5 +878,45 @@
     "source_url": "https://eap.bl.uk/",
     "source_status": "Research lead — item-level verification pending",
     "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-089",
+    "title": "Digital Bodleian manuscript collections",
+    "chamber": "The Sacred Archives",
+    "classification": "Documented",
+    "summary": "Oxford's digitized collections include manuscripts relevant to religious history, textual transmission and book culture; check each item for scope and rights.",
+    "source_url": "https://digital.bodleian.ox.ac.uk/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-090",
+    "title": "Vatican Library digital collections",
+    "chamber": "The Sacred Archives",
+    "classification": "Documented",
+    "summary": "Digital access point for manuscripts and rare books held by the Vatican Apostolic Library; catalog records do not imply permission to redistribute images.",
+    "source_url": "https://digi.vatlib.it/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-091",
+    "title": "Slave Voyages database",
+    "chamber": "The Lost Histories",
+    "classification": "Documented",
+    "summary": "Research database reconstructing the history of the transatlantic slave trade from surviving voyage records; gaps and uncertainty remain in the historical evidence.",
+    "source_url": "https://www.slavevoyages.org/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-092",
+    "title": "Europeana 1914–1918 collections",
+    "chamber": "The Lost Histories",
+    "classification": "Documented",
+    "summary": "Europeana's First World War heritage initiative preserves personal stories and historical materials; individual item provenance and rights vary.",
+    "source_url": "https://www.europeana.eu/en/collections/topic/83-1914-1918",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
   }
 ]
