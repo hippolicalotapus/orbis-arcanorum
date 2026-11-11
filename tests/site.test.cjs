@@ -117,3 +117,14 @@ test('catalog sorting is accessible, shareable and defaults to title order', () 
   assert.ok(script);
   new vm.Script(script,{filename:'catalog.html'});
 });
+
+test('homepage loads full catalog and retains a limited fallback', () => {
+  const html=fs.readFileSync('index.html','utf8');
+  assert.ok(html.includes("fetch('./data/twelve-archives-catalog.json')"));
+  assert.ok(html.includes('entries=records.filter('));
+  assert.ok(html.includes('Full research catalog unavailable'));
+  assert.ok(html.includes("search.value=''"));
+  const scripts=[...html.matchAll(/<script>([\s\S]*?)<\/script>/g)];
+  assert.ok(scripts.length);
+  scripts.forEach(s=>new vm.Script(s[1],{filename:'index.html'}));
+});
