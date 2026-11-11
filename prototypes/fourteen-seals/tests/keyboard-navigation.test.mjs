@@ -117,3 +117,22 @@ test('Escape exits active chamber even when all seals have unlocked the Observat
   assert.equal(await page.locator('#grid .tile').first().evaluate(node=>node===document.activeElement),true);
  }finally{await browser.close()}
 });
+
+test('unlocked Observatory can close and reopen without losing discovered seals',async()=>{
+ const browser=await chromium.launch({headless:true});
+ try{
+  const page=await browser.newPage({viewport:{width:390,height:844},reducedMotion:'reduce'});
+  await page.goto(url);await page.locator('#skip').click();
+  for(let i=0;i<14;i++){
+   await page.locator('#grid .tile').nth(i).click();
+   await page.locator('#reveal').click();
+   await page.locator('#back').click();
+  }
+  assert.match(await page.locator('#progress').innerText(),/14 of 14/);
+  await page.locator('#closeObservatory').click();
+  assert.equal(await page.locator('#observatory').isVisible(),false);
+  await page.locator('#observatoryAccess').click();
+  assert.equal(await page.locator('#observatory').isVisible(),true);
+  assert.match(await page.locator('#progress').innerText(),/14 of 14/);
+ }finally{await browser.close()}
+});
