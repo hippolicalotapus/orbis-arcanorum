@@ -48,3 +48,12 @@ test('new Sacred and Lost Histories research leads remain distinct and source-li
     assert.match(item.rights, /Link only/);
   }
 });
+
+test('historical placeholder audit is complete and does not mislabel leads as verified', () => {
+  const audit = JSON.parse(fs.readFileSync('data/historical-placeholder-audit.json','utf8'));
+  assert.equal(audit.total_historical_entries,360);
+  assert.equal(audit.template_placeholders,124);
+  assert.equal(audit.flagged_entries.length,124);
+  assert.equal(new Set(audit.flagged_entries.map(item=>item.id)).size,124);
+  assert.ok(audit.flagged_entries.every(item=>item.reason.includes('not verified')));
+});
