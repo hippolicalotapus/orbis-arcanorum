@@ -20,9 +20,9 @@ Base: `efcc87e830d80c02e3fc47a48ca737c4f5586d97`, branch `development/offline-re
 - Local Python archive tests with mocked network operations: **25 passed**.
 - Inline prototype JavaScript and new browser-test JavaScript pass syntax checks.
 
-## Browser verification pending — milestone not yet signed off
+## Browser verification completed — offline milestone signed off
 
-The current execution environment denied Chromium's socket creation, so Playwright could not launch. The separate preview browser also rejected local-file URLs. Neither restriction was bypassed.
+The initial local execution environment denied Chromium's socket creation, and the preview browser rejected local-file URLs. Those restrictions were not bypassed. The user subsequently approved GitHub QA; the hosted browser suite completed successfully as recorded below.
 
 Two new Playwright tests are ready: five viewport widths (320, 390, 430, 768 and 1280), distinct SVGs, unclipped content, touch targets, offline requests, importer placement, keyboard focus restoration, unique-seal counting, preservation of unsaved reviewer form values, and Observatory expanded state. Existing import/XSS/quarantine browser regressions are unchanged.
 
@@ -35,3 +35,12 @@ Next: run the prepared browser suite in a permitted environment; inspect `test-a
 ## Hosted QA authorization
 
 On 2026-11-11, the user approved running the prepared GitHub QA workflow and its Actions allowance usage. This documentation update triggers only the existing offline branch QA. Deployment and all other spending remain unapproved. Results will be recorded after browser tests and screenshot inspection.
+
+## Final verified result
+
+- Approved QA run: https://github.com/hippolicalotapus/orbis-arcanorum/actions/runs/42993343268
+- Tested commit: `13aee443d07ed542371b9de951ba49a02d8226e6` (portal implementation `3c10192590cf9f6e786245634895204d4d56d0aa`; only authorization documentation changed afterward).
+- GitHub taxonomy/conversion regressions: **7 passed**. Playwright browser tests: **5 passed**, including all five viewport widths and navigation/form-preservation checks. No failed or skipped tests.
+- Artifact `13841964779` contains `fourteen-portals-mobile.png` (clean atlas) and `fourteen-chambers-mobile.png` (clearly synthetic import fixture). Both fresh 390px screenshots were downloaded and visually inspected: all fourteen distinct engraved entrances render, labels fit, the Observatory control remains secondary and the importer sits below the atlas. No visible horizontal overflow or clipped tile text.
+- Offline milestone is complete. Physical Android device testing and deployment remain separate; no claim is made that the live site has changed.
+- This final results-only commit uses `[skip ci] [skip netlify]`; it makes no code changes and starts no additional QA run. No Netlify deployment or Supabase change was made.
