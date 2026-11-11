@@ -2912,22 +2912,28 @@
     "title": "Remote viewing Stargate Project",
     "chamber": "Paranormal Investigations",
     "classification": "Research lead",
-    "summary": "Research dossier proposed for Remote viewing Stargate Project. Establish the historical context, provenance, relevant primary records, competing interpretations and scholarly consensus before publishing a definitive article.",
-    "source_url": "https://archive.org/search?query=Remote%20viewing%20Stargate%20Project",
-    "source_status": "Unverified discovery search only; no individual source located, read or checked in this batch",
-    "rights": "No image, text, translation, artifact or media reproduction rights verified; link only",
-    "editorial_review": "placeholder_research_backlog"
+    "summary": "The CIA publicly describes United States intelligence research into purported remote viewing, subsequently associated with the STARGATE program. The program's records document government-funded investigation of claimed psychic perception, not demonstrated operational reliability. The CIA states that a 1995 independent assessment found the results too inconsistent and unreliable for intelligence use, and the program was not restored.",
+    "source_url": "https://www.cia.gov/stories/story/ask-molly-did-cia-really-study-psychic-powers/",
+    "source_status": "CIA historical program account reviewed 2026-11-11; original session records and reuse rights not reviewed",
+    "rights": "Official collection link only; no document or image reproduction approved",
+    "editorial_review": "institutional_collection_verified_item_review_pending",
+    "original_discovery_url": "https://archive.org/search?query=Remote%20viewing%20Stargate%20Project",
+    "institution": "Central Intelligence Agency",
+    "evidence_scope": "Documented government research and records; extraordinary interpretations not established"
   },
   {
     "id": "oa-259",
     "title": "Project Blue Book archival files",
     "chamber": "Paranormal Investigations",
     "classification": "Research lead",
-    "summary": "Research dossier proposed for Project Blue Book archival files. Establish the historical context, provenance, relevant primary records, competing interpretations and scholarly consensus before publishing a definitive article.",
-    "source_url": "https://archive.org/search?query=Project%20Blue%20Book%20archival%20files",
-    "source_status": "Unverified discovery search only; no individual source located, read or checked in this batch",
-    "rights": "No image, text, translation, artifact or media reproduction rights verified; link only",
-    "editorial_review": "placeholder_research_backlog"
+    "summary": "The United States National Archives holds declassified Air Force Project BLUE BOOK records documenting investigations of unidentified flying-object reports from 1947 through 1969. Its reference report describes administrative files, chronological case files and microfilm publication T1206. The Air Force reported 12,618 sightings, including 701 categorized as unidentified; that classification is not evidence of extraterrestrial origin.",
+    "source_url": "https://www.archives.gov/research/military/air-force/ufos",
+    "source_status": "NARA official collection guide reviewed 2026-11-11; individual case files and reuse rights not reviewed",
+    "rights": "Official collection link only; no document or image reproduction approved",
+    "editorial_review": "institutional_collection_verified_item_review_pending",
+    "original_discovery_url": "https://archive.org/search?query=Project%20Blue%20Book%20archival%20files",
+    "institution": "U.S. National Archives and Records Administration",
+    "evidence_scope": "Documented government research and records; extraordinary interpretations not established"
   },
   {
     "id": "oa-260",
