@@ -2658,11 +2658,15 @@
     "title": "Ars Notoria",
     "chamber": "Grimoires & Magical Texts",
     "classification": "Research lead",
-    "summary": "Research dossier proposed for Ars Notoria. Establish the historical context, provenance, relevant primary records, competing interpretations and scholarly consensus before publishing a definitive article.",
-    "source_url": "https://archive.org/search?query=Ars%20Notoria",
-    "source_status": "Unverified discovery search only; no individual source located, read or checked in this batch",
-    "rights": "No image, text, translation, artifact or media reproduction rights verified; link only",
-    "editorial_review": "placeholder_research_backlog"
+    "summary": "The British Library catalogues Harley MS 181 as a manuscript containing three Ars Notoria-related texts. Its described contents include Ars Memorativa (folios 1r–17v), Ars Notoria (18r–74v), and De Arte crucifixi Pelagij (75r–81r). The Ars Notoria tradition combines prayers, names, diagrams and ritual practices directed toward obtaining knowledge; this record documents the manuscript witness rather than endorsing its supernatural claims.",
+    "source_url": "https://searcharchives.bl.uk/catalog/040-002046009",
+    "source_status": "Specific institutional or bibliographic item page checked 2026-11-11; full contents and reuse rights not independently reviewed",
+    "rights": "Link only; no image or text reproduction permission established",
+    "editorial_review": "item_catalog_verified_rights_pending",
+    "original_discovery_url": "https://archive.org/search?query=Ars%20Notoria",
+    "institution": "British Library",
+    "shelfmark": "Harley MS 181",
+    "evidence_scope": "Documented manuscript or printed edition, not verification of supernatural claims"
   },
   {
     "id": "oa-238",
@@ -2680,11 +2684,15 @@
     "title": "Sworn Book of Honorius",
     "chamber": "Grimoires & Magical Texts",
     "classification": "Research lead",
-    "summary": "Research dossier proposed for Sworn Book of Honorius. Establish the historical context, provenance, relevant primary records, competing interpretations and scholarly consensus before publishing a definitive article.",
-    "source_url": "https://archive.org/search?query=Sworn%20Book%20of%20Honorius",
-    "source_status": "Unverified discovery search only; no individual source located, read or checked in this batch",
-    "rights": "No image, text, translation, artifact or media reproduction rights verified; link only",
-    "editorial_review": "placeholder_research_backlog"
+    "summary": "The British Library identifies Royal MS 17 A XLII as a fifteenth-century English parchment manuscript preserving the Sworne Book of Honorius (Liber iuratus Honorii), alongside related texts on angels, suffumigations and diagrams. Portions are in Latin and English; the catalog describes illuminated angel figures and symbolic tables. The record concerns a surviving manuscript witness, not proof of the magical claims within it.",
+    "source_url": "https://searcharchives.bl.uk/catalog/041-003419951",
+    "source_status": "Specific institutional or bibliographic item page checked 2026-11-11; full contents and reuse rights not independently reviewed",
+    "rights": "Link only; no image or text reproduction permission established",
+    "editorial_review": "item_catalog_verified_rights_pending",
+    "original_discovery_url": "https://archive.org/search?query=Sworn%20Book%20of%20Honorius",
+    "institution": "British Library",
+    "shelfmark": "Royal MS 17 A XLII",
+    "evidence_scope": "Documented manuscript or printed edition, not verification of supernatural claims"
   },
   {
     "id": "oa-240",
@@ -2702,11 +2710,15 @@
     "title": "Arbatel of Magic",
     "chamber": "Grimoires & Magical Texts",
     "classification": "Research lead",
-    "summary": "Research dossier proposed for Arbatel of Magic. Establish the historical context, provenance, relevant primary records, competing interpretations and scholarly consensus before publishing a definitive article.",
-    "source_url": "https://archive.org/search?query=Arbatel%20of%20Magic",
-    "source_status": "Unverified discovery search only; no individual source located, read or checked in this batch",
-    "rights": "No image, text, translation, artifact or media reproduction rights verified; link only",
-    "editorial_review": "placeholder_research_backlog"
+    "summary": "The bibliographic record for Arbatel De magia veterum identifies a 1575 edition of 87 pages, digitized from a British Library copy. This is evidence for an early printed witness to the Arbatel tradition; attribution, textual variants and the contents of the full digitization have not yet been independently examined.",
+    "source_url": "https://books.google.com/books/about/Arbatel_De_magia_veterum.html?id=aWpjAAAAcAAJ",
+    "source_status": "Specific institutional or bibliographic item page checked 2026-11-11; full contents and reuse rights not independently reviewed",
+    "rights": "Link only; no image or text reproduction permission established",
+    "editorial_review": "item_catalog_verified_rights_pending",
+    "original_discovery_url": "https://archive.org/search?query=Arbatel%20of%20Magic",
+    "institution": "Google Books / British Library copy",
+    "shelfmark": "1575 edition, 87 pages",
+    "evidence_scope": "Documented manuscript or printed edition, not verification of supernatural claims"
   },
   {
     "id": "oa-242",
