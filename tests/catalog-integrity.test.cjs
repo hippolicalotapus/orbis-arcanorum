@@ -57,3 +57,12 @@ test('historical placeholder audit is complete and does not mislabel leads as ve
   assert.equal(new Set(audit.flagged_entries.map(item=>item.id)).size,124);
   assert.ok(audit.flagged_entries.every(item=>item.reason.includes('not verified')));
 });
+
+test('recovered historical catalog preserves 360 entries and quarantines placeholders', () => {
+  const records=JSON.parse(fs.readFileSync('data/archive-catalog-recovery.json','utf8'));
+  assert.equal(records.length,360);
+  assert.equal(new Set(records.map(item=>item.id)).size,360);
+  assert.equal(records.filter(item=>item.editorial_review==='placeholder_research_backlog').length,124);
+  assert.equal(records.filter(item=>item.editorial_review==='source_review_required').length,236);
+  assert.ok(records.every(item=>item.editorial_review!=='verified'));
+});
