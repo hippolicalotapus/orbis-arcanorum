@@ -107,13 +107,13 @@ test('Escape exits active chamber even when all seals have unlocked the Observat
    await page.locator('#reveal').click();
    await page.locator('#back').click();
   }
-  assert.equal(await page.locator('#observatory').isVisible(),true);
+  assert.equal(await page.locator('#observatory').isVisible(),false,'Unlock must not interrupt the atlas');
   await page.locator('#grid .tile').first().click();
   await page.locator('#detailTitle').focus();
   await page.keyboard.press('Escape');
   assert.equal(await page.locator('#detail').isVisible(),false);
   assert.equal(await page.locator('#chambers').isVisible(),true);
-  assert.equal(await page.locator('#observatory').isVisible(),true,'Unlocked Observatory must remain accessible on the atlas');
+  assert.equal(await page.locator('#observatory').isVisible(),false,'Returning to atlas must not force open the Observatory');
   assert.equal(await page.locator('#grid .tile').first().evaluate(node=>node===document.activeElement),true);
  }finally{await browser.close()}
 });
@@ -129,6 +129,8 @@ test('unlocked Observatory can close and reopen without losing discovered seals'
    await page.locator('#back').click();
   }
   assert.match(await page.locator('#progress').innerText(),/14 of 14/);
+  assert.equal(await page.locator('#observatory').isVisible(),false,'Unlock should not force the Observatory open');
+  await page.locator('#observatoryAccess').click();
   await page.locator('#closeObservatory').click();
   assert.equal(await page.locator('#observatory').isVisible(),false);
   await page.locator('#observatoryAccess').click();
