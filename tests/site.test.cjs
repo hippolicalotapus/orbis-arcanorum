@@ -91,3 +91,15 @@ test('administrator review desk is gated and moderated', () => {
  assert.ok(js.includes('reviewed_at'));
  assert.doesNotMatch(js,/service_role|sb_secret_|innerHTML/);
 });
+
+test('research catalog supports shareable filters and clearing them', () => {
+  const html = fs.readFileSync('catalog.html', 'utf8');
+  const scripts = [...html.matchAll(/<script>([\\s\\S]*?)<\\/script>/g)];
+  assert.ok(scripts.length > 0);
+  scripts.forEach(script => new vm.Script(script[1], {filename: 'catalog.html'}));
+  assert.match(html, /id="clearFilters"/);
+  assert.match(html, /params\\.get\\('q'\\)/);
+  assert.match(html, /params\\.get\\('classification'\\)/);
+  assert.match(html, /history\\.replaceState/);
+  assert.match(html, /params\\.set\\('chamber',c\\.value\\)/);
+});
