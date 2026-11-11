@@ -105,3 +105,15 @@ test('research catalog supports shareable filters and clearing them', () => {
     "params.set('chamber',c.value)"
   ]) assert.ok(html.includes(fragment), 'Missing filter feature: ' + fragment);
 });
+
+test('catalog sorting is accessible, shareable and defaults to title order', () => {
+  const html = fs.readFileSync('catalog.html','utf8');
+  assert.ok(html.includes('id="sort"'));
+  for (const option of ['value="title"','value="archive"','value="recent"']) assert.ok(html.includes(option));
+  assert.ok(html.includes("params.get('sort')"));
+  assert.ok(html.includes("params.set('sort',sort.value)"));
+  assert.ok(html.includes("sort.addEventListener('change',updateFilters)"));
+  const script = html.split('<script>')[1]?.split('</script>')[0];
+  assert.ok(script);
+  new vm.Script(script,{filename:'catalog.html'});
+});
