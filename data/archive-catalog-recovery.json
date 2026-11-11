@@ -2799,14 +2799,13 @@
     "title": "Munich Manual of Demonic Magic",
     "chamber": "Grimoires & Magical Texts",
     "classification": "Research lead",
-    "summary": "The so-called Munich Manual is the fifteenth-century manuscript Clm 849 held by the Bavarian State Library in Munich. Historian Richard Kieckhefer discusses its Latin ritual texts, particularly folios 3r–108v, as evidence for late-medieval ceremonial and necromantic practices. This is a documented historical manuscript; the rituals' claimed effects are not independently established.",
+    "summary": "Historian Richard Kieckhefer describes a fifteenth-century Munich manuscript associated with clerical necromancy and cites his separate critical study Forbidden Rites: A Necromancer's Manual of the Fifteenth Century. This entry documents scholarly discussion of a historical manuscript, not the effectiveness of any rituals. The holding-library shelfmark and folio range require independent catalogue verification.",
     "source_url": "https://api.pageplace.de/preview/DT0400.9781316121924_A23713524/preview-9781316121924_A23713524.pdf",
-    "source_status": "Scholarly book preview consulted 2026-11-11; direct holding-library catalogue and rights review pending",
+    "source_status": "Richard Kieckhefer's Cambridge University Press book preview checked 2026-11-11; manuscript identification and folios still require primary-catalog verification",
     "rights": "Link only; manuscript images and scholarly text not reproduced",
     "editorial_review": "scholarly_source_checked_primary_catalog_pending",
     "original_discovery_url": "https://archive.org/search?query=Munich%20Manual%20of%20Demonic%20Magic",
-    "institution": "Bavarian State Library (manuscript); Cambridge University Press preview (secondary discussion)",
-    "shelfmark": "Clm 849, ff. 3r–108v",
+    "institution": "Cambridge University Press scholarly preview; holding-library catalogue pending",
     "evidence_scope": "Historical manuscript existence and scholarship, not supernatural efficacy"
   },
   {
