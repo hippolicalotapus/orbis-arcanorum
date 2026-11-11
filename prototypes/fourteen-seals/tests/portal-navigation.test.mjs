@@ -70,3 +70,60 @@ test('keyboard chamber navigation restores focus, preserves notes and counts uni
   assert.deepEqual(errors,[]);
  }finally{await browser.close()}
 });
+
+test('chamber interiors cycle through fourteen guides, wrap, reveal and return to local tools',async()=>{
+ const browser=await chromium.launch({headless:true});
+ try{
+  const page=await browser.newPage({viewport:{width:390,height:1000},reducedMotion:'reduce'});
+  const errors=[];page.on('pageerror',error=>errors.push(error.message));
+  await page.goto(url);await page.locator('#skip').click();
+  const names=await page.locator('#grid .tile h3').allTextContents();
+  await page.locator('#grid .tile').first().click();
+  const scopes=[];
+  for(let i=0;i<14;i++){
+   assert.equal(await page.locator('#detailTitle').innerText(),names[i]);
+   assert.equal(await page.locator('#chamberTopics li').count(),3);
+   scopes.push(await page.locator('#chamberScope').innerText());
+   assert.equal(await page.locator('#reveal').getAttribute('aria-expanded'),'false');
+   await page.locator('#reveal').click();
+   assert.equal(await page.locator('#reveal').getAttribute('aria-expanded'),'true');
+   assert.equal(await page.locator('#scroll').evaluate(node=>getComputedStyle(node).visibility),'visible');
+   await page.locator('#nextChamber').click();
+  }
+  assert.equal(new Set(scopes).size,14);
+  assert.equal(await page.locator('#detailTitle').innerText(),names[0]);
+  await page.locator('#previousChamber').click();
+  assert.equal(await page.locator('#detailTitle').innerText(),names[13]);
+  await page.locator('#returnAtlas').click();
+  assert.equal(await page.locator('#grid .tile').nth(13).evaluate(node=>node===document.activeElement),true);
+  await page.locator('#grid .tile').nth(7).click();
+  assert.match(await page.locator('#recordResults').innerText(),/does not query the live archive/);
+  await page.locator('#recordResults button').click();
+  assert.equal(await page.locator('#archiveImport').evaluate(node=>node===document.activeElement),true);
+  assert.equal(await page.locator('#chambers').isVisible(),true);
+  assert.deepEqual(errors,[]);
+ }finally{await browser.close()}
+});
+
+test('actual chamber webpage screenshots and interior responsiveness',async()=>{
+ const browser=await chromium.launch({headless:true});
+ try{
+  const page=await browser.newPage({reducedMotion:'reduce'});
+  mkdirSync('test-artifacts',{recursive:true});
+  for(const width of [320,390,768]){
+   await page.setViewportSize({width,height:1000});
+   await page.goto(url);await page.locator('#skip').click();
+   if(width===390)await page.screenshot({path:'test-artifacts/atlas-mobile-viewport.png'});
+   for(let i=0;i<14;i++){
+    await page.locator('#grid .tile').nth(i).click();
+    await page.locator('#reveal').click();
+    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true,`Interior ${i+1} at ${width}px overflows`);
+    if(width===390&&[1,7].includes(i)){
+     await page.evaluate(()=>window.scrollTo(0,0));
+     await page.screenshot({path:`test-artifacts/${i===7?'celestial':'grimoire'}-chamber-mobile.png`});
+    }
+    await page.locator('#returnAtlas').click();
+   }
+  }
+ }finally{await browser.close()}
+});
