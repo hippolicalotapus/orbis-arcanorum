@@ -103,9 +103,9 @@
     "title": "Munich Manual of Demonic Magic",
     "chamber": "Grimoires & Magical Texts",
     "source_url": "https://archive.org/search?query=Munich%20Manual%20of%20Demonic%20Magic",
-    "review_state": "needs_specific_source",
-    "priority": "replace_placeholder",
-    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+    "review_state": "scholarly_source_checked_primary_catalog_pending",
+    "priority": "verify_primary_catalog_and_rights",
+    "notes": "Scholarly book preview confirms discussion of fifteenth-century Munich manuscript; primary holding catalogue and rights still pending"
   },
   {
     "id": "oa-249",
