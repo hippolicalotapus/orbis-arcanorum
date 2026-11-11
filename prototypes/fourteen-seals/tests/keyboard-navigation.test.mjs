@@ -96,3 +96,23 @@ test('all fourteen chamber exits restore the corresponding atlas tile',async()=>
   assert.deepEqual(errors,[]);
  }finally{await browser.close()}
 });
+
+test('Escape exits active chamber even when all seals have unlocked the Observatory',async()=>{
+ const browser=await chromium.launch({headless:true});
+ try{
+  const page=await browser.newPage({viewport:{width:390,height:844},reducedMotion:'reduce'});
+  await page.goto(url);await page.locator('#skip').click();
+  for(let i=0;i<14;i++){
+   await page.locator('#grid .tile').nth(i).click();
+   await page.locator('#reveal').click();
+   await page.locator('#back').click();
+  }
+  assert.equal(await page.locator('#observatory').isVisible(),true);
+  await page.locator('#grid .tile').first().click();
+  await page.locator('#detailTitle').focus();
+  await page.keyboard.press('Escape');
+  assert.equal(await page.locator('#detail').isVisible(),false);
+  assert.equal(await page.locator('#chambers').isVisible(),true);
+  assert.equal(await page.locator('#grid .tile').first().evaluate(node=>node===document.activeElement),true);
+ }finally{await browser.close()}
+});
