@@ -62,9 +62,10 @@ test('recovered historical catalog preserves 360 entries and quarantines placeho
   const records=JSON.parse(fs.readFileSync('data/archive-catalog-recovery.json','utf8'));
   assert.equal(records.length,360);
   assert.equal(new Set(records.map(item=>item.id)).size,360);
-  assert.equal(records.filter(item=>item.editorial_review==='placeholder_research_backlog').length,118);
+  assert.equal(records.filter(item=>item.editorial_review==='placeholder_research_backlog').length,116);
   assert.equal(records.filter(item=>item.editorial_review==='item_catalog_verified_rights_pending').length,5);
   assert.equal(records.filter(item=>item.editorial_review==='scholarly_source_checked_primary_catalog_pending').length,1);
+  assert.equal(records.filter(item=>item.editorial_review==='institutional_collection_verified_item_review_pending').length,2);
   assert.equal(records.filter(item=>item.editorial_review==='source_review_required').length,236);
   assert.ok(records.every(item=>item.editorial_review!=='verified'));
 });
@@ -72,11 +73,12 @@ test('recovered historical catalog preserves 360 entries and quarantines placeho
 test('replacement queue exactly matches quarantined historical placeholders', () => {
   const records=JSON.parse(fs.readFileSync('data/archive-catalog-recovery.json','utf8'));
   const queue=JSON.parse(fs.readFileSync('data/placeholder-replacement-queue.json','utf8'));
-  const expected=records.filter(item=>['placeholder_research_backlog','item_catalog_verified_rights_pending','scholarly_source_checked_primary_catalog_pending'].includes(item.editorial_review));
+  const expected=records.filter(item=>['placeholder_research_backlog','item_catalog_verified_rights_pending','scholarly_source_checked_primary_catalog_pending','institutional_collection_verified_item_review_pending'].includes(item.editorial_review));
   assert.equal(queue.length,124);
   assert.deepEqual(queue.map(item=>item.id).sort(),expected.map(item=>item.id).sort());
-  assert.equal(queue.filter(item=>item.review_state==='needs_specific_source').length,118);
+  assert.equal(queue.filter(item=>item.review_state==='needs_specific_source').length,116);
   assert.equal(queue.filter(item=>item.review_state==='item_catalog_verified_rights_pending').length,5);
   assert.equal(queue.filter(item=>item.review_state==='scholarly_source_checked_primary_catalog_pending').length,1);
-  assert.ok(queue.every(item=>['replace_placeholder','review_rights_and_full_text','verify_primary_catalog_and_rights'].includes(item.priority)));
+  assert.equal(queue.filter(item=>item.review_state==='institutional_collection_verified_item_review_pending').length,2);
+  assert.ok(queue.every(item=>['replace_placeholder','review_rights_and_full_text','verify_primary_catalog_and_rights','review_item_level_sources_and_rights'].includes(item.priority)));
 });
