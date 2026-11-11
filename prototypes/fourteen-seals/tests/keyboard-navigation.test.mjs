@@ -44,6 +44,20 @@ test('Escape closes the observatory and restores access-button focus',async()=>{
  }finally{await browser.close()}
 });
 
+test('Escape inside review notes does not discard chamber context',async()=>{
+ const browser=await chromium.launch({headless:true});
+ try{
+  const page=await browser.newPage({viewport:{width:390,height:844},reducedMotion:'reduce'});
+  await page.goto(url);await page.locator('#skip').click();
+  await page.locator('#grid .tile').first().click();
+  await page.locator('#reviewNotes').fill('An unfinished private review');
+  await page.locator('#reviewNotes').focus();
+  await page.keyboard.press('Escape');
+  assert.equal(await page.locator('#detail').isVisible(),true);
+  assert.equal(await page.locator('#reviewNotes').inputValue(),'An unfinished private review');
+ }finally{await browser.close()}
+});
+
 test('modified Escape shortcuts do not navigate away',async()=>{
  const browser=await chromium.launch({headless:true});
  try{
