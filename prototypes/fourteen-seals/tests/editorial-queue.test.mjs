@@ -13,6 +13,7 @@ const rows = [
 ];
 const load = async (page, data, name='records.json') => {
   await page.locator('#file').setInputFiles({name,mimeType:'application/json',buffer:Buffer.from(typeof data==='string'?data:JSON.stringify(data))});
+  await page.waitForFunction(()=>document.querySelector('#file').value==='',{timeout:10000});
 };
 test('offline editorial queue: imports, filters, escapes HTML, rejects unsafe URLs, clears',async()=>{
  const browser=await chromium.launch({headless:true});
