@@ -838,5 +838,45 @@
     "source_url": "https://www.loc.gov/collections/",
     "source_status": "Research lead — item-level verification pending",
     "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-085",
+    "title": "The Nag Hammadi Library",
+    "chamber": "The Sacred Archives",
+    "classification": "Documented",
+    "summary": "Collection of Coptic codices discovered in Egypt, important to the study of early Christian and related religious traditions; interpretations vary by text.",
+    "source_url": "https://www.britannica.com/topic/Nag-Hammadi-library",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-086",
+    "title": "The Gutenberg Bible",
+    "chamber": "The Sacred Archives",
+    "classification": "Documented",
+    "summary": "Early major European book printed using movable metal type; surviving copies and fragments are held by multiple institutions.",
+    "source_url": "https://www.loc.gov/exhibits/bibles/the-gutenberg-bible.html",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-087",
+    "title": "The Rosetta Stone",
+    "chamber": "The Lost Histories",
+    "classification": "Documented",
+    "summary": "Multilingual inscribed decree instrumental in the decipherment of Egyptian hieroglyphs; interpretation and collection history merit separate research.",
+    "source_url": "https://www.britishmuseum.org/collection/object/Y_EA24",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-088",
+    "title": "The Endangered Archives Programme",
+    "chamber": "The Lost Histories",
+    "classification": "Documented",
+    "summary": "British Library-supported initiative preserving vulnerable archival collections worldwide; individual project records require review.",
+    "source_url": "https://eap.bl.uk/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
   }
 ]
