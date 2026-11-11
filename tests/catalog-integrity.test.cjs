@@ -66,3 +66,13 @@ test('recovered historical catalog preserves 360 entries and quarantines placeho
   assert.equal(records.filter(item=>item.editorial_review==='source_review_required').length,236);
   assert.ok(records.every(item=>item.editorial_review!=='verified'));
 });
+
+test('replacement queue exactly matches quarantined historical placeholders', () => {
+  const records=JSON.parse(fs.readFileSync('data/archive-catalog-recovery.json','utf8'));
+  const queue=JSON.parse(fs.readFileSync('data/placeholder-replacement-queue.json','utf8'));
+  const expected=records.filter(item=>item.editorial_review==='placeholder_research_backlog');
+  assert.equal(queue.length,124);
+  assert.deepEqual(queue.map(item=>item.id).sort(),expected.map(item=>item.id).sort());
+  assert.ok(queue.every(item=>item.review_state==='needs_specific_source'));
+  assert.ok(queue.every(item=>item.priority==='replace_placeholder'));
+});
