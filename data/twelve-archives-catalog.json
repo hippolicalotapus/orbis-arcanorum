@@ -758,5 +758,165 @@
     "source_url": "https://www.britannica.com/topic/Tantrism",
     "source_status": "Research lead — individual bibliographic verification pending",
     "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-077",
+    "title": "The Dead Sea Scrolls",
+    "chamber": "The Sacred Archives",
+    "classification": "Documented",
+    "summary": "Ancient Jewish manuscript collection illuminating Second Temple religious texts and practices; interpretations of individual fragments remain scholarly questions.",
+    "source_url": "https://www.deadseascrolls.org.il/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-078",
+    "title": "Sacred texts in the British Library collections",
+    "chamber": "The Sacred Archives",
+    "classification": "Documented",
+    "summary": "Institutional collections of religious manuscripts and printed texts from multiple traditions; individual objects and reuse terms require verification.",
+    "source_url": "https://www.bl.uk/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-079",
+    "title": "UNESCO Memory of the World Register",
+    "chamber": "The Lost Histories",
+    "classification": "Documented",
+    "summary": "International register highlighting documentary heritage at risk of neglect, loss, or destruction; entries are starting points for object-level research.",
+    "source_url": "https://www.unesco.org/en/memory-world",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-080",
+    "title": "The National Archives discovery catalogue",
+    "chamber": "The Lost Histories",
+    "classification": "Documented",
+    "summary": "Searchable catalogue of historical records and archival collections, including lesser-known institutional and personal histories; not every record is digitized.",
+    "source_url": "https://discovery.nationalarchives.gov.uk/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-081",
+    "title": "Codex Sinaiticus",
+    "chamber": "The Sacred Archives",
+    "classification": "Documented",
+    "summary": "Fourth-century Greek biblical manuscript preserved across multiple institutions; consult the project for manuscript images and scholarly descriptions.",
+    "source_url": "https://www.codexsinaiticus.org/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-082",
+    "title": "The Cairo Genizah collections",
+    "chamber": "The Sacred Archives",
+    "classification": "Documented",
+    "summary": "Documentary fragments from a historic synagogue storeroom provide evidence of religious, commercial and everyday life; individual fragments need provenance and rights review.",
+    "source_url": "https://cudl.lib.cam.ac.uk/collections/genizah",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-083",
+    "title": "Europeana digital cultural heritage collections",
+    "chamber": "The Lost Histories",
+    "classification": "Documented",
+    "summary": "European cultural heritage discovery portal linking institutional records, photographs and manuscripts; availability and licensing vary by item.",
+    "source_url": "https://www.europeana.eu/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-084",
+    "title": "Library of Congress American Memory collections",
+    "chamber": "The Lost Histories",
+    "classification": "Documented",
+    "summary": "Historic documents, images, oral histories and other primary materials useful for recovering overlooked narratives; object-level context remains essential.",
+    "source_url": "https://www.loc.gov/collections/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-085",
+    "title": "The Nag Hammadi Library",
+    "chamber": "The Sacred Archives",
+    "classification": "Documented",
+    "summary": "Collection of Coptic codices discovered in Egypt, important to the study of early Christian and related religious traditions; interpretations vary by text.",
+    "source_url": "https://www.britannica.com/topic/Nag-Hammadi-library",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-086",
+    "title": "The Gutenberg Bible",
+    "chamber": "The Sacred Archives",
+    "classification": "Documented",
+    "summary": "Early major European book printed using movable metal type; surviving copies and fragments are held by multiple institutions.",
+    "source_url": "https://www.loc.gov/exhibits/bibles/the-gutenberg-bible.html",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-087",
+    "title": "The Rosetta Stone",
+    "chamber": "The Lost Histories",
+    "classification": "Documented",
+    "summary": "Multilingual inscribed decree instrumental in the decipherment of Egyptian hieroglyphs; interpretation and collection history merit separate research.",
+    "source_url": "https://www.britishmuseum.org/collection/object/Y_EA24",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-088",
+    "title": "The Endangered Archives Programme",
+    "chamber": "The Lost Histories",
+    "classification": "Documented",
+    "summary": "British Library-supported initiative preserving vulnerable archival collections worldwide; individual project records require review.",
+    "source_url": "https://eap.bl.uk/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-089",
+    "title": "Digital Bodleian manuscript collections",
+    "chamber": "The Sacred Archives",
+    "classification": "Documented",
+    "summary": "Oxford's digitized collections include manuscripts relevant to religious history, textual transmission and book culture; check each item for scope and rights.",
+    "source_url": "https://digital.bodleian.ox.ac.uk/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-090",
+    "title": "Vatican Library digital collections",
+    "chamber": "The Sacred Archives",
+    "classification": "Documented",
+    "summary": "Digital access point for manuscripts and rare books held by the Vatican Apostolic Library; catalog records do not imply permission to redistribute images.",
+    "source_url": "https://digi.vatlib.it/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-091",
+    "title": "Slave Voyages database",
+    "chamber": "The Lost Histories",
+    "classification": "Documented",
+    "summary": "Research database reconstructing the history of the transatlantic slave trade from surviving voyage records; gaps and uncertainty remain in the historical evidence.",
+    "source_url": "https://www.slavevoyages.org/",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
+  },
+  {
+    "id": "oa-092",
+    "title": "Europeana 1914–1918 collections",
+    "chamber": "The Lost Histories",
+    "classification": "Documented",
+    "summary": "Europeana's First World War heritage initiative preserves personal stories and historical materials; individual item provenance and rights vary.",
+    "source_url": "https://www.europeana.eu/en/collections/topic/83-1914-1918",
+    "source_status": "Research lead — item-level verification pending",
+    "rights": "Link only; no reproduction permission assumed"
   }
 ]

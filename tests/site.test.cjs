@@ -26,11 +26,11 @@ for (const page of pages) {
     assert.doesNotMatch(html, /\.innerHTML\s*=/);
   });
 }
-test('homepage includes all twelve chambers', () => {
+test('homepage includes all fourteen chambers', () => {
   const html = fs.readFileSync('index.html', 'utf8');
-  const match = html.match(/const chambers=(\[[^;]+\]);const entries=/);
+  const match = html.match(/const chambers=(\[[^;]+\]);(?:const|let) entries=/);
   assert.ok(match, 'chamber data missing');
-  assert.equal(JSON.parse(match[1]).length, 12);
+  assert.equal(JSON.parse(match[1]).length, 14);
 });
 test('research resource catalog has valid URLs and classifications', () => {
   const data = JSON.parse(fs.readFileSync('data/archive-resources.json', 'utf8'));
@@ -90,4 +90,41 @@ test('administrator review desk is gated and moderated', () => {
  assert.ok(js.includes("'published'"));
  assert.ok(js.includes('reviewed_at'));
  assert.doesNotMatch(js,/service_role|sb_secret_|innerHTML/);
+});
+
+test('research catalog supports shareable filters and clearing them', () => {
+  const html = fs.readFileSync('catalog.html', 'utf8');
+  const script = html.split('<script>')[1]?.split('</script>')[0];
+  assert.ok(script, 'catalog inline script missing');
+  new vm.Script(script, { filename: 'catalog.html' });
+  for (const fragment of [
+    'id="clearFilters"',
+    "params.get('q')",
+    "params.get('classification')",
+    'history.replaceState',
+    "params.set('chamber',c.value)"
+  ]) assert.ok(html.includes(fragment), 'Missing filter feature: ' + fragment);
+});
+
+test('catalog sorting is accessible, shareable and defaults to title order', () => {
+  const html = fs.readFileSync('catalog.html','utf8');
+  assert.ok(html.includes('id="sort"'));
+  for (const option of ['value="title"','value="archive"','value="recent"']) assert.ok(html.includes(option));
+  assert.ok(html.includes("params.get('sort')"));
+  assert.ok(html.includes("params.set('sort',sort.value)"));
+  assert.ok(html.includes("sort.addEventListener('change',updateFilters)"));
+  const script = html.split('<script>')[1]?.split('</script>')[0];
+  assert.ok(script);
+  new vm.Script(script,{filename:'catalog.html'});
+});
+
+test('homepage loads full catalog and retains a limited fallback', () => {
+  const html=fs.readFileSync('index.html','utf8');
+  assert.ok(html.includes("fetch('./data/twelve-archives-catalog.json')"));
+  assert.ok(html.includes('entries=records.filter('));
+  assert.ok(html.includes('Full research catalog unavailable'));
+  assert.ok(html.includes("search.value=''"));
+  const scripts=[...html.matchAll(/<script>([\s\S]*?)<\/script>/g)];
+  assert.ok(scripts.length);
+  scripts.forEach(s=>new vm.Script(s[1],{filename:'index.html'}));
 });
