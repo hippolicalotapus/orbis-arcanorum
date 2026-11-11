@@ -15,6 +15,9 @@ on:
       - '.github/workflows/offline-editorial-qa.yml'
 permissions:
   contents: read
+concurrency:
+  group: offline-editorial-qa-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 jobs:
   browser-tests:
     runs-on: ubuntu-24.04
@@ -27,6 +30,7 @@ jobs:
       - name: Run archive taxonomy and conversion regression tests
         run: node --test prototypes/fourteen-seals/tests/chamber-mapping.test.mjs prototypes/fourteen-seals/tests/convert-archive-export.test.mjs
       - name: Install Playwright in temporary workspace
+        timeout-minutes: 5
         run: |
           npm install --no-save --no-package-lock playwright@1.58.2
           npx playwright install --with-deps chromium
