@@ -193,18 +193,18 @@
     "title": "Remote viewing Stargate Project",
     "chamber": "Paranormal Investigations",
     "source_url": "https://archive.org/search?query=Remote%20viewing%20Stargate%20Project",
-    "review_state": "needs_specific_source",
-    "priority": "replace_placeholder",
-    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+    "review_state": "institutional_collection_verified_item_review_pending",
+    "priority": "review_item_level_sources_and_rights",
+    "notes": "Official government collection or program account identified; individual records and reproduction rights still pending"
   },
   {
     "id": "oa-259",
     "title": "Project Blue Book archival files",
     "chamber": "Paranormal Investigations",
     "source_url": "https://archive.org/search?query=Project%20Blue%20Book%20archival%20files",
-    "review_state": "needs_specific_source",
-    "priority": "replace_placeholder",
-    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+    "review_state": "institutional_collection_verified_item_review_pending",
+    "priority": "review_item_level_sources_and_rights",
+    "notes": "Official government collection or program account identified; individual records and reproduction rights still pending"
   },
   {
     "id": "oa-260",
