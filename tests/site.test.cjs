@@ -94,12 +94,14 @@ test('administrator review desk is gated and moderated', () => {
 
 test('research catalog supports shareable filters and clearing them', () => {
   const html = fs.readFileSync('catalog.html', 'utf8');
-  const scripts = [...html.matchAll(/<script>([\\s\\S]*?)<\\/script>/g)];
-  assert.ok(scripts.length > 0);
-  scripts.forEach(script => new vm.Script(script[1], {filename: 'catalog.html'}));
-  assert.match(html, /id="clearFilters"/);
-  assert.match(html, /params\\.get\\('q'\\)/);
-  assert.match(html, /params\\.get\\('classification'\\)/);
-  assert.match(html, /history\\.replaceState/);
-  assert.match(html, /params\\.set\\('chamber',c\\.value\\)/);
+  const script = html.split('<script>')[1]?.split('</script>')[0];
+  assert.ok(script, 'catalog inline script missing');
+  new vm.Script(script, { filename: 'catalog.html' });
+  for (const fragment of [
+    'id="clearFilters"',
+    "params.get('q')",
+    "params.get('classification')",
+    'history.replaceState',
+    "params.set('chamber',c.value)"
+  ]) assert.ok(html.includes(fragment), 'Missing filter feature: ' + fragment);
 });
