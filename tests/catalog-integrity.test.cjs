@@ -10,3 +10,18 @@ test('archive catalog JSON is parseable and twelve chambers are preserved', () =
   assert.ok(Array.isArray(resources));
   assert.ok(resources.every(item => typeof item.title === 'string' && item.title.trim().length > 0));
 });
+
+test('curated catalog entries have unique identifiers and valid source links', () => {
+  const records = JSON.parse(fs.readFileSync('data/twelve-archives-catalog.json', 'utf8'));
+  assert.ok(Array.isArray(records) && records.length > 0);
+  const ids = new Set();
+  for (const record of records) {
+    assert.ok(typeof record.id === 'string' && record.id.trim(), 'missing record id');
+    assert.ok(!ids.has(record.id), 'duplicate record id: ' + record.id);
+    ids.add(record.id);
+    assert.ok(typeof record.chamber === 'string' && record.chamber.trim(), 'missing chamber');
+    assert.ok(typeof record.title === 'string' && record.title.trim(), 'missing title');
+    assert.equal(new URL(record.source_url).protocol, 'https:', 'non-HTTPS source');
+    assert.ok(typeof record.rights === 'string' && record.rights.trim(), 'missing rights review');
+  }
+});
