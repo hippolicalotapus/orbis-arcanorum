@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
 import {resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
+import {mkdirSync} from 'node:fs';
 
 const url=pathToFileURL(resolve('prototypes/fourteen-seals/index.html')).href;
 
@@ -80,9 +81,12 @@ test('all fourteen chamber exits restore the corresponding atlas tile',async()=>
   await page.goto(url);await page.locator('#skip').click();
   const tiles=page.locator('#grid .tile');
   assert.equal(await tiles.count(),14);
+  mkdirSync('test-artifacts',{recursive:true});
+  await page.screenshot({path:'test-artifacts/orbis-navigation-atlas-390.png',fullPage:true});
   for(let i=0;i<14;i++){
    await tiles.nth(i).click();
    assert.equal(await page.locator('#detail').isVisible(),true);
+   if(i===0)await page.screenshot({path:'test-artifacts/orbis-navigation-chamber-390.png',fullPage:true});
    assert.equal(await page.locator('#detailTitle').innerText(),await tiles.nth(i).locator('h3').innerText());
    await page.locator('#detailTitle').focus();
    await page.keyboard.press('Escape');
