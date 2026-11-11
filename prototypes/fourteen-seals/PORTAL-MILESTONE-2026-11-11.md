@@ -31,3 +31,7 @@ The existing QA workflow includes the new tests and collects both the original s
 Commit with `[skip ci] [skip netlify]` to preserve this checkpoint without triggering hosted CI or a deploy. No hosted workflow was dispatched. No Netlify, Supabase, generation service or paid research operation was invoked. User approval is required before any hosted run that could consume credits or allowance.
 
 Next: run the prepared browser suite in a permitted environment; inspect `test-artifacts/fourteen-portals-mobile.png`; fix any visual or interaction failures before declaring this milestone complete. Deployment remains separately unapproved.
+
+## Hosted QA authorization
+
+On 2026-11-11, the user approved running the prepared GitHub QA workflow and its Actions allowance usage. This documentation update triggers only the existing offline branch QA. Deployment and all other spending remain unapproved. Results will be recorded after browser tests and screenshot inspection.
