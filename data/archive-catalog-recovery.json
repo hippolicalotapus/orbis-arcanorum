@@ -2673,11 +2673,15 @@
     "title": "Heptameron attributed to Pietro d'Abano",
     "chamber": "Grimoires & Magical Texts",
     "classification": "Research lead",
-    "summary": "Research dossier proposed for Heptameron attributed to Pietro d'Abano. Establish the historical context, provenance, relevant primary records, competing interpretations and scholarly consensus before publishing a definitive article.",
-    "source_url": "https://archive.org/search?query=Heptameron%20attributed%20to%20Pietro%20d'Abano",
-    "source_status": "Unverified discovery search only; no individual source located, read or checked in this batch",
-    "rights": "No image, text, translation, artifact or media reproduction rights verified; link only",
-    "editorial_review": "placeholder_research_backlog"
+    "summary": "The British Library catalogues Sloane MS 3850, a multilingual collection of magical texts, with a seventeenth-century Heptameron attributed in the catalogue to Petrus de Abano on folios 13b–23. This is evidence of a surviving manuscript witness; the historical attribution to Pietro d'Abano is disputed and is not treated as established authorship.",
+    "source_url": "https://searcharchives.bl.uk/catalog/040-002116240",
+    "source_status": "British Library item catalogue checked 2026-11-11; attribution disputed; reproduction rights not cleared",
+    "rights": "Link only; no scan or translation reproduced; institutional terms and third-party rights require review",
+    "editorial_review": "item_catalog_verified_rights_pending",
+    "original_discovery_url": "https://archive.org/search?query=Heptameron%20attributed%20to%20Pietro%20d'Abano",
+    "institution": "British Library",
+    "shelfmark": "Sloane MS 3850, ff. 13b–23",
+    "evidence_scope": "Catalogued historical textual witness, not validation of supernatural claims"
   },
   {
     "id": "oa-239",
@@ -2769,11 +2773,15 @@
     "title": "Sefer Raziel HaMalakh",
     "chamber": "Grimoires & Magical Texts",
     "classification": "Research lead",
-    "summary": "Research dossier proposed for Sefer Raziel HaMalakh. Establish the historical context, provenance, relevant primary records, competing interpretations and scholarly consensus before publishing a definitive article.",
-    "source_url": "https://archive.org/search?query=Sefer%20Raziel%20HaMalakh",
-    "source_status": "Unverified discovery search only; no individual source located, read or checked in this batch",
-    "rights": "No image, text, translation, artifact or media reproduction rights verified; link only",
-    "editorial_review": "placeholder_research_backlog"
+    "summary": "The University of Southern Maine Special Collection records a Hebrew printed copy of Sefer Raziel HaMalakh in its Sefer Raziel Collection (JUD MS 12). Its catalogue describes a fragile book with crumbling edges and an accompanying photocopy. The collection provides a digitized file under a CC BY-NC-ND 4.0 notice; this archive links to the institution's record without reproducing the scan.",
+    "source_url": "https://digitalcommons.usm.maine.edu/jud_sefer_raziel/1/",
+    "source_status": "Institutional item page and displayed CC BY-NC-ND 4.0 notice checked 2026-11-11; reuse not approved",
+    "rights": "Link only; no scan or translation reproduced; institutional terms and third-party rights require review",
+    "editorial_review": "item_catalog_verified_rights_pending",
+    "original_discovery_url": "https://archive.org/search?query=Sefer%20Raziel%20HaMalakh",
+    "institution": "University of Southern Maine Special Collection",
+    "shelfmark": "JUD MS 12",
+    "evidence_scope": "Catalogued historical textual witness, not validation of supernatural claims"
   },
   {
     "id": "oa-247",
