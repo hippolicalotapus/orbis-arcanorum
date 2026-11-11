@@ -17,7 +17,7 @@ test('14 chambers: import, editorial quarantine, clear and observatory on mobile
    {title:'Synthetic alchemical text',chamber:'Alchemy & Hermeticism',summary:'A controlled test record',sources:[{url:'https://example.org/source',label:'Source'}]},
    {title:'Synthetic legend',chamber:'Myths & Legends',summary:'Another controlled record',sources:[]}
   ],review_required:[{title:'Withheld example',archive_section:'Indigenous Traditions & Oral Histories'}]};
-  const upload=async data=>page.locator('#archiveImport').setInputFiles({name:'synthetic.json',mimeType:'application/json',buffer:Buffer.from(typeof data==='string'?data:JSON.stringify(data))});
+  const upload=async data=>{await page.locator('#archiveImport').setInputFiles({name:'synthetic.json',mimeType:'application/json',buffer:Buffer.from(typeof data==='string'?data:JSON.stringify(data))});await page.waitForFunction(()=>document.querySelector('#archiveImport').value==='',{timeout:10000});};
   await upload(fixture);
   assert.match(await page.locator('#importStatus').innerText(),/Loaded 2 records across 2 chambers/);
   assert.match(await page.locator('#importStatus').innerText(),/1 record withheld/);
