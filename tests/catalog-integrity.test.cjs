@@ -36,3 +36,15 @@ test('all fourteen archive chambers have research records and homepage navigatio
   for (const name of chambers) assert.ok(home.includes(name), 'Missing homepage chamber: ' + name);
   assert.ok(catalog.includes('Fourteen Archives'));
 });
+
+test('new Sacred and Lost Histories research leads remain distinct and source-linked', () => {
+  const records = JSON.parse(fs.readFileSync('data/twelve-archives-catalog.json', 'utf8'));
+  for (const id of ['oa-085','oa-086','oa-087','oa-088']) {
+    const item = records.find(record => record.id === id);
+    assert.ok(item, 'Missing research lead ' + id);
+    assert.ok(['The Sacred Archives','The Lost Histories'].includes(item.chamber));
+    assert.equal(new URL(item.source_url).protocol, 'https:');
+    assert.match(item.source_status, /Research lead/);
+    assert.match(item.rights, /Link only/);
+  }
+});
