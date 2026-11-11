@@ -188,6 +188,21 @@ $("nextRecords").onclick=()=>{recordPage++;renderRecords(currentChamber);$("read
 
 $("observatoryAccess").onclick=()=>{$("observatory").classList.remove("hidden");$("observatoryAccess").setAttribute("aria-expanded","true");$("observatory").scrollIntoView({behavior:motionBehavior(),block:"start"});requestAnimationFrame(drawThreads)};function updateProgress(){$("progress").textContent=visits.size+" of 14 seals discovered";if(visits.size===14){$("observatory").classList.remove("hidden");$("observatoryAccess").setAttribute("aria-expanded","true")}}$("closeObservatory").onclick=()=>{$("observatory").classList.add("hidden");$("observatoryAccess").setAttribute("aria-expanded","false");$("observatoryAccess").focus()};$("back").onclick=()=>{enter();const tile=$("grid").children[currentChamber];tile.focus({preventScroll:true});tile.scrollIntoView({block:"center",behavior:motionBehavior()})};
 
+// Keyboard navigation follows the same controls as the visible back buttons.
+// Ignore editable controls and modifier shortcuts; never dismiss unsaved review text.
+document.addEventListener("keydown",event=>{
+ if(event.key!=="Escape"||event.defaultPrevented||event.altKey||event.ctrlKey||event.metaKey||event.shiftKey)return;
+ const active=document.activeElement;
+ if(active?.closest?.('[role="dialog"],[aria-modal="true"]'))return;
+ if(!$("observatory").classList.contains("hidden")){
+  event.preventDefault();$("closeObservatory").click();return;
+ }
+ if($("detail").classList.contains("hidden"))return;
+ event.preventDefault();
+ if(!$("readingRoom").classList.contains("hidden"))$("returnEntrance").click();
+ else $("back").click();
+});
+
 // Atmosphere runs only for visible surfaces, stops in background tabs, and can be paused.
 const motionPreference=matchMedia("(prefers-reduced-motion: reduce)");
 let userPaused=false;
