@@ -194,13 +194,17 @@ document.addEventListener("keydown",event=>{
  if(event.key!=="Escape"||event.defaultPrevented||event.altKey||event.ctrlKey||event.metaKey||event.shiftKey)return;
  const active=document.activeElement;
  if(active?.closest?.('[role="dialog"],[aria-modal="true"],[contenteditable="true"],textarea,input,select'))return;
- if(!$("observatory").classList.contains("hidden")){
-  event.preventDefault();$("closeObservatory").click();return;
+ // The Observatory may be revealed behind an active chamber after the final seal.
+ // Navigate the visible chamber first; only close the Observatory from the atlas.
+ if(!$("detail").classList.contains("hidden")){
+  event.preventDefault();
+  if(!$("readingRoom").classList.contains("hidden"))$("returnEntrance").click();
+  else $("back").click();
+  return;
  }
- if($("detail").classList.contains("hidden"))return;
- event.preventDefault();
- if(!$("readingRoom").classList.contains("hidden"))$("returnEntrance").click();
- else $("back").click();
+ if(!$("observatory").classList.contains("hidden")){
+  event.preventDefault();$("closeObservatory").click();
+ }
 });
 
 // Atmosphere runs only for visible surfaces, stops in background tabs, and can be paused.
