@@ -113,6 +113,7 @@ test('Escape exits active chamber even when all seals have unlocked the Observat
   await page.keyboard.press('Escape');
   assert.equal(await page.locator('#detail').isVisible(),false);
   assert.equal(await page.locator('#chambers').isVisible(),true);
+  assert.equal(await page.locator('#observatory').isVisible(),true,'Unlocked Observatory must remain accessible on the atlas');
   assert.equal(await page.locator('#grid .tile').first().evaluate(node=>node===document.activeElement),true);
  }finally{await browser.close()}
 });
