@@ -13,9 +13,9 @@
     "title": "Heptameron attributed to Pietro d'Abano",
     "chamber": "Grimoires & Magical Texts",
     "source_url": "https://archive.org/search?query=Heptameron%20attributed%20to%20Pietro%20d'Abano",
-    "review_state": "needs_specific_source",
-    "priority": "replace_placeholder",
-    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+    "review_state": "item_catalog_verified_rights_pending",
+    "priority": "review_rights_and_full_text",
+    "notes": "Institutional item record identified; no reproduction or publication approval yet"
   },
   {
     "id": "oa-239",
@@ -85,9 +85,9 @@
     "title": "Sefer Raziel HaMalakh",
     "chamber": "Grimoires & Magical Texts",
     "source_url": "https://archive.org/search?query=Sefer%20Raziel%20HaMalakh",
-    "review_state": "needs_specific_source",
-    "priority": "replace_placeholder",
-    "notes": "Do not publish until an item-specific source, original description, evidence class and rights review are recorded"
+    "review_state": "item_catalog_verified_rights_pending",
+    "priority": "review_rights_and_full_text",
+    "notes": "Institutional item record identified; no reproduction or publication approval yet"
   },
   {
     "id": "oa-247",
