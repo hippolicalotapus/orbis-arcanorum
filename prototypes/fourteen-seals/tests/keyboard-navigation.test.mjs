@@ -38,6 +38,7 @@ test('Escape closes the observatory and restores access-button focus',async()=>{
   await page.goto(url);await page.locator('#skip').click();
   await page.locator('#observatoryAccess').click();
   assert.equal(await page.locator('#observatory').isVisible(),true);
+  assert.equal(await page.locator('#observatory').evaluate(el=>el===document.activeElement),true);
   await page.keyboard.press('Escape');
   assert.equal(await page.locator('#observatory').isVisible(),false);
   assert.equal(await page.locator('#observatoryAccess').evaluate(el=>el===document.activeElement),true);
