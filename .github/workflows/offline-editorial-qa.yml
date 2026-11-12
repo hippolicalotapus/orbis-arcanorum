@@ -33,7 +33,8 @@ jobs:
         timeout-minutes: 5
         run: |
           npm install --no-save --no-package-lock playwright@1.58.2
-          npx playwright install --with-deps chromium
+          # GitHub Ubuntu runners include Chromium system libraries; avoid apt mirror timeouts.
+          npx playwright install chromium
       - name: Run offline editorial queue browser tests
         run: node --test prototypes/fourteen-seals/tests/editorial-queue.test.mjs prototypes/fourteen-seals/tests/chamber-browser.test.mjs prototypes/fourteen-seals/tests/portal-navigation.test.mjs prototypes/fourteen-seals/tests/fantasy-portals.test.mjs prototypes/fourteen-seals/tests/chamber-journey.test.mjs prototypes/fourteen-seals/tests/keyboard-navigation.test.mjs
       - name: Preserve real browser screenshot for review
