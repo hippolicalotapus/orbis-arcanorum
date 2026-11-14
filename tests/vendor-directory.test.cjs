@@ -1,0 +1,4 @@
+const {test}=require('node:test');const assert=require('node:assert/strict');const fs=require('node:fs');const d=require('../development/vendor-directory.js');
+test('fictional listings searchable',()=>{assert.equal(d.filter('canada').length,1);assert.equal(d.filter('collector').length,1);assert.equal(d.filter('missing').length,0)});
+test('unsafe and credentialed links rejected',()=>{for(const website of ['javascript:alert(1)','http://example.org','https://user:pass@example.org'])assert.throws(()=>d.safeVendor({name:'Test',country:'Canada',specialty:'Books',website}))});
+test('directory page includes script and fictional disclosure',()=>{const html=fs.readFileSync(__dirname+'/../development/vendor-directory.html','utf8');assert.match(html,/src="vendor-directory.js"/);assert.match(html,/id="vendor-results"/);assert.match(html,/No real vendor has been verified/)});
