@@ -318,3 +318,23 @@ test('homepage cannot regress to the retired twelve-archive experience', () => {
   assert.match(html, /archive-chambers\\.json/);
   assert.match(html, /archive-catalog\\.json/);
 });
+
+test('fifteenth room stays locked until fourteen unique real chambers have been explored', () => {
+ const home=fs.readFileSync('index.html','utf8');
+ const room=fs.readFileSync('fifteenth-room.html','utf8');
+ const manifest=JSON.parse(fs.readFileSync('data/archive-chambers.json','utf8'));
+ const names=manifest.map(x=>x.name);
+ const unlocked=visited=>new Set(visited.filter(name=>names.includes(name))).size===14;
+ assert.equal(names.length,14);
+ assert.equal(unlocked([]),false);
+ assert.equal(unlocked([names[0],names[0]]),false);
+ assert.equal(unlocked(names.slice(0,13)),false);
+ assert.equal(unlocked([...names.slice(0,13),'not-a-chamber']),false);
+ assert.equal(unlocked(names),true);
+ assert.match(home,/localStorage\\.setItem\\(visitedKey/);
+ assert.match(home,/valid\\.size===14/);
+ assert.match(home,/id="hidden-room-entry"/);
+ assert.match(room,/explored\\.size!==14/);
+ assert.match(room,/id="locked"/);
+ assert.match(room,/id="reveal" hidden/);
+});
