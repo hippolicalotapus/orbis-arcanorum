@@ -28,7 +28,7 @@ test('fourteen distinct fantasy scenes load locally; full artwork matches each c
    await images.nth(i).evaluate(img=>img.decode());
    assert.ok(await images.nth(i).evaluate(img=>img.naturalWidth>=384&&img.naturalHeight>=384));
    const card=resolve('prototypes/fourteen-seals',sources[i]);
-   const full=card.replace('-card.webp','.webp');
+   const full=card.replace(/-card\.(svg|webp)$/,(m,ext)=>'.'+ext);
    assert.ok(statSync(card).size<150000,'Card download budget');
    assert.ok(statSync(full).size<500000,'Interior download budget');
    totalBytes+=statSync(card).size+statSync(full).size;
@@ -37,7 +37,7 @@ test('fourteen distinct fantasy scenes load locally; full artwork matches each c
    assert.equal(await page.locator('#detailTitle').innerText(),names[i]);
    openings.push(await page.locator('#mechanism').getAttribute('data-opening'));
    assert.equal(await page.locator('.opening-fx').count(),1);
-   assert.equal(await page.locator('#chamberImage').getAttribute('src'),sources[i].replace('-card.webp','.webp'));
+   assert.equal(await page.locator('#chamberImage').getAttribute('src'),sources[i].replace(/-card\.(svg|webp)$/,(m,ext)=>'.'+ext));
    assert.equal(await page.locator('#mechanismGlyph').isVisible(),false);
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
    if([1,2,7].includes(i)){

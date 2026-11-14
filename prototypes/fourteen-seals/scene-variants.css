@@ -1,0 +1,23 @@
+/* Each scene uses its own space, framing and physical movement. Original assets remain archived. */
+#mechanism[data-scene=manuscript],#mechanism[data-scene=laboratory],#mechanism[data-scene=excavation]{border-radius:4px;height:min(72svh,760px);min-height:430px;max-width:680px;margin-inline:auto;border-color:#77654d}
+#mechanism[data-scene=manuscript] .chamber-image{object-position:50% 62%}
+#mechanism[data-scene=laboratory] .chamber-image{object-position:43% 45%}
+#mechanism[data-scene=excavation] .chamber-image{object-position:50% 45%}
+#grid .tile[data-scene=manuscript],#grid .tile[data-scene=laboratory],#grid .tile[data-scene=excavation]{border-radius:5px}
+#grid .tile[data-scene=manuscript]:before,#grid .tile[data-scene=laboratory]:before,#grid .tile[data-scene=excavation]:before{border-radius:3px}
+.fx-folio{position:absolute;inset:13% 7% 10%;perspective:850px}.fx-folio-leaf{position:absolute;inset:0;background:linear-gradient(100deg,#5f442a44,#bfa47488),url('assets/props/parchment.webp') center/100% 100% no-repeat;transform-origin:8% 50%;filter:drop-shadow(8px 12px 8px #0009)}
+.activated[data-opening=scroll] .fx-folio-leaf{animation:folio-turn 2.5s ease both}.fx-folio-dust{position:absolute;inset:10% -8%;background:radial-gradient(ellipse,#e5ca9344,transparent 65%);mix-blend-mode:screen}.activated[data-opening=scroll] .fx-folio-dust{animation:folio-dust 2.5s ease both}
+@keyframes folio-turn{0%,8%{transform:rotateY(0) rotate(-3deg);opacity:.9}75%,100%{transform:rotateY(-155deg) rotate(6deg);opacity:0}}@keyframes folio-dust{0%{opacity:0;transform:translateY(15%)}45%{opacity:.8}100%{opacity:0;transform:translateY(-18%)}}
+.fx-lab-vapour{position:absolute;inset:0}.fx-steam{position:absolute;width:50%;height:65%;left:5%;top:13%;background:radial-gradient(ellipse at 50% 75%,#c4e9dc55,transparent 62%);filter:blur(12px);transform-origin:bottom}.fx-steam.s2{left:29%;top:3%}.fx-steam.s3{left:45%;top:29%}.activated[data-opening=reaction] .fx-steam{animation:lab-steam-rise 2.5s ease both}.activated[data-opening=reaction] .fx-steam.s2{animation-delay:.15s}.activated[data-opening=reaction] .fx-steam.s3{animation-delay:.3s}.fx-furnace-glow{position:absolute;inset:44% -15% -5% 45%;background:radial-gradient(ellipse,#ff8d2944,transparent 60%);mix-blend-mode:screen}.activated[data-opening=reaction] .fx-furnace-glow{animation:furnace-ignite 2.5s ease both}
+@keyframes lab-steam-rise{0%{transform:translateY(20%) scale(.65);opacity:0}40%{opacity:.9}100%{transform:translateY(-35%) scale(1.2);opacity:0}}@keyframes furnace-ignite{0%{opacity:0}45%{opacity:1}65%{opacity:.35}85%{opacity:.8}100%{opacity:.15}}
+.fx-excavation-dust{position:absolute;inset:0;overflow:hidden}.fx-dust-bank{position:absolute;inset:15% -25% -10%;background:radial-gradient(ellipse at 20% 70%,#c19a61cc,transparent 65%),radial-gradient(ellipse at 75% 60%,#d1af7ab0,transparent 65%);filter:blur(13px)}.fx-dust-bank.second{inset:-15% -10% 15%;opacity:.5}.activated[data-opening=sand] .fx-dust-bank{animation:excavation-clear 2.5s ease both}.activated[data-opening=sand] .fx-dust-bank.second{animation-delay:.2s}.fx-expedition-light{position:absolute;inset:-20%;background:linear-gradient(120deg,transparent 35%,#fff2bd33 48%,transparent 61%);mix-blend-mode:screen}.activated[data-opening=sand] .fx-expedition-light{animation:excavation-sun 2.5s ease both}
+@keyframes excavation-clear{0%,10%{transform:translateX(0);opacity:1}100%{transform:translate(60%,-20%);opacity:0}}@keyframes excavation-sun{0%{transform:translateX(-30%);opacity:0}70%{opacity:.7}100%{transform:translateX(15%);opacity:.2}}
+@media(max-width:520px){#mechanism[data-scene=manuscript],#mechanism[data-scene=laboratory],#mechanism[data-scene=excavation]{height:510px;min-height:0}}
+@media(prefers-reduced-motion:reduce){.fx-folio *,.fx-lab-vapour *,.fx-furnace-glow,.fx-excavation-dust *,.fx-expedition-light{animation:none!important;transition:none!important}}
+/* Keep the product identity visible during room journeys and shared development previews. */
+body:has(#detail:not(.hidden)) header{position:sticky;top:0;z-index:20;background:#110e15f5;padding:10px 14px;border-bottom:1px solid #8f7348;backdrop-filter:blur(8px)}
+body:has(#detail:not(.hidden)) header h1{font-size:1.2rem;letter-spacing:.1em;margin:4px 0}
+body:has(#detail:not(.hidden)) header>div:first-child{display:none}
+body:has(#detail:not(.hidden)) header>div:last-of-type{font-size:.65rem;letter-spacing:.08em}
+body:has(#detail:not(.hidden)) header:after{display:none}
+#detailTitle{scroll-margin-top:88px}

@@ -17,7 +17,8 @@ test('recovered original portal scripts and all artwork references are intact',(
  const assets=JSON.parse(html.match(/const portalAssets=(\[[^;]+\]);/)[1]);
  assert.equal(new Set(assets).size,14);
  for(const name of assets)for(const suffix of ['', '-card']){
-  const bytes=fs.readFileSync(path.join(base,'assets/portals',name+suffix+'.webp'));
+  let bytes=fs.readFileSync(path.join(base,'assets/portals',name+suffix+(name.endsWith('-v2')?'.svg':'.webp')));
+  if(name.endsWith('-v2'))bytes=Buffer.from(bytes.toString().match(/base64,([^"]+)/)[1],'base64');
   assert.equal(bytes.toString('ascii',0,4),'RIFF');assert.equal(bytes.toString('ascii',8,12),'WEBP');
   assert.equal(bytes.readUInt32LE(4)+8,bytes.length,'complete image bytes');
  }
