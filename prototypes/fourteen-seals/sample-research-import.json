@@ -1,0 +1,21 @@
+{
+  "records": [
+    {
+      "title": "Sample research record — replace with verified archive entry",
+      "chamber": "Grimoires & Magical Texts",
+      "summary": "TEST DATA ONLY. This demonstrates the importer format and is not a historical claim.",
+      "sources": [
+        {
+          "label": "Example source link (IANA)",
+          "url": "https://www.iana.org/domains/reserved"
+        }
+      ]
+    },
+    {
+      "title": "Sample evidence record — replace with verified archive entry",
+      "chamber": "Alchemy & Hermeticism",
+      "summary": "TEST DATA ONLY. Use genuine sources when importing production research.",
+      "sources": []
+    }
+  ]
+}
