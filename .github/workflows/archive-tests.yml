@@ -12,6 +12,8 @@ on:
     paths:
       - 'tools/import_archive_jsonl.py'
       - 'tools/harvest_met.py'
+      - 'tools/*.cjs'
+      - 'data/archive-resources.json'
       - 'tests/**'
       - '.github/workflows/archive-tests.yml'
   workflow_dispatch:
