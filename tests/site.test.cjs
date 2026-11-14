@@ -308,15 +308,15 @@ test('homepage cannot regress to the retired twelve-archive experience', () => {
   const html = fs.readFileSync('index.html', 'utf8');
   const chambers = JSON.parse(fs.readFileSync('data/archive-chambers.json', 'utf8'));
   assert.equal(chambers.length, 14, 'expected fourteen published archive categories');
-  assert.doesNotMatch(html, /(?:the\\s+)?twelve\\s+(?:archives|chambers)|all\\s+twelve\\s+archives|\\b12\\s+(?:archives|chambers)/i);
+  assert.doesNotMatch(html, /(?:the\s+)?twelve\s+(?:archives|chambers)|all\s+twelve\s+archives|\b12\s+(?:archives|chambers)/i);
   assert.match(html, /Fourteen chambers/);
   assert.match(html, /id="chamber-grid"/);
   assert.equal((html.match(/id="chambers"/g) || []).length, 1, 'section id must be unique');
   assert.equal((html.match(/id="chamber-grid"/g) || []).length, 1, 'grid id must be unique');
-  assert.match(html, /getElementById\\('chamber-grid'\\)/);
-  assert.doesNotMatch(html, /chamberEl\\.append\\(b\\);const wrap/);
-  assert.match(html, /archive-chambers\\.json/);
-  assert.match(html, /archive-catalog\\.json/);
+  assert.match(html, /getElementById\('chamber-grid'\)/);
+  assert.doesNotMatch(html, /chamberEl\.append\(b\);const wrap/);
+  assert.match(html, /archive-chambers\.json/);
+  assert.match(html, /archive-catalog\.json/);
 });
 
 test('fifteenth room stays locked until fourteen unique real chambers have been explored', () => {
@@ -331,10 +331,10 @@ test('fifteenth room stays locked until fourteen unique real chambers have been 
  assert.equal(unlocked(names.slice(0,13)),false);
  assert.equal(unlocked([...names.slice(0,13),'not-a-chamber']),false);
  assert.equal(unlocked(names),true);
- assert.match(home,/localStorage\\.setItem\\(visitedKey/);
- assert.match(home,/valid\\.size===14/);
+ assert.match(home,/localStorage\.setItem\(visitedKey/);
+ assert.match(home,/valid\.size===14/);
  assert.match(home,/id="hidden-room-entry"/);
- assert.match(room,/explored\\.size!==14/);
+ assert.match(room,/explored\.size!==14/);
  assert.match(room,/id="locked"/);
  assert.match(room,/id="reveal" hidden/);
 });
