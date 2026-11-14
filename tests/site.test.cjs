@@ -338,3 +338,13 @@ test('fifteenth room stays locked until fourteen unique real chambers have been 
  assert.match(room,/id="locked"/);
  assert.match(room,/id="reveal" hidden/);
 });
+
+test('exploration is recorded by entering a chamber catalog, not merely selecting its homepage card', () => {
+ const home=fs.readFileSync('index.html','utf8');
+ const catalog=fs.readFileSync('catalog.html','utf8');
+ assert.doesNotMatch(home,/if\(selected\)markExplored\(name\)/);
+ assert.match(home,/catalog\.html\?chamber=/);
+ assert.match(catalog,/function recordChamberVisit\(name\)/);
+ assert.match(catalog,/recordChamberVisit\(c\.value\)/);
+ assert.match(catalog,/orbis-explored-chambers-v1/);
+});
