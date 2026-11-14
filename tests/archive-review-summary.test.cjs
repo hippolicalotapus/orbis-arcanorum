@@ -1,0 +1,3 @@
+const {test}=require('node:test'),assert=require('node:assert/strict'),{summarizeArchiveReviews}=require('../tools/archive-review-summary.cjs');
+test('aggregate review keeps all records link-only',()=>{const x=summarizeArchiveReviews([{title:'A',classification:'Documented',rights:'review',reviewed:'2026-11-08'},{title:'B',classification:'Unverified',rights:'review',reviewed:'2026-11-08'}]);assert.equal(x.total,2);assert.equal(x.linkOnly,2);assert.equal(x.redistributionApproved,0);assert.equal(x.sourceVerificationNeeded,1);assert.equal(x.needsAttention[0].title,'B')});
+test('rejects non-array',()=>assert.throws(()=>summarizeArchiveReviews({})));
