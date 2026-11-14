@@ -348,3 +348,14 @@ test('exploration is recorded by entering a chamber catalog, not merely selectin
  assert.match(catalog,/recordChamberVisit\(c\.value\)/);
  assert.match(catalog,/orbis-explored-chambers-v1/);
 });
+
+test('duplicate visits do not truncate fourteen distinct chamber visits and back navigation refreshes progress', () => {
+ const html=fs.readFileSync('index.html','utf8');
+ const names=JSON.parse(fs.readFileSync('data/archive-chambers.json','utf8')).map(x=>x.name);
+ const stored=[names[0],names[0],...names.slice(1)];
+ assert.equal(new Set(stored.slice(0,14)).size,13);
+ assert.equal(new Set(stored).size,14);
+ assert.match(html,/new Set\(saved\.filter\(x=>typeof x==='string'\)\)/);
+ assert.doesNotMatch(html,/saved\.filter\(x=>typeof x==='string'\)\.slice\(0,14\)/);
+ assert.match(html,/addEventListener\('pageshow'/);
+});
