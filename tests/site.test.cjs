@@ -331,7 +331,8 @@ test('fifteenth room stays locked until fourteen unique real chambers have been 
  assert.equal(unlocked(names.slice(0,13)),false);
  assert.equal(unlocked([...names.slice(0,13),'not-a-chamber']),false);
  assert.equal(unlocked(names),true);
- assert.match(home,/localStorage\.setItem\(visitedKey/);
+ const catalog=fs.readFileSync('catalog.html','utf8');
+ assert.match(catalog,/localStorage\.setItem\(exploredKey/);
  assert.match(home,/valid\.size===14/);
  assert.match(home,/id="hidden-room-entry"/);
  assert.match(room,/explored\.size!==14/);
