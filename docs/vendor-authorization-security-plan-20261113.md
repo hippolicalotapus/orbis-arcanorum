@@ -6,7 +6,7 @@ Status: **NOT APPLIED**. Based on read-only Supabase inspection, 2026-11-13. Do 
 - vendor_applications: id, applicant_id, display_name, country, specialty, description, website_url, status, created_at, reviewed_at.
 - vendor_profiles: id, owner_id, display_name, country, specialty, description, website_url, status, created_at, updated_at.
 - vendor_listings: id, vendor_id, title, description, category, listing_type, status, created_at, updated_at.
-- authenticated currently has SELECT and INSERT on applications, SELECT on profiles, and SELECT/INSERT/DELETE on listings. **No authenticated UPDATE on applications or listings.**
+- authenticated has SELECT and INSERT on applications, SELECT on profiles, and SELECT/INSERT/DELETE on listings at the table level. **Important correction (verified by information_schema.column_privileges): column-level UPDATE privileges already exist** for application status/reviewed_at and listing category/description/listing_type/status/title/updated_at. The absence of table-wide UPDATE is intentional or at least compatible with least privilege; do not assume updates are blocked solely because role_table_grants omits UPDATE.
 - Existing UPDATE RLS policies distinguish admin reviews and vendor-owned draft edits. Admin recognition uses app_metadata.orbis_admin, not user-editable metadata.
 
 ## Security decision required before implementation
