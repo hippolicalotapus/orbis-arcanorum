@@ -1,0 +1,3 @@
+const {test}=require('node:test'),assert=require('node:assert/strict'),{prepareArchiveReview}=require('../tools/archive-rights-review.cjs');
+test('documented record remains link-only pending rights review',()=>{const r=prepareArchiveReview({title:'A',url:'https://example.org',classification:'Documented',rights:'Review before copying',reviewed:'2026-11-08'});assert.equal(r.redistributionApproved,false);assert.equal(r.linkOnly,true);assert.deepEqual(r.issues,[])});
+test('unverified records and incomplete review metadata are flagged',()=>{const r=prepareArchiveReview({classification:'Unverified'});assert.equal(r.requiresSourceVerification,true);assert.deepEqual(r.issues,['missing rights note','missing review date'])});
