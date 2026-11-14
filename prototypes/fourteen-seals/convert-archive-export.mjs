@@ -1,11 +1,15 @@
 // Offline-only converter for authorized private editorial exports.
 // Usage: node convert-archive-export.mjs input.json archive-section-mapping.json output.json
 // Never fetches Supabase, publishes records, or modifies the input.
-import {readFileSync,writeFileSync} from 'node:fs';
+import {readFileSync,writeFileSync,statSync} from 'node:fs';
 const [inputPath,mapPath,outputPath]=process.argv.slice(2);
 if(!inputPath||!mapPath||!outputPath){console.error('Usage: node convert-archive-export.mjs input.json archive-section-mapping.json output.json');process.exit(2)}
 if(inputPath===outputPath||mapPath===outputPath)throw Error('Output must not overwrite an input file');
-const raw=JSON.parse(readFileSync(inputPath,'utf8'));
+const maxBytes=5*1024*1024;
+if(statSync(inputPath).size>maxBytes)throw Error('Input exceeds the 5 MiB import limit');
+const input=readFileSync(inputPath,'utf8');
+if(Buffer.byteLength(input,'utf8')>maxBytes)throw Error('Input exceeds the 5 MiB import limit');
+const raw=JSON.parse(input);
 const records=Array.isArray(raw)?raw:raw.records;
 const taxonomy=JSON.parse(readFileSync(mapPath,'utf8'));
 if(!Array.isArray(records)||records.length>10000)throw Error('Expected an array of at most 10,000 records');
@@ -20,5 +24,8 @@ for(const [index,r] of records.entries()){
  if(!title.trim())throw Error('Empty title in record '+(index+1));
  mapped.push({title:title.slice(0,250),chamber,summary:summary.slice(0,3000),sources:source});
 }
-writeFileSync(outputPath,JSON.stringify({records:mapped,review_required:review,summary:{input:records.length,mapped:mapped.length,review_required:review.length}},null,2)+'\n',{flag:'wx',mode:0o600});
+const output=JSON.stringify({records:mapped,review_required:review,summary:{input:records.length,mapped:mapped.length,review_required:review.length}},null,2)+'\n';
+if(Buffer.byteLength(output,'utf8')>maxBytes)throw Error('Converted output exceeds the 5 MiB viewer limit; split the input batch');
+writeFileSync(outputPath,output,{flag:'wx',mode:0o600});
 console.log(JSON.stringify({input:records.length,mapped:mapped.length,review_required:review.length,output:outputPath}));
+

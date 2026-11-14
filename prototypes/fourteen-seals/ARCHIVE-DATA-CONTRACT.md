@@ -12,6 +12,10 @@ Each record:
 
 All imported data stays in page memory; no server requests or database writes. The viewer creates text nodes for titles and summaries, and only HTTP(S) source links.
 
+The offline export converter enforces the same 5 MiB limit on its input and generated JSON. Formatting can make output larger than its source; split a batch if the converter reports that the output exceeds the viewer limit. Rejected conversions create no output and preserve existing files.
+
+2026-11-14 validation: 8 mapping/conversion checks and 25 Python archive checks passed locally, including the exact input-size boundary and output expansion. Browser QA remains blocked by this environment's Chromium socket permissions; no live database, publication or deployment was used.
+
 ## Test procedure before deployment
 1. Import `sample-research-import.json`; expect two records in two chambers. These are explicitly test data, not verified historical facts.
 2. Import malformed JSON; expect a rejection, no crash.
@@ -26,3 +30,4 @@ The GitHub repository currently does not establish the actual live archive data 
 
 ## Evidence policy
 Documented historical relationships need cited source URLs and a clear explanation. Similar motifs or speculative associations must not be presented as proven connections. No fabricated bibliography, unlicensed images, or invented provenance.
+

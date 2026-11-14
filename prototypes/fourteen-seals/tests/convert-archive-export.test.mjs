@@ -6,6 +6,27 @@ import {join,resolve} from 'node:path';
 import {spawnSync} from 'node:child_process';
 const script=resolve('prototypes/fourteen-seals/convert-archive-export.mjs');
 const mapping=resolve('prototypes/fourteen-seals/archive-section-mapping.json');
+test('converter respects the 5 MiB input boundary and never writes oversized viewer output',()=>{
+ const dir=mkdtempSync(join(tmpdir(),'orbis-converter-size-'));
+ try{
+  const input=join(dir,'input.json'),output=join(dir,'output.json'),limit=5*1024*1024;
+  writeFileSync(input,'[]'+' '.repeat(limit-2));
+  const boundary=spawnSync(process.execPath,[script,input,mapping,output],{encoding:'utf8'});
+  assert.equal(boundary.status,0,boundary.stderr);
+  rmSync(output);
+  writeFileSync(input,'[]'+' '.repeat(limit-1));
+  const oversized=spawnSync(process.execPath,[script,input,mapping,output],{encoding:'utf8'});
+  assert.notEqual(oversized.status,0,'Reject input above 5 MiB');
+  assert.equal(existsSync(output),false);
+  const records=Array.from({length:10000},()=>({title:'X'.repeat(250),archive_section:'Alchemy & Hermeticism',description:'A'.repeat(170)}));
+  const text=JSON.stringify(records);
+  assert.ok(Buffer.byteLength(text)<=limit,'Fixture input must fit the accepted size');
+  writeFileSync(input,text);
+  const expanded=spawnSync(process.execPath,[script,input,mapping,output],{encoding:'utf8'});
+  assert.notEqual(expanded.status,0,'Do not create output the viewer cannot import');
+  assert.equal(existsSync(output),false);
+ }finally{rmSync(dir,{recursive:true,force:true})}
+});
 test('authorized export converts mapped categories and quarantines unmapped ones',()=>{
  const dir=mkdtempSync(join(tmpdir(),'orbis-converter-'));
  try{
@@ -56,3 +77,4 @@ test('translated fields are normalized and limited for safe private review',()=>
   assert.equal(result.records[1].summary.length,3000);
  }finally{rmSync(dir,{recursive:true,force:true})}
 });
+
