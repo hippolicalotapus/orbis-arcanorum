@@ -303,3 +303,18 @@ test('named investigation cases and notes survive case file export and import', 
  assert.match(html, /parsed\.investigator_notes/);
  assert.match(html, /saveCaseMeta\(\)/);
 });
+
+test('homepage cannot regress to the retired twelve-archive experience', () => {
+  const html = fs.readFileSync('index.html', 'utf8');
+  const chambers = JSON.parse(fs.readFileSync('data/archive-chambers.json', 'utf8'));
+  assert.equal(chambers.length, 14, 'expected fourteen published archive categories');
+  assert.doesNotMatch(html, /(?:the\\s+)?twelve\\s+(?:archives|chambers)|all\\s+twelve\\s+archives|\\b12\\s+(?:archives|chambers)/i);
+  assert.match(html, /Fourteen chambers/);
+  assert.match(html, /id="chamber-grid"/);
+  assert.equal((html.match(/id="chambers"/g) || []).length, 1, 'section id must be unique');
+  assert.equal((html.match(/id="chamber-grid"/g) || []).length, 1, 'grid id must be unique');
+  assert.match(html, /getElementById\\('chamber-grid'\\)/);
+  assert.doesNotMatch(html, /chamberEl\\.append\\(b\\);const wrap/);
+  assert.match(html, /archive-chambers\\.json/);
+  assert.match(html, /archive-catalog\\.json/);
+});
