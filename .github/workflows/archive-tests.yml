@@ -4,6 +4,8 @@ on:
     paths:
       - 'tools/import_archive_jsonl.py'
       - 'tools/harvest_met.py'
+      - 'tools/*.cjs'
+      - 'data/archive-resources.json'
       - 'tests/**'
       - '.github/workflows/archive-tests.yml'
   pull_request:
@@ -26,3 +28,10 @@ jobs:
           python-version: '3.12'
       - name: Run all archive regression tests
         run: python -m unittest discover -s tests -v
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run offline archive Node tests
+        run: node --test tests/*.test.cjs
+      - name: Validate current archive resource records
+        run: node tools/validate_archive_resources.cjs
