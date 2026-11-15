@@ -11,6 +11,6 @@
 @keyframes final-align{0%,10%{transform:translate(-50%,-50%) rotate(-26deg);opacity:1}45%{transform:translate(-50%,-50%) rotate(0);filter:brightness(1.8);opacity:1}75%,100%{transform:translate(-50%,-50%) scale(1.8);opacity:0}}
 @keyframes final-left-open{0%,35%{transform:none}100%{transform:translateX(-90%) rotateY(45deg);opacity:0}}
 @keyframes final-right-open{0%,35%{transform:none}100%{transform:translateX(90%) rotateY(-45deg);opacity:0}}
-@media(max-width:520px){.final-seal-scene{height:410px}.final-seal-controls{gap:8px}.final-seal button,.final-seal a[data-final-enter]{font-size:.88rem}.final-wheel:before{font-size:3rem}}
+@media(max-width:520px){.final-seal-scene{height:clamp(300px,100vw,410px)}.final-seal-controls{gap:8px}.final-seal button,.final-seal a[data-final-enter]{font-size:.88rem}.final-wheel:before{font-size:3rem}}
 @media(prefers-reduced-motion:reduce){.final-seal *{animation:none!important;transition:none!important}}
 body.motion-paused .final-seal *{animation:none!important;transition:none!important}
