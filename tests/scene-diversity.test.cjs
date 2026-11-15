@@ -8,3 +8,22 @@ test('manuscript laboratory and excavation use distinct compositions and scene l
  const css=fs.readFileSync('prototypes/fourteen-seals/scene-variants.css','utf8');
  for(const name of ['manuscript','laboratory','excavation'])assert.ok(css.includes('[data-scene='+name+']'));
 });
+
+test('each of the remaining original portals has its own frame and narrow-phone height is fluid',()=>{
+ const html=fs.readFileSync('prototypes/fourteen-seals/index.html','utf8');
+ const css=fs.readFileSync('prototypes/fourteen-seals/scene-variants.css','utf8');
+ assert.match(html,/b\.dataset\.opening=PortalOpenings\.specs\[i\]\[0\]/);
+ const names=['insignia','tablets','storybook','chains','constellations','tracks','lantern','reliquary','hourglass','astrolabe','vault'];
+ const shapes=new Set();
+ for(const name of names){
+  const selector='#chambers .grid .tile[data-opening="'+name+'"]';
+  assert.ok(css.includes(selector),'missing frame for '+name);
+  const match=css.match(new RegExp('\\\\.tile\\\\[data-opening="'+name+'"\\\\][^{]*\\\\{border-radius:([^}]+)\\\\}'));
+  assert.ok(match,'missing frame radius for '+name);
+  shapes.add(match[1]);
+ }
+ assert.equal(shapes.size,names.length,'every original frame must have a distinct silhouette');
+ assert.match(css,/@media\\(max-width:520px\\)/);
+ assert.match(css,/height:clamp\\(345px,115vw,510px\\)/);
+ assert.match(css,/height:clamp\\(335px,112vw,430px\\)/);
+});

@@ -21,3 +21,41 @@ body:has(#detail:not(.hidden)) header>div:first-child{display:none}
 body:has(#detail:not(.hidden)) header>div:last-of-type{font-size:.65rem;letter-spacing:.08em}
 body:has(#detail:not(.hidden)) header:after{display:none}
 #detailTitle{scroll-margin-top:88px}
+
+/* Original archive frames: each remaining entrance is staged around its own physical mechanism. The approved fantasy images and choreography are preserved. */
+#chambers .grid .tile[data-opening="insignia"],body #mechanism[data-opening="insignia"]{border-radius:17px 17px 5px 5px}
+#chambers .grid .tile[data-opening="insignia"] .portal-scene{border-radius:17px 17px 5px 5px}
+#chambers .grid .tile[data-opening="insignia"] .portal-image,body #mechanism[data-opening="insignia"] .chamber-image{object-position:50% 34%;filter:contrast(1.12) saturate(.86)}
+#chambers .grid .tile[data-opening="tablets"],body #mechanism[data-opening="tablets"]{border-radius:3px 3px 18px 18px}
+#chambers .grid .tile[data-opening="tablets"] .portal-scene{border-radius:3px 3px 18px 18px}
+#chambers .grid .tile[data-opening="tablets"] .portal-image,body #mechanism[data-opening="tablets"] .chamber-image{object-position:52% 50%;filter:sepia(.22) contrast(1.08)}
+#chambers .grid .tile[data-opening="storybook"],body #mechanism[data-opening="storybook"]{border-radius:12px 54px 18px 4px}
+#chambers .grid .tile[data-opening="storybook"] .portal-scene{border-radius:12px 54px 18px 4px}
+#chambers .grid .tile[data-opening="storybook"] .portal-image,body #mechanism[data-opening="storybook"] .chamber-image{object-position:44% 50%;filter:saturate(1.08) contrast(1.06)}
+#chambers .grid .tile[data-opening="chains"],body #mechanism[data-opening="chains"]{border-radius:4px}
+#chambers .grid .tile[data-opening="chains"] .portal-scene{border-radius:4px}
+#chambers .grid .tile[data-opening="chains"] .portal-image,body #mechanism[data-opening="chains"] .chamber-image{object-position:53% 20%;filter:brightness(.83) contrast(1.22)}
+#chambers .grid .tile[data-opening="constellations"],body #mechanism[data-opening="constellations"]{border-radius:50% 50% 8px 8px / 23% 23% 8px 8px}
+#chambers .grid .tile[data-opening="constellations"] .portal-scene{border-radius:50% 50% 8px 8px / 23% 23% 8px 8px}
+#chambers .grid .tile[data-opening="constellations"] .portal-image,body #mechanism[data-opening="constellations"] .chamber-image{object-position:48% 20%;filter:saturate(1.16) contrast(1.11)}
+#chambers .grid .tile[data-opening="tracks"],body #mechanism[data-opening="tracks"]{border-radius:35% 10% 21% 12% / 17% 10% 18% 15%}
+#chambers .grid .tile[data-opening="tracks"] .portal-scene{border-radius:35% 10% 21% 12% / 17% 10% 18% 15%}
+#chambers .grid .tile[data-opening="tracks"] .portal-image,body #mechanism[data-opening="tracks"] .chamber-image{object-position:63% 56%;filter:saturate(.84) contrast(1.15)}
+#chambers .grid .tile[data-opening="lantern"],body #mechanism[data-opening="lantern"]{border-radius:15px 15px 62px 62px}
+#chambers .grid .tile[data-opening="lantern"] .portal-scene{border-radius:15px 15px 62px 62px}
+#chambers .grid .tile[data-opening="lantern"] .portal-image,body #mechanism[data-opening="lantern"] .chamber-image{object-position:36% 43%;filter:sepia(.16) brightness(.94)}
+#chambers .grid .tile[data-opening="reliquary"],body #mechanism[data-opening="reliquary"]{border-radius:2px 2px 24px 24px}
+#chambers .grid .tile[data-opening="reliquary"] .portal-scene{border-radius:2px 2px 24px 24px}
+#chambers .grid .tile[data-opening="reliquary"] .portal-image,body #mechanism[data-opening="reliquary"] .chamber-image{object-position:62% 50%;filter:contrast(1.14) saturate(1.05)}
+#chambers .grid .tile[data-opening="hourglass"],body #mechanism[data-opening="hourglass"]{border-radius:27% 8% 27% 8% / 17% 7% 17% 7%}
+#chambers .grid .tile[data-opening="hourglass"] .portal-scene{border-radius:27% 8% 27% 8% / 17% 7% 17% 7%}
+#chambers .grid .tile[data-opening="hourglass"] .portal-image,body #mechanism[data-opening="hourglass"] .chamber-image{object-position:42% 48%;filter:sepia(.08) contrast(1.13)}
+#chambers .grid .tile[data-opening="astrolabe"],body #mechanism[data-opening="astrolabe"]{border-radius:48% 48% 6px 6px / 27% 27% 6px 6px}
+#chambers .grid .tile[data-opening="astrolabe"] .portal-scene{border-radius:48% 48% 6px 6px / 27% 27% 6px 6px}
+#chambers .grid .tile[data-opening="astrolabe"] .portal-image,body #mechanism[data-opening="astrolabe"] .chamber-image{object-position:48% 24%;filter:saturate(1.18) contrast(1.08)}
+#chambers .grid .tile[data-opening="vault"],body #mechanism[data-opening="vault"]{border-radius:3px 24px 3px 24px}
+#chambers .grid .tile[data-opening="vault"] .portal-scene{border-radius:3px 24px 3px 24px}
+#chambers .grid .tile[data-opening="vault"] .portal-image,body #mechanism[data-opening="vault"] .chamber-image{object-position:58% 44%;filter:brightness(.93) contrast(1.18)}
+/* Make cinematic details visible above the fold on narrower handsets without reducing the reading room's controls. */
+@media(max-width:520px){body #mechanism[data-scene=manuscript],body #mechanism[data-scene=laboratory],body #mechanism[data-scene=excavation]{height:clamp(345px,115vw,510px)}body #mechanism:not([data-scene=manuscript]):not([data-scene=laboratory]):not([data-scene=excavation]){height:clamp(335px,112vw,430px)}#chambers .grid .tile .portal-scene{height:clamp(175px,53vw,218px)}}
+@media(max-width:350px){#chambers .grid .tile .portal-scene{height:175px}}
