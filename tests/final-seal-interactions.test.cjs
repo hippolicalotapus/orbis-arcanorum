@@ -6,7 +6,7 @@ const vm=require('node:vm');
 const path=require('node:path');
 const script=fs.readFileSync(path.resolve(__dirname,'../final-seal.js'),'utf8');
 function harness({reducedMotion=false,paused=false,query=''}={}){
- const controls=Object.fromEntries(['open','skip','enter','status'].map(k=>[k,{hidden:k==='enter'||k==='skip',disabled:false,textContent:'',handlers:{},addEventListener(type,fn){this.handlers[type]=fn},click(){this.handlers.click?.()},focus(){this.focused=true}}]));
+ const controls=Object.fromEntries(['open','skip','enter','status'].map(k=>[k,{hidden:k==='enter'||k==='skip',disabled:false,textContent:'',handlers:{},addEventListener(type,fn){this.handlers[type]=fn},click(){this.handlers.click?.()},focus(){this.focused=true;document.activeElement=this}}]));
  const host={dataset:{state:'sealed'},handlers:{},querySelector(sel){return controls[sel.slice(12,-1)]},addEventListener(type,fn){this.handlers[type]=fn}};
  const changes={};let timerId=0;const timers=new Map();const clicked=[];
  const document={hidden:false,handlers:{},body:{classList:{contains:k=>paused&&k==='motion-paused'}},querySelectorAll:()=>[host],addEventListener(type,fn){this.handlers[type]=fn},getElementById:id=>({click(){clicked.push(id)}})};
@@ -25,3 +25,20 @@ test('reduced motion opens immediately and backgrounding finishes opening',()=>{
  const b=harness();b.controls.open.click();b.document.hidden=true;b.document.handlers.visibilitychange();assert.equal(b.host.dataset.state,'ready');
 });
 test('reviewer shortcut invokes the preserved observatory route',()=>{const h=harness({query:'?room=15'});assert.deepEqual(h.clicked,['skip','observatoryAccess'])});
+
+
+test('automatic completion moves focus from the disappearing skip control to entry',()=>{
+ for(const completion of ['timer','animation','reduced-motion','background']){
+  const h=harness();h.controls.open.click();h.controls.skip.focus();
+  if(completion==='timer')h.flush();
+  if(completion==='animation')h.host.handlers.animationend({animationName:'final-right-open'});
+  if(completion==='reduced-motion'){h.reduced.matches=true;h.changes.change()}
+  if(completion==='background'){h.document.hidden=true;h.document.handlers.visibilitychange()}
+  assert.equal(h.host.dataset.state,'ready',completion);
+  assert.equal(h.document.activeElement,h.controls.enter,completion+' must preserve keyboard position');
+ }
+});
+test('automatic completion leaves focus on another control untouched',()=>{
+ const h=harness();h.controls.open.click();h.controls.open.focus();h.flush();
+ assert.equal(h.document.activeElement,h.controls.open);
+});
