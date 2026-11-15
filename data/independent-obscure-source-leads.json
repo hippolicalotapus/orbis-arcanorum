@@ -1,0 +1,150 @@
+{
+  "created": "2026-11-09",
+  "status": "discovery leads only; not archive-record verification",
+  "editorial_rule": "A site's existence and self-description are not proof of its extraordinary claims.",
+  "sources": [
+    {
+      "name": "Fortean Archives",
+      "url": "https://www.forteanarchives.org/",
+      "category": "Fortean",
+      "description": "Independent anomalous-event newspaper clippings and indexes",
+      "review_needed": "Primary clipping provenance and dates",
+      "rights": "Link only; no copying without rights check",
+      "outreach_status": "Not contacted",
+      "access_status": "Accessible in automated check 2026-11-09",
+      "last_checked": "2026-11-09"
+    },
+    {
+      "name": "Anomalist Archives",
+      "url": "https://www.anomalist.com/archive.html",
+      "category": "Fortean",
+      "description": "Historical anomalist essays and high-strangeness reports",
+      "review_needed": "Separate reports from corroboration",
+      "rights": "Link only; no copying without rights check",
+      "outreach_status": "Not contacted",
+      "access_status": "Accessible in automated check 2026-11-09",
+      "last_checked": "2026-11-09"
+    },
+    {
+      "name": "Arcane Archive",
+      "url": "https://arcane-archive.org/interdisciplinary/sites/",
+      "category": "Usenet and occult",
+      "description": "Old Usenet text collections on occult and spiritual subjects",
+      "review_needed": "Rights and original authorship",
+      "rights": "Link only; no copying without rights check",
+      "outreach_status": "Not contacted",
+      "access_status": "Accessible in automated check 2026-11-09",
+      "last_checked": "2026-11-09"
+    },
+    {
+      "name": "DarkBooks",
+      "url": "https://darkbooks.org/",
+      "category": "Independent esoteric library",
+      "description": "Independent collection of occult and magical books",
+      "review_needed": "Verify public-domain status per work",
+      "rights": "Link only; no copying without rights check",
+      "outreach_status": "Not contacted",
+      "access_status": "Accessible in automated check 2026-11-09",
+      "last_checked": "2026-11-09"
+    },
+    {
+      "name": "Twilit Grotto",
+      "url": "http://www.esotericarchives.com/",
+      "category": "Grimoires",
+      "description": "Independent esoteric text transcriptions",
+      "review_needed": "Edition, transcription and translation accuracy",
+      "rights": "Link only; no copying without rights check",
+      "outreach_status": "Not contacted",
+      "access_status": "Accessible in automated check 2026-11-09",
+      "last_checked": "2026-11-09"
+    },
+    {
+      "name": "Hermetic Library",
+      "url": "https://hermetic.com/",
+      "category": "Hermeticism",
+      "description": "Long-running practitioner-curated esoteric archive",
+      "review_needed": "Practitioner perspective and rights",
+      "rights": "Link only; no copying without rights check",
+      "outreach_status": "Not contacted",
+      "access_status": "Automated access blocked; manual review required",
+      "last_checked": "2026-11-09"
+    },
+    {
+      "name": "Anomaly Archives",
+      "url": "https://anomalyarchives.org/links/",
+      "category": "Research directory",
+      "description": "Extensive links to cryptozoology and Fortean resources, including defunct sites",
+      "review_needed": "Dead-link snapshots and original sourcing",
+      "rights": "Link only; no copying without rights check",
+      "outreach_status": "Not contacted",
+      "access_status": "Accessible in automated check 2026-11-09",
+      "last_checked": "2026-11-09"
+    },
+    {
+      "name": "Occult-Study links",
+      "url": "https://occult-study.com/links/",
+      "category": "Research directory",
+      "description": "Independent directory of occult resources and legacy links",
+      "review_needed": "Exclude unauthorized or private trackers",
+      "rights": "Link only; no copying without rights check",
+      "outreach_status": "Not contacted",
+      "access_status": "Accessible in automated check 2026-11-09",
+      "last_checked": "2026-11-09"
+    },
+    {
+      "name": "Sophia Aporrheta",
+      "url": "https://sophiaaporrheta.com/",
+      "category": "Multilingual esoterica",
+      "description": "Independent multilingual esoteric bibliographic repository",
+      "review_needed": "Check claimed item totals and rights independently",
+      "rights": "Link only; no copying without rights check",
+      "outreach_status": "Not contacted",
+      "access_status": "Accessible in automated check 2026-11-09",
+      "last_checked": "2026-11-09"
+    },
+    {
+      "name": "Libra Esoterica",
+      "url": "https://libraesoterica.com/",
+      "category": "Multilingual discovery",
+      "description": "Large cross-library occult discovery index",
+      "review_needed": "Check aggregation, duplication and source licenses",
+      "rights": "Link only; no copying without rights check",
+      "outreach_status": "Not contacted",
+      "access_status": "Accessible in automated check 2026-11-09",
+      "last_checked": "2026-11-09"
+    },
+    {
+      "name": "UKIYOVERSE INDEX.EXE",
+      "url": "https://ukiyoverse.org/directory",
+      "category": "Weird-web discovery",
+      "description": "Niche directory with occult, ritual, radio and weird-web categories",
+      "review_needed": "Creative-fiction/mythology context; do not treat as independent historical corroboration",
+      "rights": "Link only; no copying without rights check",
+      "outreach_status": "Not contacted",
+      "access_status": "Accessible in automated check 2026-11-09",
+      "last_checked": "2026-11-09"
+    },
+    {
+      "name": "Weird Science link archive",
+      "url": "https://amasci.com/weird/windex.html",
+      "category": "Legacy niche web",
+      "description": "Older directory of unconventional science and fringe research",
+      "review_needed": "Archive snapshots and evidence quality",
+      "rights": "Link only; no copying without rights check",
+      "outreach_status": "Not contacted",
+      "access_status": "Unreachable in automated check 2026-11-09",
+      "last_checked": "2026-11-09"
+    },
+    {
+      "name": "Nichibunken Japanese-language Yōkai database gateway",
+      "url": "https://www.nichibun.ac.jp/ja/db/category/yokai/",
+      "category": "Japanese folklore / original-language index",
+      "description": "Japanese-language entrypoint linked from the institutional yōkai folklore bibliography page",
+      "review_needed": "Inspect Japanese-language item-level records, licensing, exact source titles and translation provenance",
+      "rights": "Link only; no copying without rights check",
+      "outreach_status": "Not contacted",
+      "access_status": "Link discovered on accessible Nichibunken English page; Japanese endpoint not separately fetched",
+      "last_checked": "2026-11-09"
+    }
+  ]
+}

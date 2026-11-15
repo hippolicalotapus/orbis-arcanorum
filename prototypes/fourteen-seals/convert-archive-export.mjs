@@ -1,0 +1,24 @@
+// Offline-only converter for authorized private editorial exports.
+// Usage: node convert-archive-export.mjs input.json archive-section-mapping.json output.json
+// Never fetches Supabase, publishes records, or modifies the input.
+import {readFileSync,writeFileSync} from 'node:fs';
+const [inputPath,mapPath,outputPath]=process.argv.slice(2);
+if(!inputPath||!mapPath||!outputPath){console.error('Usage: node convert-archive-export.mjs input.json archive-section-mapping.json output.json');process.exit(2)}
+if(inputPath===outputPath||mapPath===outputPath)throw Error('Output must not overwrite an input file');
+const raw=JSON.parse(readFileSync(inputPath,'utf8'));
+const records=Array.isArray(raw)?raw:raw.records;
+const taxonomy=JSON.parse(readFileSync(mapPath,'utf8'));
+if(!Array.isArray(records)||records.length>10000)throw Error('Expected an array of at most 10,000 records');
+const mapped=[],review=[];
+for(const [index,r] of records.entries()){
+ if(!r||typeof r.title!=='string'||typeof r.archive_section!=='string')throw Error('Invalid record '+(index+1));
+ const chamber=Object.hasOwn(taxonomy.mapping,r.archive_section)?taxonomy.mapping[r.archive_section]:undefined;
+ if(!chamber){review.push({index:index+1,title:r.title,archive_section:r.archive_section,reason:'Unmapped: requires editorial review'});continue}
+ let source=[];try{const u=new URL(r.source_url);if(['https:','http:'].includes(u.protocol))source=[{url:u.href,label:typeof r.source_name==='string'?r.source_name:'Original source'}]}catch{}
+ const title=typeof r.english_title==='string'&&r.english_title.trim()?r.english_title:r.title;
+ const summary=typeof r.english_description==='string'?r.english_description:typeof r.description==='string'?r.description:'';
+ if(!title.trim())throw Error('Empty title in record '+(index+1));
+ mapped.push({title:title.slice(0,250),chamber,summary:summary.slice(0,3000),sources:source});
+}
+writeFileSync(outputPath,JSON.stringify({records:mapped,review_required:review,summary:{input:records.length,mapped:mapped.length,review_required:review.length}},null,2)+'\n',{flag:'wx',mode:0o600});
+console.log(JSON.stringify({input:records.length,mapped:mapped.length,review_required:review.length,output:outputPath}));

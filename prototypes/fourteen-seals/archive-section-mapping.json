@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "description": "Provisional navigation mapping only; does not reclassify or publish source records.",
+  "mapping": {
+    "Alchemy & Hermeticism": "Alchemy & Hermeticism",
+    "Ancient Egyptian Amulets": "Artifacts & Relics",
+    "Ancient Egyptian funerary texts": "Ancient Religions & Mythology",
+    "Ancient Egyptian protective objects": "Artifacts & Relics",
+    "Ancient Egyptian protective texts": "Ancient Religions & Mythology",
+    "Ancient Near Eastern Religion": "Ancient Religions & Mythology",
+    "Astrology & Divination": "Celestial Mysteries",
+    "Cryptozoology & Folklore": "Cryptids & Unexplained",
+    "Dreams & Consciousness": "Esoteric Sciences",
+    "Folklore & Mythology": "Myths & Legends",
+    "Ghosts & Hauntings": "Paranormal & Hauntings",
+    "Grimoires & Ceremonial Magic": "Grimoires & Magical Texts",
+    "Herbalism & Occult Botany": "Esoteric Sciences",
+    "Historical Magic & Charms": "Grimoires & Magical Texts",
+    "Lost Histories & Civilizations": "Lost Civilizations",
+    "Manuscripts & Ciphers": "Forbidden Knowledge",
+    "Manx Folklore & Witchcraft": "Myths & Legends",
+    "Mythical Creatures": "Myths & Legends",
+    "Occult Philosophy": "Alchemy & Hermeticism",
+    "Parapsychology & Investigation": "Paranormal & Hauntings",
+    "Ritual Objects & Material Culture": "Artifacts & Relics",
+    "Spiritualism & Psychical Research": "Paranormal & Hauntings",
+    "Talismans & Ritual Objects": "Artifacts & Relics",
+    "UFOs & UAP": "Cryptids & Unexplained",
+    "Unexplained Phenomena": "Cryptids & Unexplained",
+    "Witchcraft & Folklore": "Myths & Legends"
+  },
+  "requires_human_review": [
+    "African Diaspora & Spiritual Traditions",
+    "Catholic Mysticism & Manuscripts",
+    "Cross-archive",
+    "Faith & Sacred Traditions",
+    "Indigenous Traditions & Oral Histories",
+    "Magic History & Performance",
+    "Religion & Esotericism",
+    "Tantra & Esoteric Buddhism"
+  ],
+  "notes": "Unmapped or culturally sensitive source categories must remain in review rather than being force-fit. Conspiracy and Questionable & Disputed chambers require evidence-level classification, not a topic-only rule."
+}
