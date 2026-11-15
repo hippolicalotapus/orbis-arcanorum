@@ -18,12 +18,12 @@ test('each of the remaining original portals has its own frame and narrow-phone 
  for(const name of names){
   const selector='#chambers .grid .tile[data-opening="'+name+'"]';
   assert.ok(css.includes(selector),'missing frame for '+name);
-  const match=css.match(new RegExp('\\\\.tile\\\\[data-opening="'+name+'"\\\\][^{]*\\\\{border-radius:([^}]+)\\\\}'));
-  assert.ok(match,'missing frame radius for '+name);
-  shapes.add(match[1]);
+  const declaration=css.slice(css.indexOf(selector)).match(/^[^{]*\{border-radius:([^;}]+)\}/);
+  assert.ok(declaration,'missing frame radius for '+name);
+  shapes.add(declaration[1]);
  }
  assert.equal(shapes.size,names.length,'every original frame must have a distinct silhouette');
- assert.match(css,/@media\\(max-width:520px\\)/);
- assert.match(css,/height:clamp\\(345px,115vw,510px\\)/);
- assert.match(css,/height:clamp\\(335px,112vw,430px\\)/);
+ assert.ok(css.includes('@media(max-width:520px)'));
+ assert.ok(css.includes('height:clamp(345px,115vw,510px)'));
+ assert.ok(css.includes('height:clamp(335px,112vw,430px)'));
 });
