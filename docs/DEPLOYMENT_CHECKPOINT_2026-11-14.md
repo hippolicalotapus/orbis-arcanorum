@@ -1,3 +1,11 @@
+# Orbis production checkpoint — chamber research continuation
+
+Latest production main5328ba594871b7a7ef9a8c249ee25fcd63817e21; tested development11148060ad2d4c807efde0455a88ab55aa75dc27, treece425a86f0ada667e0b76b212648b4214bbfa8c8. Previous production/rollback source21aa937c6fb7291fc2a849efeb6191277cd8da8c. Existing Netlify target and original scenes/gates preserved.
+
+Each portal now offers relevant same-tab research catalog links while preserving original categories and evidence labels. All14 routes were checked against actual research data and return records;71 tests passed. At320px Chromium the two links fit203px wide and exceeded44px height, with document width305px including15px scrollbar. Live navigation from the alchemy entrance opened catalog.html?chamber=Alchemy+%26+Hermeticism and rendered25 of360 research leads. Published research-routes.js matches tested bytes. The source catalog remains an early research-lead collection, not a fully verified bibliography; physical-device tests and earlier release limitations still apply.
+
+## Previous checkpoint (retained history)
+
 # Orbis production development-preview checkpoint
 
 User authorized spending and deployment. Released exact prepared tree 4b4357fe2dd943bf80af19038e4c0e1f71a981bd through the existing GitHub-connected Netlify main branch. It preserves recovered development source and main's media-source document.
