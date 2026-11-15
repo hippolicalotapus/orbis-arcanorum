@@ -34,19 +34,30 @@ footer{border-top:1px solid #70583a;color:#c8b6a2;margin-top:50px;font:.85rem sy
 // No fictional vendors are shown as real businesses. Replace only with consented, reviewed records.
 let vendors=[];
 const search=document.getElementById("search"),country=document.getElementById("country"),specialty=document.getElementById("specialty"),results=document.getElementById("results"),count=document.getElementById("count");
-for(const [select,key] of [[country,"country"],[specialty,"specialty"]]){for(const value of [...new Set(vendors.map(v=>v[key]))].sort()){const o=document.createElement("option");o.value=value;o.textContent=value;select.append(o)}}
-function render(){const term=search.value.trim().toLocaleLowerCase();const filtered=vendors.filter(v=>(!country.value||v.country===country.value)&&(!specialty.value||v.specialty===specialty.value)&&[v.name,v.specialty,v.country].some(s=>s.toLocaleLowerCase().includes(term)));count.textContent=filtered.length+" verified directory participants";results.replaceChildren();if(!filtered.length){const p=document.createElement("p");p.className="empty";p.textContent=vendors.length?"No participants match your filters.":"The directory is preparing for its first verified participants. No vendor listings are live yet.";results.append(p)}for(const v of filtered){const card=document.createElement("article");card.className="card";const h=document.createElement("h3");h.textContent=v.name;const m=document.createElement("p");m.className="meta";m.textContent=v.country+" · "+v.specialty;card.append(h,m);if(v.url&&/^https:\/\//.test(v.url)){const a=document.createElement("a");a.href=v.url;a.rel="noopener noreferrer nofollow";a.target="_blank";a.textContent="Visit independent storefront";card.append(a)}results.append(card)}}
+function storefrontUrl(value){
+ if(typeof value!=="string"||!/^https:\/\/[^/\\]/i.test(value)||/[\u0000-\u0020\u007f\\]/.test(value))return null;
+ try{const url=new URL(value);return url.protocol==="https:"&&url.hostname&&!url.username&&!url.password?url.href:null}catch{return null}
+}
+function directoryVendor(record){
+ if(!record||typeof record!=="object"||Array.isArray(record)||record.status!=="approved")return null;
+ for(const [field,min,max] of [["display_name",2,120],["country",1,100],["specialty",1,120]]){
+  if(typeof record[field]!=="string"||record[field].trim().length<min||record[field].trim().length>max)return null;
+ }
+ return {name:record.display_name.trim(),country:record.country.trim(),specialty:record.specialty.trim(),url:storefrontUrl(record.website_url)};
+}
+function render(){const term=search.value.trim().toLocaleLowerCase();const filtered=vendors.filter(v=>(!country.value||v.country===country.value)&&(!specialty.value||v.specialty===specialty.value)&&[v.name,v.specialty,v.country].some(s=>s.toLocaleLowerCase().includes(term)));count.textContent=filtered.length+" approved directory participants";results.replaceChildren();if(!filtered.length){const p=document.createElement("p");p.className="empty";p.textContent=vendors.length?"No participants match your filters.":"The directory is preparing for its first verified participants. No vendor listings are live yet.";results.append(p)}for(const v of filtered){const card=document.createElement("article");card.className="card";const h=document.createElement("h3");h.textContent=v.name;const m=document.createElement("p");m.className="meta";m.textContent=v.country+" · "+v.specialty;card.append(h,m);if(v.url){const a=document.createElement("a");a.href=v.url;a.rel="noopener noreferrer nofollow";a.target="_blank";a.textContent="Visit independent storefront";card.append(a)}results.append(card)}}
 search.addEventListener("input",render);country.addEventListener("change",render);specialty.addEventListener("change",render);
 async function loadVendors(){
  count.textContent="Loading approved vendors…";
  try {
-  const response=await fetch("https://brxptqbdrlxixvsafvlf.supabase.co/rest/v1/vendor_profiles?select=display_name,country,specialty,website_url&status=eq.approved&order=display_name.asc&limit=100",{
+  const response=await fetch("https://brxptqbdrlxixvsafvlf.supabase.co/rest/v1/vendor_profiles?select=display_name,country,specialty,website_url,status&status=eq.approved&order=display_name.asc&limit=100",{
    headers:{"apikey":"sb_publishable_UV40XxeKKe3qP4bGOno2RQ__QuaVmKK"}
   });
   if(!response.ok)throw new Error("HTTP "+response.status);
   const data=await response.json();
   if(!Array.isArray(data))throw new Error("Invalid directory response");
-  vendors=data.map(v=>({name:v.display_name,country:v.country,specialty:v.specialty,url:v.website_url}));
+  // Status is checked again at the rendering boundary; consent is not exposed by this contract.
+  vendors=data.map(directoryVendor).filter(Boolean);
   for(const [select,field] of [[country,"country"],[specialty,"specialty"]]){
    for(const value of [...new Set(vendors.map(v=>v[field]))].sort()){
     const option=document.createElement("option");option.value=value;option.textContent=value;select.append(option);
