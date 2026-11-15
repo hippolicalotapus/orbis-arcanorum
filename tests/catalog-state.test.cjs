@@ -52,3 +52,12 @@ test('unknown selection values do not turn a shared URL into an empty catalog',a
  assert.equal(h.ids.chamber.value,'');assert.equal(h.ids.classification.value,'');assert.equal(h.ids.review.value,'');
  assert.equal(h.ids.count.textContent,'3 of 3 research leads');
 });
+test('opening a dossier carries the active research filters without unrelated URL data',async()=>{
+ const h=await harness('?campaign=friend&chamber=Orders&q=Rosicrucian&classification=Documented&review=pending');
+ const dossier=h.ids.results.children[0].children.find(node=>node.textContent==='Open research dossier');
+ const url=new URL(dossier.href,'https://orbis.example/catalog.html');
+ assert.equal(url.pathname,'/record.html');assert.equal(url.searchParams.get('id'),'lead');
+ assert.equal(url.searchParams.get('q'),'Rosicrucian');assert.equal(url.searchParams.get('chamber'),'Orders');
+ assert.equal(url.searchParams.get('classification'),'Documented');assert.equal(url.searchParams.get('review'),'pending');
+ assert.equal(url.searchParams.has('campaign'),false);
+});
