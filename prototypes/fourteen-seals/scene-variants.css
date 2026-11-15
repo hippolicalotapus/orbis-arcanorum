@@ -62,3 +62,6 @@ body:has(#detail:not(.hidden)) header:after{display:none}
 
 /* Preserve each entrance silhouette on the decorative inner trim. */
 #chambers .grid .tile[data-opening]::before{border-radius:inherit}
+
+/* Match the inner gold engraving to each original portal silhouette, including mobile cards. */
+#chambers .grid .tile[data-opening]::before{border-radius:inherit}
