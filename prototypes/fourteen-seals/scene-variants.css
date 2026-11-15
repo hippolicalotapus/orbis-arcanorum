@@ -59,3 +59,6 @@ body:has(#detail:not(.hidden)) header:after{display:none}
 /* Make cinematic details visible above the fold on narrower handsets without reducing the reading room's controls. */
 @media(max-width:520px){body #mechanism[data-scene=manuscript],body #mechanism[data-scene=laboratory],body #mechanism[data-scene=excavation]{height:clamp(345px,115vw,510px)}body #mechanism:not([data-scene=manuscript]):not([data-scene=laboratory]):not([data-scene=excavation]){height:clamp(335px,112vw,430px)}#chambers .grid .tile .portal-scene{height:clamp(175px,53vw,218px)}}
 @media(max-width:350px){#chambers .grid .tile .portal-scene{height:175px}}
+
+/* Preserve each entrance silhouette on the decorative inner trim. */
+#chambers .grid .tile[data-opening]::before{border-radius:inherit}
