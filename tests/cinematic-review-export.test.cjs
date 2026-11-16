@@ -1,0 +1,13 @@
+'use strict';
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const {prepareReviewExport}=require('../tools/cinematic-review-export.cjs');
+const safe=u=>u==='https://example.org/item';
+const bridge=[{status:'exact-name-match',catalogChamber:'Alchemy & Hermeticism',cinematicName:'Alchemy & Hermeticism'},{status:'editorial-review-required',catalogChamber:null,cinematicName:'Lost Civilizations'}];
+const record=(id,chamber='Alchemy & Hermeticism')=>({id,title:'Archival record',chamber,summary:'Research only',source_url:'https://example.org/item',rights:'Link only; no reproduction rights assumed'});
+test('exports exact matches into private import format and withholds unresolved rooms',()=>{const x=prepareReviewExport([record('a'),record('b','The Lost Histories')],bridge,safe);assert.equal(x.records.length,1);assert.equal(x.review_required.length,1);assert.equal(x.records[0].chamber,'Alchemy & Hermeticism');assert.equal(x.records[0].sources[0].url,'https://example.org/item');assert.equal(x.license_granted,false);assert.equal(x.preview_only,true);});
+test('duplicate IDs fail closed',()=>assert.throws(()=>prepareReviewExport([record('a'),record('a')],bridge,safe)));
+test('unsafe rights fail closed',()=>assert.throws(()=>prepareReviewExport([{...record('a'),rights:'Cleared for sale'}],bridge,safe)));
+test('sales and reproduction approvals fail closed',()=>{for(const key of ['sale_approved','reproduction_approved','media_embed_approved'])assert.throws(()=>prepareReviewExport([{...record('a'),[key]:true}],bridge,safe))});
+test('unsafe source URL fails closed on included records',()=>assert.throws(()=>prepareReviewExport([{...record('a'),source_url:'http://example.org/item'}],bridge,safe)));
+test('no target mapped means no private records exported',()=>{const x=prepareReviewExport([record('a','The Lost Histories')],bridge,safe);assert.equal(x.records.length,0);assert.equal(x.review_required.length,1)});
