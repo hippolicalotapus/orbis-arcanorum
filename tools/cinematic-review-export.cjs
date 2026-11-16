@@ -20,10 +20,11 @@ function prepareReviewExport(records, bridge, isSafeLink) {
        record.sale_approved===true||record.reproduction_approved===true||record.media_embed_approved===true)
       throw Error('Unsafe metadata or rights at '+record.id);
     const destination=known.get(record.chamber);
-    if(!destination) {result.review_required.push({id:record.id,chamber:record.chamber,reason:'Unresolved cinematic classification'});continue;}
+    if(!destination) {result.review_required.push({id:record.id,chamber:record.chamber,classification:record.classification || null,source_status:record.source_status || null,reason:'Unresolved cinematic classification'});continue;}
     if(!isSafeLink(record.source_url))
       throw Error('Unsafe source URL at '+record.id);
-    result.records.push({title:record.title,summary:record.summary,chamber:destination,
+    result.records.push({id:record.id,title:record.title,summary:record.summary,chamber:destination,
+      classification:record.classification || null,source_status:record.source_status || null,rights:record.rights,
       sources:[{url:record.source_url,label:'External research source (link only)'}]});
   }
   return result;
