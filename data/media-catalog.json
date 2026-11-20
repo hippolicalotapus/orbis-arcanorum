@@ -1,0 +1,95 @@
+[
+  {
+    "id": "bl-myths-magic-manuscripts",
+    "title": "Myths, Magic and Manuscripts",
+    "mediaType": "youtube",
+    "canonicalUrl": "https://www.youtube.com/watch?v=M0l9R6flA-I",
+    "publisher": "British Library",
+    "language": "en",
+    "rightsNotes": "Link to publisher only; embedding and redistribution not authorized or checked",
+    "evidenceRole": "secondary",
+    "verificationStatus": "proposed",
+    "archiveEntryIds": [],
+    "topics": [
+      "manuscripts",
+      "mythology"
+    ],
+    "embedAllowed": false,
+    "sourceCheck": "pending"
+  },
+  {
+    "id": "bnf-medieval-manuscripts-guide",
+    "title": "Medieval manuscripts: a user's guide",
+    "mediaType": "youtube",
+    "canonicalUrl": "https://www.youtube.com/watch?v=pMoELLWtiGw",
+    "publisher": "Bibliothèque nationale de France",
+    "language": "en",
+    "rightsNotes": "Link to publisher only; embedding and redistribution not authorized or checked",
+    "evidenceRole": "secondary",
+    "verificationStatus": "proposed",
+    "archiveEntryIds": [],
+    "topics": [
+      "medieval",
+      "manuscripts"
+    ],
+    "embedAllowed": false,
+    "sourceCheck": "pending"
+  },
+  {
+    "id": "smithsonian-herculaneum-scrolls",
+    "title": "How Artificial Intelligence Is Making 2,000-Year-Old Scrolls Readable Again",
+    "mediaType": "podcast",
+    "canonicalUrl": "https://www.smithsonianmag.com/podcast/series/theres-more-to-that/season-1/",
+    "publisher": "Smithsonian Magazine",
+    "language": "en",
+    "rightsNotes": "Link to publisher only; embedding and redistribution not authorized or checked",
+    "evidenceRole": "secondary",
+    "verificationStatus": "proposed",
+    "archiveEntryIds": [],
+    "topics": [
+      "archaeology",
+      "ancient manuscripts"
+    ],
+    "embedAllowed": false,
+    "linkTarget": "series",
+    "sourceCheck": "pending"
+  },
+  {
+    "id": "smithsonian-sojourner-truth",
+    "title": "How to Separate Fact From Myth in the Extraordinary Story of Sojourner Truth",
+    "mediaType": "podcast",
+    "canonicalUrl": "https://www.smithsonianmag.com/podcast/series/theres-more-to-that/season-1/",
+    "publisher": "Smithsonian Magazine — There's More to That",
+    "language": "en",
+    "rightsNotes": "Publisher series page verified; episode-specific URL and embedding permissions still need review",
+    "evidenceRole": "secondary",
+    "verificationStatus": "proposed",
+    "archiveEntryIds": [],
+    "topics": [
+      "history",
+      "historical claims"
+    ],
+    "embedAllowed": false,
+    "sourceCheck": "pending",
+    "linkTarget": "series"
+  },
+  {
+    "id": "smithsonian-eclipses-history",
+    "title": "Why We Love Eclipses",
+    "mediaType": "podcast",
+    "canonicalUrl": "https://www.smithsonianmag.com/podcast/series/theres-more-to-that/season-1/",
+    "publisher": "Smithsonian Magazine — There's More to That",
+    "language": "en",
+    "rightsNotes": "Publisher series page verified; episode-specific URL and embedding permissions still need review",
+    "evidenceRole": "secondary",
+    "verificationStatus": "proposed",
+    "archiveEntryIds": [],
+    "topics": [
+      "astronomy",
+      "cultural history"
+    ],
+    "embedAllowed": false,
+    "sourceCheck": "pending",
+    "linkTarget": "series"
+  }
+]
