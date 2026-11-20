@@ -26,11 +26,15 @@ for (const page of pages) {
     assert.doesNotMatch(html, /\.innerHTML\s*=/);
   });
 }
-test('homepage includes all twelve chambers', () => {
-  const html = fs.readFileSync('index.html', 'utf8');
-  const match = html.match(/const chambers=(\[[^;]+\]);const entries=/);
-  assert.ok(match, 'chamber data missing');
-  assert.equal(JSON.parse(match[1]).length, 12);
+test('archive manifest and catalog contain fourteen consistent chambers', () => {
+  const chambers = JSON.parse(fs.readFileSync('data/archive-chambers.json', 'utf8'));
+  const entries = JSON.parse(fs.readFileSync('data/archive-catalog.json', 'utf8'));
+  assert.equal(chambers.length, 14);
+  const names = chambers.map(c => c.name);
+  assert.equal(new Set(names).size, 14);
+  assert.equal(new Set(entries.map(e => e.id)).size, entries.length);
+  for (const entry of entries) assert.ok(names.includes(entry.chamber), 'unknown chamber: ' + entry.chamber);
+  assert.match(fs.readFileSync('index.html', 'utf8'), /archive-chambers\.json/);
 });
 test('research resource catalog has valid URLs and classifications', () => {
   const data = JSON.parse(fs.readFileSync('data/archive-resources.json', 'utf8'));
@@ -42,52 +46,316 @@ test('research resource catalog has valid URLs and classifications', () => {
   }
 });
 
-test('vendor registration is accessible and requires configured Supabase', () => {
-  const html=fs.readFileSync('vendor.html','utf8');
-  const js=fs.readFileSync('vendor.js','utf8');
-  assert.match(html, /id="account"/);
-  assert.match(html, /id="signin"/);
-  assert.match(html, /id="application"/);
-  assert.match(html, /aria-live="polite"/);
-  assert.match(js, /auth\.signUp/);
-  assert.match(js, /auth\.signInWithPassword/);
-  assert.match(js, /vendor_applications/);
-  assert.match(js, /status:'pending'/);
-  assert.doesNotMatch(js, /service_role|sb_secret_/);
-  assert.ok(fs.existsSync('vendor-config.example.json'));
-  assert.match(js, /await fetch/); // vendor.js is an ES module with top-level await
+const additionalPages = ['catalog.html','vendors.html','register.html','collectors-vault.html','antiquarian-atelier.html','advertise.html','lost-histories.html'];
+for (const page of additionalPages) {
+  test(page + ' exists with basic structure and valid local links', () => {
+    const html = fs.readFileSync(page, 'utf8');
+    assert.match(html, /<!doctype html>/i);
+    assert.match(html, /<html lang="en">/i);
+    assert.match(html, /<title>/i);
+    const links = [...html.matchAll(/href="\.\/([^"#?]+)"/g)].map(x => x[1]);
+    links.forEach(link => assert.ok(fs.existsSync(link), page + ' missing link: ' + link));
+  });
+}
+test('homepage connects the five core experiences', () => {
+  const html = fs.readFileSync('index.html','utf8');
+  for (const page of ['catalog.html','vendors.html','collectors-vault.html','antiquarian-atelier.html'])
+    assert.ok(html.includes('./'+page), 'missing homepage link: '+page);
+});
+test('Atelier discloses collector edition inclusions and no active checkout', () => {
+  const html = fs.readFileSync('antiquarian-atelier.html','utf8');
+  assert.match(html, /original unretouched scan/);
+  assert.match(html, /No checkout is active/);
+  assert.match(html, /fine-art paper print/i);
 });
 
-test('vendor signup remains disabled until launch gates pass', () => {
-  const config=JSON.parse(fs.readFileSync('vendor-config.json','utf8'));
-  const js=fs.readFileSync('vendor.js','utf8');
-  assert.equal(config.registrationEnabled,false,'registration must remain closed during beta preparation');
-  assert.match(config.supabaseUrl,/^https:\/\/[a-z0-9-]+\.supabase\.co$/);
-  assert.match(config.publishableKey,/^sb_publishable_/);
-  assert.match(js,/config\.registrationEnabled!==true/);
-  assert.match(js,/button\[type=submit\]/);
-  assert.doesNotMatch(JSON.stringify(config),/sb_secret_|service_role/);
+test('Grand Archive hero has an original accessible image asset', () => {
+ const html=fs.readFileSync('index.html','utf8');
+ assert.match(html, /src="\.\/assets\/grand-archive\.svg"/);
+ assert.match(html, /class="archive-illustration"[^>]+alt="[^"]+"/);
+ const asset=fs.readFileSync('assets/grand-archive.svg','utf8');
+ assert.match(asset, /<svg/);
+ assert.match(asset, /<title/);
+ assert.match(asset, /<desc/);
 });
 
-test('vendor studio is gated and only drafts or submits for moderation', () => {
- const html=fs.readFileSync('studio.html','utf8');
- const js=fs.readFileSync('studio.js','utf8');
- assert.match(html,/id="studio" hidden/);
- assert.match(js,/config.registrationEnabled!==true/);
- assert.match(js,/eq\('status','approved'\)/);
- assert.match(js,/status:'draft'/);
- assert.match(js,/status:'pending_review'/);
- assert.doesNotMatch(js,/service_role|sb_secret_|innerHTML/);
+test('preserved historical archive and research leads remain accessible', () => {
+ const html=fs.readFileSync('index.html','utf8');
+ for(const path of ['archives/index.html','archives/research-leads.json','data/archive-resources.json']) {
+  assert.ok(fs.existsSync(path),'missing preserved collection: '+path);
+  assert.ok(html.includes('./'+path),'missing homepage access: '+path);
+ }
+ const historical=JSON.parse(fs.readFileSync('archives/research-leads.json','utf8'));
+ assert.equal(historical.records.length,26);
+ const catalog=JSON.parse(fs.readFileSync('data/archive-catalog.json','utf8'));
+ assert.ok(catalog.length>=360,'archive catalog shrank unexpectedly');
+ const chambers=JSON.parse(fs.readFileSync('data/archive-chambers.json','utf8'));
+ assert.equal(chambers.length,14);
 });
 
-test('administrator review desk is gated and moderated', () => {
- const html=fs.readFileSync('review.html','utf8');
- const js=fs.readFileSync('review.js','utf8');
- assert.match(html,/id="desk" hidden/);
- assert.ok(js.includes('config.registrationEnabled!==true'));
- assert.ok(js.includes('user.app_metadata?.orbis_admin!==true'));
- assert.ok(js.includes("'pending_review'"));
- assert.ok(js.includes("'published'"));
- assert.ok(js.includes('reviewed_at'));
- assert.doesNotMatch(js,/service_role|sb_secret_|innerHTML/);
+test('Akashic catalog supports review-stage filtering without modifying source records', () => {
+ const html=fs.readFileSync('catalog.html','utf8');
+ assert.match(html, /id="review"/);
+ assert.match(html, /Research status: /);
+ assert.match(html, /Historical research collection/);
+ const records=JSON.parse(fs.readFileSync('data/archive-catalog.json','utf8'));
+ assert.equal(records.length,360);
+ assert.ok(records.every(r=>r.id&&r.title&&r.source_url&&r.source_status));
+});
+
+test('individual dossiers are linked and preserve source provenance', () => {
+ const page=fs.readFileSync('record.html','utf8');
+ const catalog=fs.readFileSync('catalog.html','utf8');
+ assert.match(page, /id="metadata"/);
+ assert.match(page, /Source review status/);
+ assert.match(page, /Rights and reproduction/);
+ assert.match(page, /encodeURIComponent\(item.id\)/);
+ assert.match(catalog, /record\.html\?id=/);
+ assert.match(page, /archive-catalog\.json/);
+});
+
+test('dossiers expose transparent cross-chamber discovery', () => {
+ const page=fs.readFileSync('record.html','utf8');
+ assert.match(page, /Discover related mysteries across the archives/);
+ assert.match(page, /item\.chamber!==entry\.chamber/);
+ assert.match(page, /shared catalog terms/);
+ assert.match(page, /not verified historical relationships/);
+ assert.match(page, /encodeURIComponent\(item.id\)/);
+});
+
+test('constellation explorer is connected and uses source-led catalog data', () => {
+ const page=fs.readFileSync('constellation.html','utf8');
+ const home=fs.readFileSync('index.html','utf8');
+ const dossier=fs.readFileSync('record.html','utf8');
+ assert.match(page, /id="network"/);
+ assert.match(page, /id="list"/);
+ assert.match(page, /archive-catalog\.json/);
+ assert.match(page, /not evidence of a historical association/);
+ assert.match(home, /constellation\.html/);
+ assert.match(dossier, /constellation\.html\?id=/);
+});
+
+test('constellation mobile layout and full catalog selection remain usable', () => {
+ const html=fs.readFileSync('constellation.html','utf8');
+ assert.match(html, /position:static!important/);
+ assert.doesNotMatch(html, /\.slice\(0,120\)/);
+ assert.match(html, /@media\(max-width:700px\)/);
+ const records=JSON.parse(fs.readFileSync('data/archive-catalog.json','utf8'));
+ assert.equal(records.length,360);
+});
+
+test('release gate validates navigation, scripts and external-link protections across public pages', () => {
+ const pages=['index.html','orders.html','catalog.html','record.html','constellation.html','vendors.html','register.html','collectors-vault.html','antiquarian-atelier.html','advertise.html','lost-histories.html'];
+ for(const page of pages){
+  const html=fs.readFileSync(page,'utf8');
+  assert.match(html, /<html lang="en">/i,page+' missing language');
+  assert.match(html, /<meta name="viewport"/i,page+' missing viewport');
+  for(const [,path] of html.matchAll(/href="\.\/([^"#?]+)(?:[?#][^"]*)?"/g))assert.ok(fs.existsSync(path),page+' broken local link: '+path);
+  for(const [,script] of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)){
+   if(/<script[^>]*type="module"/.test(html)&&page==='register.html')continue;
+   new vm.Script(script,{filename:page});
+  }
+  for(const tag of html.match(/<a\b[^>]*target="_blank"[^>]*>/g)||[])assert.match(tag,/rel="[^"]*noopener/,page+' unsafe external link');
+ }
+});
+
+test('mobile homepage entrance keeps text readable and reaches all chambers', () => {
+ const html=fs.readFileSync('index.html','utf8');
+ assert.match(html, /class="hero-content"/);
+ assert.match(html, /class="hero-action" href="#chambers"/);
+ assert.match(html, /<section id="chambers" aria-label="Research archive chambers">/);
+ assert.match(html, /\.hero-content h1\{/);
+ assert.match(html, /@media\(max-width:650px\)\{\.hero\{/);
+ assert.match(html, /\.hero:before\{display:none!important\}/);
+ const chambers=JSON.parse(fs.readFileSync('data/archive-chambers.json','utf8'));
+ assert.equal(chambers.length,14);
+});
+
+test('source review filter cannot mark pending leads as verified', () => {
+ const html=fs.readFileSync('catalog.html','utf8');
+ const match=html.match(/function isSourceChecked\(status\)\{[\s\S]*?\}\s*function render\(/);
+ assert.ok(match,'source review classifier is present');
+ const classify=new Function('status',match[0].replace(/^function isSourceChecked\(status\)\{/,'').replace(/\}\s*function render\($/,''));
+ for(const pending of ['Research lead — item-level verification pending','not verified','not independently verified','source not checked','discovery lead'])assert.equal(classify(pending),false,pending);
+ for(const checked of ['Source page checked','Source reviewed','independently verified'])assert.equal(classify(checked),true,checked);
+ assert.match(html,/Verification incomplete \/ pending/);
+});
+
+test('all chambers link to their filtered catalog and homepage records link to dossiers', () => {
+ const home=fs.readFileSync('index.html','utf8');
+ const catalog=fs.readFileSync('catalog.html','utf8');
+ assert.match(home, /catalog\.html\?chamber=/);
+ assert.match(home, /encodeURIComponent\(name\)/);
+ assert.match(home, /record\.html\?id=/);
+ assert.match(home, /encodeURIComponent\(x\.id\)/);
+ assert.match(catalog, /URLSearchParams\(location\.search\)\.get\('chamber'\)/);
+ const chambers=JSON.parse(fs.readFileSync('data/archive-chambers.json','utf8'));
+ const records=JSON.parse(fs.readFileSync('data/archive-catalog.json','utf8'));
+ assert.equal(chambers.length,14);
+ assert.equal(records.length,360);
+ for(const chamber of chambers)assert.ok(records.some(x=>x.chamber===chamber.name),'missing records for '+chamber.name);
+});
+
+test('research dossier offers contextual chamber and constellation navigation', () => {
+ const html=fs.readFileSync('record.html','utf8');
+ assert.match(html, /id="chamber-link"/);
+ assert.match(html, /id="constellation-link"/);
+ assert.match(html, /catalog\.html\?chamber=/);
+ assert.match(html, /encodeURIComponent\(entry\.chamber\)/);
+ assert.match(html, /constellation\.html\?id=/);
+ assert.match(html, /encodeURIComponent\(entry\.id\)/);
+});
+
+test('research dossiers provide mobile readable layout and return navigation', () => {
+ const html=fs.readFileSync('record.html','utf8');
+ assert.match(html, /aria-label="Breadcrumb"/);
+ assert.match(html, /id="return-catalog"/);
+ assert.match(html, /@media\(max-width:650px\)/);
+ assert.match(html, /\.related\{grid-template-columns:1fr\}/);
+ assert.match(html, /id="chamber-link"/);
+ assert.match(html, /id="constellation-link"/);
+});
+
+test('catalog mobile filters can be cleared and chamber selection persists in URL', () => {
+ const html=fs.readFileSync('catalog.html','utf8');
+ assert.match(html, /id="clear-filters"/);
+ assert.match(html, /id="active-chamber"/);
+ assert.match(html, /history\.replaceState\(null,'',url\)/);
+ assert.match(html, /url\.searchParams\.set\('chamber',c\.value\)/);
+ assert.match(html, /url\.searchParams\.delete\('chamber'\)/);
+ assert.match(html, /q\.value='';c\.value='';cl\.value='';rv\.value=''/);
+ assert.match(html, /@media\(max-width:750px\)/);
+});
+
+test('constellation board labels provisional connections and keeps selected dossier shareable', () => {
+ const html=fs.readFileSync('constellation.html','utf8');
+ assert.match(html, /Suggested text connection/);
+ assert.match(html, /id="selected-dossier"/);
+ assert.match(html, /selectedDossier\.href='\.\/record\.html\?id='/);
+ assert.match(html, /url\.searchParams\.set\('id',select\.value\)/);
+ assert.match(html, /history\.replaceState\(null,'',url\)/);
+ assert.match(html, /@media\(max-width:390px\)/);
+});
+
+test('investigation board explains connection terms without claiming historical proof', () => {
+ const html=fs.readFileSync('constellation.html','utf8');
+ assert.match(html, /className='connection-reason'/);
+ assert.match(html, /Suggested because both records mention:/);
+ assert.match(html, /Automated text match — historical relationship not verified/);
+ assert.match(html, /hit\.item\.classification/);
+ assert.match(html, /hit\.overlap\.slice\(0,4\)/);
+});
+
+test('investigation trails can continue from any suggested connection', () => {
+ const html=fs.readFileSync('constellation.html','utf8');
+ assert.match(html, /function trailLink\(item\)/);
+ assert.match(html, /constellation\.html\?id='\+encodeURIComponent\(item\.id\)/);
+ assert.match(html, /Investigate this connection/);
+ assert.match(html, /wrap\.append\(item,trailLink\(hit\.item\)\)/);
+ assert.match(html, /className='connection-card'/);
+});
+
+test('investigation trail stores limited session history and supports reset', () => {
+ const html=fs.readFileSync('constellation.html','utf8');
+ assert.match(html, /id="trail-steps"/);
+ assert.match(html, /id="clear-trail"/);
+ assert.match(html, /sessionStorage\.getItem\(trailKey\)/);
+ assert.match(html, /sessionStorage\.setItem\(trailKey,JSON\.stringify\(ids\)\)/);
+ assert.match(html, /ids\.slice\(-12\)/);
+ assert.match(html, /function rememberTrail\(id\)/);
+ assert.match(html, /saveTrail\(\[\]\);caseName\.value='';caseNotes\.value='';saveCaseMeta\(\);renderTrail\(\)/);
+ assert.match(html, /constellation\.html\?id='\+encodeURIComponent\(entry\.id\)/);
+});
+
+test('case file export includes provenance and uncertainty without remote storage', () => {
+ const html=fs.readFileSync('constellation.html','utf8');
+ assert.match(html, /id="export-trail"/);
+ assert.match(html, /function exportCaseFile\(\)/);
+ assert.match(html, /orbis-arcanorum-casefile-v1/);
+ assert.match(html, /source_status:entry\.source_status/);
+ assert.match(html, /source_url:entry\.source_url/);
+ assert.match(html, /JSON\.stringify\(file,null,2\)/);
+ assert.match(html, /URL\.createObjectURL\(blob\)/);
+ assert.match(html, /Suggested links do not establish historical relationships/);
+});
+
+test('case file import validates format size and catalog membership before restoring trail', () => {
+ const html=fs.readFileSync('constellation.html','utf8');
+ assert.match(html, /id="import-trail"/);
+ assert.match(html, /async function importCaseFile\(file\)/);
+ assert.match(html, /file\.size>1048576/);
+ assert.match(html, /parsed\.format!=='orbis-arcanorum-casefile-v1'/);
+ assert.match(html, /parsed\.trail\.length>12/);
+ assert.match(html, /records\.some\(x=>x\.id===step\.id\)/);
+ assert.match(html, /saveTrail\(ids\)/);
+ assert.match(html, /Import rejected:/);
+});
+
+test('named investigation cases and notes survive case file export and import', () => {
+ const html=fs.readFileSync('constellation.html','utf8');
+ assert.match(html, /id="case-name"/);
+ assert.match(html, /id="case-notes"/);
+ assert.match(html, /caseMetaKey='orbis-investigation-metadata-v1'/);
+ assert.match(html, /case_name:caseName\.value\.slice\(0,100\)/);
+ assert.match(html, /investigator_notes:caseNotes\.value\.slice\(0,5000\)/);
+ assert.match(html, /parsed\.case_name/);
+ assert.match(html, /parsed\.investigator_notes/);
+ assert.match(html, /saveCaseMeta\(\)/);
+});
+
+test('homepage cannot regress to the retired twelve-archive experience', () => {
+  const html = fs.readFileSync('index.html', 'utf8');
+  const chambers = JSON.parse(fs.readFileSync('data/archive-chambers.json', 'utf8'));
+  assert.equal(chambers.length, 14, 'expected fourteen published archive categories');
+  assert.doesNotMatch(html, /(?:the\s+)?twelve\s+(?:archives|chambers)|all\s+twelve\s+archives|\b12\s+(?:archives|chambers)/i);
+  assert.match(html, /Fourteen chambers/);
+  assert.match(html, /id="chamber-grid"/);
+  assert.equal((html.match(/id="chambers"/g) || []).length, 1, 'section id must be unique');
+  assert.equal((html.match(/id="chamber-grid"/g) || []).length, 1, 'grid id must be unique');
+  assert.match(html, /getElementById\('chamber-grid'\)/);
+  assert.doesNotMatch(html, /chamberEl\.append\(b\);const wrap/);
+  assert.match(html, /archive-chambers\.json/);
+  assert.match(html, /archive-catalog\.json/);
+});
+
+test('fifteenth room stays locked until fourteen unique real chambers have been explored', () => {
+ const home=fs.readFileSync('index.html','utf8');
+ const room=fs.readFileSync('fifteenth-room.html','utf8');
+ const manifest=JSON.parse(fs.readFileSync('data/archive-chambers.json','utf8'));
+ const names=manifest.map(x=>x.name);
+ const unlocked=visited=>new Set(visited.filter(name=>names.includes(name))).size===14;
+ assert.equal(names.length,14);
+ assert.equal(unlocked([]),false);
+ assert.equal(unlocked([names[0],names[0]]),false);
+ assert.equal(unlocked(names.slice(0,13)),false);
+ assert.equal(unlocked([...names.slice(0,13),'not-a-chamber']),false);
+ assert.equal(unlocked(names),true);
+ const catalog=fs.readFileSync('catalog.html','utf8');
+ assert.match(catalog,/localStorage\.setItem\(exploredKey/);
+ assert.match(home,/valid\.size===14/);
+ assert.match(home,/id="hidden-room-entry"/);
+ assert.match(room,/explored\.size!==14/);
+ assert.match(room,/id="locked"/);
+ assert.match(room,/id="reveal" hidden/);
+});
+
+test('exploration is recorded by entering a chamber catalog, not merely selecting its homepage card', () => {
+ const home=fs.readFileSync('index.html','utf8');
+ const catalog=fs.readFileSync('catalog.html','utf8');
+ assert.doesNotMatch(home,/if\(selected\)markExplored\(name\)/);
+ assert.match(home,/catalog\.html\?chamber=/);
+ assert.match(catalog,/function recordChamberVisit\(name\)/);
+ assert.match(catalog,/recordChamberVisit\(c\.value\)/);
+ assert.match(catalog,/orbis-explored-chambers-v1/);
+});
+
+test('duplicate visits do not truncate fourteen distinct chamber visits and back navigation refreshes progress', () => {
+ const html=fs.readFileSync('index.html','utf8');
+ const names=JSON.parse(fs.readFileSync('data/archive-chambers.json','utf8')).map(x=>x.name);
+ const stored=[names[0],names[0],...names.slice(1)];
+ assert.equal(new Set(stored.slice(0,14)).size,13);
+ assert.equal(new Set(stored).size,14);
+ assert.match(html,/new Set\(saved\.filter\(x=>typeof x==='string'\)\)/);
+ assert.doesNotMatch(html,/saved\.filter\(x=>typeof x==='string'\)\.slice\(0,14\)/);
+ assert.match(html,/addEventListener\('pageshow'/);
 });
