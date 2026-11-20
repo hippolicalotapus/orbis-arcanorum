@@ -145,6 +145,17 @@
       "outreach_status": "Not contacted",
       "access_status": "Link discovered on accessible Nichibunken English page; Japanese endpoint not separately fetched",
       "last_checked": "2026-11-09"
+    },
+    {
+      "name": "Crossref REST API (DOI metadata)",
+      "url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+      "category": "Reference infrastructure / scholarly metadata",
+      "description": "Open API for DOI metadata, a possible no-cost way to keep cited records current across disciplines",
+      "review_needed": "Confirm reuse terms on Crossref's metadata documentation; abstracts are excluded from the open-data statement; credit Crossref",
+      "rights": "Crossref states API metadata, except abstracts, is public-domain facts; verify on its documentation before reuse",
+      "outreach_status": "Contacted; support replied 2026-11-18",
+      "access_status": "Public documentation; not yet integrated",
+      "last_checked": "2026-11-20"
     }
   ]
 }
