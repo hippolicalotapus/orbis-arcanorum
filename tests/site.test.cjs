@@ -303,3 +303,60 @@ test('named investigation cases and notes survive case file export and import', 
  assert.match(html, /parsed\.investigator_notes/);
  assert.match(html, /saveCaseMeta\(\)/);
 });
+
+test('homepage cannot regress to the retired twelve-archive experience', () => {
+  const html = fs.readFileSync('index.html', 'utf8');
+  const chambers = JSON.parse(fs.readFileSync('data/archive-chambers.json', 'utf8'));
+  assert.equal(chambers.length, 14, 'expected fourteen published archive categories');
+  assert.doesNotMatch(html, /(?:the\s+)?twelve\s+(?:archives|chambers)|all\s+twelve\s+archives|\b12\s+(?:archives|chambers)/i);
+  assert.match(html, /Fourteen chambers/);
+  assert.match(html, /id="chamber-grid"/);
+  assert.equal((html.match(/id="chambers"/g) || []).length, 1, 'section id must be unique');
+  assert.equal((html.match(/id="chamber-grid"/g) || []).length, 1, 'grid id must be unique');
+  assert.match(html, /getElementById\('chamber-grid'\)/);
+  assert.doesNotMatch(html, /chamberEl\.append\(b\);const wrap/);
+  assert.match(html, /archive-chambers\.json/);
+  assert.match(html, /archive-catalog\.json/);
+});
+
+test('fifteenth room stays locked until fourteen unique real chambers have been explored', () => {
+ const home=fs.readFileSync('index.html','utf8');
+ const room=fs.readFileSync('fifteenth-room.html','utf8');
+ const manifest=JSON.parse(fs.readFileSync('data/archive-chambers.json','utf8'));
+ const names=manifest.map(x=>x.name);
+ const unlocked=visited=>new Set(visited.filter(name=>names.includes(name))).size===14;
+ assert.equal(names.length,14);
+ assert.equal(unlocked([]),false);
+ assert.equal(unlocked([names[0],names[0]]),false);
+ assert.equal(unlocked(names.slice(0,13)),false);
+ assert.equal(unlocked([...names.slice(0,13),'not-a-chamber']),false);
+ assert.equal(unlocked(names),true);
+ const catalog=fs.readFileSync('catalog.html','utf8');
+ assert.match(catalog,/localStorage\.setItem\(exploredKey/);
+ assert.match(home,/valid\.size===14/);
+ assert.match(home,/id="hidden-room-entry"/);
+ assert.match(room,/explored\.size!==14/);
+ assert.match(room,/id="locked"/);
+ assert.match(room,/id="reveal" hidden/);
+});
+
+test('exploration is recorded by entering a chamber catalog, not merely selecting its homepage card', () => {
+ const home=fs.readFileSync('index.html','utf8');
+ const catalog=fs.readFileSync('catalog.html','utf8');
+ assert.doesNotMatch(home,/if\(selected\)markExplored\(name\)/);
+ assert.match(home,/catalog\.html\?chamber=/);
+ assert.match(catalog,/function recordChamberVisit\(name\)/);
+ assert.match(catalog,/recordChamberVisit\(c\.value\)/);
+ assert.match(catalog,/orbis-explored-chambers-v1/);
+});
+
+test('duplicate visits do not truncate fourteen distinct chamber visits and back navigation refreshes progress', () => {
+ const html=fs.readFileSync('index.html','utf8');
+ const names=JSON.parse(fs.readFileSync('data/archive-chambers.json','utf8')).map(x=>x.name);
+ const stored=[names[0],names[0],...names.slice(1)];
+ assert.equal(new Set(stored.slice(0,14)).size,13);
+ assert.equal(new Set(stored).size,14);
+ assert.match(html,/new Set\(saved\.filter\(x=>typeof x==='string'\)\)/);
+ assert.doesNotMatch(html,/saved\.filter\(x=>typeof x==='string'\)\.slice\(0,14\)/);
+ assert.match(html,/addEventListener\('pageshow'/);
+});
