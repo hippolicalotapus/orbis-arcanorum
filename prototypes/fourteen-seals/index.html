@@ -186,7 +186,26 @@ $("clearRecordSearch").onclick=()=>{$("recordSearch").value="";recordPage=0;rend
 $("previousRecords").onclick=()=>{recordPage--;renderRecords(currentChamber);$("readingTitle").focus()};
 $("nextRecords").onclick=()=>{recordPage++;renderRecords(currentChamber);$("readingTitle").focus()};
 
-$("observatoryAccess").onclick=()=>{$("observatory").classList.remove("hidden");$("observatoryAccess").setAttribute("aria-expanded","true");$("observatory").scrollIntoView({behavior:motionBehavior(),block:"start"});requestAnimationFrame(drawThreads)};function updateProgress(){$("progress").textContent=visits.size+" of 14 seals discovered";if(visits.size===14){$("observatory").classList.remove("hidden");$("observatoryAccess").setAttribute("aria-expanded","true")}}$("closeObservatory").onclick=()=>{$("observatory").classList.add("hidden");$("observatoryAccess").setAttribute("aria-expanded","false");$("observatoryAccess").focus()};$("back").onclick=()=>{enter();const tile=$("grid").children[currentChamber];tile.focus({preventScroll:true});tile.scrollIntoView({block:"center",behavior:motionBehavior()})};
+$("observatoryAccess").onclick=()=>{$("observatory").classList.remove("hidden");$("observatoryAccess").setAttribute("aria-expanded","true");$("observatory").setAttribute("tabindex","-1");$("observatory").focus({preventScroll:true});$("observatory").scrollIntoView({behavior:motionBehavior(),block:"start"});requestAnimationFrame(drawThreads)};function updateProgress(){$("progress").textContent=visits.size+" of 14 seals discovered";if(visits.size===14)$("observatoryAccess").setAttribute("data-unlocked","true")}$("closeObservatory").onclick=()=>{$("observatory").classList.add("hidden");$("observatoryAccess").setAttribute("aria-expanded","false");$("observatoryAccess").focus()};$("back").onclick=()=>{enter();const tile=$("grid").children[currentChamber];tile.focus({preventScroll:true});tile.scrollIntoView({block:"center",behavior:motionBehavior()})};
+
+// Keyboard navigation follows the same controls as the visible back buttons.
+// Ignore editable controls and modifier shortcuts; never dismiss unsaved review text.
+document.addEventListener("keydown",event=>{
+ if(event.key!=="Escape"||event.defaultPrevented||event.altKey||event.ctrlKey||event.metaKey||event.shiftKey)return;
+ const active=document.activeElement;
+ if(active?.closest?.('[role="dialog"],[aria-modal="true"],[contenteditable="true"],textarea,input,select'))return;
+ // The Observatory may be revealed behind an active chamber after the final seal.
+ // Navigate the visible chamber first; only close the Observatory from the atlas.
+ if(!$("detail").classList.contains("hidden")){
+  event.preventDefault();
+  if(!$("readingRoom").classList.contains("hidden"))$("returnEntrance").click();
+  else $("back").click();
+  return;
+ }
+ if(!$("observatory").classList.contains("hidden")){
+  event.preventDefault();$("closeObservatory").click();
+ }
+});
 
 // Atmosphere runs only for visible surfaces, stops in background tabs, and can be paused.
 const motionPreference=matchMedia("(prefers-reduced-motion: reduce)");

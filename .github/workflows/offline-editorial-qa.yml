@@ -1,6 +1,12 @@
 name: Offline editorial queue browser QA
 on:
   workflow_dispatch:
+  pull_request:
+    branches:
+      - development/offline-research-review
+    paths:
+      - 'prototypes/fourteen-seals/**'
+      - '.github/workflows/offline-editorial-qa.yml'
   push:
     branches:
       - development/offline-research-review
@@ -9,6 +15,9 @@ on:
       - '.github/workflows/offline-editorial-qa.yml'
 permissions:
   contents: read
+concurrency:
+  group: offline-editorial-qa-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 jobs:
   browser-tests:
     runs-on: ubuntu-24.04
@@ -21,11 +30,13 @@ jobs:
       - name: Run archive taxonomy and conversion regression tests
         run: node --test prototypes/fourteen-seals/tests/chamber-mapping.test.mjs prototypes/fourteen-seals/tests/convert-archive-export.test.mjs
       - name: Install Playwright in temporary workspace
+        timeout-minutes: 5
         run: |
           npm install --no-save --no-package-lock playwright@1.58.2
-          npx playwright install --with-deps chromium
+          # GitHub Ubuntu runners include Chromium system libraries; avoid apt mirror timeouts.
+          npx playwright install chromium
       - name: Run offline editorial queue browser tests
-        run: node --test prototypes/fourteen-seals/tests/editorial-queue.test.mjs prototypes/fourteen-seals/tests/chamber-browser.test.mjs prototypes/fourteen-seals/tests/portal-navigation.test.mjs prototypes/fourteen-seals/tests/fantasy-portals.test.mjs prototypes/fourteen-seals/tests/chamber-journey.test.mjs
+        run: node --test prototypes/fourteen-seals/tests/editorial-queue.test.mjs prototypes/fourteen-seals/tests/chamber-browser.test.mjs prototypes/fourteen-seals/tests/portal-navigation.test.mjs prototypes/fourteen-seals/tests/fantasy-portals.test.mjs prototypes/fourteen-seals/tests/chamber-journey.test.mjs prototypes/fourteen-seals/tests/keyboard-navigation.test.mjs
       - name: Preserve real browser screenshot for review
         if: always()
         uses: actions/upload-artifact@v4
